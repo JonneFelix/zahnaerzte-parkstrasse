@@ -30,7 +30,7 @@ export default function GoogleMap() {
         src={MAPS_URL}
         width="100%"
         height="400"
-        style={{ border: 0 }}
+        style={{ border: 0, display: "block" }}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

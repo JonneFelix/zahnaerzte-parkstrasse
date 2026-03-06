@@ -24,8 +24,9 @@ RUN echo 'server { \
         add_header Cache-Control "public, immutable"; \
     } \
     location /images/ { \
-        expires 30d; \
-        add_header Cache-Control "public"; \
+        expires 7d; \
+        add_header Cache-Control "public, must-revalidate"; \
+        add_header CDN-Cache-Control "max-age=86400"; \
     } \
 }' > /etc/nginx/conf.d/default.conf
 

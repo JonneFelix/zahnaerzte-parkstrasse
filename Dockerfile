@@ -1,13 +1,13 @@
 # ─── Zahnärzte Parkstrasse Dockerfile ─────────────────────────────────────────
 # Multi-Stage Build: Bun → Next.js Standalone Output
 
-FROM oven/bun:1.2-alpine AS base
+FROM oven/bun:latest AS base
 WORKDIR /app
 
 # ─── Dependencies installieren ───────────────────────────────────────────────
 FROM base AS deps
 COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile
+RUN bun install
 
 # ─── Build ───────────────────────────────────────────────────────────────────
 FROM base AS builder
@@ -16,11 +16,13 @@ COPY . .
 RUN bun run build
 
 # ─── Production Runner ───────────────────────────────────────────────────────
-FROM base AS runner
+FROM node:22-alpine AS runner
 
 ENV NODE_ENV=production
 ENV HOSTNAME=0.0.0.0
 ENV PORT=3000
+
+WORKDIR /app
 
 # Next.js Standalone Output kopieren
 COPY --from=builder /app/.next/standalone ./
@@ -29,4 +31,4 @@ COPY --from=builder /app/public ./public
 
 EXPOSE 3000
 
-CMD ["bun", "run", "server.js"]
+CMD ["node", "server.js"]

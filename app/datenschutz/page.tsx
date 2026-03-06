@@ -39,7 +39,7 @@ export default function DatenschutzSeite() {
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
               </p>
               <p className="text-sm leading-relaxed mt-2" style={textStyle}>
-                Dr. Claudia Schwegmann, Dr. Nina Janz &amp; Dr. Julia Prüter<br />
+                Dr. Claudia Schwegmann &amp; Dr. Nina Janz<br />
                 Parkstraße 10<br />
                 22605 Hamburg<br />
                 Telefon: 040 — 880 21 50<br />
@@ -56,11 +56,11 @@ export default function DatenschutzSeite() {
                 3. Hosting
               </h2>
               <p className="text-sm leading-relaxed" style={textStyle}>
-                Diese Website wird auf einem eigenen Server in Deutschland gehostet. Wenn Sie unsere Website besuchen, erfasst der Webserver automatisch technische Zugriffsdaten (siehe Abschnitt „Server-Log-Dateien"). Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer effizienten und sicheren Bereitstellung unserer Website (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO).
+                Diese Website wird auf einem Server in Deutschland gehostet. Wenn Sie unsere Website besuchen, erfasst der Webserver automatisch technische Zugriffsdaten (siehe Abschnitt „Server-Log-Dateien"). Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer effizienten und sicheren Bereitstellung unserer Website (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO).
               </p>
             </div>
 
-            {/* 4. SSL/TLS-Verschlüsselung */}
+            {/* 4. SSL/TLS */}
             <div>
               <h2 className="text-xl mb-3" style={h2Style}>
                 4. SSL- bzw. TLS-Verschlüsselung
@@ -89,12 +89,12 @@ export default function DatenschutzSeite() {
                 <li>IP-Adresse</li>
               </ul>
               <p className="text-sm leading-relaxed mb-4" style={textStyle}>
-                Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO. Wir haben ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und Optimierung unserer Website. Die Server-Log-Dateien werden nach spätestens 14 Tagen automatisch gelöscht.
+                Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO. Wir haben ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und Optimierung unserer Website. Die Server-Log-Dateien werden regelmäßig gelöscht und nicht dauerhaft gespeichert.
               </p>
 
               <h3 className="text-base font-semibold mb-2" style={h3Style}>Cookies</h3>
               <p className="text-sm leading-relaxed" style={textStyle}>
-                Diese Website verwendet keine Cookies — weder Tracking-Cookies noch technisch notwendige Cookies. Es werden keine Analyse-Tools von Drittanbietern eingesetzt. Ein Cookie-Banner ist daher nicht erforderlich.
+                Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können jedoch Cookies von Google gesetzt werden (siehe Abschnitt „Google Maps"). Weitere Tracking-Cookies oder Analyse-Tools werden nicht eingesetzt.
               </p>
             </div>
 
@@ -105,8 +105,16 @@ export default function DatenschutzSeite() {
               </h2>
 
               <h3 className="text-base font-semibold mb-2" style={h3Style}>Schriftarten (Google Fonts — lokal)</h3>
-              <p className="text-sm leading-relaxed" style={textStyle}>
+              <p className="text-sm leading-relaxed mb-4" style={textStyle}>
                 Diese Website nutzt Schriftarten von Google Fonts. Die Schriftarten sind lokal auf unserem Server eingebunden und werden beim Aufruf unserer Website direkt von dort geladen. Es findet <strong>keine Verbindung zu Servern von Google</strong> statt. Ihre IP-Adresse wird nicht an Google übermittelt.
+              </p>
+
+              <h3 className="text-base font-semibold mb-2" style={h3Style}>Google Maps</h3>
+              <p className="text-sm leading-relaxed" style={textStyle}>
+                Auf unserer Kontaktseite wird Google Maps als Karteneinbettung genutzt. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf der Kontaktseite wird eine Verbindung zu den Servern von Google hergestellt, wodurch unter anderem Ihre IP-Adresse an Google übermittelt wird. Google kann hierbei Cookies setzen. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse an einer ansprechenden Darstellung unserer Anfahrtsbeschreibung). Weitere Informationen finden Sie in der{" "}
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
+                  Datenschutzerklärung von Google
+                </a>.
               </p>
             </div>
 
@@ -141,8 +149,10 @@ export default function DatenschutzSeite() {
               </p>
               <p className="text-sm leading-relaxed mt-2" style={textStyle}>
                 Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit<br />
-                Ludwig-Erhard-Str. 22, 7.&nbsp;OG<br />
+                Ludwig-Erhard-Str 22, 7.&nbsp;OG<br />
                 20459 Hamburg<br />
+                Telefon: 040 / 428 54 - 4040<br />
+                E-Mail: mailbox@datenschutz.hamburg.de<br />
                 <a href="https://datenschutz-hamburg.de" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
                   datenschutz-hamburg.de
                 </a>

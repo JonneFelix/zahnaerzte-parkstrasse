@@ -25,8 +25,8 @@ export default function ImpressumSeite() {
                 Angaben gemäß § 5 DDG
               </h2>
               <p className="text-sm leading-relaxed" style={textStyle}>
-                Dr. Claudia Schwegmann, Dr. Nina Janz &amp; Dr. Julia Prüter<br />
-                Zahnärztinnen<br />
+                Dr. Claudia Schwegmann &amp; Dr. Nina Janz<br />
+                Zahnärztinnen (Praxisinhaberinnen)<br />
                 Parkstraße 10<br />
                 22605 Hamburg
               </p>

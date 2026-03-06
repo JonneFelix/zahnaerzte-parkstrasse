@@ -1,34 +1,37 @@
 # ─── Zahnärzte Parkstrasse Dockerfile ─────────────────────────────────────────
-# Multi-Stage Build: Bun → Next.js Standalone Output
+# Multi-Stage Build: Bun Build → Nginx Static Serving
 
-FROM oven/bun:latest AS base
+FROM oven/bun:latest AS builder
 WORKDIR /app
-
-# ─── Dependencies installieren ───────────────────────────────────────────────
-FROM base AS deps
 COPY package.json bun.lock ./
 RUN bun install
-
-# ─── Build ───────────────────────────────────────────────────────────────────
-FROM base AS builder
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN bun run build
 
-# ─── Production Runner ───────────────────────────────────────────────────────
-FROM node:22-alpine AS runner
+# ─── Production: Nginx mit statischen Dateien ────────────────────────────────
+FROM nginx:alpine AS runner
 
-ENV NODE_ENV=production
-ENV HOSTNAME=0.0.0.0
-ENV PORT=3000
+# Nginx-Konfiguration für SPA-Routing
+RUN echo 'server { \
+    listen 3000; \
+    root /usr/share/nginx/html; \
+    index index.html; \
+    location / { \
+        try_files $uri $uri.html $uri/index.html /index.html; \
+    } \
+    location /_next/ { \
+        expires 1y; \
+        add_header Cache-Control "public, immutable"; \
+    } \
+    location /images/ { \
+        expires 30d; \
+        add_header Cache-Control "public"; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
 
-WORKDIR /app
-
-# Next.js Standalone Output kopieren
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
-COPY --from=builder /app/public ./public
+# Statischen Export kopieren
+COPY --from=builder /app/out /usr/share/nginx/html
 
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+CMD ["nginx", "-g", "daemon off;"]

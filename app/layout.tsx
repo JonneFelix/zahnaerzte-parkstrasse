@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Work_Sans } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CookieBanner from "./components/CookieBanner";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

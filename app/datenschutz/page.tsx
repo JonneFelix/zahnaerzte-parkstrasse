@@ -39,7 +39,7 @@ export default function DatenschutzSeite() {
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
               </p>
               <p className="text-sm leading-relaxed mt-2" style={textStyle}>
-                Dr. Claudia Schwegmann &amp; Dr. Nina Janz<br />
+                Dr. Claudia Schwegmann<br />
                 Parkstraße 10<br />
                 22605 Hamburg<br />
                 Telefon: 040 — 880 21 50<br />

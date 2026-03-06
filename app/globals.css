@@ -1,26 +1,158 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* === Primärfarbe: Teal/Petrol (aus dem Logo) === */
+  --color-primary-50: #f0f4f4;
+  --color-primary-100: #dce4e4;
+  --color-primary-200: #b8c8c8;
+  --color-primary-300: #94a0a0;
+  --color-primary-400: #7e8e8e;
+  --color-primary-500: #697b7b;
+  --color-primary-600: #566767;
+  --color-primary-700: #4a5c5c;
+  --color-primary-800: #3a4a4a;
+  --color-primary-900: #2d3a3a;
+  --color-primary-950: #1a2424;
+
+  /* === Sekundärfarbe: Warmes Orange (Original-Webseite #F26522) === */
+  --color-secondary-50: #fff7f0;
+  --color-secondary-100: #ffedd9;
+  --color-secondary-200: #fdd6b3;
+  --color-secondary-300: #f9b380;
+  --color-secondary-400: #f58a4a;
+  --color-secondary-500: #f26522;
+  --color-secondary-600: #e3541a;
+  --color-secondary-700: #bc4015;
+  --color-secondary-800: #963518;
+  --color-secondary-900: #7a2e18;
+  --color-secondary-950: #42140a;
+
+  /* === Akzentfarbe: Warmes Gold === */
+  --color-accent-50: #fdf8ef;
+  --color-accent-100: #f9edda;
+  --color-accent-200: #f2d8b4;
+  --color-accent-300: #e9be84;
+  --color-accent-400: #dfa253;
+  --color-accent-500: #d68b33;
+  --color-accent-600: #c87428;
+  --color-accent-700: #a65a23;
+  --color-accent-800: #864822;
+  --color-accent-900: #6e3c1f;
+  --color-accent-950: #3c1e0e;
+
+  /* === Neutrale Farben (leicht teal-getönt) === */
+  --color-neutral-50: #f8fafa;
+  --color-neutral-100: #f0f3f3;
+  --color-neutral-200: #e2e6e6;
+  --color-neutral-300: #c8d0d0;
+  --color-neutral-400: #a0acac;
+  --color-neutral-500: #7a8888;
+  --color-neutral-600: #5e6c6c;
+  --color-neutral-700: #4a5555;
+  --color-neutral-800: #353e3e;
+  --color-neutral-900: #242b2b;
+  --color-neutral-950: #141919;
+
+  /* === Schriftarten === */
+  --font-serif: var(--font-cormorant);
+  --font-body: var(--font-work-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* === Basis === */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f1ec;
+  color: var(--color-neutral-900);
+  font-family: var(--font-work-sans), "Work Sans", sans-serif;
+}
+
+/* === Organische Animationen === */
+@keyframes einblenden {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes einblendenLinks {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes einblendenRechts {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes blobAtmen {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  25% { transform: translate(8px, -12px) scale(1.04) rotate(1deg); }
+  50% { transform: translate(-5px, 8px) scale(0.97) rotate(-1deg); }
+  75% { transform: translate(6px, 5px) scale(1.02) rotate(0.5deg); }
+}
+@keyframes pulsieren {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+@keyframes schimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Animations-Klassen */
+.anim-einblenden { animation: einblenden 0.8s ease-out both; }
+.anim-einblenden-links { animation: einblendenLinks 0.8s ease-out both; }
+.anim-einblenden-rechts { animation: einblendenRechts 0.8s ease-out both; }
+.anim-blob { animation: blobAtmen 14s ease-in-out infinite; }
+.anim-puls { animation: pulsieren 3.5s ease-in-out infinite; }
+
+/* Verzögerungen */
+.d1 { animation-delay: 100ms; }
+.d2 { animation-delay: 200ms; }
+.d3 { animation-delay: 300ms; }
+.d4 { animation-delay: 400ms; }
+.d5 { animation-delay: 500ms; }
+.d6 { animation-delay: 600ms; }
+.d7 { animation-delay: 700ms; }
+.d8 { animation-delay: 800ms; }
+
+/* Karte Hover */
+.karte-hover {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.karte-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 44px -8px rgba(105, 123, 123, 0.18);
+}
+
+/* CTA-Button Schimmer */
+.cta-schimmer {
+  position: relative;
+  overflow: hidden;
+}
+.cta-schimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.2) 50%, transparent 60%);
+  background-size: 200% 100%;
+  animation: schimmer 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Team-Bild Hover */
+.team-bild-hover {
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.team-bild-hover:hover {
+  transform: scale(1.015);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: #f0ede8; }
+::-webkit-scrollbar-thumb { background: #697B7B; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #4a5959; }
+
+/* Subtile Papier-Textur */
+.papier-textur {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23697B7B' fill-opacity='0.025'%3E%3Cpath d='M20 20c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2zm-16 0c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2zm32 0c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }

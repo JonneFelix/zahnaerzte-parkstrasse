@@ -36,6 +36,20 @@ yarn-error.log*
 # vercel
 .vercel
 
+# firecrawl
+.firecrawl/
+
+# screenshots
+.screenshots/
+
+# alte Dateien / Notizen
+alte-wordpress-webseite/
+Inspired_Product-Management/
+.next\ 2/
+BRANDING.md
+SEITENARCHITEKTUR-V11.md
+SEITENSTRUKTUR.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

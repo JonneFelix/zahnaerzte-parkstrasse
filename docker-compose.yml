@@ -1,0 +1,20 @@
+# ─── Zahnärzte Parkstrasse Docker Compose ─────────────────────────────────────
+# Deployment via Dokploy — statische Next.js-Seite, keine Env-Variablen nötig.
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true

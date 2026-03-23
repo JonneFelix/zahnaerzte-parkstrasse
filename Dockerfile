@@ -28,7 +28,7 @@ RUN echo 'server { \
     \
     # URLs ohne Locale-Prefix nach /de/ umleiten \
     # Ausnahmen: statische Assets + 404.html \
-    if ($uri !~ "^/(de|en|fr|es|_next|images)/|^/404|\\.(txt|xml|ico|png|svg|js|css|woff2|html)$") { \
+    if ($uri !~ "^/(de|en|fr|es)(/|$)|^/(_next|images)/|^/404|\\.(txt|xml|ico|png|svg|js|css|woff2|html)$") { \
         rewrite ^/(.+)$ /de/$1 permanent; \
     } \
     \

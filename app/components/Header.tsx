@@ -342,7 +342,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           <Link
             href={l("/termin", locale)}
             onClick={() => setMobileOffen(false)}
-            className="cta-schimmer mt-8 px-10 py-4 text-sm tracking-wider"
+            className="cta-schimmer mt-4 px-10 py-3.5 text-sm tracking-wider"
             style={{
               fontWeight: 600,
               color: "#fff",

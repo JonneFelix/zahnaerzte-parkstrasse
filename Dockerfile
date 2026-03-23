@@ -16,6 +16,7 @@ RUN echo 'server { \
     listen 3000; \
     root /usr/share/nginx/html; \
     index index.html; \
+    absolute_redirect off; \
     \
     # Root / → Redirect nach /de (ohne Trailing Slash, weil Next.js de.html generiert) \
     location = / { \

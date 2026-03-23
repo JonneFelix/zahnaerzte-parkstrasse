@@ -17,9 +17,9 @@ RUN echo 'server { \
     root /usr/share/nginx/html; \
     index index.html; \
     \
-    # Root / → Redirect nach /de/ (Spracherkennung passiert client-seitig) \
+    # Root / → Redirect nach /de (ohne Trailing Slash, weil Next.js de.html generiert) \
     location = / { \
-        return 302 /de/; \
+        return 302 /de; \
     } \
     \
     # Statische Dateien: Exakter Pfad, dann .html, dann /index.html \

@@ -264,7 +264,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
       {/* Mobiles Fullscreen-Menü */}
       <div
-        className="fixed inset-0 z-40 lg:hidden transition-all duration-500"
+        className="fixed inset-0 z-40 lg:hidden transition-all duration-500 flex flex-col"
         style={{
           background: "rgba(244, 241, 236, 0.98)",
           backdropFilter: "blur(20px)",
@@ -272,7 +272,9 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           pointerEvents: mobileOffen ? "auto" : "none",
         }}
       >
-        <nav className="flex flex-col items-center justify-start h-full gap-2 px-8 pt-24 pb-8 overflow-y-auto">
+        {/* Scrollbarer Nav-Bereich */}
+        <div className="flex-1 overflow-y-auto px-8 pt-24">
+          <nav className="flex flex-col items-center gap-2 max-w-sm mx-auto">
           {getNavLinks(locale).map((link) => (
             <div key={link.href} className="w-full max-w-sm">
               {link.unterseiten ? (
@@ -338,11 +340,15 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
             </div>
           ))}
 
-          {/* Termin CTA */}
+          </nav>
+        </div>
+
+        {/* Fester Bereich am unteren Rand — unabhängig vom Scroll */}
+        <div className="shrink-0 px-8 pb-8 pt-4 flex flex-col items-center gap-3" style={{ borderTop: "1px solid rgba(105, 123, 123, 0.06)" }}>
           <Link
             href={l("/termin", locale)}
             onClick={() => setMobileOffen(false)}
-            className="cta-schimmer mt-4 px-10 py-3.5 text-sm tracking-wider"
+            className="cta-schimmer px-10 py-3.5 text-sm tracking-wider"
             style={{
               fontWeight: 600,
               color: "#fff",
@@ -354,18 +360,14 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           >
             {(navTexts[locale] || navTexts.de).terminBuchen.toUpperCase()}
           </Link>
-
-          {/* Telefonnummer */}
           <a
             href="tel:+494088021050"
-            className="mt-4 text-sm tracking-wider"
+            className="text-sm tracking-wider"
             style={{ color: "#697B7B", fontWeight: 400, letterSpacing: "0.08em" }}
           >
             040 — 880 21 50
           </a>
-
-          {/* Sprach-Switcher Mobile */}
-          <div className="mt-6 flex gap-3">
+          <div className="flex gap-3">
             {locales.map((loc) => (
               <button
                 key={loc}
@@ -389,7 +391,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
               </button>
             ))}
           </div>
-        </nav>
+        </div>
       </div>
     </>
   );

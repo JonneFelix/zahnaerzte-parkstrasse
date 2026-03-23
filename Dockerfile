@@ -11,22 +11,38 @@ RUN bun run build
 # ─── Production: Nginx mit statischen Dateien ────────────────────────────────
 FROM nginx:alpine AS runner
 
-# Nginx-Konfiguration für SPA-Routing
+# Nginx-Konfiguration
 RUN echo 'server { \
     listen 3000; \
     root /usr/share/nginx/html; \
     index index.html; \
-    location / { \
-        try_files $uri $uri.html $uri/index.html /index.html; \
+    \
+    # Root / → Redirect nach /de/ (Spracherkennung passiert client-seitig) \
+    location = / { \
+        return 302 /de/; \
     } \
+    \
+    # Statische Dateien: Exakter Pfad, dann .html, dann /index.html \
+    location / { \
+        try_files $uri $uri.html $uri/index.html =404; \
+    } \
+    \
+    # Cache für Next.js Assets (immutable, 1 Jahr) \
     location /_next/ { \
         expires 1y; \
         add_header Cache-Control "public, immutable"; \
     } \
+    \
+    # Cache für Bilder (7 Tage) \
     location /images/ { \
         expires 7d; \
         add_header Cache-Control "public, must-revalidate"; \
         add_header CDN-Cache-Control "max-age=86400"; \
+    } \
+    \
+    # robots.txt, llms.txt, sitemap.xml direkt ausliefern \
+    location ~ \.(txt|xml)$ { \
+        add_header Content-Type "text/plain; charset=utf-8"; \
     } \
 }' > /etc/nginx/conf.d/default.conf
 

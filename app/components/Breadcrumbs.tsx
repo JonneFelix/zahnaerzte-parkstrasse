@@ -25,15 +25,26 @@ const pfadNamen: Record<string, string> = {
   wissenswertes: "Wissenswertes",
 };
 
+const localeSegments = ["de", "en", "fr", "es"];
+
 export default function Breadcrumbs() {
   const pathname = usePathname();
 
   if (pathname === "/") return null;
 
-  const segmente = pathname.split("/").filter(Boolean);
+  const alleSegmente = pathname.split("/").filter(Boolean);
+
+  /* Locale-Segment überspringen (z.B. "de" aus /de/team) */
+  const locale = localeSegments.includes(alleSegmente[0]) ? alleSegmente[0] : "";
+  const segmente = locale ? alleSegmente.slice(1) : alleSegmente;
+
+  /* Nicht auf Hauptseiten anzeigen (/de, /en, /fr, /es) */
+  if (segmente.length === 0) return null;
+
+  const prefix = locale ? `/${locale}` : "";
 
   const breadcrumbs = segmente.map((segment, index) => {
-    const href = "/" + segmente.slice(0, index + 1).join("/");
+    const href = prefix + "/" + segmente.slice(0, index + 1).join("/");
     const name = pfadNamen[segment] || segment;
     const istLetztes = index === segmente.length - 1;
 
@@ -51,7 +62,7 @@ export default function Breadcrumbs() {
       >
         <li>
           <Link
-            href="/"
+            href={prefix || "/"}
             className="transition-colors duration-200 hover:text-[#F26522]"
           >
             Startseite

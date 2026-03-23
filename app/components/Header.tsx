@@ -103,7 +103,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
             </Link>
 
             {/* Desktop-Navigation */}
-            <nav className="hidden lg:flex items-center gap-7">
+            <nav className="hidden xl:flex items-center gap-5">
               {navLinks.map((link) => (
                 <div key={link.href} className="relative group">
                   <Link
@@ -191,7 +191,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
             {/* Mobiler Hamburger */}
             <button
-              className="lg:hidden flex flex-col gap-1.5 p-2 z-50"
+              className="xl:hidden flex flex-col gap-1.5 p-2 z-50"
               onClick={() => setMobileOffen(!mobileOffen)}
               aria-label={mobileOffen ? "Menü schließen" : "Menü öffnen"}
             >
@@ -224,7 +224,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
       {/* Mobiles Fullscreen-Menü */}
       <div
-        className="fixed inset-0 z-40 lg:hidden transition-all duration-500"
+        className="fixed inset-0 z-40 xl:hidden transition-all duration-500"
         style={{
           background: "rgba(244, 241, 236, 0.98)",
           backdropFilter: "blur(20px)",
@@ -337,7 +337,9 @@ function LanguageSwitcher({ locale }: { locale: Locale }) {
     localStorage.setItem("preferred-locale", newLocale);
     /* Aktuellen Pfad umschreiben: /de/team → /en/team */
     const currentPath = window.location.pathname.replace(`/${locale}`, "");
-    window.location.href = `/${newLocale}${currentPath || "/"}`;
+    /* Trailing Slash entfernen und zu neuer Locale navigieren */
+    const cleanPath = currentPath.replace(/\/$/, "") || "";
+    window.location.href = `/${newLocale}${cleanPath}`;
   };
 
   return (

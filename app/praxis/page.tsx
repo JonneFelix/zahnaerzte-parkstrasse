@@ -279,7 +279,7 @@ export default function PraxisSeite() {
             <span style={{ color: "#697B7B", fontWeight: 500 }}>
               Sprachen:
             </span>{" "}
-            Wir behandeln und beraten auf Deutsch, Englisch und Französisch.
+            Wir behandeln und beraten auf Deutsch, Englisch, Französisch und Spanisch.
           </p>
         </div>
       </section>

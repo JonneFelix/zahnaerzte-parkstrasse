@@ -113,7 +113,7 @@ export default function Homepage() {
           HERO
           ============================================================ */}
       <section
-        className="relative min-h-screen flex items-center overflow-hidden"
+        className="relative min-h-[85vh] lg:min-h-screen flex items-center overflow-hidden"
         style={{
           background: "linear-gradient(155deg, #f4f1ec 0%, #eaf0ea 30%, #dde6dd 55%, #c8d6c8 85%, #b8c8b8 100%)",
         }}
@@ -202,9 +202,9 @@ export default function Homepage() {
             </div>
 
             {/* Bild */}
-            <div className="order-1 lg:order-2 relative anim-einblenden-rechts d3">
-              <div className="absolute -inset-5 anim-blob" style={{ border: "1.5px solid rgba(242, 101, 34, 0.1)", borderRadius: "55% 45% 52% 48% / 48% 58% 42% 52%" }} />
-              <div className="absolute -inset-12 anim-blob" style={{ border: "1px solid rgba(105, 123, 123, 0.06)", borderRadius: "42% 58% 48% 52% / 55% 42% 58% 45%", animationDelay: "3.5s" }} />
+            <div className="order-1 lg:order-2 relative anim-einblenden-rechts d3 max-h-[45vh] lg:max-h-none overflow-hidden">
+              <div className="absolute -inset-5 anim-blob hidden lg:block" style={{ border: "1.5px solid rgba(242, 101, 34, 0.1)", borderRadius: "55% 45% 52% 48% / 48% 58% 42% 52%" }} />
+              <div className="absolute -inset-12 anim-blob hidden lg:block" style={{ border: "1px solid rgba(105, 123, 123, 0.06)", borderRadius: "42% 58% 48% 52% / 55% 42% 58% 45%", animationDelay: "3.5s" }} />
               <div className="relative overflow-hidden" style={{ borderRadius: "58% 42% 52% 48% / 44% 56% 44% 56%", boxShadow: "0 28px 56px -14px rgba(105, 123, 123, 0.22)" }}>
                 <Image src="/images/hero-team.jpeg" alt="Das Team der Zahnärzte Parkstrasse in Othmarschen" width={600} height={700} className="w-full h-auto object-cover" style={{ aspectRatio: "5/6", filter: "saturate(0.92) brightness(1.02)" }} priority quality={90} sizes="(max-width: 768px) 100vw, 50vw" />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(105, 123, 123, 0.04), rgba(105, 123, 123, 0.1))" }} />
@@ -224,7 +224,7 @@ export default function Homepage() {
       {/* ============================================================
           PHILOSOPHIE / VERTRAUEN
           ============================================================ */}
-      <section className="relative py-24 lg:py-32 overflow-hidden" style={{ background: "#f4f1ec" }}>
+      <section className="relative py-14 lg:py-32 overflow-hidden" style={{ background: "#f4f1ec" }}>
         <BaumDekor className="absolute -top-10 -right-16 w-72 opacity-[0.03] rotate-45 hidden lg:block" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label="Unsere Philosophie" titel="Zahnmedizin, die" titelAkzent="Vertrauen verdient" />
@@ -271,7 +271,7 @@ export default function Homepage() {
       {/* ============================================================
           LEISTUNGEN
           ============================================================ */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-14 lg:py-32 overflow-hidden">
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, #f4f1ec 0%, #eaf0ea 25%, #e0eae0 60%, #f4f1ec 100%)" }} />
         <BaumDekor className="absolute -left-20 top-1/4 w-64 opacity-[0.04] -rotate-12 hidden lg:block" />
 
@@ -328,7 +328,7 @@ export default function Homepage() {
       {/* ============================================================
           PATIENT JOURNEY (aus V10)
           ============================================================ */}
-      <section className="relative py-24 lg:py-32 overflow-hidden" style={{ background: "#f4f1ec" }}>
+      <section className="relative py-14 lg:py-32 overflow-hidden" style={{ background: "#f4f1ec" }}>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label="Ihr Weg zu uns" titel="In vier Schritten zu" titelAkzent="gesunden Zähnen" />
 
@@ -363,7 +363,7 @@ export default function Homepage() {
       {/* ============================================================
           SOCIAL PROOF / TESTIMONIALS (aus V9)
           ============================================================ */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-14 lg:py-32 overflow-hidden">
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, #f4f1ec 0%, #faf8f4 50%, #f4f1ec 100%)" }} />
         <BaumDekor className="absolute -right-16 bottom-10 w-48 opacity-[0.04] rotate-[20deg] hidden lg:block" />
 
@@ -400,7 +400,7 @@ export default function Homepage() {
       {/* ============================================================
           TEAM-TEASER — 3 Ärztinnen
           ============================================================ */}
-      <section className="relative py-24 lg:py-32 overflow-hidden" style={{ background: "#f4f1ec" }}>
+      <section className="relative py-14 lg:py-32 overflow-hidden" style={{ background: "#f4f1ec" }}>
         <BaumDekor className="absolute -right-16 top-8 w-96 opacity-[0.03] rotate-[30deg] hidden lg:block" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
@@ -434,7 +434,7 @@ export default function Homepage() {
       {/* ============================================================
           KONTAKT / CTA
           ============================================================ */}
-      <section className="relative py-24 lg:py-32 overflow-hidden">
+      <section className="relative py-14 lg:py-32 overflow-hidden">
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, #f4f1ec 0%, #eaf0ea 50%, #dde6dd 100%)" }} />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">

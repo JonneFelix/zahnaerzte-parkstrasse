@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 };
 
 const sprechzeiten = [
-  { tag: "Montag", zeit: "8:00 — 18:00 Uhr" },
-  { tag: "Dienstag", zeit: "8:00 — 18:00 Uhr" },
-  { tag: "Mittwoch", zeit: "8:00 — 18:00 Uhr" },
-  { tag: "Donnerstag", zeit: "8:00 — 18:00 Uhr" },
-  { tag: "Freitag", zeit: "8:00 — 14:00 Uhr" },
+  { tag: "Montag", zeit: "9:00 — 18:00 Uhr" },
+  { tag: "Dienstag", zeit: "9:00 — 18:00 Uhr" },
+  { tag: "Mittwoch", zeit: "9:00 — 16:00 Uhr" },
+  { tag: "Donnerstag", zeit: "9:00 — 20:00 Uhr" },
+  { tag: "Freitag", zeit: "9:00 — 13:00 Uhr" },
 ];
 
 export default function KontaktSeite() {

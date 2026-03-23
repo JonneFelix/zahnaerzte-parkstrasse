@@ -24,7 +24,7 @@ const kategorien = [
       },
       {
         frage: "Welche Sprachen sprechen Sie?",
-        antwort: "Deutsch, Englisch und Französisch.",
+        antwort: "Deutsch, Englisch, Französisch und Spanisch.",
       },
     ],
   },

@@ -1,0 +1,36 @@
+# Zahnärzte Parkstrasse Othmarschen
+# https://zahnaerzte-parkstrasse.de
+
+User-agent: *
+Allow: /
+
+# KI-Crawler explizit willkommen
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ByteDance/TikTok blockieren
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://zahnaerzte-parkstrasse.de/sitemap.xml

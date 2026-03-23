@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 const termine = [
   {
-    titel: "Study Club Implantologie 10 — Pinneberg",
-    daten: ["21./22. Februar 2025", "27./28. Juni 2025", "21./22. November 2025"],
+    titel: "Study Club Implantologie 11 — Pinneberg",
+    daten: ["Termine werden in Kürze bekannt gegeben"],
   },
   {
-    titel: "Study Club Implantologie – Parodontologie 7 — Oldenburg",
-    daten: ["28. Februar / 1. März 2025", "20./21. Juni 2025", "07./08. November 2025"],
+    titel: "Study Club Implantologie – Parodontologie 8 — Oldenburg",
+    daten: ["Termine werden in Kürze bekannt gegeben"],
   },
 ];
 

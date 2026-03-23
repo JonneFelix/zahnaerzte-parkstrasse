@@ -26,6 +26,10 @@ export default function RootRedirect() {
     window.location.replace(`/${matched || DEFAULT_LOCALE}/`);
   }, []);
 
-  /* Zeige nichts — der meta-refresh im Root-Layout leitet sofort nach /de/ weiter */
-  return null;
+  /* Noscript-Fallback: Nur für Nutzer ohne JavaScript */
+  return (
+    <noscript>
+      <meta httpEquiv="refresh" content="0;url=/de/" />
+    </noscript>
+  );
 }

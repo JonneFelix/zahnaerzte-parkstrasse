@@ -34,6 +34,7 @@ export default function RootLayout({
           data-website-id="555d0c21-8ed9-4b57-9cfa-b5b858b8764d"
           strategy="afterInteractive"
         />
+        {/* KEIN meta-refresh hier — das ist im Root-Layout und würde ALLE Seiten betreffen! */}
       </head>
       <body
         className={`${cormorant.variable} ${workSans.variable} antialiased papier-textur`}

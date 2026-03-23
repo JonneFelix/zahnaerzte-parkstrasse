@@ -272,7 +272,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           pointerEvents: mobileOffen ? "auto" : "none",
         }}
       >
-        <nav className="flex flex-col items-center justify-center h-full gap-2 px-8">
+        <nav className="flex flex-col items-center justify-start h-full gap-2 px-8 pt-24 pb-8 overflow-y-auto">
           {getNavLinks(locale).map((link) => (
             <div key={link.href} className="w-full max-w-sm">
               {link.unterseiten ? (
@@ -363,6 +363,30 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           >
             040 — 880 21 50
           </a>
+
+          {/* Sprach-Switcher Mobile */}
+          <div className="mt-6 flex gap-3">
+            {locales.map((loc) => (
+              <button
+                key={loc}
+                onClick={() => {
+                  localStorage.setItem("preferred-locale", loc);
+                  const currentPath = window.location.pathname.replace(`/${locale}`, "").replace(/\/$/, "") || "";
+                  window.location.href = `/${loc}${currentPath}`;
+                }}
+                className="px-4 py-2 text-sm tracking-wider rounded-full transition-all duration-200"
+                style={{
+                  color: loc === locale ? "#fff" : "#697B7B",
+                  background: loc === locale ? "#F26522" : "transparent",
+                  border: loc === locale ? "none" : "1px solid rgba(105, 123, 123, 0.2)",
+                  fontWeight: loc === locale ? 600 : 400,
+                  letterSpacing: "0.1em",
+                }}
+              >
+                {loc.toUpperCase()}
+              </button>
+            ))}
+          </div>
         </nav>
       </div>
     </>

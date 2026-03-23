@@ -103,17 +103,17 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
             </Link>
 
             {/* Desktop-Navigation */}
-            <nav className="hidden xl:flex items-center gap-5">
+            <nav className="hidden lg:flex items-center gap-5">
               {navLinks.map((link) => (
                 <div key={link.href} className="relative group">
                   <Link
                     href={l(link.href, locale)}
-                    className="relative text-sm tracking-wider transition-colors duration-300"
+                    className="relative text-xs transition-colors duration-300"
                     style={{
                       fontFamily: "var(--font-work-sans), 'Work Sans', sans-serif",
                       fontWeight: 400,
                       color: "#4a5959",
-                      letterSpacing: "0.1em",
+                      letterSpacing: "0.06em",
                     }}
                   >
                     {link.text.toUpperCase()}
@@ -174,7 +174,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
               <Link
                 href={l("/termin", locale)}
-                className="cta-schimmer ml-3 px-6 py-2.5 text-sm tracking-wider transition-all duration-500"
+                className="cta-schimmer ml-2 px-5 py-2 text-xs tracking-wider transition-all duration-500"
                 style={{
                   fontFamily: "var(--font-work-sans), 'Work Sans', sans-serif",
                   fontWeight: 600,
@@ -191,7 +191,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
             {/* Mobiler Hamburger */}
             <button
-              className="xl:hidden flex flex-col gap-1.5 p-2 z-50"
+              className="lg:hidden flex flex-col gap-1.5 p-2 z-50"
               onClick={() => setMobileOffen(!mobileOffen)}
               aria-label={mobileOffen ? "Menü schließen" : "Menü öffnen"}
             >
@@ -224,7 +224,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
       {/* Mobiles Fullscreen-Menü */}
       <div
-        className="fixed inset-0 z-40 xl:hidden transition-all duration-500"
+        className="fixed inset-0 z-40 lg:hidden transition-all duration-500"
         style={{
           background: "rgba(244, 241, 236, 0.98)",
           backdropFilter: "blur(20px)",

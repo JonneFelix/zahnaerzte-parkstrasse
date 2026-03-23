@@ -15,7 +15,7 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-40 xl:hidden
+      className={`fixed bottom-0 left-0 right-0 z-40 lg:hidden
         transition-transform duration-300 ease-out
         ${sichtbar ? "translate-y-0" : "translate-y-full"}`}
       style={{

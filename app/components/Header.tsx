@@ -339,11 +339,10 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           ))}
 
           {/* Termin CTA */}
-          <div className="mt-10 pt-6" style={{ borderTop: "1px solid rgba(105, 123, 123, 0.08)" }} />
           <Link
             href={l("/termin", locale)}
             onClick={() => setMobileOffen(false)}
-            className="cta-schimmer px-10 py-4 text-sm tracking-wider"
+            className="cta-schimmer mt-8 px-10 py-4 text-sm tracking-wider"
             style={{
               fontWeight: 600,
               color: "#fff",

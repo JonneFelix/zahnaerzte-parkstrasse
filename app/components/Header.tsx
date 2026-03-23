@@ -5,26 +5,66 @@ import Link from "next/link";
 import Image from "next/image";
 import { type Locale, locales } from "../../lib/i18n";
 
-const navLinks = [
-  {
-    text: "Leistungen",
-    href: "/leistungen",
-    unterseiten: [
-      { text: "Oralchirurgie", href: "/leistungen/oralchirurgie" },
-      { text: "Implantate", href: "/leistungen/implantate" },
-      { text: "Wurzelbehandlung", href: "/leistungen/wurzelbehandlung" },
-      { text: "Prophylaxe", href: "/leistungen/prophylaxe" },
-      { text: "Parodontologie", href: "/leistungen/parodontologie" },
-      { text: "Zahnersatz", href: "/leistungen/zahnersatz" },
-      { text: "Kinderzahnheilkunde", href: "/leistungen/kinderzahnheilkunde" },
-      { text: "Ästhetik", href: "/leistungen/aesthetik" },
-    ],
+/* Übersetzte Navigation pro Sprache */
+const navTexts: Record<string, {
+  leistungen: string; team: string; innovationen: string; fortbildungen: string; kontakt: string; terminBuchen: string;
+  oralchirurgie: string; implantate: string; wurzelbehandlung: string; prophylaxe: string;
+  parodontologie: string; zahnersatz: string; kinderzahnheilkunde: string; aesthetik: string;
+  alleLeistungen: string;
+}> = {
+  de: {
+    leistungen: "Leistungen", team: "Team", innovationen: "Innovationen", fortbildungen: "Fortbildungen",
+    kontakt: "Kontakt", terminBuchen: "Termin buchen",
+    oralchirurgie: "Oralchirurgie", implantate: "Implantate", wurzelbehandlung: "Wurzelbehandlung",
+    prophylaxe: "Prophylaxe", parodontologie: "Parodontologie", zahnersatz: "Zahnersatz",
+    kinderzahnheilkunde: "Kinderzahnheilkunde", aesthetik: "Ästhetik", alleLeistungen: "Alle Leistungen",
   },
-  { text: "Team", href: "/team" },
-  { text: "Innovationen", href: "/innovationen" },
-  { text: "Fortbildungen", href: "/fortbildungen" },
-  { text: "Kontakt", href: "/kontakt" },
-];
+  en: {
+    leistungen: "Services", team: "Team", innovationen: "Innovations", fortbildungen: "Training",
+    kontakt: "Contact", terminBuchen: "Book appointment",
+    oralchirurgie: "Oral Surgery", implantate: "Implants", wurzelbehandlung: "Root Canal",
+    prophylaxe: "Preventive Care", parodontologie: "Periodontics", zahnersatz: "Prosthetics",
+    kinderzahnheilkunde: "Pediatric Dentistry", aesthetik: "Cosmetics", alleLeistungen: "All services",
+  },
+  fr: {
+    leistungen: "Soins", team: "Équipe", innovationen: "Innovations", fortbildungen: "Formations",
+    kontakt: "Contact", terminBuchen: "Prendre rendez-vous",
+    oralchirurgie: "Chirurgie orale", implantate: "Implants", wurzelbehandlung: "Traitement de canal",
+    prophylaxe: "Prophylaxie", parodontologie: "Parodontologie", zahnersatz: "Prothèses",
+    kinderzahnheilkunde: "Dentisterie pédiatrique", aesthetik: "Esthétique", alleLeistungen: "Tous les soins",
+  },
+  es: {
+    leistungen: "Servicios", team: "Equipo", innovationen: "Innovaciones", fortbildungen: "Formación",
+    kontakt: "Contacto", terminBuchen: "Pedir cita",
+    oralchirurgie: "Cirugía oral", implantate: "Implantes", wurzelbehandlung: "Endodoncia",
+    prophylaxe: "Profilaxis", parodontologie: "Periodoncia", zahnersatz: "Prótesis",
+    kinderzahnheilkunde: "Odontopediatría", aesthetik: "Estética", alleLeistungen: "Todos los servicios",
+  },
+};
+
+function getNavLinks(locale: Locale) {
+  const t = navTexts[locale] || navTexts.de;
+  return [
+    {
+      text: t.leistungen,
+      href: "/leistungen",
+      unterseiten: [
+        { text: t.oralchirurgie, href: "/leistungen/oralchirurgie" },
+        { text: t.implantate, href: "/leistungen/implantate" },
+        { text: t.wurzelbehandlung, href: "/leistungen/wurzelbehandlung" },
+        { text: t.prophylaxe, href: "/leistungen/prophylaxe" },
+        { text: t.parodontologie, href: "/leistungen/parodontologie" },
+        { text: t.zahnersatz, href: "/leistungen/zahnersatz" },
+        { text: t.kinderzahnheilkunde, href: "/leistungen/kinderzahnheilkunde" },
+        { text: t.aesthetik, href: "/leistungen/aesthetik" },
+      ],
+    },
+    { text: t.team, href: "/team" },
+    { text: t.innovationen, href: "/innovationen" },
+    { text: t.fortbildungen, href: "/fortbildungen" },
+    { text: t.kontakt, href: "/kontakt" },
+  ];
+}
 
 /* Hilfsfunktion: Locale-Prefix an Pfade hängen */
 function l(href: string, locale: Locale) {
@@ -104,7 +144,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
             {/* Desktop-Navigation */}
             <nav className="hidden lg:flex items-center gap-5">
-              {navLinks.map((link) => (
+              {getNavLinks(locale).map((link) => (
                 <div key={link.href} className="relative group">
                   <Link
                     href={l(link.href, locale)}
@@ -161,7 +201,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
                             borderRadius: "10px",
                           }}
                         >
-                          Alle Leistungen →
+                          {(navTexts[locale] || navTexts.de).alleLeistungen} →
                         </Link>
                       </div>
                     </div>
@@ -185,7 +225,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
                   boxShadow: "0 4px 18px rgba(242, 101, 34, 0.35)",
                 }}
               >
-                TERMIN BUCHEN
+                {(navTexts[locale] || navTexts.de).terminBuchen.toUpperCase()}
               </Link>
             </nav>
 
@@ -233,7 +273,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
         }}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-2 px-8">
-          {navLinks.map((link) => (
+          {getNavLinks(locale).map((link) => (
             <div key={link.href} className="w-full max-w-sm">
               {link.unterseiten ? (
                 <>
@@ -312,7 +352,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
               boxShadow: "0 8px 28px rgba(242, 101, 34, 0.3)",
             }}
           >
-            TERMIN BUCHEN
+            {(navTexts[locale] || navTexts.de).terminBuchen.toUpperCase()}
           </Link>
 
           {/* Telefonnummer */}

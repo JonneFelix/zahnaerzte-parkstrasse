@@ -1008,27 +1008,28 @@
       }
     },
     "faq": {
-      "label": "Questions fréquentes",
-      "titel": "Vos questions,",
-      "titelAkzent": "nos réponses",
       "fragen": {
         "schmerzhaft": {
           "frage": "La chirurgie orale est-elle douloureuse ?",
           "antwort": "Non. Grâce à l'anesthésie moderne, vous ne sentirez rien pendant l'intervention. Ensuite, vous recevrez un plan de gestion de la douleur individuel."
         },
-        "dauer": {
-          "frage": "Combien de temps dure une chirurgie orale ?",
-          "antwort": "Selon l'intervention — de 30 minutes pour une extraction de dent de sagesse à 2 heures pour une greffe osseuse complexe."
+        "unterschied": {
+          "frage": "Quelle est la différence entre un dentiste et un chirurgien oral ?",
+          "antwort": "Une spécialiste en chirurgie orale a effectué une spécialisation clinique de 4 ans en chirurgie après ses études dentaires — comparable à une formation de spécialiste en médecine."
         },
-        "kosten": {
-          "frage": "Les coûts sont-ils pris en charge par l'assurance ?",
-          "antwort": "De nombreuses interventions de chirurgie orale sont prises en charge par l'assurance maladie obligatoire. Nous établirons un plan de coûts transparent avant le traitement."
+        "ueberweisung": {
+          "frage": "Ai-je besoin d'une recommandation ?",
+          "antwort": "Non. Vous pouvez vous présenter directement chez nous."
         }
-      }
+      },
+      "label": "Questions fréquentes",
+      "titel": "Vos questions,",
+      "titelAkzent": "nos réponses"
     },
     "interneLinks": {
       "implantate": "Implants",
-      "team": "Dr. Claudia Schwegmann"
+      "parodontologie": "Parodontologie",
+      "team": "Notre équipe"
     },
     "cta": {
       "titel": "Consultation chirurgicale",
@@ -1104,27 +1105,28 @@
       "orientierung": "Orientation : Un implant individuel avec couronne coûte généralement entre 1 800 et 3 500 euros."
     },
     "faq": {
+      "fragen": {
+        "haltbarkeit": {
+          "frage": "Combien de temps durent les implants ?",
+          "antwort": "Avec de bons soins et des contrôles préventifs réguliers, les implants dentaires peuvent durer toute une vie. La couronne dessus dure en moyenne 15 à 20 ans."
+        },
+        "schmerzhaft": {
+          "frage": "L'implantation est-elle douloureuse ?",
+          "antwort": "Sous anesthésie locale, vous ne sentirez rien. Après l'intervention, un léger gonflement peut survenir, facilement traitable avec des antidouleurs simples."
+        },
+        "knochenaufbau": {
+          "frage": "Est-ce possible sans greffe osseuse ?",
+          "antwort": "Souvent oui. Nous déterminons si une greffe osseuse est nécessaire lors de la consultation initiale avec une radiographie 3D."
+        }
+      },
       "label": "Questions fréquentes",
       "titel": "Vos questions sur",
-      "titelAkzent": "les implants",
-      "fragen": {
-        "schmerzen": {
-          "frage": "L'implantation est-elle douloureuse ?",
-          "antwort": "Non. L'intervention se fait sous anesthésie locale — vous ne sentirez rien. Ensuite, un léger antidouleur suffit généralement."
-        },
-        "haltbarkeit": {
-          "frage": "Combien de temps dure un implant ?",
-          "antwort": "Avec de bons soins et des contrôles réguliers, un implant peut durer toute une vie. La prothèse dessus peut nécessiter un renouvellement après 15 à 20 ans."
-        },
-        "alter": {
-          "frage": "Suis-je trop âgé(e) pour des implants ?",
-          "antwort": "L'âge seul n'est pas une contre-indication. Ce qui compte, c'est l'état de santé général et la disponibilité osseuse. Nous vous conseillerons individuellement."
-        }
-      }
+      "titelAkzent": "les implants"
     },
     "interneLinks": {
       "oralchirurgie": "Chirurgie orale",
-      "zahnersatz": "Prothèses dentaires"
+      "zahnersatz": "Prothèses dentaires",
+      "team": "Dr. Schwegmann"
     },
     "cta": {
       "titel": "Intéressé(e) par",

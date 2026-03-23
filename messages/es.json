@@ -946,15 +946,15 @@
   },
   "LeistungOralchirurgie": {
     "meta": {
-      "title": "Cirugía oral Hamburgo Othmarschen | Especialista Dr. Schwegmann",
-      "description": "Cirugía oral en Hamburgo-Othmarschen: implantes, injerto óseo, extracción de muelas del juicio, cirugía de mucosas. Dr. Schwegmann — más de 25 años de experiencia."
+      "title": "Cirugía oral Hamburgo Othmarschen | Especialista Dra. Schwegmann",
+      "description": "Cirugía oral en Hamburgo-Othmarschen: Implantes, injerto óseo, extracción de muelas del juicio, cirugía de mucosas. Dra. Schwegmann — más de 25 años de experiencia."
     },
     "hero": {
       "label": "Nuestra especialidad",
       "titel": "Cirugía oral —",
       "titelAkzent": "nuestra especialidad",
-      "subtext": "Las intervenciones quirúrgicas requieren experiencia, precisión y empatía. Como especialista en cirugía oral, Dr. Schwegmann reúne las tres cualidades — desde hace más de 25 años.",
-      "badge": "Dr. Claudia Schwegmann — Especialista en cirugía oral"
+      "subtext": "Las intervenciones quirúrgicas requieren experiencia, precisión y empatía. Como especialista en cirugía oral, la Dra. Schwegmann reúne las tres cualidades — desde hace más de 25 años.",
+      "badge": "Dra. Claudia Schwegmann — Especialista en cirugía oral"
     },
     "bereiche": {
       "label": "Espectro de tratamientos",
@@ -963,23 +963,23 @@
       "items": {
         "implantate": {
           "titel": "Implantes e injerto óseo",
-          "text": "Dientes fijos sobre implantes — con injerto óseo de tejido propio cuando sea necesario. Evitamos los materiales ajenos siempre que sea posible."
+          "text": "Dientes fijos sobre implantes — con injerto óseo de tejido propio si es necesario. Evitamos materiales ajenos siempre que sea posible."
         },
         "schleimhaut": {
           "titel": "Cirugía de mucosas",
-          "text": "Restauración de las mucosas y encías: en caso de cuellos dentales expuestos, tras implantaciones o para correcciones estéticas."
+          "text": "Restauración de mucosas y encías: en caso de cuellos dentales expuestos, después de implantaciones o para correcciones estéticas."
         },
         "weisheitszahn": {
           "titel": "Extracción de muelas del juicio",
-          "text": "Con delicadeza y competencia — incluso en situaciones difíciles. En nuestra consulta, no en el hospital."
+          "text": "De forma suave y competente — incluso en situaciones difíciles. En nuestra consulta, no en el hospital."
         },
         "parodontose": {
           "titel": "Terapia periodontal quirúrgica",
-          "text": "Cuando el tratamiento conservador no es suficiente: curetaje quirúrgico de bolsas y procedimientos regenerativos."
+          "text": "Cuando el tratamiento conservador no es suficiente: limpieza quirúrgica de bolsas y procedimientos regenerativos."
         },
         "praeprothetisch": {
           "titel": "Cirugía preprotésica",
-          "text": "Preparación del maxilar para prótesis dentales: injerto óseo, corrección de mucosas, plastia de reborde alveolar."
+          "text": "Preparación del maxilar para prótesis dentales: injerto óseo, corrección de mucosas, plastia del reborde alveolar."
         }
       },
       "mehrErfahren": "Más información"
@@ -990,41 +990,41 @@
       "titelAkzent": "con nosotros?",
       "items": {
         "fachzahnaerztin": {
-          "titel": "Dentista especializada",
-          "text": "No todo dentista puede llevar este título. La formación especializada comprende 4 años de cirugía clínica."
+          "titel": "Dentista especialista",
+          "text": "No todos los dentistas pueden llevar este título. La especialización incluye 4 años de cirugía clínica."
         },
         "gewebe": {
-          "titel": "Tejido autógeno",
-          "text": "Injerto óseo preferiblemente con su propio tejido — para una mejor osteointegración."
+          "titel": "Tejido autólogo",
+          "text": "Injerto óseo preferiblemente con su propio material — para una mejor cicatrización."
         },
         "lupenbrille": {
           "titel": "Lupas y microscopio",
-          "text": "Máxima precisión incluso en las estructuras más pequeñas."
+          "text": "Máxima precisión incluso con las estructuras más pequeñas."
         },
         "minimalinvasiv": {
           "titel": "Mínimamente invasivo",
-          "text": "Tanto como sea necesario, lo más delicado posible."
+          "text": "Lo necesario, lo más suave posible."
         }
       }
     },
     "faq": {
-      "label": "Preguntas frecuentes",
-      "titel": "Sus preguntas,",
-      "titelAkzent": "nuestras respuestas",
       "fragen": {
         "schmerzhaft": {
           "frage": "¿Es dolorosa la cirugía oral?",
-          "antwort": "No. Gracias a la anestesia moderna, no sentirá nada durante la intervención. Después, recibirá un tratamiento del dolor personalizado."
+          "antwort": "No. Gracias a la anestesia moderna, no sentirá nada durante la intervención. Después recibirá un plan individualizado de manejo del dolor."
         },
         "unterschied": {
           "frage": "¿Cuál es la diferencia entre un dentista y un cirujano oral?",
-          "antwort": "Una especialista en cirugía oral ha completado, tras los estudios de odontología, una formación clínica de 4 años en cirugía — comparable a una especialización médica."
+          "antwort": "Una especialista en cirugía oral ha completado una especialización clínica de 4 años en cirugía tras sus estudios de odontología — comparable a una formación de especialista en medicina."
         },
         "ueberweisung": {
           "frage": "¿Necesito una derivación?",
-          "antwort": "No. Puede acudir a nosotros directamente."
+          "antwort": "No. Puede presentarse directamente en nuestra consulta."
         }
-      }
+      },
+      "label": "Preguntas frecuentes",
+      "titel": "Sus preguntas,",
+      "titelAkzent": "nuestras respuestas"
     },
     "interneLinks": {
       "implantate": "Implantes",
@@ -1032,32 +1032,32 @@
       "team": "Nuestro equipo"
     },
     "cta": {
-      "titel": "Consulta para",
-      "titelAkzent": "cuestiones quirúrgicas",
-      "text": "Reserve una cita de consulta sin compromiso."
+      "titel": "¿Necesita una consulta",
+      "titelAkzent": "quirúrgica?",
+      "text": "Solicite una cita — le asesoraremos de forma personal y sin compromiso."
     }
   },
   "LeistungImplantate": {
     "meta": {
-      "title": "Implantes dentales Hamburgo | Implantología Dr. Schwegmann — Othmarschen",
-      "description": "Implantes dentales en Hamburgo-Othmarschen: dientes fijos con injerto óseo autógeno. Especialista en cirugía oral. Asesoramiento individual."
+      "title": "Implantes dentales Hamburgo | Implantología Dra. Schwegmann — Othmarschen",
+      "description": "Implantes dentales en Hamburgo-Othmarschen: Dientes fijos con injerto óseo autólogo. Especialista en cirugía oral. Asesoramiento individual."
     },
     "hero": {
       "label": "Implantología",
       "titel": "Implantes dentales —",
       "titelAkzent": "dientes fijos, sensación natural",
-      "subtext": "Un implante es mucho más que una prótesis dental — le devuelve calidad de vida. Como especialista en cirugía oral, Dr. Schwegmann es su experta en implantología."
+      "subtext": "Un implante es más que un reemplazo dental — le devuelve una parte de su calidad de vida. Como especialista en cirugía oral, la Dra. Schwegmann es su experta en implantología."
     },
     "grundlagen": {
-      "label": "Fundamentos",
+      "label": "Conceptos básicos",
       "titel": "¿Qué es un",
       "titelAkzent": "implante dental?",
-      "text": "Un implante dental es un pequeño tornillo de titanio o cerámica que se inserta en el hueso maxilar. Sobre él se ancla firmemente la prótesis dental — una corona, puente o prótesis. El resultado: dientes que se ven, se sienten y funcionan como los suyos propios."
+      "text": "Un implante dental es un pequeño tornillo de titanio o cerámica que se inserta en el hueso maxilar. Sobre él se fija firmemente la prótesis propiamente dicha — una corona, puente o prótesis. El resultado: dientes que se ven, se sienten y funcionan como los suyos propios."
     },
     "ablauf": {
       "label": "Su camino hacia el implante",
-      "titel": "Cómo funciona un",
-      "titelAkzent": "procedimiento de implante",
+      "titel": "Así funciona una",
+      "titelAkzent": "implantación",
       "schritte": {
         "s1": {
           "nr": "01",
@@ -1067,22 +1067,22 @@
         "s2": {
           "nr": "02",
           "titel": "Preparación",
-          "text": "Si es necesario: injerto óseo con tejido autógeno."
+          "text": "Si es necesario: injerto óseo con tejido autólogo."
         },
         "s3": {
           "nr": "03",
           "titel": "Implantación",
-          "text": "La intervención en sí suele durar solo de 30 a 60 minutos por implante."
+          "text": "La intervención propiamente dicha suele durar solo 30–60 minutos por implante."
         },
         "s4": {
           "nr": "04",
           "titel": "Fase de cicatrización",
-          "text": "De 2 a 6 meses durante los cuales el implante se integra firmemente en el hueso."
+          "text": "2–6 meses durante los cuales el implante se fusiona firmemente con el hueso."
         },
         "s5": {
           "nr": "05",
           "titel": "Restauración",
-          "text": "Su nuevo diente se coloca — fabricado por nuestro laboratorio colaborador en Bönningstedt."
+          "text": "Se coloca su nuevo diente — fabricado por nuestro laboratorio asociado en Bönningstedt."
         }
       }
     },
@@ -1091,8 +1091,8 @@
       "titel": "Lo que nos",
       "titelAkzent": "distingue",
       "items": [
-        "Especialista en cirugía oral — la máxima competencia quirúrgica",
-        "Injerto óseo autógeno — sin materiales ajenos",
+        "Especialista en cirugía oral — máxima competencia quirúrgica",
+        "Injerto óseo autólogo — sin materiales ajenos",
         "Prótesis dentales de Hamburgo — no del extranjero",
         "Más de 25 años de experiencia con implantes"
       ]
@@ -1101,56 +1101,56 @@
       "label": "Transparencia",
       "titel": "¿Cuánto cuestan",
       "titelAkzent": "los implantes dentales?",
-      "text": "El coste de un implante dental varía según la complejidad y el diagnóstico individual. Siempre le proporcionamos un plan de tratamiento y costes transparente — antes de comenzar el tratamiento. El seguro médico legal cubre el subsidio fijo para la prótesis; el implante en sí corre por cuenta del paciente.",
-      "orientierung": "Orientación: un implante individual con corona suele costar entre 1.800 y 3.500 euros."
+      "text": "El coste de un implante dental varía según la complejidad y el diagnóstico individual. Siempre le elaboramos un plan de tratamiento y costes transparente — antes de comenzar el tratamiento. El seguro médico obligatorio cubre la subvención fija para la prótesis; usted paga el cuerpo del implante como contribución propia.",
+      "orientierung": "Orientación: Un implante individual con corona suele costar entre 1.800 y 3.500 euros."
     },
     "faq": {
-      "label": "Preguntas frecuentes",
-      "titel": "Sus preguntas sobre",
-      "titelAkzent": "implantes",
       "fragen": {
         "haltbarkeit": {
           "frage": "¿Cuánto duran los implantes?",
-          "antwort": "Con buenos cuidados y profilaxis regular, los implantes dentales pueden durar toda la vida. La corona colocada encima dura en promedio de 15 a 20 años."
+          "antwort": "Con buenos cuidados y revisiones preventivas regulares, los implantes dentales pueden durar toda la vida. La corona sobre ellos dura un promedio de 15–20 años."
         },
         "schmerzhaft": {
           "frage": "¿Es dolorosa la implantación?",
-          "antwort": "Bajo anestesia local, no sentirá nada. Tras la intervención puede producirse una leve hinchazón, que se trata fácilmente con analgésicos sencillos."
+          "antwort": "Con anestesia local no sentirá nada. Después de la intervención puede haber una ligera hinchazón, fácilmente tratable con analgésicos simples."
         },
         "knochenaufbau": {
           "frage": "¿Es posible sin injerto óseo?",
-          "antwort": "A menudo sí. Si es necesario un injerto óseo se determina en la consulta inicial con un escáner 3D."
+          "antwort": "A menudo sí. Si es necesario un injerto óseo se determina en la consulta inicial con una radiografía 3D."
         }
-      }
+      },
+      "label": "Preguntas frecuentes",
+      "titel": "Sus preguntas sobre",
+      "titelAkzent": "implantes"
     },
     "interneLinks": {
       "oralchirurgie": "Cirugía oral",
       "zahnersatz": "Prótesis dentales",
-      "team": "Dr. Schwegmann"
+      "team": "Dra. Schwegmann"
     },
     "cta": {
-      "titel": "Primera consulta gratuita",
-      "titelAkzent": "sobre implantes",
-      "text": "Déjese asesorar sin compromiso — nos tomamos el tiempo para responder a sus preguntas."
+      "titel": "¿Interesado/a en",
+      "titelAkzent": "implantes?",
+      "text": "Solicite una consulta — encontraremos la mejor solución para usted."
     }
   },
   "LeistungWurzelbehandlung": {
     "meta": {
-      "title": "Endodoncia Hamburgo | Tratamiento de conducto Dr. Janz — Othmarschen",
-      "description": "Endodoncia sin dolor en Hamburgo-Othmarschen: endodoncia de última generación con microscopio y medición electrónica de longitud. Dr. Nina Janz — especialista en conservación dental."
+      "title": "Endodoncia Hamburgo | Tratamiento de conducto Dra. Janz — Othmarschen",
+      "description": "Endodoncia indolora en Hamburgo-Othmarschen: Endodoncia de vanguardia con microscopio y medición electrónica de longitud. Dra. Nina Janz — especialista en conservación dental."
     },
     "hero": {
       "label": "Endodoncia",
       "titel": "Endodoncia —",
       "titelAkzent": "conservación dental al más alto nivel",
-      "subtext": "Un tratamiento de conducto hoy no tiene nada que ver con su antigua reputación. Dr. Nina Janz trata con la tecnología más moderna — con delicadeza, precisión y con el objetivo de salvar su diente.",
-      "badge": "Dr. Nina Janz — Curriculum Endodoncia"
+      "subtext": "Un tratamiento de conducto hoy no tiene nada que ver con su antigua reputación. La Dra. Nina Janz trata con la tecnología más moderna — con suavidad, precisión y el objetivo de salvar su diente.",
+      "badge": "Dra. Nina Janz — Curriculum Endodoncia"
     },
     "zahnerhalt": {
       "label": "Conservación dental",
       "titel": "Por qué su propio diente",
       "titelAkzent": "es el mejor",
-      "text": "Ningún implante ni ninguna prótesis puede reemplazar completamente un diente natural sano. Por eso hacemos todo lo posible para conservar su diente natural — incluso cuando está gravemente dañado. La endodoncia moderna lo hace posible."
+      "text": "Ningún implante ni prótesis puede reemplazar completamente un diente natural sano. Por eso hacemos todo lo posible para conservar su diente natural — incluso cuando está gravemente dañado. La endodoncia moderna lo hace posible."
     },
     "technik": {
       "label": "Tecnología de vanguardia",
@@ -1159,11 +1159,11 @@
       "items": {
         "mikroskop": {
           "titel": "Uso del microscopio",
-          "text": "Ampliación de hasta 25x — para máxima visibilidad y precisión en los finos conductos radiculares."
+          "text": "Aumento de hasta 25x — para máxima visibilidad y precisión en los finos conductos radiculares."
         },
         "instrumente": {
           "titel": "Instrumentos flexibles",
-          "text": "Preparación mecanizada con limas de níquel-titanio flexibles — delicada y minuciosa."
+          "text": "Preparación mecánica con limas flexibles de níquel-titanio — suave y minuciosa."
         },
         "laengenmessung": {
           "titel": "Medición electrónica de longitud",
@@ -1177,63 +1177,63 @@
     },
     "faq": {
       "label": "Preguntas frecuentes",
-      "titel": "Sus preguntas sobre el",
-      "titelAkzent": "tratamiento de conducto",
+      "titel": "Sus preguntas sobre la",
+      "titelAkzent": "endodoncia",
       "fragen": {
         "schmerzhaft": {
           "frage": "¿Duele un tratamiento de conducto?",
-          "antwort": "No. Bajo anestesia no sentirá nada — muchos pacientes se sorprenden de lo poco que notan."
+          "antwort": "No. Con anestesia no sentirá nada — muchos pacientes se sorprenden de lo poco que notan."
         },
         "dauer": {
           "frage": "¿Cuánto dura un tratamiento de conducto?",
-          "antwort": "Normalmente de 60 a 90 minutos, a veces repartido en dos sesiones."
+          "antwort": "Por lo general, 60–90 minutos, a veces repartidos en dos sesiones."
         },
         "tot": {
           "frage": "¿Está muerto el diente después?",
-          "antwort": "El diente ya no tiene nervio, pero sigue siendo parte permanente de su dentadura y es totalmente funcional."
+          "antwort": "El diente ya no tiene nervio, pero sigue siendo una parte sólida de su dentadura y es completamente funcional."
         }
       }
     },
     "interneLinks": {
-      "team": "Dr. Nina Janz",
+      "team": "Dra. Nina Janz",
       "prophylaxe": "Profilaxis",
       "zahnersatz": "Prótesis dentales"
     },
     "cta": {
       "titel": "¿Dolor de muelas?",
       "titelAkzent": "Le ayudamos",
-      "text": "Reserve una cita rápidamente — nos ocupamos de su diente."
+      "text": "Solicite una cita rápidamente — nos ocuparemos de su diente."
     }
   },
   "LeistungProphylaxe": {
     "meta": {
-      "title": "Profilaxis y limpieza dental Hamburgo | Consulta Parkstrasse Othmarschen",
-      "description": "Limpieza dental profesional en Hamburgo-Othmarschen: programas de profilaxis individuales para dientes sanos y encías sanas. Para toda la vida."
+      "title": "Profilaxis y limpieza dental Hamburgo | Zahnärzte Parkstrasse Othmarschen",
+      "description": "Limpieza dental profesional en Hamburgo-Othmarschen: Programas de profilaxis individuales para dientes y encías sanos. Para toda la vida."
     },
     "hero": {
       "label": "Profilaxis",
       "titel": "Profilaxis —",
-      "titelAkzent": "la prevención es la mejor medicina",
+      "titelAkzent": "prevenir es la mejor medicina",
       "subtext": "Limpieza dental profesional y programas de profilaxis individuales — para dientes relucientes y encías sanas. La prevención regular es la mejor protección contra las caries y la enfermedad periodontal."
     },
     "warum": {
       "label": "Por qué la profilaxis",
-      "titel": "Prevenir en vez de",
-      "titelAkzent": "curar",
+      "titel": "Prevención en lugar de",
+      "titelAkzent": "tratamiento posterior",
       "text": "Incluso con el mejor cuidado dental en casa, el cepillo de dientes no llega a todos los rincones. La limpieza dental profesional elimina la placa y las bacterias donde usted no puede llegar — y reduce significativamente el riesgo de caries, enfermedad periodontal y pérdida de dientes."
     },
     "ablauf": {
       "label": "Procedimiento",
-      "titel": "Cómo funciona su",
+      "titel": "Así funciona su",
       "titelAkzent": "limpieza dental",
       "schritte": {
         "s1": {
           "titel": "Evaluación",
-          "text": "Comprobamos el estado de sus dientes y encías y comentamos sus necesidades individuales."
+          "text": "Revisamos el estado de sus dientes y encías y hablamos sobre sus necesidades individuales."
         },
         "s2": {
           "titel": "Limpieza",
-          "text": "Eliminación de sarro, placa y decoloraciones — con ultrasonidos e instrumentos manuales finos."
+          "text": "Eliminación de sarro, placa y manchas — con ultrasonido e instrumentos manuales finos."
         },
         "s3": {
           "titel": "Pulido",
@@ -1245,13 +1245,13 @@
         },
         "s5": {
           "titel": "Asesoramiento",
-          "text": "Consejos individuales para su higiene bucal en casa — para que el efecto dure más tiempo."
+          "text": "Consejos individuales para su higiene bucal en casa — para que el efecto perdure."
         }
       }
     },
     "recall": {
-      "titel": "Se lo recordamos",
-      "text": "Nuestro sistema de recuerdo le avisa a tiempo de su próxima cita de profilaxis — para que nunca olvide su prevención. Recomendamos una limpieza dental profesional cada 6 meses."
+      "titel": "Le recordamos",
+      "text": "Nuestro sistema de recordatorio le avisa a tiempo de su próxima cita de profilaxis — para que nunca se olvide de la prevención. Recomendamos una limpieza dental profesional cada 6 meses."
     },
     "interneLinks": {
       "parodontologie": "Periodoncia",
@@ -1266,40 +1266,40 @@
   "LeistungParodontologie": {
     "meta": {
       "title": "Tratamiento periodontal Hamburgo | Periodoncia Othmarschen",
-      "description": "Tratamiento periodontal en Hamburgo-Othmarschen: terapia individual para inflamación de encías y pérdida ósea. Tratamiento conservador y quirúrgico."
+      "description": "Tratamiento periodontal en Hamburgo-Othmarschen: Terapia individual para inflamación de encías y pérdida ósea. Tratamiento conservador y quirúrgico."
     },
     "hero": {
       "label": "Periodoncia",
       "titel": "Periodoncia —",
       "titelAkzent": "sus dientes firmemente anclados",
-      "subtext": "La enfermedad periodontal es la causa más frecuente de pérdida de dientes en edad avanzada — pero es muy tratable. Le ofrecemos el espectro completo: desde la terapia conservadora hasta el tratamiento periodontal quirúrgico."
+      "subtext": "La enfermedad periodontal es la causa más frecuente de pérdida de dientes en edad avanzada — pero es tratable. Le ofrecemos el espectro completo: desde la terapia conservadora hasta el tratamiento periodontal quirúrgico."
     },
     "was": {
       "label": "Comprender",
       "titel": "¿Qué es la",
       "titelAkzent": "enfermedad periodontal?",
-      "text": "La enfermedad periodontal (periodontitis) es una inflamación crónica del periodonto — es decir, de las encías y del hueso que sostiene sus dientes. Sin tratamiento, conduce a la pérdida ósea y, en última instancia, a la pérdida de dientes. La buena noticia: detectada a tiempo, la enfermedad periodontal es muy tratable."
+      "text": "La enfermedad periodontal (periodontitis) es una inflamación crónica del aparato de soporte dental — es decir, las encías y el hueso que sostiene sus dientes. Sin tratamiento, conduce a la pérdida ósea y finalmente a la pérdida de dientes. La buena noticia: detectada a tiempo, la enfermedad periodontal es muy tratable."
     },
     "warnsignale": {
       "label": "Reconocer",
-      "titel": "Señales de alerta",
-      "titelAkzent": "que hay que tomar en serio",
+      "titel": "Señales de alarma",
+      "titelAkzent": "que tomar en serio",
       "items": [
-        "Sangrado de encías al cepillarse",
+        "Sangrado de encías al cepillarse los dientes",
         "Enrojecimiento e hinchazón de las encías",
-        "Retracción de encías — los dientes parecen más largos",
-        "Mal aliento a pesar de una buena higiene bucal",
-        "Dientes flojos o cambios en la posición dental"
+        "Recesión gingival — los dientes parecen más largos",
+        "Mal aliento a pesar de buena higiene bucal",
+        "Dientes flojos o cambio en la posición dental"
       ]
     },
     "behandlung": {
       "label": "Tratamiento",
-      "titel": "Su camino hacia unas",
+      "titel": "Su camino hacia",
       "titelAkzent": "encías sanas",
       "items": {
         "diagnostik": {
           "titel": "Diagnóstico",
-          "text": "Examen exhaustivo con medición de las bolsas periodontales y diagnóstico por radiografía."
+          "text": "Examen exhaustivo con medición de las bolsas periodontales y diagnóstico radiográfico."
         },
         "konservativ": {
           "titel": "Terapia conservadora",
@@ -1307,11 +1307,11 @@
         },
         "chirurgisch": {
           "titel": "Terapia quirúrgica",
-          "text": "En caso de enfermedad avanzada: curetaje quirúrgico de bolsas y procedimientos regenerativos por la especialista Dr. Schwegmann."
+          "text": "En caso de enfermedad avanzada: limpieza quirúrgica de bolsas y procedimientos regenerativos por la especialista Dra. Schwegmann."
         },
         "nachsorge": {
           "titel": "Seguimiento",
-          "text": "Controles regulares y profilaxis — para mantener la enfermedad periodontal permanentemente bajo control."
+          "text": "Revisiones regulares y profilaxis — para que la enfermedad periodontal se mantenga permanentemente bajo control."
         }
       }
     },
@@ -1322,19 +1322,19 @@
     "cta": {
       "titel": "¿Problemas de encías?",
       "titelAkzent": "Le ayudamos",
-      "text": "Reserve una cita de consulta — cuanto antes, mejor."
+      "text": "Solicite una consulta — cuanto antes, mejor."
     }
   },
   "LeistungZahnersatz": {
     "meta": {
       "title": "Prótesis dentales Hamburgo Othmarschen | Coronas, puentes y prótesis",
-      "description": "Prótesis dentales de alta calidad en Hamburgo-Othmarschen: coronas, puentes, prótesis — fabricadas con escáner intraoral. Técnica dental de la región, no del extranjero."
+      "description": "Prótesis dentales de alta calidad en Hamburgo-Othmarschen: Coronas, puentes, prótesis — fabricadas con escáner intraoral. Técnica dental de la región, no del extranjero."
     },
     "hero": {
       "label": "Prótesis dentales",
       "titel": "Prótesis dentales —",
       "titelAkzent": "tan naturales como sus propios dientes",
-      "subtext": "Ya sea corona, puente o prótesis: encontramos la mejor solución para usted — fabricada por nuestro laboratorio colaborador en Bönningstedt, con la tecnología de escáner más moderna."
+      "subtext": "Ya sea corona, puente o prótesis: encontramos la mejor solución para usted — fabricada por nuestro laboratorio asociado en Bönningstedt, con la tecnología de escáner más moderna."
     },
     "optionen": {
       "label": "Sus opciones",
@@ -1343,7 +1343,7 @@
       "items": {
         "kronen": {
           "titel": "Coronas",
-          "text": "Coronas de cerámica integral para una estética natural y máxima durabilidad — ajustadas con precisión gracias a la impresión digital."
+          "text": "Coronas de cerámica completa para una estética natural y máxima durabilidad — ajuste preciso gracias a la impresión digital."
         },
         "bruecken": {
           "titel": "Puentes",
@@ -1359,7 +1359,7 @@
         },
         "implantatgetragen": {
           "titel": "Prótesis sobre implantes",
-          "text": "Dientes fijos sobre implantes — la solución más cómoda, que se siente como dientes propios."
+          "text": "Dientes fijos sobre implantes — la solución más cómoda que se siente como dientes propios."
         }
       }
     },
@@ -1369,41 +1369,41 @@
       "titelAkzent": "la región",
       "items": [
         "Escáner intraoral en lugar de impresiones incómodas — digital, preciso, rápido.",
-        "Prótesis de Bönningstedt, no de China — calidad regional, circuitos cortos.",
-        "Costes transparentes: cobertura del seguro y copago explicados claramente antes de empezar."
+        "Prótesis dentales de Bönningstedt, no de China — calidad regional, distancias cortas.",
+        "Costes transparentes: prestaciones del seguro y contribución propia claramente explicados antes de empezar."
       ]
     },
     "interneLinks": {
       "implantate": "Implantes",
-      "aesthetik": "Estética"
+      "aesthetik": "Odontología estética"
     },
     "cta": {
       "titel": "Consulta sobre",
       "titelAkzent": "sus prótesis dentales",
-      "text": "Encontremos juntos la mejor solución — reserve una cita de consulta."
+      "text": "Juntos encontraremos la mejor solución — solicite una consulta."
     }
   },
   "LeistungKinderzahnheilkunde": {
     "meta": {
-      "title": "Dentista infantil Hamburgo Othmarschen | Consulta Parkstrasse",
-      "description": "Odontopediatría en Hamburgo-Othmarschen: tratamiento empático para niños de todas las edades. Porque nosotras mismas tenemos hijos, sabemos lo que importa."
+      "title": "Odontopediatra Hamburgo Othmarschen | Zahnärzte Parkstrasse",
+      "description": "Odontopediatría en Hamburgo-Othmarschen: Tratamiento empático para niños de todas las edades. Porque nosotras mismas tenemos hijos, sabemos lo que importa."
     },
     "hero": {
       "label": "Odontopediatría",
       "titel": "Dientes sanos",
       "titelAkzent": "desde el principio",
-      "subtext": "Como nosotras mismas tenemos hijos, sabemos lo importante que es una atmósfera de confianza y sin miedo para los pequeños. Con nosotros, los niños aprenden jugando que la visita al dentista no es nada temible."
+      "subtext": "Porque nosotras mismas tenemos hijos, sabemos lo importante que es un ambiente de confianza y sin miedo para los más pequeños. Con nosotras, los niños aprenden jugando que la visita al dentista no tiene nada de malo."
     },
     "ansatz": {
       "label": "Nuestro enfoque",
-      "titel": "Somos",
-      "titelAkzent": "madres nosotras mismas",
-      "text": "Othmarschen es un barrio familiar — y nosotras somos un equipo familiar. Como madres, sabemos exactamente lo importante que es que los niños tengan experiencias positivas en el dentista. Por eso nos tomamos especialmente nuestro tiempo, explicamos de forma adaptada a los niños y trabajamos completamente sin presión."
+      "titel": "Nosotras mismas somos",
+      "titelAkzent": "madres",
+      "text": "Othmarschen es un barrio familiar — y nosotras somos un equipo familiar. Como madres, sabemos exactamente lo importante que es que los niños tengan experiencias positivas en el dentista. Por eso nos tomamos especialmente mucho tiempo, explicamos de forma adaptada a los niños y trabajamos completamente sin presión."
     },
     "leistungen": {
       "label": "Para sus hijos",
       "titel": "Lo que hacemos por",
-      "titelAkzent": "los pequeños",
+      "titelAkzent": "los más pequeños",
       "items": {
         "vorsorge": {
           "titel": "Revisiones preventivas",
@@ -1411,51 +1411,51 @@
         },
         "fissurenversiegelung": {
           "titel": "Sellado de fisuras",
-          "text": "Protección de los molares contra las caries — una de las medidas preventivas más eficaces para los niños."
+          "text": "Protección de los molares contra las caries — una de las medidas preventivas más eficaces para niños."
         },
         "fluoridierung": {
           "titel": "Fluorización",
-          "text": "Fortalecimiento del esmalte dental con fluorización adaptada a la edad — para dientes más resistentes."
+          "text": "Fortalecimiento del esmalte dental con fluorización adecuada a la edad — para dientes resistentes."
         },
         "fuellungen": {
           "titel": "Empastes",
-          "text": "Si a pesar de todo surge una caries: tratamiento poco doloroso con materiales modernos del color del diente."
+          "text": "Si a pesar de todo aparece una caries: tratamiento con poco dolor con materiales modernos del color del diente."
         },
         "beratung": {
           "titel": "Asesoramiento en higiene dental",
-          "text": "Consejos para padres y niños — para que el cuidado dental en casa sea divertido y eficaz."
+          "text": "Consejos para padres e hijos — para que el cuidado dental en casa sea divertido y funcione bien."
         }
       }
     },
     "ersterBesuch": {
-      "titel": "¿Cuándo llevar a mi hijo al dentista?",
-      "text": "Recomendamos la primera visita al dentista a partir del primer diente de leche — normalmente alrededor del sexto mes de vida. Así los pequeños se acostumbran pronto al entorno y aprenden que una visita al dentista no tiene nada de malo. Los dientes de leche son importantes reservadores de espacio para los dientes permanentes y merecen la misma atención."
+      "titel": "¿Cuándo empezar a ir al dentista?",
+      "text": "Recomendamos la primera visita al dentista desde el primer diente de leche — normalmente alrededor de los 6 meses de edad. Así los más pequeños se acostumbran pronto al entorno y aprenden que una visita al dentista no tiene nada de malo. Los dientes de leche son importantes marcadores de posición para los dientes definitivos y merecen la misma atención."
     },
     "interneLinks": {
       "prophylaxe": "Profilaxis",
       "ersterBesuch": "Primera visita"
     },
     "cta": {
-      "titel": "Cita para su",
-      "titelAkzent": "hijo",
-      "text": "Reserve una cita de presentación adaptada a los niños — nos alegramos de recibir a los pequeños."
+      "titel": "Reservar cita para",
+      "titelAkzent": "su hijo/a",
+      "text": "Solicite una cita de presentación adaptada a niños — nos alegramos de conocer a los más pequeños."
     }
   },
   "LeistungAesthetik": {
     "meta": {
       "title": "Odontología estética Hamburgo | Blanqueamiento y carillas Othmarschen",
-      "description": "Odontología estética en Hamburgo-Othmarschen: blanqueamiento profesional, carillas y correcciones estéticas para su sonrisa más bonita."
+      "description": "Odontología estética en Hamburgo-Othmarschen: Blanqueamiento profesional, carillas y correcciones estéticas para su sonrisa más bonita."
     },
     "hero": {
-      "label": "Estética",
+      "label": "Odontología estética",
       "titel": "Odontología estética —",
       "titelAkzent": "para su sonrisa más bonita",
-      "subtext": "A veces no se trata solo de salud, sino también de estética. Le ofrecemos procedimientos suaves para dientes de un blanco brillante y perfectamente formados."
+      "subtext": "A veces no se trata solo de salud, sino también de estética. Le ofrecemos procedimientos suaves para dientes de un blanco radiante y perfectamente formados."
     },
     "behandlungen": {
       "label": "Tratamientos",
-      "titel": "Su camino hacia",
-      "titelAkzent": "la sonrisa perfecta",
+      "titel": "Su camino hacia la",
+      "titelAkzent": "sonrisa perfecta",
       "items": {
         "bleaching": {
           "titel": "Blanqueamiento profesional",
@@ -1463,7 +1463,7 @@
         },
         "veneers": {
           "titel": "Carillas",
-          "text": "Finas láminas de cerámica para formas y colores dentales perfectos. Ideales para decoloraciones, ligeras malposiciones o bordes fracturados."
+          "text": "Finas láminas de cerámica para formas y colores dentales perfectos. Ideal para decoloraciones, pequeñas malposiciones o bordes rotos."
         },
         "fuellungen": {
           "titel": "Empastes estéticos",
@@ -1471,7 +1471,7 @@
         },
         "zahnfleisch": {
           "titel": "Corrección gingival",
-          "text": "Corrección estética del contorno de las encías — para una sonrisa armoniosa. Realizada por la especialista Dr. Schwegmann con precisión quirúrgica."
+          "text": "Corrección estética del contorno gingival — para una sonrisa armoniosa. Realizada por la especialista Dra. Schwegmann con precisión quirúrgica."
         }
       }
     },
@@ -1482,7 +1482,7 @@
     "cta": {
       "titel": "Consulta para su",
       "titelAkzent": "sonrisa más bonita",
-      "text": "Déjese asesorar sin compromiso — encontramos la solución estética adecuada para usted."
+      "text": "Déjese asesorar sin compromiso — encontraremos la solución estética adecuada para usted."
     }
   }
 }

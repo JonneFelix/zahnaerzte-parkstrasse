@@ -8,7 +8,15 @@ function l(href: string, locale: Locale) {
   return `/${locale}${href}`;
 }
 
+const footerTexts: Record<string, { praxis: string; behandlungen: string; kontakt: string; team: string; innovationen: string; fortbildungen: string; kontaktAnfahrt: string; terminBuchen: string }> = {
+  de: { praxis: "Praxis", behandlungen: "Behandlungen", kontakt: "Kontakt", team: "Unser Team", innovationen: "Innovationen", fortbildungen: "Fortbildungen", kontaktAnfahrt: "Kontakt & Anfahrt", terminBuchen: "Termin buchen" },
+  en: { praxis: "Practice", behandlungen: "Treatments", kontakt: "Contact", team: "Our Team", innovationen: "Innovations", fortbildungen: "Training", kontaktAnfahrt: "Contact & Directions", terminBuchen: "Book appointment" },
+  fr: { praxis: "Cabinet", behandlungen: "Traitements", kontakt: "Contact", team: "Notre équipe", innovationen: "Innovations", fortbildungen: "Formations", kontaktAnfahrt: "Contact & Accès", terminBuchen: "Prendre rendez-vous" },
+  es: { praxis: "Clínica", behandlungen: "Tratamientos", kontakt: "Contacto", team: "Nuestro equipo", innovationen: "Innovaciones", fortbildungen: "Formación", kontaktAnfahrt: "Contacto y Acceso", terminBuchen: "Pedir cita" },
+};
+
 export default function Footer({ locale = "de" as Locale }: { locale?: Locale }) {
+  const ft = footerTexts[locale] || footerTexts.de;
   return (
     <footer
       className="relative overflow-hidden"
@@ -54,15 +62,15 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
               className="text-xs tracking-widest uppercase mb-5"
               style={{ color: "rgba(255, 255, 255, 0.55)", fontWeight: 600, letterSpacing: "0.2em" }}
             >
-              Praxis
+              {ft.praxis}
             </h4>
             <nav className="space-y-2.5">
               {[
-                { text: "Unser Team", href: "/team" },
-                { text: "Innovationen", href: "/innovationen" },
-                { text: "Fortbildungen", href: "/fortbildungen" },
-                { text: "Kontakt & Anfahrt", href: "/kontakt" },
-                { text: "Termin buchen", href: "/termin" },
+                { text: ft.team, href: "/team" },
+                { text: ft.innovationen, href: "/innovationen" },
+                { text: ft.fortbildungen, href: "/fortbildungen" },
+                { text: ft.kontaktAnfahrt, href: "/kontakt" },
+                { text: ft.terminBuchen, href: "/termin" },
                 { text: "FAQ", href: "/faq" },
               ].map((link) => (
                 <Link
@@ -83,7 +91,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
               className="text-xs tracking-widest uppercase mb-5"
               style={{ color: "rgba(255, 255, 255, 0.55)", fontWeight: 600, letterSpacing: "0.2em" }}
             >
-              Behandlungen
+              {ft.behandlungen}
             </h4>
             <nav className="space-y-2.5">
               {[

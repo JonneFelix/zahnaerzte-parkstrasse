@@ -1008,27 +1008,27 @@
       }
     },
     "faq": {
-      "label": "Frequently Asked Questions",
-      "titel": "Your questions,",
-      "titelAkzent": "our answers",
       "fragen": {
         "schmerzhaft": {
           "frage": "Is oral surgery painful?",
-          "antwort": "No. Thanks to modern anaesthesia, you won't feel anything during the procedure. Afterwards, you'll receive personalised pain management."
+          "antwort": "No. Thanks to modern anesthesia, you won't feel anything during the procedure. Afterwards, you will receive an individual pain management plan."
         },
         "unterschied": {
           "frage": "What is the difference between a dentist and an oral surgeon?",
-          "antwort": "A specialist in oral surgery has completed 4 years of clinical surgical training after dental school — comparable to a medical specialisation."
+          "antwort": "A specialist in oral surgery has completed a 4-year clinical specialization in surgery after dental school — comparable to a medical residency."
         },
         "ueberweisung": {
           "frage": "Do I need a referral?",
-          "antwort": "No. You can come to us directly."
+          "antwort": "No. You can come directly to us."
         }
-      }
+      },
+      "label": "FAQ",
+      "titel": "Your Questions,",
+      "titelAkzent": "Our Answers"
     },
     "interneLinks": {
       "implantate": "Implants",
-      "parodontologie": "Periodontology",
+      "parodontologie": "Periodontics",
       "team": "Our Team"
     },
     "cta": {
@@ -1105,23 +1105,23 @@
       "orientierung": "Guideline: A single implant with crown typically costs between 1,800 and 3,500 euros."
     },
     "faq": {
-      "label": "Frequently Asked Questions",
-      "titel": "Your questions about",
-      "titelAkzent": "implants",
       "fragen": {
         "haltbarkeit": {
           "frage": "How long do implants last?",
-          "antwort": "With good care and regular prophylaxis, dental implants can last a lifetime. The crown on top lasts an average of 15–20 years."
+          "antwort": "With good care and regular preventive check-ups, dental implants can last a lifetime. The crown on top lasts an average of 15–20 years."
         },
         "schmerzhaft": {
-          "frage": "Is the implant procedure painful?",
-          "antwort": "Under local anaesthesia, you won't feel a thing. After the procedure, some mild swelling may occur, which can be easily managed with simple painkillers."
+          "frage": "Is the implantation painful?",
+          "antwort": "Under local anesthesia, you won't feel anything. After the procedure, there may be slight swelling, which can be easily managed with simple painkillers."
         },
         "knochenaufbau": {
           "frage": "Is it possible without bone grafting?",
-          "antwort": "Often yes. Whether bone grafting is necessary is determined during the initial consultation with a 3D scan."
+          "antwort": "Often yes. Whether bone grafting is necessary will be determined in the initial consultation with a 3D scan."
         }
-      }
+      },
+      "label": "FAQ",
+      "titel": "Your Questions About",
+      "titelAkzent": "Implants"
     },
     "interneLinks": {
       "oralchirurgie": "Oral Surgery",

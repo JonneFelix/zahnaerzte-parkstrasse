@@ -4,7 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { type Locale } from "../../lib/i18n";
 
+const ctaTexts: Record<string, { anrufen: string; termin: string }> = {
+  de: { anrufen: "Anrufen", termin: "Termin buchen" },
+  en: { anrufen: "Call us", termin: "Book appointment" },
+  fr: { anrufen: "Appeler", termin: "Rendez-vous" },
+  es: { anrufen: "Llamar", termin: "Pedir cita" },
+};
+
 export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale }) {
+  const ct = ctaTexts[locale] || ctaTexts.de;
   const [sichtbar, setSichtbar] = useState(false);
 
   useEffect(() => {
@@ -40,7 +48,7 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
           <svg viewBox="0 0 20 20" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M2 3.5A1.5 1.5 0 013.5 2h2.879a1.5 1.5 0 011.414 1.002l.675 2.7a1.5 1.5 0 01-.76 1.67l-.833.555a10.5 10.5 0 005.196 5.196l.555-.833a1.5 1.5 0 011.67-.76l2.7.675A1.5 1.5 0 0118 13.621V16.5a1.5 1.5 0 01-1.5 1.5A15.5 15.5 0 012 3.5z" />
           </svg>
-          Anrufen
+          {ct.anrufen}
         </a>
 
         {/* Termin buchen */}
@@ -55,7 +63,7 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
           <svg viewBox="0 0 20 20" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M6.75 3v1.5M13.25 3v1.5M3 8.25h14M4.5 4.5h11a1.5 1.5 0 011.5 1.5v10a1.5 1.5 0 01-1.5 1.5h-11A1.5 1.5 0 013 16V6a1.5 1.5 0 011.5-1.5z" />
           </svg>
-          Termin buchen
+          {ct.termin}
         </Link>
       </div>
     </div>

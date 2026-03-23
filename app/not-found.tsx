@@ -1,6 +1,37 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const texts: Record<string, { title: string; text: string; button: string }> = {
+  de: {
+    title: "Seite nicht gefunden",
+    text: "Die Seite, die Sie suchen, existiert leider nicht oder wurde verschoben.",
+    button: "Zur Startseite",
+  },
+  en: {
+    title: "Page not found",
+    text: "The page you are looking for does not exist or has been moved.",
+    button: "Go to homepage",
+  },
+  fr: {
+    title: "Page introuvable",
+    text: "La page que vous recherchez n'existe pas ou a été déplacée.",
+    button: "Retour à l'accueil",
+  },
+  es: {
+    title: "Página no encontrada",
+    text: "La página que busca no existe o ha sido trasladada.",
+    button: "Ir a la página principal",
+  },
+};
 
 export default function NotFound() {
+  const pathname = usePathname();
+  const localeFromPath = pathname?.split("/")[1] || "de";
+  const locale = ["de", "en", "fr", "es"].includes(localeFromPath) ? localeFromPath : "de";
+  const t = texts[locale];
+
   return (
     <div
       className="min-h-screen flex items-center justify-center px-6"
@@ -25,16 +56,16 @@ export default function NotFound() {
             color: "#2d3a3a",
           }}
         >
-          Seite nicht gefunden
+          {t.title}
         </h1>
         <p
           className="text-base mb-8"
           style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.7 }}
         >
-          Die Seite, die Sie suchen, existiert leider nicht oder wurde verschoben.
+          {t.text}
         </p>
         <Link
-          href="/de"
+          href={`/${locale}`}
           className="inline-flex items-center gap-2 px-8 py-3 text-sm tracking-wider transition-all duration-500"
           style={{
             fontWeight: 600,
@@ -45,7 +76,7 @@ export default function NotFound() {
             boxShadow: "0 4px 18px rgba(242, 101, 34, 0.35)",
           }}
         >
-          Zur Startseite
+          {t.button}
         </Link>
       </div>
     </div>

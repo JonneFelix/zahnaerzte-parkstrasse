@@ -112,7 +112,7 @@ export default async function KontaktSeite({ params }: { params: Promise<{ local
               </div>
               <div className="text-center mt-6">
                 <Link
-                  href="/termin"
+                  href={`/${locale}/termin`}
                   className="cta-schimmer inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500"
                   style={{ fontWeight: 600, color: "#fff", background: "linear-gradient(135deg, #F26522, #e3541a)", borderRadius: "9999px", letterSpacing: "0.1em", boxShadow: "0 8px 28px rgba(242,101,34,0.3)" }}
                 >
@@ -152,7 +152,7 @@ export default async function KontaktSeite({ params }: { params: Promise<{ local
               </p>
             </div>
             <Link
-              href="/fortbildungen"
+              href={`/${locale}/fortbildungen`}
               className="shrink-0 inline-flex items-center gap-2 px-6 py-3 text-sm tracking-wider transition-all duration-300"
               style={{
                 color: "#697B7B",

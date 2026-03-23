@@ -198,7 +198,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
 
               <div className="anim-einblenden d5 flex flex-wrap gap-4 mt-10">
                 <Link
-                  href="/termin"
+                  href={`/${locale}/termin`}
                   className="cta-schimmer group inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500"
                   style={{
                     fontWeight: 600, color: "#fff",
@@ -213,7 +213,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
                   </svg>
                 </Link>
                 <Link
-                  href="/team"
+                  href={`/${locale}/team`}
                   className="inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500 hover:border-[#697B7B]"
                   style={{
                     fontWeight: 500, color: "#697B7B",
@@ -342,7 +342,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           </div>
 
           <div className="text-center mt-12 anim-einblenden d8">
-            <Link href="/leistungen" className="inline-flex items-center gap-2 text-sm tracking-wider transition-colors duration-300 hover:text-[#F26522]" style={{ color: "#697B7B", fontWeight: 500, letterSpacing: "0.1em" }}>
+            <Link href={`/${locale}/leistungen`} className="inline-flex items-center gap-2 text-sm tracking-wider transition-colors duration-300 hover:text-[#F26522]" style={{ color: "#697B7B", fontWeight: 500, letterSpacing: "0.1em" }}>
               {leistungenSection.alleAnsehen as string}
               <svg viewBox="0 0 20 20" className="w-4 h-4" stroke="currentColor" strokeWidth="2" fill="none"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
             </Link>
@@ -375,7 +375,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
 
           <div className="text-center mt-14 anim-einblenden d7">
             <Link
-              href="/erster-besuch"
+              href={`/${locale}/termin`}
               className="inline-flex items-center gap-2 px-8 py-4 text-sm tracking-wider transition-all duration-500 hover:border-[#697B7B]"
               style={{ fontWeight: 500, color: "#697B7B", border: "1.5px solid rgba(105, 123, 123, 0.25)", borderRadius: "9999px", letterSpacing: "0.1em" }}
             >
@@ -448,7 +448,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           </div>
 
           <div className="text-center mt-14 anim-einblenden d6">
-            <Link href="/team" className="inline-flex items-center gap-2 text-sm tracking-wider transition-colors duration-300 hover:text-[#F26522]" style={{ color: "#697B7B", fontWeight: 500, letterSpacing: "0.1em" }}>
+            <Link href={`/${locale}/team`} className="inline-flex items-center gap-2 text-sm tracking-wider transition-colors duration-300 hover:text-[#F26522]" style={{ color: "#697B7B", fontWeight: 500, letterSpacing: "0.1em" }}>
               {teamSection.alleKennenlernen as string}
               <svg viewBox="0 0 20 20" className="w-4 h-4" stroke="currentColor" strokeWidth="2" fill="none"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
             </Link>
@@ -503,7 +503,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
 
           <div className="text-center mt-14 anim-einblenden d8">
             <Link
-              href="/termin"
+              href={`/${locale}/termin`}
               className="cta-schimmer group inline-flex items-center gap-3 px-10 py-5 text-sm tracking-wider transition-all duration-500"
               style={{
                 fontWeight: 600, color: "#fff",

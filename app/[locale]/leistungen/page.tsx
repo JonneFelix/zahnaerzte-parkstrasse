@@ -185,7 +185,7 @@ export default async function LeistungenSeite({ params }: { params: Promise<{ lo
                 {schwerpunkt.text}
               </p>
               <Link
-                href="/leistungen/oralchirurgie"
+                href={`/${locale}/leistungen/oralchirurgie`}
                 className="inline-flex items-center gap-2 text-sm tracking-wider transition-colors duration-300 hover:text-[#e3541a]"
                 style={{
                   color: "#F26522",

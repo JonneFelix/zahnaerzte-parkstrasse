@@ -147,7 +147,7 @@ export default async function WissenswertesSeite({ params }: { params: Promise<{
               {fortbildungenHinweis.text}
             </p>
             <Link
-              href="/fortbildungen"
+              href={`/${locale}/fortbildungen`}
               className="inline-flex items-center gap-2 text-sm transition-colors duration-300 hover:text-[#e3541a]"
               style={{ color: "#F26522", fontWeight: 600 }}
             >

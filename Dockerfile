@@ -26,6 +26,12 @@ RUN echo 'server { \
     # Trailing Slash entfernen (z.B. /de/team/ → /de/team) \
     rewrite ^(.+)/$ $1 permanent; \
     \
+    # URLs ohne Locale-Prefix nach /de/ umleiten (z.B. /leistungen/implantate → /de/leistungen/implantate) \
+    # Ausnahmen: statische Assets \
+    if ($uri !~ "^/(de|en|fr|es|_next|images)/|\\.(txt|xml|ico|png|svg|js|css|woff2)$") { \
+        rewrite ^/(.+)$ /de/$1 permanent; \
+    } \
+    \
     # Gebrandete 404-Seite \
     error_page 404 /404.html; \
     \

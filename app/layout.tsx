@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CookieBanner from "./components/CookieBanner";
 import MobileCTA from "./components/MobileCTA";
+import Breadcrumbs from "./components/Breadcrumbs";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -112,6 +113,7 @@ export default function RootLayout({
         className={`${cormorant.variable} ${workSans.variable} antialiased papier-textur`}
       >
         <Header />
+        <Breadcrumbs />
         <main>{children}</main>
         <Footer />
         <MobileCTA />

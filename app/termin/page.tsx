@@ -106,6 +106,27 @@ export default function TerminSeite() {
           <p className="text-sm mt-6 text-center" style={{ color: "#697B7B", fontWeight: 400 }}>
             Für den ersten Besuch planen Sie bitte ca. 45 Minuten ein.
           </p>
+
+          {/* Was mitbringen — aufklappbar */}
+          <details className="mt-8 group" style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)" }}>
+            <summary
+              className="flex items-center justify-between cursor-pointer px-7 py-5 text-base"
+              style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 500, color: "#2d3a3a" }}
+            >
+              Was sollte ich zum ersten Termin mitbringen?
+              <span className="text-sm transition-transform duration-300 group-open:rotate-180" style={{ color: "#F26522" }}>▾</span>
+            </summary>
+            <div className="px-7 pb-6 space-y-3">
+              {["Versichertenkarte", "Aktuelle Röntgenbilder (falls vorhanden)", "Medikamentenliste (falls zutreffend)", "Bonusheft"].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center rounded-full" style={{ background: "rgba(242,101,34,0.1)" }}>
+                    <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none" stroke="#F26522" strokeWidth="2"><path d="M3 8l3.5 3.5L13 5" /></svg>
+                  </div>
+                  <p className="text-sm" style={{ color: "#5a6a6a", fontWeight: 300 }}>{item}</p>
+                </div>
+              ))}
+            </div>
+          </details>
         </div>
       </section>
     </>

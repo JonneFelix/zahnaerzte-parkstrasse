@@ -53,12 +53,12 @@ export default function Footer() {
             </h4>
             <nav className="space-y-2.5">
               {[
-                { text: "Unsere Praxis", href: "/praxis" },
                 { text: "Unser Team", href: "/team" },
-                { text: "Erster Besuch", href: "/erster-besuch" },
-                { text: "Kontakt & Anfahrt", href: "/kontakt" },
-                { text: "Wissenswertes", href: "/wissenswertes" },
+                { text: "Innovationen", href: "/innovationen" },
                 { text: "Fortbildungen", href: "/fortbildungen" },
+                { text: "Kontakt & Anfahrt", href: "/kontakt" },
+                { text: "Termin buchen", href: "/termin" },
+                { text: "FAQ", href: "/faq" },
               ].map((link) => (
                 <Link
                   key={link.href}

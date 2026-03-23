@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { text: "Praxis", href: "/praxis" },
   {
     text: "Leistungen",
     href: "/leistungen",
@@ -18,11 +17,11 @@ const navLinks = [
       { text: "Zahnersatz", href: "/leistungen/zahnersatz" },
       { text: "Kinderzahnheilkunde", href: "/leistungen/kinderzahnheilkunde" },
       { text: "Ästhetik", href: "/leistungen/aesthetik" },
-      { text: "Fortbildungen für Zahnärzte", href: "/fortbildungen" },
     ],
   },
   { text: "Team", href: "/team" },
-  { text: "Wissenswertes", href: "/wissenswertes" },
+  { text: "Innovationen", href: "/innovationen" },
+  { text: "Fortbildungen", href: "/fortbildungen" },
   { text: "Kontakt", href: "/kontakt" },
 ];
 
@@ -133,9 +132,7 @@ export default function Header() {
                           boxShadow: "0 20px 48px -12px rgba(105, 123, 123, 0.15)",
                         }}
                       >
-                        {link.unterseiten
-                          .filter((sub) => sub.href !== "/fortbildungen")
-                          .map((sub) => (
+                        {link.unterseiten.map((sub) => (
                           <Link
                             key={sub.href}
                             href={sub.href}
@@ -159,19 +156,6 @@ export default function Header() {
                           }}
                         >
                           Alle Leistungen →
-                        </Link>
-                        <Link
-                          href="/fortbildungen"
-                          className="col-span-2 px-4 py-2.5 text-sm transition-all duration-200 hover:bg-[rgba(242,101,34,0.05)]"
-                          style={{
-                            color: "#697B7B",
-                            fontWeight: 500,
-                            borderTop: "1px solid rgba(105, 123, 123, 0.06)",
-                            borderRadius: "10px",
-                            fontStyle: "italic",
-                          }}
-                        >
-                          Fortbildungen für Zahnärzte →
                         </Link>
                       </div>
                     </div>

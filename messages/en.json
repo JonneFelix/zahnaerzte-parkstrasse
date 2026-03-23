@@ -946,543 +946,543 @@
   },
   "LeistungOralchirurgie": {
     "meta": {
-      "title": "Oralchirurgie Hamburg Othmarschen | Fachzahnärztin Dr. Schwegmann",
-      "description": "Oralchirurgie in Hamburg-Othmarschen: Implantate, Knochenaufbau, Weisheitszahn-OP, Schleimhautchirurgie. Fachzahnärztin Dr. Schwegmann — über 25 Jahre Erfahrung."
+      "title": "Oral Surgery Hamburg Othmarschen | Specialist Dr. Schwegmann",
+      "description": "Oral surgery in Hamburg-Othmarschen: implants, bone grafting, wisdom tooth removal, soft tissue surgery. Specialist Dr. Schwegmann — over 25 years of experience."
     },
     "hero": {
-      "label": "Unser Schwerpunkt",
-      "titel": "Oralchirurgie —",
-      "titelAkzent": "unser Schwerpunkt",
-      "subtext": "Chirurgische Eingriffe erfordern Erfahrung, Präzision und Einfühlungsvermögen. Als Fachzahnärztin für Oralchirurgie vereint Dr. Schwegmann alle drei — seit über 25 Jahren.",
-      "badge": "Dr. Claudia Schwegmann — Fachzahnärztin für Oralchirurgie"
+      "label": "Our Speciality",
+      "titel": "Oral Surgery —",
+      "titelAkzent": "our speciality",
+      "subtext": "Surgical procedures require experience, precision and empathy. As a specialist in oral surgery, Dr. Schwegmann combines all three — for over 25 years.",
+      "badge": "Dr. Claudia Schwegmann — Specialist in Oral Surgery"
     },
     "bereiche": {
-      "label": "Behandlungsspektrum",
-      "titel": "Was wir für",
-      "titelAkzent": "Sie tun",
+      "label": "Treatment Spectrum",
+      "titel": "What we do",
+      "titelAkzent": "for you",
       "items": {
         "implantate": {
-          "titel": "Implantate & Knochenaufbau",
-          "text": "Festsitzende Zähne auf Implantaten — bei Bedarf mit Knochenaufbau aus körpereigenem Gewebe. Wir vermeiden Fremdmaterial wo immer möglich."
+          "titel": "Implants & Bone Grafting",
+          "text": "Fixed teeth on implants — with bone grafting from your own tissue when needed. We avoid foreign materials wherever possible."
         },
         "schleimhaut": {
-          "titel": "Schleimhautchirurgie",
-          "text": "Wiederherstellung von Schleimhaut und Zahnfleisch: bei freiliegenden Zahnhälsen, nach Implantationen oder zur ästhetischen Korrektur."
+          "titel": "Soft Tissue Surgery",
+          "text": "Restoration of mucosa and gums: for exposed tooth necks, after implant procedures or for aesthetic corrections."
         },
         "weisheitszahn": {
-          "titel": "Weisheitszahn-Entfernung",
-          "text": "Schonend und kompetent — auch bei schwierigen Verhältnissen. In unserer Praxis, nicht im Krankenhaus."
+          "titel": "Wisdom Tooth Removal",
+          "text": "Gentle and competent — even in difficult situations. In our practice, not in hospital."
         },
         "parodontose": {
-          "titel": "Chirurgische Parodontose-Therapie",
-          "text": "Wenn die konservative Behandlung nicht ausreicht: chirurgische Taschen-Reinigung und regenerative Verfahren."
+          "titel": "Surgical Periodontal Therapy",
+          "text": "When conservative treatment is not enough: surgical pocket debridement and regenerative procedures."
         },
         "praeprothetisch": {
-          "titel": "Präprothetische Chirurgie",
-          "text": "Vorbereitung des Kiefers für Zahnersatz: Knochenaufbau, Schleimhautkorrektur, Alveolarkamm-Plastik."
+          "titel": "Pre-Prosthetic Surgery",
+          "text": "Preparation of the jaw for dental prostheses: bone grafting, soft tissue correction, alveolar ridge augmentation."
         }
       },
-      "mehrErfahren": "Mehr erfahren"
+      "mehrErfahren": "Learn more"
     },
     "vorteile": {
-      "label": "Ihre Vorteile",
-      "titel": "Warum Oralchirurgie",
-      "titelAkzent": "bei uns?",
+      "label": "Your Advantages",
+      "titel": "Why oral surgery",
+      "titelAkzent": "with us?",
       "items": {
         "fachzahnaerztin": {
-          "titel": "Fachzahnärztin",
-          "text": "Nicht jeder Zahnarzt darf sich so nennen. Die Weiterbildung umfasst 4 Jahre klinische Chirurgie."
+          "titel": "Specialist Dentist",
+          "text": "Not every dentist can claim this title. The specialist training comprises 4 years of clinical surgery."
         },
         "gewebe": {
-          "titel": "Körpereigenes Gewebe",
-          "text": "Knochenaufbau bevorzugt mit Ihrem eigenen Material — für bessere Einheilung."
+          "titel": "Autogenous Tissue",
+          "text": "Bone grafting preferably with your own material — for better osseointegration."
         },
         "lupenbrille": {
-          "titel": "Lupenbrille & Mikroskop",
-          "text": "Höchste Präzision auch bei kleinsten Strukturen."
+          "titel": "Loupes & Microscope",
+          "text": "Maximum precision even with the smallest structures."
         },
         "minimalinvasiv": {
-          "titel": "Minimalinvasiv",
-          "text": "So viel wie nötig, so schonend wie möglich."
+          "titel": "Minimally Invasive",
+          "text": "As much as necessary, as gentle as possible."
         }
       }
     },
     "faq": {
-      "label": "Häufige Fragen",
-      "titel": "Ihre Fragen,",
-      "titelAkzent": "unsere Antworten",
+      "label": "Frequently Asked Questions",
+      "titel": "Your questions,",
+      "titelAkzent": "our answers",
       "fragen": {
         "schmerzhaft": {
-          "frage": "Ist eine Oralchirurgie schmerzhaft?",
-          "antwort": "Nein. Dank moderner Betäubung spüren Sie während des Eingriffs nichts. Danach erhalten Sie ein individuelles Schmerzmanagement."
+          "frage": "Is oral surgery painful?",
+          "antwort": "No. Thanks to modern anaesthesia, you won't feel anything during the procedure. Afterwards, you'll receive personalised pain management."
         },
         "unterschied": {
-          "frage": "Was ist der Unterschied zwischen Zahnarzt und Oralchirurg?",
-          "antwort": "Eine Fachzahnärztin für Oralchirurgie hat nach dem Studium eine 4-jährige klinische Weiterbildung in Chirurgie absolviert — vergleichbar mit einer Facharzt-Ausbildung in der Medizin."
+          "frage": "What is the difference between a dentist and an oral surgeon?",
+          "antwort": "A specialist in oral surgery has completed 4 years of clinical surgical training after dental school — comparable to a medical specialisation."
         },
         "ueberweisung": {
-          "frage": "Brauche ich eine Überweisung?",
-          "antwort": "Nein. Sie können sich direkt bei uns vorstellen."
+          "frage": "Do I need a referral?",
+          "antwort": "No. You can come to us directly."
         }
       }
     },
     "interneLinks": {
-      "implantate": "Implantate",
-      "parodontologie": "Parodontologie",
-      "team": "Unser Team"
+      "implantate": "Implants",
+      "parodontologie": "Periodontology",
+      "team": "Our Team"
     },
     "cta": {
-      "titel": "Beratungstermin für",
-      "titelAkzent": "chirurgische Fragen",
-      "text": "Vereinbaren Sie einen unverbindlichen Beratungstermin."
+      "titel": "Consultation for",
+      "titelAkzent": "surgical questions",
+      "text": "Schedule a no-obligation consultation appointment."
     }
   },
   "LeistungImplantate": {
     "meta": {
-      "title": "Zahnimplantate Hamburg | Implantologie Dr. Schwegmann — Othmarschen",
-      "description": "Zahnimplantate in Hamburg-Othmarschen: Feste dritte Zähne mit körpereigenem Knochenaufbau. Fachzahnärztin für Oralchirurgie. Individuelle Beratung."
+      "title": "Dental Implants Hamburg | Implantology Dr. Schwegmann — Othmarschen",
+      "description": "Dental implants in Hamburg-Othmarschen: Permanent teeth with autogenous bone grafting. Specialist in oral surgery. Individual consultation."
     },
     "hero": {
-      "label": "Implantologie",
-      "titel": "Zahnimplantate —",
-      "titelAkzent": "feste Zähne, natürliches Gefühl",
-      "subtext": "Ein Implantat ist mehr als ein Zahnersatz — es gibt Ihnen ein Stück Lebensqualität zurück. Als Fachzahnärztin für Oralchirurgie ist Dr. Schwegmann Ihre Spezialistin für Implantologie."
+      "label": "Implantology",
+      "titel": "Dental Implants —",
+      "titelAkzent": "permanent teeth, natural feeling",
+      "subtext": "An implant is more than a dental prosthesis — it gives you back a piece of quality of life. As a specialist in oral surgery, Dr. Schwegmann is your expert for implantology."
     },
     "grundlagen": {
-      "label": "Grundlagen",
-      "titel": "Was ist ein",
-      "titelAkzent": "Zahnimplantat?",
-      "text": "Ein Zahnimplantat ist eine kleine Schraube aus Titan oder Keramik, die in den Kieferknochen eingesetzt wird. Darauf wird der eigentliche Zahnersatz — eine Krone, Brücke oder Prothese — fest verankert. Das Ergebnis: Zähne, die aussehen, sich anfühlen und funktionieren wie Ihre eigenen."
+      "label": "Basics",
+      "titel": "What is a",
+      "titelAkzent": "dental implant?",
+      "text": "A dental implant is a small screw made of titanium or ceramic that is inserted into the jawbone. The actual dental prosthesis — a crown, bridge or denture — is then securely anchored on top. The result: teeth that look, feel and function like your own."
     },
     "ablauf": {
-      "label": "Ihr Weg zum Implantat",
-      "titel": "So läuft eine",
-      "titelAkzent": "Implantation ab",
+      "label": "Your Path to an Implant",
+      "titel": "How an implant",
+      "titelAkzent": "procedure works",
       "schritte": {
         "s1": {
           "nr": "01",
-          "titel": "Beratung & Planung",
-          "text": "Ausführliches Erstgespräch, digitales Röntgen und 3D-Planung."
+          "titel": "Consultation & Planning",
+          "text": "Comprehensive initial consultation, digital X-ray and 3D planning."
         },
         "s2": {
           "nr": "02",
-          "titel": "Vorbereitung",
-          "text": "Falls nötig: Knochenaufbau mit körpereigenem Gewebe."
+          "titel": "Preparation",
+          "text": "If necessary: bone grafting with autogenous tissue."
         },
         "s3": {
           "nr": "03",
-          "titel": "Implantation",
-          "text": "Der eigentliche Eingriff dauert meist nur 30–60 Minuten pro Implantat."
+          "titel": "Implant Placement",
+          "text": "The actual procedure usually takes only 30–60 minutes per implant."
         },
         "s4": {
           "nr": "04",
-          "titel": "Einheilphase",
-          "text": "2–6 Monate, in denen das Implantat fest mit dem Knochen verwächst."
+          "titel": "Healing Phase",
+          "text": "2–6 months during which the implant fuses firmly with the bone."
         },
         "s5": {
           "nr": "05",
-          "titel": "Versorgung",
-          "text": "Ihr neuer Zahn wird eingesetzt — gefertigt von unserem Partnerlabor in Bönningstedt."
+          "titel": "Restoration",
+          "text": "Your new tooth is placed — crafted by our partner laboratory in Bönningstedt."
         }
       }
     },
     "vorteile": {
-      "label": "Ihre Vorteile",
-      "titel": "Was uns",
-      "titelAkzent": "auszeichnet",
+      "label": "Your Advantages",
+      "titel": "What sets",
+      "titelAkzent": "us apart",
       "items": [
-        "Fachzahnärztin für Oralchirurgie — höchste chirurgische Kompetenz",
-        "Körpereigener Knochenaufbau — kein Fremdmaterial",
-        "Zahnersatz aus Hamburg — nicht aus dem Ausland",
-        "Über 25 Jahre Erfahrung mit Implantaten"
+        "Specialist in oral surgery — the highest surgical expertise",
+        "Autogenous bone grafting — no foreign materials",
+        "Dental prosthetics from Hamburg — not from abroad",
+        "Over 25 years of experience with implants"
       ]
     },
     "kosten": {
-      "label": "Transparenz",
-      "titel": "Was kosten",
-      "titelAkzent": "Zahnimplantate?",
-      "text": "Die Kosten für ein Zahnimplantat variieren je nach Aufwand und individuellem Befund. Wir erstellen Ihnen immer einen transparenten Heil- und Kostenplan — bevor wir mit der Behandlung beginnen. Gesetzliche Krankenkassen übernehmen den Festzuschuss für den Zahnersatz, den Implantatkörper zahlen Sie als Eigenanteil.",
-      "orientierung": "Orientierung: Ein einzelnes Implantat mit Krone liegt in der Regel zwischen 1.800 und 3.500 Euro."
+      "label": "Transparency",
+      "titel": "How much do",
+      "titelAkzent": "dental implants cost?",
+      "text": "The cost of a dental implant varies depending on the complexity and individual findings. We always provide you with a transparent treatment and cost plan — before we begin treatment. Statutory health insurance covers the fixed subsidy for the prosthetic component; you pay the implant itself as your personal contribution.",
+      "orientierung": "Guideline: A single implant with crown typically costs between 1,800 and 3,500 euros."
     },
     "faq": {
-      "label": "Häufige Fragen",
-      "titel": "Ihre Fragen zu",
-      "titelAkzent": "Implantaten",
+      "label": "Frequently Asked Questions",
+      "titel": "Your questions about",
+      "titelAkzent": "implants",
       "fragen": {
         "haltbarkeit": {
-          "frage": "Wie lange halten Implantate?",
-          "antwort": "Bei guter Pflege und regelmäßiger Prophylaxe halten Zahnimplantate ein Leben lang. Die aufgesetzte Krone hält durchschnittlich 15–20 Jahre."
+          "frage": "How long do implants last?",
+          "antwort": "With good care and regular prophylaxis, dental implants can last a lifetime. The crown on top lasts an average of 15–20 years."
         },
         "schmerzhaft": {
-          "frage": "Ist die Implantation schmerzhaft?",
-          "antwort": "Unter örtlicher Betäubung spüren Sie nichts. Nach dem Eingriff kann es zu leichten Schwellungen kommen, die mit einfachen Schmerzmitteln gut zu behandeln sind."
+          "frage": "Is the implant procedure painful?",
+          "antwort": "Under local anaesthesia, you won't feel a thing. After the procedure, some mild swelling may occur, which can be easily managed with simple painkillers."
         },
         "knochenaufbau": {
-          "frage": "Geht das auch ohne Knochenaufbau?",
-          "antwort": "Oft ja. Ob ein Knochenaufbau nötig ist, klären wir im Erstgespräch mit einer 3D-Aufnahme."
+          "frage": "Is it possible without bone grafting?",
+          "antwort": "Often yes. Whether bone grafting is necessary is determined during the initial consultation with a 3D scan."
         }
       }
     },
     "interneLinks": {
-      "oralchirurgie": "Oralchirurgie",
-      "zahnersatz": "Zahnersatz",
+      "oralchirurgie": "Oral Surgery",
+      "zahnersatz": "Dental Prosthetics",
       "team": "Dr. Schwegmann"
     },
     "cta": {
-      "titel": "Kostenlose Erstberatung",
-      "titelAkzent": "zu Implantaten",
-      "text": "Lassen Sie sich unverbindlich beraten — wir nehmen uns Zeit für Ihre Fragen."
+      "titel": "Free initial consultation",
+      "titelAkzent": "about implants",
+      "text": "Get a no-obligation consultation — we take the time for your questions."
     }
   },
   "LeistungWurzelbehandlung": {
     "meta": {
-      "title": "Wurzelbehandlung Hamburg | Endodontie Dr. Janz — Othmarschen",
-      "description": "Schmerzfreie Wurzelbehandlung in Hamburg-Othmarschen: Modernste Endodontie mit Mikroskop und elektronischer Längenmessung. Dr. Nina Janz — Spezialistin für Zahnerhalt."
+      "title": "Root Canal Treatment Hamburg | Endodontics Dr. Janz — Othmarschen",
+      "description": "Pain-free root canal treatment in Hamburg-Othmarschen: State-of-the-art endodontics with microscope and electronic length measurement. Dr. Nina Janz — specialist in tooth preservation."
     },
     "hero": {
-      "label": "Endodontie",
-      "titel": "Wurzelbehandlung —",
-      "titelAkzent": "Zahnerhalt auf höchstem Niveau",
-      "subtext": "Eine Wurzelbehandlung hat heute nichts mehr mit ihrem alten Ruf zu tun. Dr. Nina Janz behandelt mit modernster Technik — sanft, präzise und mit dem Ziel, Ihren Zahn zu retten.",
-      "badge": "Dr. Nina Janz — Curriculum Endodontie"
+      "label": "Endodontics",
+      "titel": "Root Canal Treatment —",
+      "titelAkzent": "tooth preservation at the highest level",
+      "subtext": "A root canal treatment today has nothing to do with its old reputation. Dr. Nina Janz treats with state-of-the-art technology — gently, precisely and with the goal of saving your tooth.",
+      "badge": "Dr. Nina Janz — Curriculum Endodontics"
     },
     "zahnerhalt": {
-      "label": "Zahnerhalt",
-      "titel": "Warum Ihr eigener Zahn",
-      "titelAkzent": "der beste ist",
-      "text": "Kein Implantat und kein Zahnersatz kann einen eigenen, gesunden Zahn vollständig ersetzen. Deshalb setzen wir alles daran, Ihren natürlichen Zahn zu erhalten — auch wenn er stark geschädigt ist. Die moderne Endodontie macht es möglich."
+      "label": "Tooth Preservation",
+      "titel": "Why your own tooth",
+      "titelAkzent": "is the best",
+      "text": "No implant and no dental prosthesis can fully replace a healthy natural tooth. That's why we do everything we can to preserve your natural tooth — even when it is severely damaged. Modern endodontics makes it possible."
     },
     "technik": {
-      "label": "Modernste Technik",
-      "titel": "So behandeln wir",
-      "titelAkzent": "Ihre Wurzelkanäle",
+      "label": "State-of-the-Art Technology",
+      "titel": "How we treat",
+      "titelAkzent": "your root canals",
       "items": {
         "mikroskop": {
-          "titel": "Mikroskop-Einsatz",
-          "text": "Vergrößerung bis 25-fach — für maximale Übersicht und Präzision in den feinen Wurzelkanälen."
+          "titel": "Microscope Use",
+          "text": "Magnification up to 25x — for maximum visibility and precision in the fine root canals."
         },
         "instrumente": {
-          "titel": "Biegsame Instrumente",
-          "text": "Maschinelle Aufbereitung mit flexiblen Nickel-Titan-Feilen — schonend und gründlich."
+          "titel": "Flexible Instruments",
+          "text": "Rotary preparation with flexible nickel-titanium files — gentle and thorough."
         },
         "laengenmessung": {
-          "titel": "Elektronische Längenmessung",
-          "text": "Exakte Bestimmung der Kanallänge — weniger Röntgenbilder, mehr Sicherheit."
+          "titel": "Electronic Length Measurement",
+          "text": "Precise determination of canal length — fewer X-rays, more safety."
         },
         "fuellung": {
-          "titel": "Thermoplastische Füllung",
-          "text": "Dreidimensionale Versiegelung der Kanäle — für einen dauerhaften Verschluss."
+          "titel": "Thermoplastic Filling",
+          "text": "Three-dimensional sealing of the canals — for a lasting closure."
         }
       }
     },
     "faq": {
-      "label": "Häufige Fragen",
-      "titel": "Ihre Fragen zur",
-      "titelAkzent": "Wurzelbehandlung",
+      "label": "Frequently Asked Questions",
+      "titel": "Your questions about",
+      "titelAkzent": "root canal treatment",
       "fragen": {
         "schmerzhaft": {
-          "frage": "Tut eine Wurzelbehandlung weh?",
-          "antwort": "Nein. Unter Betäubung spüren Sie nichts — viele Patienten sind überrascht, wie wenig sie merken."
+          "frage": "Does a root canal treatment hurt?",
+          "antwort": "No. Under anaesthesia, you won't feel a thing — many patients are surprised how little they notice."
         },
         "dauer": {
-          "frage": "Wie lange dauert eine Wurzelbehandlung?",
-          "antwort": "In der Regel 60–90 Minuten, manchmal verteilt auf zwei Sitzungen."
+          "frage": "How long does a root canal treatment take?",
+          "antwort": "Usually 60–90 minutes, sometimes spread over two sessions."
         },
         "tot": {
-          "frage": "Ist der Zahn danach tot?",
-          "antwort": "Der Zahn hat keinen Nerv mehr, bleibt aber als fester Bestandteil Ihres Gebisses erhalten und funktionsfähig."
+          "frage": "Is the tooth dead afterwards?",
+          "antwort": "The tooth no longer has a nerve, but it remains a permanent part of your dentition and is fully functional."
         }
       }
     },
     "interneLinks": {
       "team": "Dr. Nina Janz",
-      "prophylaxe": "Prophylaxe",
-      "zahnersatz": "Zahnersatz"
+      "prophylaxe": "Prophylaxis",
+      "zahnersatz": "Dental Prosthetics"
     },
     "cta": {
-      "titel": "Zahnschmerzen?",
-      "titelAkzent": "Wir helfen Ihnen",
-      "text": "Vereinbaren Sie schnell einen Termin — wir kümmern uns um Ihren Zahn."
+      "titel": "Toothache?",
+      "titelAkzent": "We can help",
+      "text": "Schedule an appointment quickly — we'll take care of your tooth."
     }
   },
   "LeistungProphylaxe": {
     "meta": {
-      "title": "Prophylaxe & Zahnreinigung Hamburg | Zahnärzte Parkstrasse Othmarschen",
-      "description": "Professionelle Zahnreinigung in Hamburg-Othmarschen: Individuelle Prophylaxe-Programme für gesunde Zähne und gesundes Zahnfleisch. Ein Leben lang."
+      "title": "Prophylaxis & Dental Cleaning Hamburg | Dental Practice Parkstrasse Othmarschen",
+      "description": "Professional dental cleaning in Hamburg-Othmarschen: Individual prophylaxis programmes for healthy teeth and healthy gums. For a lifetime."
     },
     "hero": {
-      "label": "Prophylaxe",
-      "titel": "Prophylaxe —",
-      "titelAkzent": "Vorsorge ist die beste Medizin",
-      "subtext": "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme — für strahlend saubere Zähne und gesundes Zahnfleisch. Regelmäßige Vorsorge ist der beste Schutz vor Karies und Parodontose."
+      "label": "Prophylaxis",
+      "titel": "Prophylaxis —",
+      "titelAkzent": "prevention is the best medicine",
+      "subtext": "Professional dental cleaning and individual prophylaxis programmes — for sparkling clean teeth and healthy gums. Regular prevention is the best protection against cavities and periodontal disease."
     },
     "warum": {
-      "label": "Warum Prophylaxe",
-      "titel": "Vorsorge statt",
-      "titelAkzent": "Nachsorge",
-      "text": "Auch bei bester Zahnpflege zu Hause erreicht die Zahnbürste nicht alle Stellen. Die professionelle Zahnreinigung entfernt Beläge und Bakterien dort, wo Sie selbst nicht hinkommen — und senkt das Risiko für Karies, Parodontose und Zahnverlust erheblich."
+      "label": "Why Prophylaxis",
+      "titel": "Prevention instead of",
+      "titelAkzent": "aftercare",
+      "text": "Even with the best dental care at home, your toothbrush can't reach every spot. Professional dental cleaning removes plaque and bacteria where you can't reach — and significantly reduces the risk of cavities, periodontal disease and tooth loss."
     },
     "ablauf": {
-      "label": "Ablauf",
-      "titel": "So läuft Ihre",
-      "titelAkzent": "Zahnreinigung ab",
+      "label": "Procedure",
+      "titel": "How your dental",
+      "titelAkzent": "cleaning works",
       "schritte": {
         "s1": {
-          "titel": "Befundaufnahme",
-          "text": "Wir prüfen den Zustand Ihrer Zähne und Ihres Zahnfleisches und besprechen Ihre individuellen Bedürfnisse."
+          "titel": "Assessment",
+          "text": "We check the condition of your teeth and gums and discuss your individual needs."
         },
         "s2": {
-          "titel": "Reinigung",
-          "text": "Entfernung von Zahnstein, Belägen und Verfärbungen — mit Ultraschall und feinen Handinstrumenten."
+          "titel": "Cleaning",
+          "text": "Removal of tartar, plaque and discolouration — with ultrasound and fine hand instruments."
         },
         "s3": {
-          "titel": "Politur",
-          "text": "Glatte Zahnoberflächen sind der beste Schutz gegen neue Beläge — Ihre Zähne fühlen sich sofort sauberer an."
+          "titel": "Polishing",
+          "text": "Smooth tooth surfaces are the best protection against new plaque — your teeth immediately feel cleaner."
         },
         "s4": {
-          "titel": "Fluoridierung",
-          "text": "Schutzlack für den Zahnschmelz — stärkt Ihre Zähne und macht sie widerstandsfähiger."
+          "titel": "Fluoride Treatment",
+          "text": "Protective varnish for the tooth enamel — strengthens your teeth and makes them more resistant."
         },
         "s5": {
-          "titel": "Beratung",
-          "text": "Individuelle Tipps für Ihre Mundhygiene zu Hause — damit die Wirkung lange anhält."
+          "titel": "Advice",
+          "text": "Individual tips for your oral hygiene at home — so the effect lasts longer."
         }
       }
     },
     "recall": {
-      "titel": "Wir erinnern Sie",
-      "text": "Unser Recall-System erinnert Sie rechtzeitig an Ihren nächsten Prophylaxe-Termin — damit Sie die Vorsorge nie vergessen. Wir empfehlen eine professionelle Zahnreinigung alle 6 Monate."
+      "titel": "We'll remind you",
+      "text": "Our recall system reminds you in good time of your next prophylaxis appointment — so you never forget your preventive care. We recommend a professional dental cleaning every 6 months."
     },
     "interneLinks": {
-      "parodontologie": "Parodontologie",
-      "kinderzahnheilkunde": "Kinderzahnheilkunde"
+      "parodontologie": "Periodontology",
+      "kinderzahnheilkunde": "Paediatric Dentistry"
     },
     "cta": {
-      "titel": "Zeit für Ihre",
-      "titelAkzent": "Zahnreinigung?",
-      "text": "Buchen Sie jetzt Ihren Prophylaxe-Termin."
+      "titel": "Time for your",
+      "titelAkzent": "dental cleaning?",
+      "text": "Book your prophylaxis appointment now."
     }
   },
   "LeistungParodontologie": {
     "meta": {
-      "title": "Parodontosebehandlung Hamburg | Parodontologie Othmarschen",
-      "description": "Parodontosebehandlung in Hamburg-Othmarschen: Individuelle Therapie bei Zahnfleischentzündung und Knochenschwund. Konservative und chirurgische Behandlung."
+      "title": "Periodontal Treatment Hamburg | Periodontology Othmarschen",
+      "description": "Periodontal treatment in Hamburg-Othmarschen: Individual therapy for gum inflammation and bone loss. Conservative and surgical treatment."
     },
     "hero": {
-      "label": "Parodontologie",
-      "titel": "Parodontologie —",
-      "titelAkzent": "Ihre Zähne fest verankert",
-      "subtext": "Parodontose ist im fortgeschrittenen Alter die häufigste Ursache für Zahnverlust — aber gut behandelbar. Wir bieten Ihnen das gesamte Spektrum: von der konservativen Therapie bis zur chirurgischen Parodontosebehandlung."
+      "label": "Periodontology",
+      "titel": "Periodontology —",
+      "titelAkzent": "your teeth firmly anchored",
+      "subtext": "Periodontal disease is the most common cause of tooth loss in later life — but it is very treatable. We offer you the full spectrum: from conservative therapy to surgical periodontal treatment."
     },
     "was": {
-      "label": "Verstehen",
-      "titel": "Was ist",
-      "titelAkzent": "Parodontose?",
-      "text": "Parodontose (Parodontitis) ist eine chronische Entzündung des Zahnhalteapparats — also des Zahnfleisches und des Knochens, der Ihre Zähne hält. Unbehandelt führt sie zum Knochenabbau und letztlich zum Zahnverlust. Die gute Nachricht: Früh erkannt, ist Parodontose sehr gut behandelbar."
+      "label": "Understanding",
+      "titel": "What is",
+      "titelAkzent": "periodontal disease?",
+      "text": "Periodontal disease (periodontitis) is a chronic inflammation of the supporting structures of the teeth — that is, the gums and the bone that holds your teeth. Left untreated, it leads to bone loss and ultimately tooth loss. The good news: detected early, periodontal disease is very treatable."
     },
     "warnsignale": {
-      "label": "Erkennen",
-      "titel": "Warnsignale",
-      "titelAkzent": "ernst nehmen",
+      "label": "Recognise",
+      "titel": "Warning signs",
+      "titelAkzent": "to take seriously",
       "items": [
-        "Zahnfleischbluten beim Zähneputzen",
-        "Rötung und Schwellung des Zahnfleisches",
-        "Zahnfleischrückgang — Zähne wirken länger",
-        "Mundgeruch trotz guter Mundhygiene",
-        "Lockere Zähne oder veränderte Zahnstellung"
+        "Bleeding gums when brushing",
+        "Redness and swelling of the gums",
+        "Gum recession — teeth appear longer",
+        "Bad breath despite good oral hygiene",
+        "Loose teeth or changes in tooth position"
       ]
     },
     "behandlung": {
-      "label": "Behandlung",
-      "titel": "Ihr Weg zu",
-      "titelAkzent": "gesundem Zahnfleisch",
+      "label": "Treatment",
+      "titel": "Your path to",
+      "titelAkzent": "healthy gums",
       "items": {
         "diagnostik": {
-          "titel": "Diagnostik",
-          "text": "Gründliche Untersuchung mit Messung der Zahnfleischtaschen und Röntgendiagnostik."
+          "titel": "Diagnostics",
+          "text": "Thorough examination with measurement of periodontal pockets and X-ray diagnostics."
         },
         "konservativ": {
-          "titel": "Konservative Therapie",
-          "text": "Gründliche Reinigung der Zahnfleischtaschen unter Betäubung — die Basis jeder Parodontosebehandlung."
+          "titel": "Conservative Therapy",
+          "text": "Thorough cleaning of the periodontal pockets under anaesthesia — the foundation of every periodontal treatment."
         },
         "chirurgisch": {
-          "titel": "Chirurgische Therapie",
-          "text": "Bei fortgeschrittener Erkrankung: chirurgische Taschen-Reinigung und regenerative Verfahren durch Fachzahnärztin Dr. Schwegmann."
+          "titel": "Surgical Therapy",
+          "text": "For advanced disease: surgical pocket debridement and regenerative procedures by specialist Dr. Schwegmann."
         },
         "nachsorge": {
-          "titel": "Nachsorge",
-          "text": "Regelmäßige Kontrollen und Prophylaxe — damit die Parodontose dauerhaft unter Kontrolle bleibt."
+          "titel": "Aftercare",
+          "text": "Regular check-ups and prophylaxis — to keep the periodontal disease permanently under control."
         }
       }
     },
     "interneLinks": {
-      "prophylaxe": "Prophylaxe",
-      "oralchirurgie": "Oralchirurgie"
+      "prophylaxe": "Prophylaxis",
+      "oralchirurgie": "Oral Surgery"
     },
     "cta": {
-      "titel": "Zahnfleischprobleme?",
-      "titelAkzent": "Wir helfen",
-      "text": "Vereinbaren Sie einen Beratungstermin — je früher, desto besser."
+      "titel": "Gum problems?",
+      "titelAkzent": "We can help",
+      "text": "Schedule a consultation — the sooner, the better."
     }
   },
   "LeistungZahnersatz": {
     "meta": {
-      "title": "Zahnersatz Hamburg Othmarschen | Kronen, Brücken & Prothesen",
-      "description": "Hochwertiger Zahnersatz in Hamburg-Othmarschen: Kronen, Brücken, Prothesen — gefertigt mit Intraoralscanner. Zahntechnik aus der Region, nicht aus dem Ausland."
+      "title": "Dental Prosthetics Hamburg Othmarschen | Crowns, Bridges & Dentures",
+      "description": "High-quality dental prosthetics in Hamburg-Othmarschen: Crowns, bridges, dentures — crafted with intraoral scanner. Dental technology from the region, not from abroad."
     },
     "hero": {
-      "label": "Zahnersatz",
-      "titel": "Zahnersatz —",
-      "titelAkzent": "so natürlich wie Ihre eigenen Zähne",
-      "subtext": "Ob Krone, Brücke oder Prothese: Wir finden die beste Lösung für Sie — gefertigt von unserem Partnerlabor in Bönningstedt, mit modernster Scannertechnologie."
+      "label": "Dental Prosthetics",
+      "titel": "Dental Prosthetics —",
+      "titelAkzent": "as natural as your own teeth",
+      "subtext": "Whether crown, bridge or denture: we find the best solution for you — crafted by our partner laboratory in Bönningstedt, with state-of-the-art scanner technology."
     },
     "optionen": {
-      "label": "Ihre Optionen",
-      "titel": "Die richtige Lösung",
-      "titelAkzent": "für Sie",
+      "label": "Your Options",
+      "titel": "The right solution",
+      "titelAkzent": "for you",
       "items": {
         "kronen": {
-          "titel": "Kronen",
-          "text": "Vollkeramik-Kronen für natürliche Ästhetik und maximale Haltbarkeit — passgenau dank digitalem Abdruck."
+          "titel": "Crowns",
+          "text": "All-ceramic crowns for natural aesthetics and maximum durability — precisely fitted thanks to digital impressions."
         },
         "bruecken": {
-          "titel": "Brücken",
-          "text": "Festsitzende Brücken zum Schließen von Zahnlücken — für ein lückenloses Lächeln und volle Kaufunktion."
+          "titel": "Bridges",
+          "text": "Fixed bridges to close tooth gaps — for a seamless smile and full chewing function."
         },
         "teilprothesen": {
-          "titel": "Teilprothesen",
-          "text": "Herausnehmbarer Zahnersatz mit präziser Passform — wenn mehrere Zähne fehlen."
+          "titel": "Partial Dentures",
+          "text": "Removable dental prostheses with precise fit — when several teeth are missing."
         },
         "vollprothesen": {
-          "titel": "Vollprothesen",
-          "text": "Hochwertige Totalprothesen mit natürlichem Aussehen — für neuen Halt und Lebensqualität."
+          "titel": "Complete Dentures",
+          "text": "High-quality full dentures with a natural appearance — for renewed stability and quality of life."
         },
         "implantatgetragen": {
-          "titel": "Implantatgetragener Zahnersatz",
-          "text": "Festsitzende Zähne auf Implantaten — die komfortabelste Lösung, die sich wie eigene Zähne anfühlt."
+          "titel": "Implant-Supported Prosthetics",
+          "text": "Fixed teeth on implants — the most comfortable solution that feels like your own teeth."
         }
       }
     },
     "qualitaet": {
-      "label": "Qualität",
-      "titel": "Zahnersatz aus",
-      "titelAkzent": "der Region",
+      "label": "Quality",
+      "titel": "Dental prosthetics from",
+      "titelAkzent": "the region",
       "items": [
-        "Intraoralscanner statt unangenehmer Abdrücke — digital, präzise, schnell.",
-        "Zahnersatz aus Bönningstedt, nicht aus China — regionale Qualität, kurze Wege.",
-        "Transparente Kosten: Kassenleistung und Eigenanteil klar erklärt, bevor wir beginnen."
+        "Intraoral scanner instead of unpleasant impressions — digital, precise, fast.",
+        "Dental prosthetics from Bönningstedt, not from China — regional quality, short distances.",
+        "Transparent costs: insurance coverage and personal contribution clearly explained before we begin."
       ]
     },
     "interneLinks": {
-      "implantate": "Implantate",
-      "aesthetik": "Ästhetik"
+      "implantate": "Implants",
+      "aesthetik": "Aesthetics"
     },
     "cta": {
-      "titel": "Beratung zu",
-      "titelAkzent": "Ihrem Zahnersatz",
-      "text": "Wir finden gemeinsam die beste Lösung — vereinbaren Sie einen Beratungstermin."
+      "titel": "Consultation about",
+      "titelAkzent": "your dental prosthetics",
+      "text": "Let's find the best solution together — schedule a consultation."
     }
   },
   "LeistungKinderzahnheilkunde": {
     "meta": {
-      "title": "Kinderzahnarzt Hamburg Othmarschen | Zahnärzte Parkstrasse",
-      "description": "Kinderzahnheilkunde in Hamburg-Othmarschen: Einfühlsame Behandlung für Kinder jeden Alters. Weil wir selbst Kinder haben, wissen wir, worauf es ankommt."
+      "title": "Paediatric Dentist Hamburg Othmarschen | Dental Practice Parkstrasse",
+      "description": "Paediatric dentistry in Hamburg-Othmarschen: Compassionate treatment for children of all ages. Because we have children ourselves, we know what matters."
     },
     "hero": {
-      "label": "Kinderzahnheilkunde",
-      "titel": "Gesunde Zähne",
-      "titelAkzent": "von Anfang an",
-      "subtext": "Da wir selber Kinder haben, wissen wir, wie wichtig eine vertrauensvolle und angstfreie Atmosphäre für die Kleinen ist. Bei uns lernen Kinder spielerisch, dass der Zahnarztbesuch gar nicht schlimm ist."
+      "label": "Paediatric Dentistry",
+      "titel": "Healthy teeth",
+      "titelAkzent": "from the very start",
+      "subtext": "As we have children ourselves, we know how important a trusting and anxiety-free atmosphere is for the little ones. With us, children learn through play that visiting the dentist isn't scary at all."
     },
     "ansatz": {
-      "label": "Unser Ansatz",
-      "titel": "Wir sind",
-      "titelAkzent": "selbst Mütter",
-      "text": "Othmarschen ist ein Familienstadtteil — und wir sind ein Familienteam. Als Mütter wissen wir genau, wie wichtig es ist, dass Kinder positive Erfahrungen beim Zahnarzt machen. Deshalb nehmen wir uns besonders viel Zeit, erklären kindgerecht und arbeiten ganz ohne Druck."
+      "label": "Our Approach",
+      "titel": "We are",
+      "titelAkzent": "mothers ourselves",
+      "text": "Othmarschen is a family neighbourhood — and we are a family team. As mothers, we know exactly how important it is for children to have positive experiences at the dentist. That's why we take extra time, explain in a child-friendly way and work entirely without pressure."
     },
     "leistungen": {
-      "label": "Für Ihre Kinder",
-      "titel": "Was wir für die",
-      "titelAkzent": "Kleinen tun",
+      "label": "For Your Children",
+      "titel": "What we do for",
+      "titelAkzent": "the little ones",
       "items": {
         "vorsorge": {
-          "titel": "Vorsorge-Untersuchungen",
-          "text": "Regelmäßige Kontrollen ab dem ersten Zahn — spielerisch und ohne Druck."
+          "titel": "Preventive Check-Ups",
+          "text": "Regular check-ups from the first tooth — playful and without pressure."
         },
         "fissurenversiegelung": {
-          "titel": "Fissurenversiegelung",
-          "text": "Schutz der Backenzähne vor Karies — eine der wirksamsten Vorsorgemaßnahmen für Kinder."
+          "titel": "Fissure Sealants",
+          "text": "Protection of molars against cavities — one of the most effective preventive measures for children."
         },
         "fluoridierung": {
-          "titel": "Fluoridierung",
-          "text": "Stärkung des Zahnschmelzes mit altersgerechter Fluoridierung — für widerstandsfähige Zähne."
+          "titel": "Fluoride Treatment",
+          "text": "Strengthening of tooth enamel with age-appropriate fluoride application — for more resistant teeth."
         },
         "fuellungen": {
-          "titel": "Füllungen",
-          "text": "Wenn doch mal eine Karies entsteht: schmerzarme Behandlung mit modernen, zahnfarbenen Materialien."
+          "titel": "Fillings",
+          "text": "If a cavity does occur: low-pain treatment with modern, tooth-coloured materials."
         },
         "beratung": {
-          "titel": "Zahnpflege-Beratung",
-          "text": "Tipps für Eltern und Kinder — damit die Zahnpflege zu Hause Spaß macht und richtig funktioniert."
+          "titel": "Dental Care Advice",
+          "text": "Tips for parents and children — so that dental care at home is fun and works properly."
         }
       }
     },
     "ersterBesuch": {
-      "titel": "Ab wann zum Zahnarzt?",
-      "text": "Wir empfehlen den ersten Zahnarztbesuch ab dem ersten Milchzahn — meist um den 6. Lebensmonat. So gewöhnen sich die Kleinen früh an die Umgebung und lernen, dass ein Zahnarztbesuch nichts Schlimmes ist. Milchzähne sind wichtige Platzhalter für die bleibenden Zähne und verdienen genauso viel Aufmerksamkeit."
+      "titel": "When should my child first visit the dentist?",
+      "text": "We recommend the first dental visit from the first milk tooth — usually around the 6th month of life. This way, the little ones get used to the environment early and learn that a dental visit is nothing to worry about. Milk teeth are important placeholders for the permanent teeth and deserve just as much attention."
     },
     "interneLinks": {
-      "prophylaxe": "Prophylaxe",
-      "ersterBesuch": "Erster Besuch"
+      "prophylaxe": "Prophylaxis",
+      "ersterBesuch": "First Visit"
     },
     "cta": {
-      "titel": "Termin für Ihr",
-      "titelAkzent": "Kind buchen",
-      "text": "Vereinbaren Sie einen kindgerechten Kennenlerntermin — wir freuen uns auf die Kleinen."
+      "titel": "Appointment for your",
+      "titelAkzent": "child",
+      "text": "Schedule a child-friendly introductory appointment — we look forward to the little ones."
     }
   },
   "LeistungAesthetik": {
     "meta": {
-      "title": "Ästhetische Zahnheilkunde Hamburg | Bleaching & Veneers Othmarschen",
-      "description": "Ästhetische Zahnheilkunde in Hamburg-Othmarschen: Professionelles Bleaching, Veneers und ästhetische Korrekturen für Ihr schönstes Lächeln."
+      "title": "Cosmetic Dentistry Hamburg | Bleaching & Veneers Othmarschen",
+      "description": "Cosmetic dentistry in Hamburg-Othmarschen: Professional bleaching, veneers and aesthetic corrections for your most beautiful smile."
     },
     "hero": {
-      "label": "Ästhetik",
-      "titel": "Ästhetische Zahnheilkunde —",
-      "titelAkzent": "für Ihr schönstes Lächeln",
-      "subtext": "Manchmal geht es nicht nur um Gesundheit, sondern auch um Ästhetik. Wir bieten Ihnen schonende Verfahren für strahlend weiße und perfekt geformte Zähne."
+      "label": "Aesthetics",
+      "titel": "Cosmetic Dentistry —",
+      "titelAkzent": "for your most beautiful smile",
+      "subtext": "Sometimes it's not just about health, but also about aesthetics. We offer gentle procedures for brilliantly white and perfectly shaped teeth."
     },
     "behandlungen": {
-      "label": "Behandlungen",
-      "titel": "Ihr Weg zum",
-      "titelAkzent": "perfekten Lächeln",
+      "label": "Treatments",
+      "titel": "Your path to",
+      "titelAkzent": "the perfect smile",
       "items": {
         "bleaching": {
-          "titel": "Professionelles Bleaching",
-          "text": "Schonende Aufhellung Ihrer Zähne — in der Praxis (In-Office) oder komfortabel zu Hause (Home-Bleaching). Sichtbare Ergebnisse nach einer Sitzung."
+          "titel": "Professional Bleaching",
+          "text": "Gentle whitening of your teeth — in the practice (in-office) or comfortably at home (home bleaching). Visible results after one session."
         },
         "veneers": {
           "titel": "Veneers",
-          "text": "Hauchdünne Keramikschalen für perfekte Zahnformen und -farben. Ideal bei Verfärbungen, leichten Fehlstellungen oder abgebrochenen Kanten."
+          "text": "Ultra-thin ceramic shells for perfect tooth shapes and colours. Ideal for discolourations, slight misalignments or chipped edges."
         },
         "fuellungen": {
-          "titel": "Ästhetische Füllungen",
-          "text": "Zahnfarbene Composite-Füllungen statt dunklem Amalgam — unsichtbar und haltbar. Für ein natürliches Lächeln ohne Kompromisse."
+          "titel": "Aesthetic Fillings",
+          "text": "Tooth-coloured composite fillings instead of dark amalgam — invisible and durable. For a natural smile without compromise."
         },
         "zahnfleisch": {
-          "titel": "Zahnfleischkorrektur",
-          "text": "Ästhetische Korrektur des Zahnfleischverlaufs — für ein harmonisches Lächeln. Durch Fachzahnärztin Dr. Schwegmann mit chirurgischer Präzision."
+          "titel": "Gum Contouring",
+          "text": "Aesthetic correction of the gum line — for a harmonious smile. Performed by specialist Dr. Schwegmann with surgical precision."
         }
       }
     },
     "interneLinks": {
-      "zahnersatz": "Zahnersatz",
-      "oralchirurgie": "Oralchirurgie"
+      "zahnersatz": "Dental Prosthetics",
+      "oralchirurgie": "Oral Surgery"
     },
     "cta": {
-      "titel": "Beratung für Ihr",
-      "titelAkzent": "schönstes Lächeln",
-      "text": "Lassen Sie sich unverbindlich beraten — wir finden die passende ästhetische Lösung für Sie."
+      "titel": "Consultation for your",
+      "titelAkzent": "most beautiful smile",
+      "text": "Get a no-obligation consultation — we'll find the right aesthetic solution for you."
     }
   }
 }

@@ -946,543 +946,543 @@
   },
   "LeistungOralchirurgie": {
     "meta": {
-      "title": "Oralchirurgie Hamburg Othmarschen | Fachzahnärztin Dr. Schwegmann",
-      "description": "Oralchirurgie in Hamburg-Othmarschen: Implantate, Knochenaufbau, Weisheitszahn-OP, Schleimhautchirurgie. Fachzahnärztin Dr. Schwegmann — über 25 Jahre Erfahrung."
+      "title": "Cirugía oral Hamburgo Othmarschen | Especialista Dr. Schwegmann",
+      "description": "Cirugía oral en Hamburgo-Othmarschen: implantes, injerto óseo, extracción de muelas del juicio, cirugía de mucosas. Dr. Schwegmann — más de 25 años de experiencia."
     },
     "hero": {
-      "label": "Unser Schwerpunkt",
-      "titel": "Oralchirurgie —",
-      "titelAkzent": "unser Schwerpunkt",
-      "subtext": "Chirurgische Eingriffe erfordern Erfahrung, Präzision und Einfühlungsvermögen. Als Fachzahnärztin für Oralchirurgie vereint Dr. Schwegmann alle drei — seit über 25 Jahren.",
-      "badge": "Dr. Claudia Schwegmann — Fachzahnärztin für Oralchirurgie"
+      "label": "Nuestra especialidad",
+      "titel": "Cirugía oral —",
+      "titelAkzent": "nuestra especialidad",
+      "subtext": "Las intervenciones quirúrgicas requieren experiencia, precisión y empatía. Como especialista en cirugía oral, Dr. Schwegmann reúne las tres cualidades — desde hace más de 25 años.",
+      "badge": "Dr. Claudia Schwegmann — Especialista en cirugía oral"
     },
     "bereiche": {
-      "label": "Behandlungsspektrum",
-      "titel": "Was wir für",
-      "titelAkzent": "Sie tun",
+      "label": "Espectro de tratamientos",
+      "titel": "Lo que hacemos",
+      "titelAkzent": "por usted",
       "items": {
         "implantate": {
-          "titel": "Implantate & Knochenaufbau",
-          "text": "Festsitzende Zähne auf Implantaten — bei Bedarf mit Knochenaufbau aus körpereigenem Gewebe. Wir vermeiden Fremdmaterial wo immer möglich."
+          "titel": "Implantes e injerto óseo",
+          "text": "Dientes fijos sobre implantes — con injerto óseo de tejido propio cuando sea necesario. Evitamos los materiales ajenos siempre que sea posible."
         },
         "schleimhaut": {
-          "titel": "Schleimhautchirurgie",
-          "text": "Wiederherstellung von Schleimhaut und Zahnfleisch: bei freiliegenden Zahnhälsen, nach Implantationen oder zur ästhetischen Korrektur."
+          "titel": "Cirugía de mucosas",
+          "text": "Restauración de las mucosas y encías: en caso de cuellos dentales expuestos, tras implantaciones o para correcciones estéticas."
         },
         "weisheitszahn": {
-          "titel": "Weisheitszahn-Entfernung",
-          "text": "Schonend und kompetent — auch bei schwierigen Verhältnissen. In unserer Praxis, nicht im Krankenhaus."
+          "titel": "Extracción de muelas del juicio",
+          "text": "Con delicadeza y competencia — incluso en situaciones difíciles. En nuestra consulta, no en el hospital."
         },
         "parodontose": {
-          "titel": "Chirurgische Parodontose-Therapie",
-          "text": "Wenn die konservative Behandlung nicht ausreicht: chirurgische Taschen-Reinigung und regenerative Verfahren."
+          "titel": "Terapia periodontal quirúrgica",
+          "text": "Cuando el tratamiento conservador no es suficiente: curetaje quirúrgico de bolsas y procedimientos regenerativos."
         },
         "praeprothetisch": {
-          "titel": "Präprothetische Chirurgie",
-          "text": "Vorbereitung des Kiefers für Zahnersatz: Knochenaufbau, Schleimhautkorrektur, Alveolarkamm-Plastik."
+          "titel": "Cirugía preprotésica",
+          "text": "Preparación del maxilar para prótesis dentales: injerto óseo, corrección de mucosas, plastia de reborde alveolar."
         }
       },
-      "mehrErfahren": "Mehr erfahren"
+      "mehrErfahren": "Más información"
     },
     "vorteile": {
-      "label": "Ihre Vorteile",
-      "titel": "Warum Oralchirurgie",
-      "titelAkzent": "bei uns?",
+      "label": "Sus ventajas",
+      "titel": "¿Por qué cirugía oral",
+      "titelAkzent": "con nosotros?",
       "items": {
         "fachzahnaerztin": {
-          "titel": "Fachzahnärztin",
-          "text": "Nicht jeder Zahnarzt darf sich so nennen. Die Weiterbildung umfasst 4 Jahre klinische Chirurgie."
+          "titel": "Dentista especializada",
+          "text": "No todo dentista puede llevar este título. La formación especializada comprende 4 años de cirugía clínica."
         },
         "gewebe": {
-          "titel": "Körpereigenes Gewebe",
-          "text": "Knochenaufbau bevorzugt mit Ihrem eigenen Material — für bessere Einheilung."
+          "titel": "Tejido autógeno",
+          "text": "Injerto óseo preferiblemente con su propio tejido — para una mejor osteointegración."
         },
         "lupenbrille": {
-          "titel": "Lupenbrille & Mikroskop",
-          "text": "Höchste Präzision auch bei kleinsten Strukturen."
+          "titel": "Lupas y microscopio",
+          "text": "Máxima precisión incluso en las estructuras más pequeñas."
         },
         "minimalinvasiv": {
-          "titel": "Minimalinvasiv",
-          "text": "So viel wie nötig, so schonend wie möglich."
+          "titel": "Mínimamente invasivo",
+          "text": "Tanto como sea necesario, lo más delicado posible."
         }
       }
     },
     "faq": {
-      "label": "Häufige Fragen",
-      "titel": "Ihre Fragen,",
-      "titelAkzent": "unsere Antworten",
+      "label": "Preguntas frecuentes",
+      "titel": "Sus preguntas,",
+      "titelAkzent": "nuestras respuestas",
       "fragen": {
         "schmerzhaft": {
-          "frage": "Ist eine Oralchirurgie schmerzhaft?",
-          "antwort": "Nein. Dank moderner Betäubung spüren Sie während des Eingriffs nichts. Danach erhalten Sie ein individuelles Schmerzmanagement."
+          "frage": "¿Es dolorosa la cirugía oral?",
+          "antwort": "No. Gracias a la anestesia moderna, no sentirá nada durante la intervención. Después, recibirá un tratamiento del dolor personalizado."
         },
         "unterschied": {
-          "frage": "Was ist der Unterschied zwischen Zahnarzt und Oralchirurg?",
-          "antwort": "Eine Fachzahnärztin für Oralchirurgie hat nach dem Studium eine 4-jährige klinische Weiterbildung in Chirurgie absolviert — vergleichbar mit einer Facharzt-Ausbildung in der Medizin."
+          "frage": "¿Cuál es la diferencia entre un dentista y un cirujano oral?",
+          "antwort": "Una especialista en cirugía oral ha completado, tras los estudios de odontología, una formación clínica de 4 años en cirugía — comparable a una especialización médica."
         },
         "ueberweisung": {
-          "frage": "Brauche ich eine Überweisung?",
-          "antwort": "Nein. Sie können sich direkt bei uns vorstellen."
+          "frage": "¿Necesito una derivación?",
+          "antwort": "No. Puede acudir a nosotros directamente."
         }
       }
     },
     "interneLinks": {
-      "implantate": "Implantate",
-      "parodontologie": "Parodontologie",
-      "team": "Unser Team"
+      "implantate": "Implantes",
+      "parodontologie": "Periodoncia",
+      "team": "Nuestro equipo"
     },
     "cta": {
-      "titel": "Beratungstermin für",
-      "titelAkzent": "chirurgische Fragen",
-      "text": "Vereinbaren Sie einen unverbindlichen Beratungstermin."
+      "titel": "Consulta para",
+      "titelAkzent": "cuestiones quirúrgicas",
+      "text": "Reserve una cita de consulta sin compromiso."
     }
   },
   "LeistungImplantate": {
     "meta": {
-      "title": "Zahnimplantate Hamburg | Implantologie Dr. Schwegmann — Othmarschen",
-      "description": "Zahnimplantate in Hamburg-Othmarschen: Feste dritte Zähne mit körpereigenem Knochenaufbau. Fachzahnärztin für Oralchirurgie. Individuelle Beratung."
+      "title": "Implantes dentales Hamburgo | Implantología Dr. Schwegmann — Othmarschen",
+      "description": "Implantes dentales en Hamburgo-Othmarschen: dientes fijos con injerto óseo autógeno. Especialista en cirugía oral. Asesoramiento individual."
     },
     "hero": {
-      "label": "Implantologie",
-      "titel": "Zahnimplantate —",
-      "titelAkzent": "feste Zähne, natürliches Gefühl",
-      "subtext": "Ein Implantat ist mehr als ein Zahnersatz — es gibt Ihnen ein Stück Lebensqualität zurück. Als Fachzahnärztin für Oralchirurgie ist Dr. Schwegmann Ihre Spezialistin für Implantologie."
+      "label": "Implantología",
+      "titel": "Implantes dentales —",
+      "titelAkzent": "dientes fijos, sensación natural",
+      "subtext": "Un implante es mucho más que una prótesis dental — le devuelve calidad de vida. Como especialista en cirugía oral, Dr. Schwegmann es su experta en implantología."
     },
     "grundlagen": {
-      "label": "Grundlagen",
-      "titel": "Was ist ein",
-      "titelAkzent": "Zahnimplantat?",
-      "text": "Ein Zahnimplantat ist eine kleine Schraube aus Titan oder Keramik, die in den Kieferknochen eingesetzt wird. Darauf wird der eigentliche Zahnersatz — eine Krone, Brücke oder Prothese — fest verankert. Das Ergebnis: Zähne, die aussehen, sich anfühlen und funktionieren wie Ihre eigenen."
+      "label": "Fundamentos",
+      "titel": "¿Qué es un",
+      "titelAkzent": "implante dental?",
+      "text": "Un implante dental es un pequeño tornillo de titanio o cerámica que se inserta en el hueso maxilar. Sobre él se ancla firmemente la prótesis dental — una corona, puente o prótesis. El resultado: dientes que se ven, se sienten y funcionan como los suyos propios."
     },
     "ablauf": {
-      "label": "Ihr Weg zum Implantat",
-      "titel": "So läuft eine",
-      "titelAkzent": "Implantation ab",
+      "label": "Su camino hacia el implante",
+      "titel": "Cómo funciona un",
+      "titelAkzent": "procedimiento de implante",
       "schritte": {
         "s1": {
           "nr": "01",
-          "titel": "Beratung & Planung",
-          "text": "Ausführliches Erstgespräch, digitales Röntgen und 3D-Planung."
+          "titel": "Consulta y planificación",
+          "text": "Consulta inicial detallada, radiografía digital y planificación 3D."
         },
         "s2": {
           "nr": "02",
-          "titel": "Vorbereitung",
-          "text": "Falls nötig: Knochenaufbau mit körpereigenem Gewebe."
+          "titel": "Preparación",
+          "text": "Si es necesario: injerto óseo con tejido autógeno."
         },
         "s3": {
           "nr": "03",
-          "titel": "Implantation",
-          "text": "Der eigentliche Eingriff dauert meist nur 30–60 Minuten pro Implantat."
+          "titel": "Implantación",
+          "text": "La intervención en sí suele durar solo de 30 a 60 minutos por implante."
         },
         "s4": {
           "nr": "04",
-          "titel": "Einheilphase",
-          "text": "2–6 Monate, in denen das Implantat fest mit dem Knochen verwächst."
+          "titel": "Fase de cicatrización",
+          "text": "De 2 a 6 meses durante los cuales el implante se integra firmemente en el hueso."
         },
         "s5": {
           "nr": "05",
-          "titel": "Versorgung",
-          "text": "Ihr neuer Zahn wird eingesetzt — gefertigt von unserem Partnerlabor in Bönningstedt."
+          "titel": "Restauración",
+          "text": "Su nuevo diente se coloca — fabricado por nuestro laboratorio colaborador en Bönningstedt."
         }
       }
     },
     "vorteile": {
-      "label": "Ihre Vorteile",
-      "titel": "Was uns",
-      "titelAkzent": "auszeichnet",
+      "label": "Sus ventajas",
+      "titel": "Lo que nos",
+      "titelAkzent": "distingue",
       "items": [
-        "Fachzahnärztin für Oralchirurgie — höchste chirurgische Kompetenz",
-        "Körpereigener Knochenaufbau — kein Fremdmaterial",
-        "Zahnersatz aus Hamburg — nicht aus dem Ausland",
-        "Über 25 Jahre Erfahrung mit Implantaten"
+        "Especialista en cirugía oral — la máxima competencia quirúrgica",
+        "Injerto óseo autógeno — sin materiales ajenos",
+        "Prótesis dentales de Hamburgo — no del extranjero",
+        "Más de 25 años de experiencia con implantes"
       ]
     },
     "kosten": {
-      "label": "Transparenz",
-      "titel": "Was kosten",
-      "titelAkzent": "Zahnimplantate?",
-      "text": "Die Kosten für ein Zahnimplantat variieren je nach Aufwand und individuellem Befund. Wir erstellen Ihnen immer einen transparenten Heil- und Kostenplan — bevor wir mit der Behandlung beginnen. Gesetzliche Krankenkassen übernehmen den Festzuschuss für den Zahnersatz, den Implantatkörper zahlen Sie als Eigenanteil.",
-      "orientierung": "Orientierung: Ein einzelnes Implantat mit Krone liegt in der Regel zwischen 1.800 und 3.500 Euro."
+      "label": "Transparencia",
+      "titel": "¿Cuánto cuestan",
+      "titelAkzent": "los implantes dentales?",
+      "text": "El coste de un implante dental varía según la complejidad y el diagnóstico individual. Siempre le proporcionamos un plan de tratamiento y costes transparente — antes de comenzar el tratamiento. El seguro médico legal cubre el subsidio fijo para la prótesis; el implante en sí corre por cuenta del paciente.",
+      "orientierung": "Orientación: un implante individual con corona suele costar entre 1.800 y 3.500 euros."
     },
     "faq": {
-      "label": "Häufige Fragen",
-      "titel": "Ihre Fragen zu",
-      "titelAkzent": "Implantaten",
+      "label": "Preguntas frecuentes",
+      "titel": "Sus preguntas sobre",
+      "titelAkzent": "implantes",
       "fragen": {
         "haltbarkeit": {
-          "frage": "Wie lange halten Implantate?",
-          "antwort": "Bei guter Pflege und regelmäßiger Prophylaxe halten Zahnimplantate ein Leben lang. Die aufgesetzte Krone hält durchschnittlich 15–20 Jahre."
+          "frage": "¿Cuánto duran los implantes?",
+          "antwort": "Con buenos cuidados y profilaxis regular, los implantes dentales pueden durar toda la vida. La corona colocada encima dura en promedio de 15 a 20 años."
         },
         "schmerzhaft": {
-          "frage": "Ist die Implantation schmerzhaft?",
-          "antwort": "Unter örtlicher Betäubung spüren Sie nichts. Nach dem Eingriff kann es zu leichten Schwellungen kommen, die mit einfachen Schmerzmitteln gut zu behandeln sind."
+          "frage": "¿Es dolorosa la implantación?",
+          "antwort": "Bajo anestesia local, no sentirá nada. Tras la intervención puede producirse una leve hinchazón, que se trata fácilmente con analgésicos sencillos."
         },
         "knochenaufbau": {
-          "frage": "Geht das auch ohne Knochenaufbau?",
-          "antwort": "Oft ja. Ob ein Knochenaufbau nötig ist, klären wir im Erstgespräch mit einer 3D-Aufnahme."
+          "frage": "¿Es posible sin injerto óseo?",
+          "antwort": "A menudo sí. Si es necesario un injerto óseo se determina en la consulta inicial con un escáner 3D."
         }
       }
     },
     "interneLinks": {
-      "oralchirurgie": "Oralchirurgie",
-      "zahnersatz": "Zahnersatz",
+      "oralchirurgie": "Cirugía oral",
+      "zahnersatz": "Prótesis dentales",
       "team": "Dr. Schwegmann"
     },
     "cta": {
-      "titel": "Kostenlose Erstberatung",
-      "titelAkzent": "zu Implantaten",
-      "text": "Lassen Sie sich unverbindlich beraten — wir nehmen uns Zeit für Ihre Fragen."
+      "titel": "Primera consulta gratuita",
+      "titelAkzent": "sobre implantes",
+      "text": "Déjese asesorar sin compromiso — nos tomamos el tiempo para responder a sus preguntas."
     }
   },
   "LeistungWurzelbehandlung": {
     "meta": {
-      "title": "Wurzelbehandlung Hamburg | Endodontie Dr. Janz — Othmarschen",
-      "description": "Schmerzfreie Wurzelbehandlung in Hamburg-Othmarschen: Modernste Endodontie mit Mikroskop und elektronischer Längenmessung. Dr. Nina Janz — Spezialistin für Zahnerhalt."
+      "title": "Endodoncia Hamburgo | Tratamiento de conducto Dr. Janz — Othmarschen",
+      "description": "Endodoncia sin dolor en Hamburgo-Othmarschen: endodoncia de última generación con microscopio y medición electrónica de longitud. Dr. Nina Janz — especialista en conservación dental."
     },
     "hero": {
-      "label": "Endodontie",
-      "titel": "Wurzelbehandlung —",
-      "titelAkzent": "Zahnerhalt auf höchstem Niveau",
-      "subtext": "Eine Wurzelbehandlung hat heute nichts mehr mit ihrem alten Ruf zu tun. Dr. Nina Janz behandelt mit modernster Technik — sanft, präzise und mit dem Ziel, Ihren Zahn zu retten.",
-      "badge": "Dr. Nina Janz — Curriculum Endodontie"
+      "label": "Endodoncia",
+      "titel": "Endodoncia —",
+      "titelAkzent": "conservación dental al más alto nivel",
+      "subtext": "Un tratamiento de conducto hoy no tiene nada que ver con su antigua reputación. Dr. Nina Janz trata con la tecnología más moderna — con delicadeza, precisión y con el objetivo de salvar su diente.",
+      "badge": "Dr. Nina Janz — Curriculum Endodoncia"
     },
     "zahnerhalt": {
-      "label": "Zahnerhalt",
-      "titel": "Warum Ihr eigener Zahn",
-      "titelAkzent": "der beste ist",
-      "text": "Kein Implantat und kein Zahnersatz kann einen eigenen, gesunden Zahn vollständig ersetzen. Deshalb setzen wir alles daran, Ihren natürlichen Zahn zu erhalten — auch wenn er stark geschädigt ist. Die moderne Endodontie macht es möglich."
+      "label": "Conservación dental",
+      "titel": "Por qué su propio diente",
+      "titelAkzent": "es el mejor",
+      "text": "Ningún implante ni ninguna prótesis puede reemplazar completamente un diente natural sano. Por eso hacemos todo lo posible para conservar su diente natural — incluso cuando está gravemente dañado. La endodoncia moderna lo hace posible."
     },
     "technik": {
-      "label": "Modernste Technik",
-      "titel": "So behandeln wir",
-      "titelAkzent": "Ihre Wurzelkanäle",
+      "label": "Tecnología de vanguardia",
+      "titel": "Cómo tratamos",
+      "titelAkzent": "sus conductos radiculares",
       "items": {
         "mikroskop": {
-          "titel": "Mikroskop-Einsatz",
-          "text": "Vergrößerung bis 25-fach — für maximale Übersicht und Präzision in den feinen Wurzelkanälen."
+          "titel": "Uso del microscopio",
+          "text": "Ampliación de hasta 25x — para máxima visibilidad y precisión en los finos conductos radiculares."
         },
         "instrumente": {
-          "titel": "Biegsame Instrumente",
-          "text": "Maschinelle Aufbereitung mit flexiblen Nickel-Titan-Feilen — schonend und gründlich."
+          "titel": "Instrumentos flexibles",
+          "text": "Preparación mecanizada con limas de níquel-titanio flexibles — delicada y minuciosa."
         },
         "laengenmessung": {
-          "titel": "Elektronische Längenmessung",
-          "text": "Exakte Bestimmung der Kanallänge — weniger Röntgenbilder, mehr Sicherheit."
+          "titel": "Medición electrónica de longitud",
+          "text": "Determinación exacta de la longitud del conducto — menos radiografías, más seguridad."
         },
         "fuellung": {
-          "titel": "Thermoplastische Füllung",
-          "text": "Dreidimensionale Versiegelung der Kanäle — für einen dauerhaften Verschluss."
+          "titel": "Obturación termoplástica",
+          "text": "Sellado tridimensional de los conductos — para un cierre duradero."
         }
       }
     },
     "faq": {
-      "label": "Häufige Fragen",
-      "titel": "Ihre Fragen zur",
-      "titelAkzent": "Wurzelbehandlung",
+      "label": "Preguntas frecuentes",
+      "titel": "Sus preguntas sobre el",
+      "titelAkzent": "tratamiento de conducto",
       "fragen": {
         "schmerzhaft": {
-          "frage": "Tut eine Wurzelbehandlung weh?",
-          "antwort": "Nein. Unter Betäubung spüren Sie nichts — viele Patienten sind überrascht, wie wenig sie merken."
+          "frage": "¿Duele un tratamiento de conducto?",
+          "antwort": "No. Bajo anestesia no sentirá nada — muchos pacientes se sorprenden de lo poco que notan."
         },
         "dauer": {
-          "frage": "Wie lange dauert eine Wurzelbehandlung?",
-          "antwort": "In der Regel 60–90 Minuten, manchmal verteilt auf zwei Sitzungen."
+          "frage": "¿Cuánto dura un tratamiento de conducto?",
+          "antwort": "Normalmente de 60 a 90 minutos, a veces repartido en dos sesiones."
         },
         "tot": {
-          "frage": "Ist der Zahn danach tot?",
-          "antwort": "Der Zahn hat keinen Nerv mehr, bleibt aber als fester Bestandteil Ihres Gebisses erhalten und funktionsfähig."
+          "frage": "¿Está muerto el diente después?",
+          "antwort": "El diente ya no tiene nervio, pero sigue siendo parte permanente de su dentadura y es totalmente funcional."
         }
       }
     },
     "interneLinks": {
       "team": "Dr. Nina Janz",
-      "prophylaxe": "Prophylaxe",
-      "zahnersatz": "Zahnersatz"
+      "prophylaxe": "Profilaxis",
+      "zahnersatz": "Prótesis dentales"
     },
     "cta": {
-      "titel": "Zahnschmerzen?",
-      "titelAkzent": "Wir helfen Ihnen",
-      "text": "Vereinbaren Sie schnell einen Termin — wir kümmern uns um Ihren Zahn."
+      "titel": "¿Dolor de muelas?",
+      "titelAkzent": "Le ayudamos",
+      "text": "Reserve una cita rápidamente — nos ocupamos de su diente."
     }
   },
   "LeistungProphylaxe": {
     "meta": {
-      "title": "Prophylaxe & Zahnreinigung Hamburg | Zahnärzte Parkstrasse Othmarschen",
-      "description": "Professionelle Zahnreinigung in Hamburg-Othmarschen: Individuelle Prophylaxe-Programme für gesunde Zähne und gesundes Zahnfleisch. Ein Leben lang."
+      "title": "Profilaxis y limpieza dental Hamburgo | Consulta Parkstrasse Othmarschen",
+      "description": "Limpieza dental profesional en Hamburgo-Othmarschen: programas de profilaxis individuales para dientes sanos y encías sanas. Para toda la vida."
     },
     "hero": {
-      "label": "Prophylaxe",
-      "titel": "Prophylaxe —",
-      "titelAkzent": "Vorsorge ist die beste Medizin",
-      "subtext": "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme — für strahlend saubere Zähne und gesundes Zahnfleisch. Regelmäßige Vorsorge ist der beste Schutz vor Karies und Parodontose."
+      "label": "Profilaxis",
+      "titel": "Profilaxis —",
+      "titelAkzent": "la prevención es la mejor medicina",
+      "subtext": "Limpieza dental profesional y programas de profilaxis individuales — para dientes relucientes y encías sanas. La prevención regular es la mejor protección contra las caries y la enfermedad periodontal."
     },
     "warum": {
-      "label": "Warum Prophylaxe",
-      "titel": "Vorsorge statt",
-      "titelAkzent": "Nachsorge",
-      "text": "Auch bei bester Zahnpflege zu Hause erreicht die Zahnbürste nicht alle Stellen. Die professionelle Zahnreinigung entfernt Beläge und Bakterien dort, wo Sie selbst nicht hinkommen — und senkt das Risiko für Karies, Parodontose und Zahnverlust erheblich."
+      "label": "Por qué la profilaxis",
+      "titel": "Prevenir en vez de",
+      "titelAkzent": "curar",
+      "text": "Incluso con el mejor cuidado dental en casa, el cepillo de dientes no llega a todos los rincones. La limpieza dental profesional elimina la placa y las bacterias donde usted no puede llegar — y reduce significativamente el riesgo de caries, enfermedad periodontal y pérdida de dientes."
     },
     "ablauf": {
-      "label": "Ablauf",
-      "titel": "So läuft Ihre",
-      "titelAkzent": "Zahnreinigung ab",
+      "label": "Procedimiento",
+      "titel": "Cómo funciona su",
+      "titelAkzent": "limpieza dental",
       "schritte": {
         "s1": {
-          "titel": "Befundaufnahme",
-          "text": "Wir prüfen den Zustand Ihrer Zähne und Ihres Zahnfleisches und besprechen Ihre individuellen Bedürfnisse."
+          "titel": "Evaluación",
+          "text": "Comprobamos el estado de sus dientes y encías y comentamos sus necesidades individuales."
         },
         "s2": {
-          "titel": "Reinigung",
-          "text": "Entfernung von Zahnstein, Belägen und Verfärbungen — mit Ultraschall und feinen Handinstrumenten."
+          "titel": "Limpieza",
+          "text": "Eliminación de sarro, placa y decoloraciones — con ultrasonidos e instrumentos manuales finos."
         },
         "s3": {
-          "titel": "Politur",
-          "text": "Glatte Zahnoberflächen sind der beste Schutz gegen neue Beläge — Ihre Zähne fühlen sich sofort sauberer an."
+          "titel": "Pulido",
+          "text": "Las superficies dentales lisas son la mejor protección contra nuevos depósitos — sus dientes se sienten inmediatamente más limpios."
         },
         "s4": {
-          "titel": "Fluoridierung",
-          "text": "Schutzlack für den Zahnschmelz — stärkt Ihre Zähne und macht sie widerstandsfähiger."
+          "titel": "Fluorización",
+          "text": "Barniz protector para el esmalte dental — fortalece sus dientes y los hace más resistentes."
         },
         "s5": {
-          "titel": "Beratung",
-          "text": "Individuelle Tipps für Ihre Mundhygiene zu Hause — damit die Wirkung lange anhält."
+          "titel": "Asesoramiento",
+          "text": "Consejos individuales para su higiene bucal en casa — para que el efecto dure más tiempo."
         }
       }
     },
     "recall": {
-      "titel": "Wir erinnern Sie",
-      "text": "Unser Recall-System erinnert Sie rechtzeitig an Ihren nächsten Prophylaxe-Termin — damit Sie die Vorsorge nie vergessen. Wir empfehlen eine professionelle Zahnreinigung alle 6 Monate."
+      "titel": "Se lo recordamos",
+      "text": "Nuestro sistema de recuerdo le avisa a tiempo de su próxima cita de profilaxis — para que nunca olvide su prevención. Recomendamos una limpieza dental profesional cada 6 meses."
     },
     "interneLinks": {
-      "parodontologie": "Parodontologie",
-      "kinderzahnheilkunde": "Kinderzahnheilkunde"
+      "parodontologie": "Periodoncia",
+      "kinderzahnheilkunde": "Odontopediatría"
     },
     "cta": {
-      "titel": "Zeit für Ihre",
-      "titelAkzent": "Zahnreinigung?",
-      "text": "Buchen Sie jetzt Ihren Prophylaxe-Termin."
+      "titel": "¿Es hora de su",
+      "titelAkzent": "limpieza dental?",
+      "text": "Reserve ahora su cita de profilaxis."
     }
   },
   "LeistungParodontologie": {
     "meta": {
-      "title": "Parodontosebehandlung Hamburg | Parodontologie Othmarschen",
-      "description": "Parodontosebehandlung in Hamburg-Othmarschen: Individuelle Therapie bei Zahnfleischentzündung und Knochenschwund. Konservative und chirurgische Behandlung."
+      "title": "Tratamiento periodontal Hamburgo | Periodoncia Othmarschen",
+      "description": "Tratamiento periodontal en Hamburgo-Othmarschen: terapia individual para inflamación de encías y pérdida ósea. Tratamiento conservador y quirúrgico."
     },
     "hero": {
-      "label": "Parodontologie",
-      "titel": "Parodontologie —",
-      "titelAkzent": "Ihre Zähne fest verankert",
-      "subtext": "Parodontose ist im fortgeschrittenen Alter die häufigste Ursache für Zahnverlust — aber gut behandelbar. Wir bieten Ihnen das gesamte Spektrum: von der konservativen Therapie bis zur chirurgischen Parodontosebehandlung."
+      "label": "Periodoncia",
+      "titel": "Periodoncia —",
+      "titelAkzent": "sus dientes firmemente anclados",
+      "subtext": "La enfermedad periodontal es la causa más frecuente de pérdida de dientes en edad avanzada — pero es muy tratable. Le ofrecemos el espectro completo: desde la terapia conservadora hasta el tratamiento periodontal quirúrgico."
     },
     "was": {
-      "label": "Verstehen",
-      "titel": "Was ist",
-      "titelAkzent": "Parodontose?",
-      "text": "Parodontose (Parodontitis) ist eine chronische Entzündung des Zahnhalteapparats — also des Zahnfleisches und des Knochens, der Ihre Zähne hält. Unbehandelt führt sie zum Knochenabbau und letztlich zum Zahnverlust. Die gute Nachricht: Früh erkannt, ist Parodontose sehr gut behandelbar."
+      "label": "Comprender",
+      "titel": "¿Qué es la",
+      "titelAkzent": "enfermedad periodontal?",
+      "text": "La enfermedad periodontal (periodontitis) es una inflamación crónica del periodonto — es decir, de las encías y del hueso que sostiene sus dientes. Sin tratamiento, conduce a la pérdida ósea y, en última instancia, a la pérdida de dientes. La buena noticia: detectada a tiempo, la enfermedad periodontal es muy tratable."
     },
     "warnsignale": {
-      "label": "Erkennen",
-      "titel": "Warnsignale",
-      "titelAkzent": "ernst nehmen",
+      "label": "Reconocer",
+      "titel": "Señales de alerta",
+      "titelAkzent": "que hay que tomar en serio",
       "items": [
-        "Zahnfleischbluten beim Zähneputzen",
-        "Rötung und Schwellung des Zahnfleisches",
-        "Zahnfleischrückgang — Zähne wirken länger",
-        "Mundgeruch trotz guter Mundhygiene",
-        "Lockere Zähne oder veränderte Zahnstellung"
+        "Sangrado de encías al cepillarse",
+        "Enrojecimiento e hinchazón de las encías",
+        "Retracción de encías — los dientes parecen más largos",
+        "Mal aliento a pesar de una buena higiene bucal",
+        "Dientes flojos o cambios en la posición dental"
       ]
     },
     "behandlung": {
-      "label": "Behandlung",
-      "titel": "Ihr Weg zu",
-      "titelAkzent": "gesundem Zahnfleisch",
+      "label": "Tratamiento",
+      "titel": "Su camino hacia unas",
+      "titelAkzent": "encías sanas",
       "items": {
         "diagnostik": {
-          "titel": "Diagnostik",
-          "text": "Gründliche Untersuchung mit Messung der Zahnfleischtaschen und Röntgendiagnostik."
+          "titel": "Diagnóstico",
+          "text": "Examen exhaustivo con medición de las bolsas periodontales y diagnóstico por radiografía."
         },
         "konservativ": {
-          "titel": "Konservative Therapie",
-          "text": "Gründliche Reinigung der Zahnfleischtaschen unter Betäubung — die Basis jeder Parodontosebehandlung."
+          "titel": "Terapia conservadora",
+          "text": "Limpieza profunda de las bolsas periodontales bajo anestesia — la base de todo tratamiento periodontal."
         },
         "chirurgisch": {
-          "titel": "Chirurgische Therapie",
-          "text": "Bei fortgeschrittener Erkrankung: chirurgische Taschen-Reinigung und regenerative Verfahren durch Fachzahnärztin Dr. Schwegmann."
+          "titel": "Terapia quirúrgica",
+          "text": "En caso de enfermedad avanzada: curetaje quirúrgico de bolsas y procedimientos regenerativos por la especialista Dr. Schwegmann."
         },
         "nachsorge": {
-          "titel": "Nachsorge",
-          "text": "Regelmäßige Kontrollen und Prophylaxe — damit die Parodontose dauerhaft unter Kontrolle bleibt."
+          "titel": "Seguimiento",
+          "text": "Controles regulares y profilaxis — para mantener la enfermedad periodontal permanentemente bajo control."
         }
       }
     },
     "interneLinks": {
-      "prophylaxe": "Prophylaxe",
-      "oralchirurgie": "Oralchirurgie"
+      "prophylaxe": "Profilaxis",
+      "oralchirurgie": "Cirugía oral"
     },
     "cta": {
-      "titel": "Zahnfleischprobleme?",
-      "titelAkzent": "Wir helfen",
-      "text": "Vereinbaren Sie einen Beratungstermin — je früher, desto besser."
+      "titel": "¿Problemas de encías?",
+      "titelAkzent": "Le ayudamos",
+      "text": "Reserve una cita de consulta — cuanto antes, mejor."
     }
   },
   "LeistungZahnersatz": {
     "meta": {
-      "title": "Zahnersatz Hamburg Othmarschen | Kronen, Brücken & Prothesen",
-      "description": "Hochwertiger Zahnersatz in Hamburg-Othmarschen: Kronen, Brücken, Prothesen — gefertigt mit Intraoralscanner. Zahntechnik aus der Region, nicht aus dem Ausland."
+      "title": "Prótesis dentales Hamburgo Othmarschen | Coronas, puentes y prótesis",
+      "description": "Prótesis dentales de alta calidad en Hamburgo-Othmarschen: coronas, puentes, prótesis — fabricadas con escáner intraoral. Técnica dental de la región, no del extranjero."
     },
     "hero": {
-      "label": "Zahnersatz",
-      "titel": "Zahnersatz —",
-      "titelAkzent": "so natürlich wie Ihre eigenen Zähne",
-      "subtext": "Ob Krone, Brücke oder Prothese: Wir finden die beste Lösung für Sie — gefertigt von unserem Partnerlabor in Bönningstedt, mit modernster Scannertechnologie."
+      "label": "Prótesis dentales",
+      "titel": "Prótesis dentales —",
+      "titelAkzent": "tan naturales como sus propios dientes",
+      "subtext": "Ya sea corona, puente o prótesis: encontramos la mejor solución para usted — fabricada por nuestro laboratorio colaborador en Bönningstedt, con la tecnología de escáner más moderna."
     },
     "optionen": {
-      "label": "Ihre Optionen",
-      "titel": "Die richtige Lösung",
-      "titelAkzent": "für Sie",
+      "label": "Sus opciones",
+      "titel": "La solución adecuada",
+      "titelAkzent": "para usted",
       "items": {
         "kronen": {
-          "titel": "Kronen",
-          "text": "Vollkeramik-Kronen für natürliche Ästhetik und maximale Haltbarkeit — passgenau dank digitalem Abdruck."
+          "titel": "Coronas",
+          "text": "Coronas de cerámica integral para una estética natural y máxima durabilidad — ajustadas con precisión gracias a la impresión digital."
         },
         "bruecken": {
-          "titel": "Brücken",
-          "text": "Festsitzende Brücken zum Schließen von Zahnlücken — für ein lückenloses Lächeln und volle Kaufunktion."
+          "titel": "Puentes",
+          "text": "Puentes fijos para cerrar espacios dentales — para una sonrisa completa y plena función masticatoria."
         },
         "teilprothesen": {
-          "titel": "Teilprothesen",
-          "text": "Herausnehmbarer Zahnersatz mit präziser Passform — wenn mehrere Zähne fehlen."
+          "titel": "Prótesis parciales",
+          "text": "Prótesis removibles con ajuste preciso — cuando faltan varios dientes."
         },
         "vollprothesen": {
-          "titel": "Vollprothesen",
-          "text": "Hochwertige Totalprothesen mit natürlichem Aussehen — für neuen Halt und Lebensqualität."
+          "titel": "Prótesis completas",
+          "text": "Prótesis totales de alta calidad con aspecto natural — para nueva estabilidad y calidad de vida."
         },
         "implantatgetragen": {
-          "titel": "Implantatgetragener Zahnersatz",
-          "text": "Festsitzende Zähne auf Implantaten — die komfortabelste Lösung, die sich wie eigene Zähne anfühlt."
+          "titel": "Prótesis sobre implantes",
+          "text": "Dientes fijos sobre implantes — la solución más cómoda, que se siente como dientes propios."
         }
       }
     },
     "qualitaet": {
-      "label": "Qualität",
-      "titel": "Zahnersatz aus",
-      "titelAkzent": "der Region",
+      "label": "Calidad",
+      "titel": "Prótesis dentales de",
+      "titelAkzent": "la región",
       "items": [
-        "Intraoralscanner statt unangenehmer Abdrücke — digital, präzise, schnell.",
-        "Zahnersatz aus Bönningstedt, nicht aus China — regionale Qualität, kurze Wege.",
-        "Transparente Kosten: Kassenleistung und Eigenanteil klar erklärt, bevor wir beginnen."
+        "Escáner intraoral en lugar de impresiones incómodas — digital, preciso, rápido.",
+        "Prótesis de Bönningstedt, no de China — calidad regional, circuitos cortos.",
+        "Costes transparentes: cobertura del seguro y copago explicados claramente antes de empezar."
       ]
     },
     "interneLinks": {
-      "implantate": "Implantate",
-      "aesthetik": "Ästhetik"
+      "implantate": "Implantes",
+      "aesthetik": "Estética"
     },
     "cta": {
-      "titel": "Beratung zu",
-      "titelAkzent": "Ihrem Zahnersatz",
-      "text": "Wir finden gemeinsam die beste Lösung — vereinbaren Sie einen Beratungstermin."
+      "titel": "Consulta sobre",
+      "titelAkzent": "sus prótesis dentales",
+      "text": "Encontremos juntos la mejor solución — reserve una cita de consulta."
     }
   },
   "LeistungKinderzahnheilkunde": {
     "meta": {
-      "title": "Kinderzahnarzt Hamburg Othmarschen | Zahnärzte Parkstrasse",
-      "description": "Kinderzahnheilkunde in Hamburg-Othmarschen: Einfühlsame Behandlung für Kinder jeden Alters. Weil wir selbst Kinder haben, wissen wir, worauf es ankommt."
+      "title": "Dentista infantil Hamburgo Othmarschen | Consulta Parkstrasse",
+      "description": "Odontopediatría en Hamburgo-Othmarschen: tratamiento empático para niños de todas las edades. Porque nosotras mismas tenemos hijos, sabemos lo que importa."
     },
     "hero": {
-      "label": "Kinderzahnheilkunde",
-      "titel": "Gesunde Zähne",
-      "titelAkzent": "von Anfang an",
-      "subtext": "Da wir selber Kinder haben, wissen wir, wie wichtig eine vertrauensvolle und angstfreie Atmosphäre für die Kleinen ist. Bei uns lernen Kinder spielerisch, dass der Zahnarztbesuch gar nicht schlimm ist."
+      "label": "Odontopediatría",
+      "titel": "Dientes sanos",
+      "titelAkzent": "desde el principio",
+      "subtext": "Como nosotras mismas tenemos hijos, sabemos lo importante que es una atmósfera de confianza y sin miedo para los pequeños. Con nosotros, los niños aprenden jugando que la visita al dentista no es nada temible."
     },
     "ansatz": {
-      "label": "Unser Ansatz",
-      "titel": "Wir sind",
-      "titelAkzent": "selbst Mütter",
-      "text": "Othmarschen ist ein Familienstadtteil — und wir sind ein Familienteam. Als Mütter wissen wir genau, wie wichtig es ist, dass Kinder positive Erfahrungen beim Zahnarzt machen. Deshalb nehmen wir uns besonders viel Zeit, erklären kindgerecht und arbeiten ganz ohne Druck."
+      "label": "Nuestro enfoque",
+      "titel": "Somos",
+      "titelAkzent": "madres nosotras mismas",
+      "text": "Othmarschen es un barrio familiar — y nosotras somos un equipo familiar. Como madres, sabemos exactamente lo importante que es que los niños tengan experiencias positivas en el dentista. Por eso nos tomamos especialmente nuestro tiempo, explicamos de forma adaptada a los niños y trabajamos completamente sin presión."
     },
     "leistungen": {
-      "label": "Für Ihre Kinder",
-      "titel": "Was wir für die",
-      "titelAkzent": "Kleinen tun",
+      "label": "Para sus hijos",
+      "titel": "Lo que hacemos por",
+      "titelAkzent": "los pequeños",
       "items": {
         "vorsorge": {
-          "titel": "Vorsorge-Untersuchungen",
-          "text": "Regelmäßige Kontrollen ab dem ersten Zahn — spielerisch und ohne Druck."
+          "titel": "Revisiones preventivas",
+          "text": "Controles regulares desde el primer diente — de forma lúdica y sin presión."
         },
         "fissurenversiegelung": {
-          "titel": "Fissurenversiegelung",
-          "text": "Schutz der Backenzähne vor Karies — eine der wirksamsten Vorsorgemaßnahmen für Kinder."
+          "titel": "Sellado de fisuras",
+          "text": "Protección de los molares contra las caries — una de las medidas preventivas más eficaces para los niños."
         },
         "fluoridierung": {
-          "titel": "Fluoridierung",
-          "text": "Stärkung des Zahnschmelzes mit altersgerechter Fluoridierung — für widerstandsfähige Zähne."
+          "titel": "Fluorización",
+          "text": "Fortalecimiento del esmalte dental con fluorización adaptada a la edad — para dientes más resistentes."
         },
         "fuellungen": {
-          "titel": "Füllungen",
-          "text": "Wenn doch mal eine Karies entsteht: schmerzarme Behandlung mit modernen, zahnfarbenen Materialien."
+          "titel": "Empastes",
+          "text": "Si a pesar de todo surge una caries: tratamiento poco doloroso con materiales modernos del color del diente."
         },
         "beratung": {
-          "titel": "Zahnpflege-Beratung",
-          "text": "Tipps für Eltern und Kinder — damit die Zahnpflege zu Hause Spaß macht und richtig funktioniert."
+          "titel": "Asesoramiento en higiene dental",
+          "text": "Consejos para padres y niños — para que el cuidado dental en casa sea divertido y eficaz."
         }
       }
     },
     "ersterBesuch": {
-      "titel": "Ab wann zum Zahnarzt?",
-      "text": "Wir empfehlen den ersten Zahnarztbesuch ab dem ersten Milchzahn — meist um den 6. Lebensmonat. So gewöhnen sich die Kleinen früh an die Umgebung und lernen, dass ein Zahnarztbesuch nichts Schlimmes ist. Milchzähne sind wichtige Platzhalter für die bleibenden Zähne und verdienen genauso viel Aufmerksamkeit."
+      "titel": "¿Cuándo llevar a mi hijo al dentista?",
+      "text": "Recomendamos la primera visita al dentista a partir del primer diente de leche — normalmente alrededor del sexto mes de vida. Así los pequeños se acostumbran pronto al entorno y aprenden que una visita al dentista no tiene nada de malo. Los dientes de leche son importantes reservadores de espacio para los dientes permanentes y merecen la misma atención."
     },
     "interneLinks": {
-      "prophylaxe": "Prophylaxe",
-      "ersterBesuch": "Erster Besuch"
+      "prophylaxe": "Profilaxis",
+      "ersterBesuch": "Primera visita"
     },
     "cta": {
-      "titel": "Termin für Ihr",
-      "titelAkzent": "Kind buchen",
-      "text": "Vereinbaren Sie einen kindgerechten Kennenlerntermin — wir freuen uns auf die Kleinen."
+      "titel": "Cita para su",
+      "titelAkzent": "hijo",
+      "text": "Reserve una cita de presentación adaptada a los niños — nos alegramos de recibir a los pequeños."
     }
   },
   "LeistungAesthetik": {
     "meta": {
-      "title": "Ästhetische Zahnheilkunde Hamburg | Bleaching & Veneers Othmarschen",
-      "description": "Ästhetische Zahnheilkunde in Hamburg-Othmarschen: Professionelles Bleaching, Veneers und ästhetische Korrekturen für Ihr schönstes Lächeln."
+      "title": "Odontología estética Hamburgo | Blanqueamiento y carillas Othmarschen",
+      "description": "Odontología estética en Hamburgo-Othmarschen: blanqueamiento profesional, carillas y correcciones estéticas para su sonrisa más bonita."
     },
     "hero": {
-      "label": "Ästhetik",
-      "titel": "Ästhetische Zahnheilkunde —",
-      "titelAkzent": "für Ihr schönstes Lächeln",
-      "subtext": "Manchmal geht es nicht nur um Gesundheit, sondern auch um Ästhetik. Wir bieten Ihnen schonende Verfahren für strahlend weiße und perfekt geformte Zähne."
+      "label": "Estética",
+      "titel": "Odontología estética —",
+      "titelAkzent": "para su sonrisa más bonita",
+      "subtext": "A veces no se trata solo de salud, sino también de estética. Le ofrecemos procedimientos suaves para dientes de un blanco brillante y perfectamente formados."
     },
     "behandlungen": {
-      "label": "Behandlungen",
-      "titel": "Ihr Weg zum",
-      "titelAkzent": "perfekten Lächeln",
+      "label": "Tratamientos",
+      "titel": "Su camino hacia",
+      "titelAkzent": "la sonrisa perfecta",
       "items": {
         "bleaching": {
-          "titel": "Professionelles Bleaching",
-          "text": "Schonende Aufhellung Ihrer Zähne — in der Praxis (In-Office) oder komfortabel zu Hause (Home-Bleaching). Sichtbare Ergebnisse nach einer Sitzung."
+          "titel": "Blanqueamiento profesional",
+          "text": "Aclaramiento suave de sus dientes — en la consulta (in-office) o cómodamente en casa (blanqueamiento domiciliario). Resultados visibles tras una sola sesión."
         },
         "veneers": {
-          "titel": "Veneers",
-          "text": "Hauchdünne Keramikschalen für perfekte Zahnformen und -farben. Ideal bei Verfärbungen, leichten Fehlstellungen oder abgebrochenen Kanten."
+          "titel": "Carillas",
+          "text": "Finas láminas de cerámica para formas y colores dentales perfectos. Ideales para decoloraciones, ligeras malposiciones o bordes fracturados."
         },
         "fuellungen": {
-          "titel": "Ästhetische Füllungen",
-          "text": "Zahnfarbene Composite-Füllungen statt dunklem Amalgam — unsichtbar und haltbar. Für ein natürliches Lächeln ohne Kompromisse."
+          "titel": "Empastes estéticos",
+          "text": "Empastes de composite del color del diente en lugar de amalgama oscura — invisibles y duraderos. Para una sonrisa natural sin compromisos."
         },
         "zahnfleisch": {
-          "titel": "Zahnfleischkorrektur",
-          "text": "Ästhetische Korrektur des Zahnfleischverlaufs — für ein harmonisches Lächeln. Durch Fachzahnärztin Dr. Schwegmann mit chirurgischer Präzision."
+          "titel": "Corrección gingival",
+          "text": "Corrección estética del contorno de las encías — para una sonrisa armoniosa. Realizada por la especialista Dr. Schwegmann con precisión quirúrgica."
         }
       }
     },
     "interneLinks": {
-      "zahnersatz": "Zahnersatz",
-      "oralchirurgie": "Oralchirurgie"
+      "zahnersatz": "Prótesis dentales",
+      "oralchirurgie": "Cirugía oral"
     },
     "cta": {
-      "titel": "Beratung für Ihr",
-      "titelAkzent": "schönstes Lächeln",
-      "text": "Lassen Sie sich unverbindlich beraten — wir finden die passende ästhetische Lösung für Sie."
+      "titel": "Consulta para su",
+      "titelAkzent": "sonrisa más bonita",
+      "text": "Déjese asesorar sin compromiso — encontramos la solución estética adecuada para usted."
     }
   }
 }

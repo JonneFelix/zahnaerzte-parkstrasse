@@ -339,10 +339,11 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
           ))}
 
           {/* Termin CTA */}
+          <div className="mt-10 pt-6" style={{ borderTop: "1px solid rgba(105, 123, 123, 0.08)" }} />
           <Link
             href={l("/termin", locale)}
             onClick={() => setMobileOffen(false)}
-            className="cta-schimmer mt-6 px-10 py-4 text-sm tracking-wider"
+            className="cta-schimmer px-10 py-4 text-sm tracking-wider"
             style={{
               fontWeight: 600,
               color: "#fff",
@@ -369,7 +370,9 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
             {locales.map((loc) => (
               <button
                 key={loc}
-                onClick={() => {
+                onClick={(e) => {
+                  if (loc === locale) return;
+                  (e.currentTarget as HTMLButtonElement).textContent = "...";
                   localStorage.setItem("preferred-locale", loc);
                   const currentPath = window.location.pathname.replace(`/${locale}`, "").replace(/\/$/, "") || "";
                   window.location.href = `/${loc}${currentPath}`;

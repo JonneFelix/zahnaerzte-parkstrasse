@@ -23,6 +23,9 @@ RUN echo 'server { \
         return 302 /de; \
     } \
     \
+    # Trailing Slash entfernen (z.B. /de/team/ → /de/team) \
+    rewrite ^(.+)/$ $1 permanent; \
+    \
     # Statische Dateien: Exakter Pfad, dann .html, dann /index.html \
     location / { \
         try_files $uri $uri.html $uri/index.html =404; \

@@ -15,6 +15,33 @@ const footerTexts: Record<string, { praxis: string; behandlungen: string; kontak
   es: { praxis: "Clínica", behandlungen: "Tratamientos", kontakt: "Contacto", team: "Nuestro equipo", innovationen: "Innovaciones", fortbildungen: "Formación", kontaktAnfahrt: "Contacto y Acceso", terminBuchen: "Pedir cita" },
 };
 
+const behandlungenTexts: Record<string, string[]> = {
+  de: ["Oralchirurgie", "Implantate", "Zahnersatz", "Wurzelbehandlung", "Prophylaxe", "Parodontologie"],
+  en: ["Oral Surgery", "Implants", "Prosthetics", "Root Canal", "Preventive Care", "Periodontics"],
+  fr: ["Chirurgie orale", "Implants", "Prothèses", "Traitement de canal", "Prophylaxie", "Parodontologie"],
+  es: ["Cirugía oral", "Implantes", "Prótesis", "Endodoncia", "Profilaxis", "Periodoncia"],
+};
+
+const beschreibungTexts: Record<string, string> = {
+  de: "Ihre Zahnarztpraxis im grünen Herzen von Hamburg-Othmarschen. Einfühlsame Zahnmedizin mit Kompetenz und Herz — wir freuen uns, Sie persönlich kennenzulernen.",
+  en: "Your dental practice in the green heart of Hamburg-Othmarschen. Compassionate dentistry with expertise and heart — we look forward to meeting you.",
+  fr: "Votre cabinet dentaire au cœur vert de Hamburg-Othmarschen. Des soins dentaires attentionnés avec compétence et cœur — nous avons hâte de vous rencontrer.",
+  es: "Su clínica dental en el corazón verde de Hamburg-Othmarschen. Odontología compasiva con experiencia y corazón — esperamos conocerle.",
+};
+
+const rechteTexts: Record<string, string> = {
+  de: "Alle Rechte vorbehalten.",
+  en: "All rights reserved.",
+  fr: "Tous droits réservés.",
+  es: "Todos los derechos reservados.",
+};
+
+function getFooterBehandlungen(locale: Locale) {
+  const hrefs = ["/leistungen/oralchirurgie", "/leistungen/implantate", "/leistungen/zahnersatz", "/leistungen/wurzelbehandlung", "/leistungen/prophylaxe", "/leistungen/parodontologie"];
+  const texts = behandlungenTexts[locale] || behandlungenTexts.de;
+  return hrefs.map((href, i) => ({ text: texts[i], href }));
+}
+
 export default function Footer({ locale = "de" as Locale }: { locale?: Locale }) {
   const ft = footerTexts[locale] || footerTexts.de;
   return (
@@ -50,9 +77,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
               className="text-sm max-w-sm leading-relaxed"
               style={{ color: "rgba(255, 255, 255, 0.42)", fontWeight: 300, lineHeight: 1.8 }}
             >
-              Ihre Zahnarztpraxis im grünen Herzen von Hamburg-Othmarschen.
-              Einfühlsame Zahnmedizin mit Kompetenz und Herz — wir freuen
-              uns, Sie persönlich kennenzulernen.
+              {beschreibungTexts[locale] || beschreibungTexts.de}
             </p>
           </div>
 
@@ -94,14 +119,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
               {ft.behandlungen}
             </h4>
             <nav className="space-y-2.5">
-              {[
-                { text: "Oralchirurgie", href: "/leistungen/oralchirurgie" },
-                { text: "Implantate", href: "/leistungen/implantate" },
-                { text: "Zahnersatz", href: "/leistungen/zahnersatz" },
-                { text: "Wurzelbehandlung", href: "/leistungen/wurzelbehandlung" },
-                { text: "Prophylaxe", href: "/leistungen/prophylaxe" },
-                { text: "Parodontologie", href: "/leistungen/parodontologie" },
-              ].map((link) => (
+              {getFooterBehandlungen(locale).map((link) => (
                 <Link
                   key={link.href}
                   href={l(link.href, locale)}
@@ -120,7 +138,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
               className="text-xs tracking-widest uppercase mb-5"
               style={{ color: "rgba(255, 255, 255, 0.55)", fontWeight: 600, letterSpacing: "0.2em" }}
             >
-              Kontakt
+              {ft.kontakt}
             </h4>
             <div className="space-y-2.5">
               <a
@@ -173,7 +191,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs" style={{ color: "rgba(255, 255, 255, 0.22)", fontWeight: 300 }}>
-            &copy; {new Date().getFullYear()} Zahnärzte Parkstrasse Othmarschen. Alle Rechte vorbehalten.
+            &copy; {new Date().getFullYear()} Zahnärzte Parkstrasse Othmarschen. {rechteTexts[locale] || rechteTexts.de}
           </p>
           <div className="flex items-center gap-5">
             <Link

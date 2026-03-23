@@ -136,9 +136,9 @@ export default async function ImplantateSeite({ params }: { params: Promise<{ lo
       <section className="py-10" style={{ background: "#f0ede8" }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-10 flex flex-wrap justify-center gap-4">
           {[
-            { text: interneLinks.oralchirurgie, href: "/leistungen/oralchirurgie" },
-            { text: interneLinks.zahnersatz, href: "/leistungen/zahnersatz" },
-            { text: interneLinks.team, href: "/team" },
+            { text: interneLinks.oralchirurgie, href: `/${locale}/leistungen/oralchirurgie` },
+            { text: interneLinks.zahnersatz, href: `/${locale}/leistungen/zahnersatz` },
+            { text: interneLinks.team, href: `/${locale}/team` },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="px-5 py-2.5 text-sm tracking-wider rounded-full transition-all duration-300 hover:bg-white" style={{ color: "#697B7B", fontWeight: 500, border: "1px solid rgba(105,123,123,0.15)", letterSpacing: "0.06em" }}>
               {l.text}

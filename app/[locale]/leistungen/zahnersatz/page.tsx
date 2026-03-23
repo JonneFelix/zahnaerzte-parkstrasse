@@ -75,8 +75,8 @@ export default async function ZahnersatzSeite({ params }: { params: Promise<{ lo
       <section className="py-10" style={{ background: "#f4f1ec" }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-10 flex flex-wrap justify-center gap-4">
           {[
-            { text: interneLinks.implantate, href: "/leistungen/implantate" },
-            { text: interneLinks.aesthetik, href: "/leistungen/aesthetik" },
+            { text: interneLinks.implantate, href: `/${locale}/leistungen/implantate` },
+            { text: interneLinks.aesthetik, href: `/${locale}/leistungen/aesthetik` },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="px-5 py-2.5 text-sm tracking-wider rounded-full transition-all duration-300 hover:bg-white" style={{ color: "#697B7B", fontWeight: 500, border: "1px solid rgba(105,123,123,0.15)", letterSpacing: "0.06em" }}>
               {l.text}

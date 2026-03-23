@@ -156,9 +156,9 @@ export default async function OralchirurgieSeite({ params }: { params: Promise<{
       <section className="py-10" style={{ background: "#f0ede8" }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-10 flex flex-wrap justify-center gap-4">
           {[
-            { text: interneLinks.implantate, href: "/leistungen/implantate" },
-            { text: interneLinks.parodontologie, href: "/leistungen/parodontologie" },
-            { text: interneLinks.team, href: "/team" },
+            { text: interneLinks.implantate, href: `/${locale}/leistungen/implantate` },
+            { text: interneLinks.parodontologie, href: `/${locale}/leistungen/parodontologie` },
+            { text: interneLinks.team, href: `/${locale}/team` },
           ].map((l) => (
             <Link
               key={l.href}

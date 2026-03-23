@@ -5,9 +5,23 @@ import { useEffect } from "react";
 const SUPPORTED_LOCALES = ["de", "en", "fr", "es"] as const;
 const DEFAULT_LOCALE = "de";
 
-/* Root-Seite: Erkennt die Browser-Sprache und leitet weiter */
+/* Root-Seite: Erkennt die Browser-Sprache und leitet weiter.
+   WICHTIG: Prüft zuerst ob man bereits auf einer Sprach-Route ist,
+   um Endlos-Redirects zu vermeiden (JS-Chunk wird auf allen Seiten geladen). */
 export default function RootRedirect() {
   useEffect(() => {
+    /* Wenn wir bereits auf einer Sprach-Route sind, NICHTS tun! */
+    const path = window.location.pathname;
+    const firstSegment = path.split("/")[1];
+    if (SUPPORTED_LOCALES.includes(firstSegment as typeof SUPPORTED_LOCALES[number])) {
+      return; /* Bereits auf /de/, /en/, /fr/ oder /es/ — kein Redirect */
+    }
+
+    /* Nur auf Root / weiterleiten */
+    if (path !== "/" && path !== "") {
+      return;
+    }
+
     /* 1. Gespeicherte Präferenz */
     try {
       const saved = localStorage.getItem("preferred-locale");
@@ -26,10 +40,5 @@ export default function RootRedirect() {
     window.location.replace(`/${matched || DEFAULT_LOCALE}/`);
   }, []);
 
-  /* Noscript-Fallback: Nur für Nutzer ohne JavaScript */
-  return (
-    <noscript>
-      <meta httpEquiv="refresh" content="0;url=/de/" />
-    </noscript>
-  );
+  return null;
 }

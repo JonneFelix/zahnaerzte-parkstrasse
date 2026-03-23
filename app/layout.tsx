@@ -7,5 +7,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <html lang="de">
+      <head>
+        <meta httpEquiv="refresh" content="0;url=/de/" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
 }

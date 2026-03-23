@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { type Locale, locales } from "../../lib/i18n";
 
 const navLinks = [
   {
@@ -25,7 +26,12 @@ const navLinks = [
   { text: "Kontakt", href: "/kontakt" },
 ];
 
-export default function Header() {
+/* Hilfsfunktion: Locale-Prefix an Pfade hängen */
+function l(href: string, locale: Locale) {
+  return `/${locale}${href}`;
+}
+
+export default function Header({ locale = "de" as Locale }: { locale?: Locale }) {
   const [mobileOffen, setMobileOffen] = useState(false);
   const [leistungenOffen, setLeistungenOffen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -62,7 +68,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
+            <Link href={l("/", locale).replace(/\/$/, "") || "/"} className="flex items-center gap-3 group">
               <Image
                 src="/logo-icon.svg"
                 alt="Zahnärzte Parkstrasse — Baum-Logo"
@@ -101,7 +107,7 @@ export default function Header() {
               {navLinks.map((link) => (
                 <div key={link.href} className="relative group">
                   <Link
-                    href={link.href}
+                    href={l(link.href, locale)}
                     className="relative text-sm tracking-wider transition-colors duration-300"
                     style={{
                       fontFamily: "var(--font-work-sans), 'Work Sans', sans-serif",
@@ -135,7 +141,7 @@ export default function Header() {
                         {link.unterseiten.map((sub) => (
                           <Link
                             key={sub.href}
-                            href={sub.href}
+                            href={l(sub.href, locale)}
                             className="px-4 py-2.5 text-sm transition-all duration-200 hover:bg-[rgba(242,101,34,0.05)]"
                             style={{
                               color: "#4a5959",
@@ -147,7 +153,7 @@ export default function Header() {
                           </Link>
                         ))}
                         <Link
-                          href="/leistungen"
+                          href={l("/leistungen", locale)}
                           className="col-span-2 px-4 py-2.5 mt-1 text-sm font-medium transition-all duration-200"
                           style={{
                             color: "#F26522",
@@ -163,8 +169,11 @@ export default function Header() {
                 </div>
               ))}
 
+              {/* Sprach-Widget */}
+              <LanguageSwitcher locale={locale} />
+
               <Link
-                href="/termin"
+                href={l("/termin", locale)}
                 className="cta-schimmer ml-3 px-6 py-2.5 text-sm tracking-wider transition-all duration-500"
                 style={{
                   fontFamily: "var(--font-work-sans), 'Work Sans', sans-serif",
@@ -260,7 +269,7 @@ export default function Header() {
                       {link.unterseiten.map((sub) => (
                         <Link
                           key={sub.href}
-                          href={sub.href}
+                          href={l(sub.href, locale)}
                           onClick={() => setMobileOffen(false)}
                           className="block py-2 text-base"
                           style={{ color: "#5a6a6a", fontWeight: 300 }}
@@ -273,7 +282,7 @@ export default function Header() {
                 </>
               ) : (
                 <Link
-                  href={link.href}
+                  href={l(link.href, locale)}
                   onClick={() => setMobileOffen(false)}
                   className="block py-4 text-2xl transition-colors"
                   style={{
@@ -291,7 +300,7 @@ export default function Header() {
 
           {/* Termin CTA */}
           <Link
-            href="/termin"
+            href={l("/termin", locale)}
             onClick={() => setMobileOffen(false)}
             className="cta-schimmer mt-6 px-10 py-4 text-sm tracking-wider"
             style={{
@@ -317,5 +326,72 @@ export default function Header() {
         </nav>
       </div>
     </>
+  );
+}
+
+/* Sprach-Switcher Komponente */
+function LanguageSwitcher({ locale }: { locale: Locale }) {
+  const [offen, setOffen] = useState(false);
+
+  const handleSwitch = (newLocale: Locale) => {
+    localStorage.setItem("preferred-locale", newLocale);
+    /* Aktuellen Pfad umschreiben: /de/team → /en/team */
+    const currentPath = window.location.pathname.replace(`/${locale}`, "");
+    window.location.href = `/${newLocale}${currentPath || "/"}`;
+  };
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setOffen(!offen)}
+        className="flex items-center gap-1 px-3 py-1.5 text-xs tracking-wider rounded-full transition-all duration-200"
+        style={{
+          color: "#697B7B",
+          fontWeight: 500,
+          letterSpacing: "0.1em",
+          border: "1px solid rgba(105, 123, 123, 0.15)",
+        }}
+      >
+        {locale.toUpperCase()}
+        <svg
+          viewBox="0 0 16 16"
+          className="w-3 h-3 transition-transform duration-200"
+          style={{ transform: offen ? "rotate(180deg)" : "none" }}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path d="M4 6l4 4 4-4" />
+        </svg>
+      </button>
+
+      {offen && (
+        <div
+          className="absolute top-full right-0 mt-2 py-1 min-w-[60px]"
+          style={{
+            background: "rgba(255, 255, 255, 0.97)",
+            backdropFilter: "blur(14px)",
+            borderRadius: "10px",
+            border: "1px solid rgba(105, 123, 123, 0.08)",
+            boxShadow: "0 8px 24px -6px rgba(105, 123, 123, 0.15)",
+          }}
+        >
+          {locales.map((loc) => (
+            <button
+              key={loc}
+              onClick={() => handleSwitch(loc)}
+              className="block w-full px-4 py-2 text-xs tracking-wider text-left transition-colors duration-200 hover:bg-[rgba(242,101,34,0.05)]"
+              style={{
+                color: loc === locale ? "#F26522" : "#4a5959",
+                fontWeight: loc === locale ? 600 : 400,
+                letterSpacing: "0.1em",
+              }}
+            >
+              {loc.toUpperCase()}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

@@ -2,8 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import OrganischerTrenner from "./OrganischerTrenner";
 import BaumDekor from "./BaumDekor";
+import { type Locale } from "../../lib/i18n";
 
-export default function Footer() {
+function l(href: string, locale: Locale) {
+  return `/${locale}${href}`;
+}
+
+export default function Footer({ locale = "de" as Locale }: { locale?: Locale }) {
   return (
     <footer
       className="relative overflow-hidden"
@@ -62,7 +67,7 @@ export default function Footer() {
               ].map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={l(link.href, locale)}
                   className="block text-sm transition-colors duration-300 hover:text-white"
                   style={{ color: "rgba(255, 255, 255, 0.38)", fontWeight: 300 }}
                 >
@@ -91,7 +96,7 @@ export default function Footer() {
               ].map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={l(link.href, locale)}
                   className="block text-sm transition-colors duration-300 hover:text-white"
                   style={{ color: "rgba(255, 255, 255, 0.38)", fontWeight: 300 }}
                 >
@@ -164,14 +169,14 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-5">
             <Link
-              href="/impressum"
+              href={l("/impressum", locale)}
               className="text-xs transition-colors duration-300 hover:text-white"
               style={{ color: "rgba(255, 255, 255, 0.22)", fontWeight: 300 }}
             >
               Impressum
             </Link>
             <Link
-              href="/datenschutz"
+              href={l("/datenschutz", locale)}
               className="text-xs transition-colors duration-300 hover:text-white"
               style={{ color: "rgba(255, 255, 255, 0.22)", fontWeight: 300 }}
             >

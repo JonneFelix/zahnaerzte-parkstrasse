@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { type Locale } from "../../lib/i18n";
 
-export default function MobileCTA() {
+export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale }) {
   const [sichtbar, setSichtbar] = useState(false);
 
   useEffect(() => {
@@ -44,7 +45,7 @@ export default function MobileCTA() {
 
         {/* Termin buchen */}
         <Link
-          href="/termin"
+          href={`/${locale}/termin`}
           className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full font-semibold text-sm text-white"
           style={{
             background: "linear-gradient(135deg, #F26522 0%, #e3541a 100%)",

@@ -1,0 +1,947 @@
+{
+  "Common": {
+    "nav": {
+      "leistungen": "Leistungen",
+      "team": "Team",
+      "innovationen": "Innovationen",
+      "fortbildungen": "Fortbildungen",
+      "kontakt": "Kontakt",
+      "terminBuchen": "TERMIN BUCHEN",
+      "unterseiten": {
+        "oralchirurgie": "Oralchirurgie",
+        "implantate": "Implantate",
+        "wurzelbehandlung": "Wurzelbehandlung",
+        "prophylaxe": "Prophylaxe",
+        "parodontologie": "Parodontologie",
+        "zahnersatz": "Zahnersatz",
+        "kinderzahnheilkunde": "Kinderzahnheilkunde",
+        "aesthetik": "Ästhetik"
+      },
+      "alleLeistungen": "Alle Leistungen →"
+    },
+    "header": {
+      "logoAlt": "Zahnärzte Parkstrasse — Baum-Logo",
+      "praxisName": "ZAHNÄRZTE PARKSTRASSE",
+      "ort": "OTHMARSCHEN",
+      "menuOeffnen": "Menü öffnen",
+      "menuSchliessen": "Menü schließen"
+    },
+    "footer": {
+      "logoAlt": "Zahnärzte Parkstrasse — Logo",
+      "beschreibung": "Ihre Zahnarztpraxis im grünen Herzen von Hamburg-Othmarschen. Einfühlsame Zahnmedizin mit Kompetenz und Herz — wir freuen uns, Sie persönlich kennenzulernen.",
+      "praxis": "Praxis",
+      "praxisLinks": {
+        "unserTeam": "Unser Team",
+        "innovationen": "Innovationen",
+        "fortbildungen": "Fortbildungen",
+        "kontaktAnfahrt": "Kontakt & Anfahrt",
+        "terminBuchen": "Termin buchen",
+        "faq": "FAQ"
+      },
+      "behandlungen": "Behandlungen",
+      "behandlungLinks": {
+        "oralchirurgie": "Oralchirurgie",
+        "implantate": "Implantate",
+        "zahnersatz": "Zahnersatz",
+        "wurzelbehandlung": "Wurzelbehandlung",
+        "prophylaxe": "Prophylaxe",
+        "parodontologie": "Parodontologie"
+      },
+      "kontakt": "Kontakt",
+      "sprechzeiten": {
+        "moDi": "Mo + Di: 9:00 — 18:00",
+        "mi": "Mi: 9:00 — 16:00",
+        "do": "Do: 9:00 — 20:00",
+        "fr": "Fr: 9:00 — 13:00",
+        "nachVereinbarung": "und nach Vereinbarung"
+      },
+      "copyright": "© {year} Zahnärzte Parkstrasse Othmarschen. Alle Rechte vorbehalten.",
+      "impressum": "Impressum",
+      "datenschutz": "Datenschutz"
+    },
+    "cta": {
+      "titel": "Wir freuen uns",
+      "titelAkzent": "auf Sie",
+      "text": "Vereinbaren Sie Ihren Termin — online, telefonisch oder per E-Mail.",
+      "ctaText": "TERMIN VEREINBAREN"
+    },
+    "cookie": {
+      "text": "Wir nutzen Google Maps, um Ihnen unseren Standort zu zeigen. Dabei können Daten an Google übermittelt werden.",
+      "mehrErfahren": "Mehr erfahren",
+      "nurNotwendige": "Nur notwendige",
+      "alleAkzeptieren": "Alle akzeptieren"
+    },
+    "breadcrumbs": {
+      "startseite": "Startseite",
+      "leistungen": "Leistungen",
+      "oralchirurgie": "Oralchirurgie",
+      "implantate": "Implantate",
+      "wurzelbehandlung": "Wurzelbehandlung",
+      "prophylaxe": "Prophylaxe",
+      "parodontologie": "Parodontologie",
+      "zahnersatz": "Zahnersatz",
+      "kinderzahnheilkunde": "Kinderzahnheilkunde",
+      "aesthetik": "Ästhetik",
+      "team": "Team",
+      "kontakt": "Kontakt",
+      "termin": "Termin",
+      "innovationen": "Innovationen",
+      "fortbildungen": "Fortbildungen",
+      "faq": "FAQ",
+      "impressum": "Impressum",
+      "datenschutz": "Datenschutz",
+      "praxis": "Praxis",
+      "wissenswertes": "Wissenswertes"
+    },
+    "mobileCta": {
+      "anrufen": "Anrufen",
+      "terminBuchen": "Termin buchen"
+    }
+  },
+  "HomePage": {
+    "meta": {
+      "title": "Zahnärzte Parkstrasse Othmarschen",
+      "description": "Ihre Zahnarztpraxis in Hamburg-Othmarschen. Oralchirurgie, Implantate, Wurzelbehandlung und mehr. Seit 1998."
+    },
+    "hero": {
+      "badge": "Hamburg Othmarschen",
+      "titel": "Hier dürfen Sie",
+      "titelAkzent": "sich wohlfühlen",
+      "text": "Ein Leben lang gesunde Zähne — das ist eine tolle Vorstellung. In unserer Praxis in Othmarschen finden Sie ideale Bedingungen dafür: einfühlsame Behandlung, modernste Methoden und ein Team, das sich Zeit für Sie nimmt.",
+      "ctaPrimaer": "TERMIN VEREINBAREN",
+      "ctaSekundaer": "TEAM KENNENLERNEN",
+      "bildAlt": "Das Team der Zahnärzte Parkstrasse in Othmarschen",
+      "erfahrung": "25+ Jahre",
+      "erfahrungDetail": "Erfahrung in Othmarschen"
+    },
+    "philosophie": {
+      "label": "Unsere Philosophie",
+      "titel": "Zahnmedizin, die",
+      "titelAkzent": "Vertrauen verdient",
+      "bildAlt": "Die einladenden Praxisräume",
+      "text1": "In der Parkstraße in Hamburg-Othmarschen haben wir einen Ort geschaffen, an dem Zahnmedizin sich natürlich und angstfrei anfühlt. Wir wissen, dass viele Menschen den Zahnarztbesuch mit Unbehagen verbinden — genau deshalb nehmen wir uns besonders viel Zeit für Sie.",
+      "text2": "Was wäre eine gute Praxis ohne hervorragende Mitarbeiterinnen? Viele sind schon lange Jahre dabei und haben uns trotz Familienzuwachs die Treue gehalten. Gemeinsam bieten wir Ihnen das gesamte Spektrum moderner Zahnmedizin.",
+      "badge": "Fachzahnärztin",
+      "badgeDetail": "für Oralchirurgie",
+      "werte": {
+        "einfuehlsam": "Einfühlsam",
+        "einfuehlsamDetail": "Angstfrei behandelt",
+        "erfahren": "Erfahren",
+        "erfahrenDetail": "Seit 1998 in Othmarschen",
+        "ganzheitlich": "Ganzheitlich",
+        "ganzheitlichDetail": "Mensch im Mittelpunkt"
+      }
+    },
+    "leistungen": {
+      "label": "Unsere Leistungen",
+      "titel": "Verwurzelt in",
+      "titelAkzent": "Kompetenz",
+      "subtext": "Von der sanften Prophylaxe bis zur anspruchsvollen Implantologie — wir bieten Ihnen ein breites Spektrum moderner Zahnmedizin unter einem Dach.",
+      "items": {
+        "oralchirurgie": {
+          "titel": "Oralchirurgie",
+          "beschreibung": "Implantate, Knochen- und Schleimhautaufbau, Weisheitszahn-Entfernungen und chirurgische Parodontose-Therapie."
+        },
+        "zahnheilkunde": {
+          "titel": "Zahnheilkunde",
+          "beschreibung": "Vorsorge, Prophylaxe, hochwertiger Zahnersatz, Füllungen und Kinderzahnheilkunde — alles auf höchstem Niveau."
+        },
+        "wurzelbehandlung": {
+          "titel": "Wurzelbehandlung",
+          "beschreibung": "Curriculum Endodontie — mit maschineller Aufbereitung und elektronischer Längenmessung für den bestmöglichen Zahnerhalt."
+        },
+        "prophylaxe": {
+          "titel": "Prophylaxe",
+          "beschreibung": "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme für strahlend gesunde Zähne."
+        },
+        "implantologie": {
+          "titel": "Implantologie",
+          "beschreibung": "Festsitzender Zahnersatz auf Implantaten — wir verwenden fast ausschließlich körpereigenes Gewebe."
+        }
+      },
+      "alleAnsehen": "ALLE LEISTUNGEN ANSEHEN"
+    },
+    "patientJourney": {
+      "label": "Ihr Weg zu uns",
+      "titel": "In vier Schritten zu",
+      "titelAkzent": "gesunden Zähnen",
+      "schritte": {
+        "s1": {
+          "titel": "Termin buchen",
+          "text": "Online, telefonisch oder per E-Mail — wie es Ihnen am liebsten ist."
+        },
+        "s2": {
+          "titel": "Ankommen & Wohlfühlen",
+          "text": "Wir nehmen uns Zeit für ein ausführliches Erstgespräch und lernen Sie und Ihre Wünsche kennen."
+        },
+        "s3": {
+          "titel": "Individuelle Behandlung",
+          "text": "Gemeinsam besprechen wir den besten Weg und behandeln Sie auf höchstem fachlichen Niveau."
+        },
+        "s4": {
+          "titel": "Nachsorge & Vorsorge",
+          "text": "Regelmäßige Prophylaxe und persönliche Betreuung — damit Ihre Zähne ein Leben lang gesund bleiben."
+        }
+      },
+      "mehrZumErstenBesuch": "MEHR ZUM ERSTEN BESUCH"
+    },
+    "testimonials": {
+      "label": "Stimmen unserer Patienten",
+      "titel": "Das sagen unsere",
+      "titelAkzent": "Patientinnen und Patienten",
+      "items": {
+        "t1": {
+          "text": "Ich hatte jahrelang Angst vor dem Zahnarzt. Bei Dr. Schwegmann und ihrem Team fühle ich mich zum ersten Mal wirklich wohl.",
+          "autor": "Patientin seit 2019"
+        },
+        "t2": {
+          "text": "Die Wurzelbehandlung bei Dr. Janz war so sanft, dass ich danach gar nicht glauben konnte, dass es schon vorbei ist.",
+          "autor": "Patient seit 2021"
+        },
+        "t3": {
+          "text": "Endlich eine Praxis, die sich wirklich Zeit nimmt. Hier ist man kein Nummern-Patient.",
+          "autor": "Patientin seit 2016"
+        }
+      }
+    },
+    "team": {
+      "label": "Unser Team",
+      "titel": "Die Menschen hinter",
+      "titelAkzent": "Ihrem Lächeln",
+      "aerztinnen": {
+        "schwegmann": {
+          "rolle": "Fachzahnärztin für Oralchirurgie"
+        },
+        "janz": {
+          "rolle": "Zahnärztin · Endodontie"
+        },
+        "prueter": {
+          "rolle": "Zahnärztin"
+        }
+      },
+      "alleKennenlernen": "ALLE KENNENLERNEN"
+    },
+    "kontakt": {
+      "label": "Kontakt",
+      "titel": "Wir sind",
+      "titelAkzent": "für Sie da",
+      "adresse": "Adresse",
+      "telefon": "Telefon",
+      "sprechzeiten": "Sprechzeiten",
+      "nachVereinbarung": "und nach Vereinbarung",
+      "jetztTermin": "JETZT TERMIN VEREINBAREN"
+    }
+  },
+  "Team": {
+    "meta": {
+      "title": "Unser Team — Dr. Schwegmann, Dr. Janz & Dr. Prüter",
+      "description": "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie), Dr. Nina Janz (Endodontie) und Dr. Julia Prüter. Seit 1998 in Othmarschen."
+    },
+    "hero": {
+      "label": "Unser Team",
+      "titel": "Die Menschen hinter",
+      "titelAkzent": "Ihrem Lächeln",
+      "subtext": "Drei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
+    },
+    "aerztinnen": {
+      "schwegmann": {
+        "rolle": "Praxisinhaberin · Fachzahnärztin für Oralchirurgie",
+        "zitat": "Ich möchte, dass meine Patienten mit einem guten Gefühl nach Hause gehen — nicht nur mit gesunden Zähnen.",
+        "ueber": "Dr. Claudia Schwegmann ist seit 1998 in Othmarschen tätig und hat sich als Fachzahnärztin für Oralchirurgie einen Namen gemacht. Ihr Schwerpunkt liegt auf Implantologie und Knochenaufbau — dabei setzt sie fast ausschließlich auf körpereigenes Gewebe.",
+        "timeline": {
+          "t1": {
+            "jahr": "1988–1993",
+            "text": "Studium der Zahnmedizin"
+          },
+          "t2": {
+            "jahr": "1993–1998",
+            "text": "AK Altona, Mund-Kiefer-Gesichtschirurgie"
+          },
+          "t3": {
+            "jahr": "1997",
+            "text": "Fachzahnärztin für Oralchirurgie"
+          },
+          "t4": {
+            "jahr": "1998",
+            "text": "Niederlassung in Hamburg-Othmarschen"
+          },
+          "t5": {
+            "jahr": "2000–2009",
+            "text": "Study Group Dragoo (Parodontologie & Implantologie)"
+          },
+          "t6": {
+            "jahr": "Seit 2008",
+            "text": "Vorträge und Study Clubs für Zahnärzte"
+          }
+        },
+        "tags": [
+          "Oralchirurgie",
+          "Implantologie",
+          "Knochenaufbau",
+          "Schleimhautchirurgie"
+        ]
+      },
+      "janz": {
+        "rolle": "Zahnärztin · Spezialistin für Endodontie",
+        "zitat": "Eine gute Wurzelbehandlung kann einen Zahn retten, der sonst verloren wäre. Das motiviert mich jeden Tag.",
+        "ueber": "Dr. Nina Janz verstärkt die Praxis seit 2008. Ihr besonderer Schwerpunkt ist die Endodontie — die Behandlung des Zahninneren. Mit ihrem Curriculum Endodontie und modernster Technik rettet sie Zähne, die andere aufgeben würden.",
+        "timeline": {
+          "t1": {
+            "jahr": "1995–2001",
+            "text": "Studium der Zahnmedizin"
+          },
+          "t2": {
+            "jahr": "2001–2008",
+            "text": "Praxiserfahrung in Tostedt"
+          },
+          "t3": {
+            "jahr": "Seit 2008",
+            "text": "Gemeinsam mit Dr. Schwegmann"
+          },
+          "t4": {
+            "jahr": "2012–2014",
+            "text": "Curriculum Endodontie"
+          }
+        },
+        "tags": [
+          "Endodontie",
+          "Wurzelbehandlung",
+          "Allgemeine Zahnheilkunde"
+        ]
+      },
+      "prueter": {
+        "rolle": "Zahnärztin",
+        "zitat": "Ich freue mich, Teil dieses erfahrenen Teams zu sein und von den Besten zu lernen.",
+        "ueber": "Dr. Julia Prüter ist die jüngste Verstärkung unseres Teams. Nach ihrem Examen 2022 am UKE Hamburg bringt sie frisches Wissen und aktuelle Behandlungsmethoden in die Praxis ein.",
+        "timeline": {
+          "t1": {
+            "jahr": "2022",
+            "text": "Staatsexamen am UKE Hamburg"
+          },
+          "t2": {
+            "jahr": "Seit 10/2024",
+            "text": "Zahnärztin in der Praxis"
+          }
+        },
+        "tags": [
+          "Allgemeine Zahnheilkunde"
+        ]
+      }
+    },
+    "praxisteam": {
+      "label": "Unser Praxisteam",
+      "titel": "Eingespielt, herzlich,",
+      "titelAkzent": "kompetent",
+      "text": "Was wäre eine gute Praxis ohne hervorragende Mitarbeiterinnen? Viele sind schon lange Jahre dabei und haben uns trotz Familienzuwachs die Treue gehalten. Unser Team am Empfang und in der Behandlung sorgt dafür, dass Sie sich von der ersten Sekunde an wohlfühlen.",
+      "gruppenfotoAlt": "Das gesamte Praxisteam der Zahnärzte Parkstrasse",
+      "gruppenfoto2Alt": "Das Praxisteam vor der Praxis"
+    },
+    "cta": {
+      "titel": "Lernen Sie uns",
+      "titelAkzent": "persönlich kennen",
+      "text": "Wir freuen uns darauf, Sie in unserer Praxis begrüßen zu dürfen."
+    }
+  },
+  "Kontakt": {
+    "meta": {
+      "title": "Kontakt & Anfahrt",
+      "description": "So finden Sie uns: Parkstraße 10, 22605 Hamburg-Othmarschen. Telefon: 040 880 21 50. Parkplätze vorhanden."
+    },
+    "hero": {
+      "label": "Kontakt",
+      "titel": "So finden",
+      "titelAkzent": "Sie uns"
+    },
+    "kontaktdaten": {
+      "adresse": "Adresse",
+      "telefonEmail": "Telefon & E-Mail",
+      "sprechzeiten": "Sprechzeiten",
+      "nachVereinbarung": "und nach Vereinbarung"
+    },
+    "anfahrt": {
+      "label": "Anfahrt",
+      "titel": "So kommen Sie",
+      "titelAkzent": "zu uns",
+      "sbahn": {
+        "titel": "S-Bahn",
+        "text": "S1 / S11 — Haltestelle Othmarschen (ca. 8 Minuten Fußweg)"
+      },
+      "bus": {
+        "titel": "Bus",
+        "text": "Linie 1 — Haltestelle Parkstraße (direkt vor der Tür)\nLinie 15 — Haltestelle Othmarschen, Waitzstraße (ca. 5 Min.)"
+      },
+      "auto": {
+        "titel": "Mit dem Auto",
+        "text": "Parkplätze direkt in der Straße vorhanden. Anfahrt über Waitzstraße oder Reventlowstraße."
+      }
+    },
+    "fortbildungen": {
+      "label": "Für Zahnärztinnen & Zahnärzte",
+      "titel": "Fortbildungen & Study Clubs",
+      "text": "Praktische Fortbildungen in Implantologie und Parodontologie — geleitet von Dr. Schwegmann.",
+      "mehrErfahren": "MEHR ERFAHREN"
+    }
+  },
+  "Termin": {
+    "meta": {
+      "title": "Termin buchen",
+      "description": "Buchen Sie Ihren Termin bei den Zahnärzten Parkstrasse in Hamburg-Othmarschen — online, telefonisch oder per E-Mail."
+    },
+    "hero": {
+      "label": "Terminbuchung",
+      "titel": "Termin",
+      "titelAkzent": "vereinbaren",
+      "subtext": "Buchen Sie Ihren Wunschtermin bequem online oder rufen Sie uns an."
+    },
+    "optionen": {
+      "telefon": "Telefon",
+      "email": "E-Mail",
+      "vorOrt": "Vor Ort"
+    },
+    "online": {
+      "label": "Online buchen",
+      "titel": "Ihr Wunschtermin",
+      "titelAkzent": "in wenigen Klicks",
+      "platzhalter": "Online-Terminbuchung wird in Kürze aktiviert.",
+      "bissDahin": "Bis dahin erreichen Sie uns telefonisch unter {telefon} oder per E-Mail."
+    },
+    "sprechzeiten": {
+      "label": "Sprechzeiten",
+      "titel": "Wann Sie uns",
+      "titelAkzent": "erreichen",
+      "tage": {
+        "montag": "Montag",
+        "dienstag": "Dienstag",
+        "mittwoch": "Mittwoch",
+        "donnerstag": "Donnerstag",
+        "freitag": "Freitag"
+      },
+      "zeiten": {
+        "montag": "9:00 — 18:00 Uhr",
+        "dienstag": "9:00 — 18:00 Uhr",
+        "mittwoch": "9:00 — 16:00 Uhr",
+        "donnerstag": "9:00 — 20:00 Uhr",
+        "freitag": "9:00 — 13:00 Uhr"
+      },
+      "nachVereinbarung": "und nach Vereinbarung",
+      "erstbesuchHinweis": "Für den ersten Besuch planen Sie bitte ca. 45 Minuten ein."
+    },
+    "mitbringen": {
+      "titel": "Was sollte ich zum ersten Termin mitbringen?",
+      "items": [
+        "Versichertenkarte",
+        "Aktuelle Röntgenbilder (falls vorhanden)",
+        "Medikamentenliste (falls zutreffend)",
+        "Bonusheft"
+      ]
+    }
+  },
+  "Leistungen": {
+    "meta": {
+      "title": "Unsere Leistungen",
+      "description": "Unser Leistungsspektrum: Oralchirurgie, Implantate, Zahnersatz, Wurzelbehandlung, Prophylaxe, Parodontologie, Kinderzähne und ästhetische Zahnheilkunde in Othmarschen."
+    },
+    "hero": {
+      "label": "Unsere Leistungen",
+      "titel": "Verwurzelt in",
+      "titelAkzent": "Kompetenz",
+      "subtext": "Von der sanften Prophylaxe bis zur anspruchsvollen Implantologie — wir bieten Ihnen das gesamte Spektrum moderner Zahnmedizin unter einem Dach."
+    },
+    "items": {
+      "oralchirurgie": {
+        "titel": "Oralchirurgie",
+        "kurz": "Implantate, Knochen- und Schleimhautaufbau, Weisheitszahn-Entfernungen und chirurgische Parodontose-Therapie — bei Fachzahnärztin Dr. Schwegmann sind Sie bestens aufgehoben."
+      },
+      "implantate": {
+        "titel": "Zahnimplantate",
+        "kurz": "Festsitzender Zahnersatz auf Implantaten — wir verwenden fast ausschließlich körpereigenes Gewebe für den Knochen- und Schleimhautaufbau."
+      },
+      "zahnersatz": {
+        "titel": "Zahnersatz",
+        "kurz": "Kronen, Brücken und Prothesen — gefertigt mit Intraoralscanner von unserem Partnerlabor in Bönningstedt. Qualität aus der Region."
+      },
+      "wurzelbehandlung": {
+        "titel": "Wurzelbehandlung",
+        "kurz": "Dr. Nina Janz bringt ihr Curriculum Endodontie ein — mit maschineller Aufbereitung und elektronischer Längenmessung für den bestmöglichen Zahnerhalt."
+      },
+      "prophylaxe": {
+        "titel": "Prophylaxe & Dentalhygiene",
+        "kurz": "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme — für strahlend saubere Zähne und gesundes Zahnfleisch, ein Leben lang."
+      },
+      "parodontologie": {
+        "titel": "Parodontologie",
+        "kurz": "Individuelle Therapie bei Zahnfleischentzündung und Knochenschwund — konservativ und chirurgisch."
+      },
+      "kinderzahnheilkunde": {
+        "titel": "Kinderzahnheilkunde",
+        "kurz": "Da wir selber Kinder haben, wissen wir, wie wichtig eine vertrauensvolle und angstfreie Atmosphäre für die Kleinen ist."
+      },
+      "aesthetik": {
+        "titel": "Ästhetische Zahnheilkunde",
+        "kurz": "Professionelles Bleaching, Veneers und ästhetische Korrekturen für Ihr schönstes Lächeln."
+      }
+    },
+    "mehrErfahren": "Mehr erfahren",
+    "schwerpunkt": {
+      "label": "Unser Schwerpunkt",
+      "titel": "Oralchirurgie &",
+      "titelAkzent": "Implantologie",
+      "text": "Dr. Claudia Schwegmann ist eine von wenigen Fachzahnärztinnen für Oralchirurgie in Hamburg. Diese Spezialisierung bedeutet für Sie: chirurgische Eingriffe auf höchstem Niveau, minimalinvasiv und mit körpereigenen Materialien.",
+      "link": "MEHR ÜBER ORALCHIRURGIE",
+      "bildAlt": "Dr. Claudia Schwegmann — Fachzahnärztin für Oralchirurgie"
+    },
+    "cta": {
+      "titel": "Welche Behandlung",
+      "titelAkzent": "brauchen Sie?",
+      "text": "Wir beraten Sie gern — vereinbaren Sie einen Termin für ein unverbindliches Gespräch."
+    }
+  },
+  "Innovationen": {
+    "meta": {
+      "title": "Innovationen",
+      "description": "Moderne Zahnmedizin in Hamburg-Othmarschen: Schmelzidentische Kronen, Zahntrauma-Behandlung, Mucogingivalchirurgie und Knochenerhalt durch eigene Zähne."
+    },
+    "hero": {
+      "label": "Was uns auszeichnet",
+      "titel": "Innovationen",
+      "titelAkzent": "in unserer Praxis",
+      "subtext": "Moderne Methoden und besondere Kompetenzen, die Sie bei uns finden — für schonendere Behandlungen und bessere Ergebnisse."
+    },
+    "items": {
+      "kronen": {
+        "titel": "Schmelzidentische Kronen und Füllungen",
+        "kurztext": "Zahnfarbene Keramiken mit der gleichen Härte wie natürlicher Zahnschmelz — fest aufgeklebt wie neuer Schmelz.",
+        "langtext": "Viele Kronen aus Keramik sind sehr hart und können die Gegenbezahnung oder den überkronten Zahn langfristig schädigen. Daher verwenden wir gerne zahnfarbene Keramiken, die die gleiche Härte wie natürlicher Zahnschmelz haben, und auf die Zähne fest aufgeklebt werden, wie neuer Schmelz. Besondere Bedeutung kommt dieses Verfahren bei komplexen Rehabilitationen, z.B. wenn die Zähne stark abgenutzt sind. Dank moderner KI-gestützter Abdrucktechniken (Scan) ohne Abdrucklöffel."
+      },
+      "zahntrauma": {
+        "titel": "Zahntrauma",
+        "kurztext": "Spezialisierung auf die Behandlung und ästhetische Wiederherstellung verletzter Frontzähne.",
+        "langtext": "Bei einem Zahntrauma wird meistens einer oder mehrere Frontzähne verletzt. Im schlimmsten Fall können Zähne sogar ganz aus dem Mund herausgebrochen werden. Daraus entwickeln sich nicht selten langfristige Probleme, die aber in den richtigen Händen gut lösbar sind. Bei uns sind Sie genau richtig, wenn es um die Behandlung und ästhetische Wiederherstellung der Frontzähne geht."
+      },
+      "zahnfleisch": {
+        "titel": "Zahnfleischchirurgie",
+        "kurztext": "25 Jahre Expertise in der Wiederherstellung gesunder Zahnfleischverhältnisse.",
+        "langtext": "Zur Wiederherstellung gesunder Zahnfleischverhältnisse, wie Durchblutungsverbesserungen, ästhetische Verbesserungen im sichtbaren Bereich sowie vor oder nach dem Setzen von Implantaten braucht man gute Kenntnisse in Parodontologie und Mucogingivalchirurgie. Seit 25 Jahren haben wir hier Expertise, und können so Implantate und Zähne möglichst lebenslang im Mund unserer Patienten belassen."
+      },
+      "knochenerhalt": {
+        "titel": "Knochenerhalt durch eigene Zähne",
+        "kurztext": "Teile des entfernten Zahnes werden zum Knochenerhalt verwendet — teure Knochenaufbauten entfallen oft.",
+        "langtext": "Damit bezeichnet man ein Verfahren, durch das beim Entfernen des Zahnes Teile des Zahnes zum Knochenerhalt verwendet werden können. So entfallen oft teure und langwierige Knochenaufbauten vor einer Implantation."
+      }
+    }
+  },
+  "Fortbildungen": {
+    "meta": {
+      "title": "Fortbildungen für Zahnärzte",
+      "description": "Study Clubs Implantologie & Parodontologie — praktische Fortbildungen für Zahnärztinnen und Zahnärzte. Geleitet von Dr. Claudia Schwegmann in Kooperation mit Fraga Dental."
+    },
+    "hero": {
+      "label": "Für Kolleginnen & Kollegen",
+      "titel": "Fortbildungen",
+      "titelAkzent": "für Zahnärzte",
+      "subtext": "Praktische Study Clubs in Implantologie und Parodontologie — operieren Sie an eigenen Patienten unter Supervision."
+    },
+    "einleitung": {
+      "titel": "Liebe Kolleginnen",
+      "titelAkzent": "und Kollegen",
+      "text1": "Wenn man sich für alles, was mit Parodontologie und Implantaten zusammenhängt, interessiert, aber sich noch nicht recht herantraut oder die anderen Fortbildungen zu theoretisch findet, dann ist ein Study Club ideal.",
+      "text2": "Seit Mick Dragoo dieses Prinzip 2000 nach Hamburg brachte, bin ich davon begeistert. Mittlerweile leite ich seit 2005 zwei Study Clubs — einen in Pinneberg (Ladies only — mehr Frauen in die Chirurgie!) und einen in Oldenburg in Niedersachsen.",
+      "text3": "Wer sich dafür interessiert, kann mich gerne in der Praxis kontaktieren oder meldet sich direkt bei Fraga Dental. Die organisieren auch Study Clubs anderer Kollegen, die ich sehr empfehlen kann.",
+      "signatur": "— Dr. Claudia Schwegmann"
+    },
+    "prinzip": {
+      "titel": "Das Prinzip",
+      "tag1": {
+        "titel": "Tag 1 — Theorie",
+        "text": "Präsentation eigener Fälle, Besprechung des Procedere und Planung der OPs."
+      },
+      "tag2": {
+        "titel": "Tag 2 — Praxis",
+        "text": "OP am eigenen Patienten, mit eigenem Instrumentarium unter Supervision des Referenten."
+      }
+    },
+    "vorteile": {
+      "label": "Warum ein Study Club?",
+      "titel": "Praxis statt",
+      "titelAkzent": "nur Theorie",
+      "items": {
+        "eigenePatienten": {
+          "titel": "Eigene Patienten",
+          "text": "Sie operieren selbst — am eigenen Patienten, mit eigenen Instrumenten."
+        },
+        "supervision": {
+          "titel": "Supervision",
+          "text": "Alle Schritte werden vorher besprochen und in der Ausführung begleitet."
+        },
+        "echteFaelle": {
+          "titel": "10–15 echte Fälle",
+          "text": "Pro Study Club sehen und diskutieren Sie ebenso viele reale Patientenfälle."
+        },
+        "selbstvertrauen": {
+          "titel": "Selbstvertrauen",
+          "text": "Optimales Selbstvertrauen, um in der eigenen Praxis durchzustarten."
+        }
+      }
+    },
+    "termine": {
+      "label": "Termine",
+      "titel": "Die nächsten",
+      "titelAkzent": "Study Clubs",
+      "studyClubs": {
+        "pinneberg": {
+          "titel": "Study Club Implantologie 11 — Pinneberg",
+          "daten": [
+            "Termine werden in Kürze bekannt gegeben"
+          ]
+        },
+        "oldenburg": {
+          "titel": "Study Club Implantologie – Parodontologie 8 — Oldenburg",
+          "daten": [
+            "Termine werden in Kürze bekannt gegeben"
+          ]
+        }
+      },
+      "detailsLink": "Details bei Fraga Dental →"
+    },
+    "kontaktSection": {
+      "label": "Interesse?",
+      "titel": "Melden Sie sich",
+      "titelAkzent": "bei uns",
+      "text": "Wer sich für die Study Clubs interessiert, kann Dr. Schwegmann direkt in der Praxis kontaktieren oder sich bei Fraga Dental anmelden. Fraga Dental organisiert auch Study Clubs anderer Kollegen, die ebenfalls sehr zu empfehlen sind."
+    }
+  },
+  "FAQ": {
+    "meta": {
+      "title": "Häufige Fragen",
+      "description": "Antworten auf die häufigsten Fragen: Kosten, Ablauf, Versicherung, Angstpatienten. Zahnärzte Parkstrasse in Hamburg-Othmarschen."
+    },
+    "hero": {
+      "label": "FAQ",
+      "titel": "Häufig gestellte",
+      "titelAkzent": "Fragen",
+      "subtext": "Hier finden Sie Antworten auf die Fragen, die uns am häufigsten gestellt werden."
+    },
+    "kategorien": {
+      "allgemein": {
+        "titel": "Allgemein",
+        "fragen": {
+          "wartezeit": {
+            "frage": "Muss ich lange auf einen Termin warten?",
+            "antwort": "In der Regel können wir Ihnen innerhalb von 1–2 Wochen einen Termin anbieten. Bei akuten Beschwerden bemühen wir uns um einen kurzfristigen Termin."
+          },
+          "angstpatienten": {
+            "frage": "Behandeln Sie auch Angstpatienten?",
+            "antwort": "Ja, ausdrücklich. Wir nehmen uns besonders viel Zeit und erklären jeden Schritt. Viele unserer Patienten kamen anfangs mit Zahnarztangst zu uns."
+          },
+          "sprachen": {
+            "frage": "Welche Sprachen sprechen Sie?",
+            "antwort": "Deutsch, Englisch, Französisch und Spanisch."
+          }
+        }
+      },
+      "kostenVersicherung": {
+        "titel": "Kosten & Versicherung",
+        "fragen": {
+          "kosten": {
+            "frage": "Was kostet eine Behandlung?",
+            "antwort": "Wir erstellen immer vorab einen transparenten Kostenplan. Gesetzlich Versicherte erhalten die Kassenleistung; Zusatzleistungen werden vorher besprochen."
+          },
+          "privatpatienten": {
+            "frage": "Nehmen Sie Privatpatienten?",
+            "antwort": "Ja, wir behandeln sowohl gesetzlich als auch privat versicherte Patienten."
+          },
+          "ratenzahlung": {
+            "frage": "Bieten Sie Ratenzahlung an?",
+            "antwort": "Bei größeren Behandlungen bieten wir Ihnen individuelle Zahlungsvereinbarungen an."
+          }
+        }
+      },
+      "behandlungen": {
+        "titel": "Behandlungen",
+        "fragen": {
+          "wurzelbehandlung": {
+            "frage": "Tut eine Wurzelbehandlung weh?",
+            "antwort": "Nein — unter Betäubung spüren Sie nichts. Mehr dazu auf unserer Seite zur Wurzelbehandlung."
+          },
+          "implantate": {
+            "frage": "Wie lange halten Implantate?",
+            "antwort": "Bei guter Pflege ein Leben lang. Die aufgesetzte Krone hält durchschnittlich 15–20 Jahre."
+          },
+          "kinderzahnarzt": {
+            "frage": "Ab welchem Alter sollte mein Kind zum Zahnarzt?",
+            "antwort": "Ab dem ersten Milchzahn — meist um den 6. Lebensmonat."
+          }
+        }
+      }
+    },
+    "mehrErfahren": "Mehr erfahren",
+    "cta": {
+      "titel": "Noch Fragen?",
+      "titelAkzent": "Rufen Sie uns an",
+      "text": "Wir beantworten gern alle weiteren Fragen persönlich."
+    }
+  },
+  "Praxis": {
+    "meta": {
+      "title": "Unsere Praxis in Hamburg-Othmarschen",
+      "description": "Lernen Sie unsere Zahnarztpraxis in der Parkstraße kennen: Moderne Ausstattung, einfühlsame Atmosphäre und über 25 Jahre Erfahrung in Hamburg-Othmarschen."
+    },
+    "hero": {
+      "label": "Unsere Praxis",
+      "titel": "Wo Zahnmedizin sich wie",
+      "titelAkzent": "Zuhause anfühlt",
+      "subtext": "Seit 1998 in der Parkstraße — ein Ort, an dem Kompetenz und Menschlichkeit zusammenfinden."
+    },
+    "philosophie": {
+      "label": "Unsere Philosophie",
+      "titel": "Mehr als",
+      "titelAkzent": "perfekte Technik",
+      "bildAlt": "Einladende Praxisräume",
+      "text1": "Wir glauben, dass gute Zahnmedizin mehr ist als perfekte Technik. Es geht darum, Menschen zu sehen, zuzuhören und individuell zu behandeln. In unserer Praxis nehmen wir uns die Zeit, die Ihre Gesundheit verdient.",
+      "text2": "Unser Ansatz: Wir behandeln nicht nur Zähne, wir behandeln Menschen. Jede Patientin und jeder Patient bringt eine eigene Geschichte mit — darauf gehen wir ein."
+    },
+    "raeume": {
+      "label": "Unsere Räume",
+      "titel": "Helle Räume,",
+      "titelAkzent": "warme Atmosphäre",
+      "subtext": "Helle, freundliche Räume mit Blick ins Grüne — mitten im Herzen von Othmarschen. Unsere Praxis verbindet moderne Ausstattung mit einer Atmosphäre, in der Sie sich wohlfühlen können.",
+      "bilder": {
+        "behandlung": "Moderner Behandlungsraum",
+        "empfang": "Unser Empfangsbereich"
+      }
+    },
+    "ausstattung": {
+      "label": "Ausstattung",
+      "titel": "Modernste Technik,",
+      "titelAkzent": "schonende Behandlung",
+      "items": {
+        "intraoralscanner": {
+          "titel": "Intraoralscanner",
+          "text": "Digitale Abdrücke ohne unangenehme Abformmasse"
+        },
+        "lupenbrille": {
+          "titel": "Lupenbrille & Mikroskop",
+          "text": "Höchste Präzision bei jeder Behandlung"
+        },
+        "roentgen": {
+          "titel": "Digitales Röntgen",
+          "text": "Weniger Strahlung, sofortige Ergebnisse"
+        },
+        "gewebe": {
+          "titel": "Körpereigenes Gewebe",
+          "text": "Knochenaufbau mit Ihrem eigenen Material"
+        }
+      }
+    },
+    "sprachen": {
+      "label": "Sprachen:",
+      "text": "Wir behandeln und beraten auf Deutsch, Englisch, Französisch und Spanisch."
+    },
+    "netzwerk": {
+      "label": "Unser Netzwerk",
+      "titel": "Starke Partner für",
+      "titelAkzent": "beste Ergebnisse",
+      "partner": {
+        "hamburgerZahntechnik": {
+          "name": "Hamburger Zahntechnik",
+          "text": "Unser Zahnersatz kommt aus Bönningstedt — nicht aus dem Ausland."
+        },
+        "fairImplant": {
+          "name": "FairImplant",
+          "text": "Hochwertige Implantatsysteme für langlebige Ergebnisse."
+        },
+        "fragaDental": {
+          "name": "Fraga Dental",
+          "text": "Partner für Fortbildung und Praxisbedarf."
+        }
+      }
+    },
+    "cta": {
+      "titel": "Überzeugen Sie",
+      "titelAkzent": "sich selbst",
+      "text": "Besuchen Sie uns in der Parkstraße und erleben Sie unsere Praxis persönlich."
+    }
+  },
+  "Impressum": {
+    "meta": {
+      "title": "Impressum",
+      "description": "Impressum der Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann, Dr. Janz & Dr. Prüter, Hamburg."
+    },
+    "titel": "Impressum",
+    "angabenDDG": {
+      "titel": "Angaben gemäß § 5 DDG",
+      "text": "Dr. Claudia Schwegmann\nZahnärztin (Praxisinhaberin)\nParkstraße 10\n22605 Hamburg"
+    },
+    "kontakt": {
+      "titel": "Kontakt",
+      "text": "Telefon: 040 — 880 21 50\nE-Mail: info@zahnarzt-othmarschen.de"
+    },
+    "berufsbezeichnung": {
+      "titel": "Berufsbezeichnung",
+      "text": "Gesetzliche Berufsbezeichnung: Zahnärztinnen\n(verliehen in der Bundesrepublik Deutschland)",
+      "details": "Dr. Claudia Schwegmann: Fachzahnärztin für Oralchirurgie\nDr. Nina Janz: Zahnärztin — Curriculum Endodontie\nDr. Julia Prüter: Zahnärztin"
+    },
+    "kammer": {
+      "titel": "Zuständige Kammer",
+      "text": "Zahnärztekammer Hamburg\nMöllner Landstraße 31\n22111 Hamburg"
+    },
+    "aufsicht": {
+      "titel": "Zuständige Aufsichtsbehörde",
+      "text": "Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde)\nHamburger Straße 47\n22083 Hamburg"
+    },
+    "kzv": {
+      "titel": "Kassenzahnärztliche Vereinigung",
+      "text": "Kassenzahnärztliche Vereinigung Hamburg\nGroße Bleichen 23\n20354 Hamburg"
+    },
+    "berufsrecht": {
+      "titel": "Berufsrechtliche Regelungen",
+      "text": "Es gelten folgende berufsrechtliche Regelungen:",
+      "items": [
+        "Zahnheilkundegesetz (ZHG)",
+        "Hamburgisches Kammergesetz für die Heilberufe (HmbKGH)",
+        "Berufsordnung der Zahnärztekammer Hamburg",
+        "Gebührenordnung für Zahnärzte (GOZ)"
+      ],
+      "hinweis": "Die Regelungen sind einsehbar unter: www.zahnaerztekammer-hh.de"
+    },
+    "streitschlichtung": {
+      "titel": "Streitschlichtung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+      "nichtBereit": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    }
+  },
+  "Datenschutz": {
+    "meta": {
+      "title": "Datenschutzerklärung",
+      "description": "Datenschutzerklärung der Zahnärzte Parkstrasse Othmarschen — Informationen zum Umgang mit Ihren personenbezogenen Daten."
+    },
+    "titel": "Datenschutzerklärung",
+    "ueberblick": {
+      "titel": "1. Datenschutz auf einen Blick",
+      "text": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie den nachfolgenden Abschnitten."
+    },
+    "verantwortlich": {
+      "titel": "2. Verantwortliche Stelle",
+      "text": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+      "details": "Dr. Claudia Schwegmann\nParkstraße 10\n22605 Hamburg\nTelefon: 040 — 880 21 50\nE-Mail: info@zahnarzt-othmarschen.de",
+      "erklaerung": "Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung personenbezogener Daten (z. B. Namen, E-Mail-Adressen)."
+    },
+    "hosting": {
+      "titel": "3. Hosting",
+      "text": "Diese Website wird auf einem Server in Deutschland gehostet. Wenn Sie unsere Website besuchen, erfasst der Webserver automatisch technische Zugriffsdaten (siehe Abschnitt 'Server-Log-Dateien'). Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer effizienten und sicheren Bereitstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO)."
+    },
+    "ssl": {
+      "titel": "4. SSL- bzw. TLS-Verschlüsselung",
+      "text": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von 'http://' auf 'https://' wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+    },
+    "datenerfassung": {
+      "titel": "5. Datenerfassung auf dieser Website",
+      "serverLog": {
+        "titel": "Server-Log-Dateien",
+        "text": "Der Webserver dieser Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:",
+        "items": [
+          "Browsertyp und -version",
+          "Verwendetes Betriebssystem",
+          "Referrer URL (zuvor besuchte Seite)",
+          "Hostname des zugreifenden Rechners",
+          "Uhrzeit der Serveranfrage",
+          "IP-Adresse"
+        ],
+        "hinweis": "Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und Optimierung unserer Website. Die Server-Log-Dateien werden regelmäßig gelöscht und nicht dauerhaft gespeichert."
+      },
+      "cookies": {
+        "titel": "Cookies",
+        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können jedoch Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Weitere Tracking-Cookies oder Analyse-Tools werden nicht eingesetzt."
+      }
+    },
+    "externeDienste": {
+      "titel": "6. Externe Dienste",
+      "fonts": {
+        "titel": "Schriftarten (Google Fonts — lokal)",
+        "text": "Diese Website nutzt Schriftarten von Google Fonts. Die Schriftarten sind lokal auf unserem Server eingebunden und werden beim Aufruf unserer Website direkt von dort geladen. Es findet keine Verbindung zu Servern von Google statt. Ihre IP-Adresse wird nicht an Google übermittelt."
+      },
+      "maps": {
+        "titel": "Google Maps",
+        "text": "Auf unserer Kontaktseite wird Google Maps als Karteneinbettung genutzt. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf der Kontaktseite wird eine Verbindung zu den Servern von Google hergestellt, wodurch unter anderem Ihre IP-Adresse an Google übermittelt wird. Google kann hierbei Cookies setzen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer ansprechenden Darstellung unserer Anfahrtsbeschreibung). Weitere Informationen finden Sie in der Datenschutzerklärung von Google."
+      }
+    },
+    "rechte": {
+      "titel": "7. Ihre Rechte als betroffene Person",
+      "text": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
+      "items": {
+        "auskunft": "Recht auf Auskunft über Ihre bei uns gespeicherten Daten (Art. 15 DSGVO)",
+        "berichtigung": "Recht auf Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+        "loeschung": "Recht auf Löschung Ihrer Daten (Art. 17 DSGVO)",
+        "einschraenkung": "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+        "uebertragbarkeit": "Recht auf Datenübertragbarkeit (Art. 20 DSGVO)",
+        "widerspruch": "Widerspruchsrecht gegen die Verarbeitung (Art. 21 DSGVO)"
+      },
+      "kontaktHinweis": "Zur Ausübung Ihrer Rechte können Sie sich jederzeit an uns wenden (Kontaktdaten siehe oben)."
+    },
+    "beschwerde": {
+      "titel": "8. Beschwerderecht bei der Aufsichtsbehörde",
+      "text": "Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig ist:",
+      "behoerde": "Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit\nLudwig-Erhard-Str 22, 7. OG\n20459 Hamburg\nTelefon: 040 / 428 54 - 4040\nE-Mail: mailbox@datenschutz.hamburg.de"
+    },
+    "aktualitaet": {
+      "titel": "9. Aktualität und Änderung dieser Datenschutzerklärung",
+      "text": "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand März 2026. Durch die Weiterentwicklung unserer Website oder aufgrund geänderter gesetzlicher bzw. behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern."
+    }
+  },
+  "Wissenswertes": {
+    "meta": {
+      "title": "Wissenswertes — Ratgeber für Ihre Zahngesundheit",
+      "description": "Hilfreiche Artikel rund um Zahngesundheit: Implantate, Prophylaxe, Kinderzähne, Angstpatienten und mehr. Von Ihren Zahnärztinnen in Othmarschen."
+    },
+    "hero": {
+      "label": "Wissenswertes",
+      "titel": "Gut informiert,",
+      "titelAkzent": "besser versorgt",
+      "subtext": "Unsere Ratgeber-Artikel helfen Ihnen, fundierte Entscheidungen für Ihre Zahngesundheit zu treffen."
+    },
+    "artikel": {
+      "angst": {
+        "titel": "Angst vor dem Zahnarzt? So helfen wir Ihnen",
+        "kategorie": "Wohlbefinden",
+        "kurz": "Zahnarztangst betrifft viele Menschen. Erfahren Sie, wie wir in unserer Praxis gezielt darauf eingehen und Ihnen den Besuch so angenehm wie möglich machen."
+      },
+      "implantate": {
+        "titel": "Implantate: Was Sie wissen sollten",
+        "kategorie": "Behandlung",
+        "kurz": "Alles Wichtige zu Zahnimplantaten — von der Planung bis zur Nachsorge. Wann sind Implantate sinnvoll und was kostet die Behandlung?"
+      },
+      "kinderzaehne": {
+        "titel": "Zahnpflege-Tipps für Kinder",
+        "kategorie": "Kinderzähne",
+        "kurz": "Ab wann Zähne putzen? Welche Zahnpasta? Wie motiviere ich mein Kind? Praktische Tipps für gesunde Kinderzähne von Anfang an."
+      },
+      "zahnschmerzen": {
+        "titel": "Was tun bei Zahnschmerzen?",
+        "kategorie": "Erste Hilfe",
+        "kurz": "Plötzliche Zahnschmerzen können verunsichern. Erfahren Sie, was Sie sofort tun können und wann ein Zahnarztbesuch nötig ist."
+      },
+      "parodontose": {
+        "titel": "Parodontose erkennen und behandeln",
+        "kategorie": "Vorsorge",
+        "kurz": "Parodontose ist die häufigste Ursache für Zahnverlust bei Erwachsenen — aber gut behandelbar. So erkennen Sie die Warnsignale."
+      },
+      "wurzelbehandlung": {
+        "titel": "Wurzelbehandlung: 5 Mythen aufgeklärt",
+        "kategorie": "Behandlung",
+        "kurz": "Die Wurzelbehandlung hat einen schlechten Ruf — zu Unrecht. Wir räumen mit den häufigsten Vorurteilen auf."
+      }
+    },
+    "mehrErfahren": "Mehr erfahren",
+    "fortbildungenHinweis": {
+      "label": "Für Kolleginnen & Kollegen",
+      "titel": "Fortbildungen für Zahnärzte",
+      "text": "Dr. Schwegmann leitet seit 2005 Study Clubs in Implantologie und Parodontologie — mit OP-Training an eigenen Patienten unter Supervision.",
+      "link": "Zu den Fortbildungen"
+    },
+    "cta": {
+      "titel": "Haben Sie",
+      "titelAkzent": "noch Fragen?",
+      "text": "Wir beraten Sie gern persönlich — vereinbaren Sie einen Termin."
+    }
+  }
+}

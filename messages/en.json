@@ -1,0 +1,947 @@
+{
+  "Common": {
+    "nav": {
+      "leistungen": "Services",
+      "team": "Team",
+      "innovationen": "Innovations",
+      "fortbildungen": "Training",
+      "kontakt": "Contact",
+      "terminBuchen": "BOOK APPOINTMENT",
+      "unterseiten": {
+        "oralchirurgie": "Oral Surgery",
+        "implantate": "Implants",
+        "wurzelbehandlung": "Root Canal Treatment",
+        "prophylaxe": "Preventive Care",
+        "parodontologie": "Periodontics",
+        "zahnersatz": "Dental Prosthetics",
+        "kinderzahnheilkunde": "Paediatric Dentistry",
+        "aesthetik": "Cosmetic Dentistry"
+      },
+      "alleLeistungen": "All Services →"
+    },
+    "header": {
+      "logoAlt": "Zahnärzte Parkstrasse — Tree Logo",
+      "praxisName": "ZAHNÄRZTE PARKSTRASSE",
+      "ort": "OTHMARSCHEN",
+      "menuOeffnen": "Open menu",
+      "menuSchliessen": "Close menu"
+    },
+    "footer": {
+      "logoAlt": "Zahnärzte Parkstrasse — Logo",
+      "beschreibung": "Your dental practice in the green heart of Hamburg-Othmarschen. Compassionate dentistry with expertise and heart — we look forward to welcoming you personally.",
+      "praxis": "Practice",
+      "praxisLinks": {
+        "unserTeam": "Our Team",
+        "innovationen": "Innovations",
+        "fortbildungen": "Training",
+        "kontaktAnfahrt": "Contact & Directions",
+        "terminBuchen": "Book Appointment",
+        "faq": "FAQ"
+      },
+      "behandlungen": "Treatments",
+      "behandlungLinks": {
+        "oralchirurgie": "Oral Surgery",
+        "implantate": "Implants",
+        "zahnersatz": "Dental Prosthetics",
+        "wurzelbehandlung": "Root Canal Treatment",
+        "prophylaxe": "Preventive Care",
+        "parodontologie": "Periodontics"
+      },
+      "kontakt": "Contact",
+      "sprechzeiten": {
+        "moDi": "Mon + Tue: 9:00 AM — 6:00 PM",
+        "mi": "Wed: 9:00 AM — 4:00 PM",
+        "do": "Thu: 9:00 AM — 8:00 PM",
+        "fr": "Fri: 9:00 AM — 1:00 PM",
+        "nachVereinbarung": "and by appointment"
+      },
+      "copyright": "© {year} Zahnärzte Parkstrasse Othmarschen. All rights reserved.",
+      "impressum": "Legal Notice",
+      "datenschutz": "Privacy Policy"
+    },
+    "cta": {
+      "titel": "We look forward",
+      "titelAkzent": "to seeing you",
+      "text": "Schedule your appointment — online, by phone or by email.",
+      "ctaText": "BOOK APPOINTMENT"
+    },
+    "cookie": {
+      "text": "We use Google Maps to show you our location. Data may be transmitted to Google.",
+      "mehrErfahren": "Learn more",
+      "nurNotwendige": "Necessary only",
+      "alleAkzeptieren": "Accept all"
+    },
+    "breadcrumbs": {
+      "startseite": "Home",
+      "leistungen": "Services",
+      "oralchirurgie": "Oral Surgery",
+      "implantate": "Implants",
+      "wurzelbehandlung": "Root Canal Treatment",
+      "prophylaxe": "Preventive Care",
+      "parodontologie": "Periodontics",
+      "zahnersatz": "Dental Prosthetics",
+      "kinderzahnheilkunde": "Paediatric Dentistry",
+      "aesthetik": "Cosmetic Dentistry",
+      "team": "Team",
+      "kontakt": "Contact",
+      "termin": "Appointment",
+      "innovationen": "Innovations",
+      "fortbildungen": "Training",
+      "faq": "FAQ",
+      "impressum": "Legal Notice",
+      "datenschutz": "Privacy Policy",
+      "praxis": "Practice",
+      "wissenswertes": "Resources"
+    },
+    "mobileCta": {
+      "anrufen": "Call",
+      "terminBuchen": "Book Appointment"
+    }
+  },
+  "HomePage": {
+    "meta": {
+      "title": "Zahnärzte Parkstrasse Othmarschen",
+      "description": "Your dental practice in Hamburg-Othmarschen. Oral surgery, implants, root canal treatment and more. Since 1998."
+    },
+    "hero": {
+      "badge": "Hamburg Othmarschen",
+      "titel": "Where you can",
+      "titelAkzent": "feel at ease",
+      "text": "Healthy teeth for a lifetime — what a wonderful thought. In our practice in Othmarschen you will find the ideal conditions: compassionate treatment, state-of-the-art methods and a team that takes time for you.",
+      "ctaPrimaer": "BOOK APPOINTMENT",
+      "ctaSekundaer": "MEET THE TEAM",
+      "bildAlt": "The team at Zahnärzte Parkstrasse in Othmarschen",
+      "erfahrung": "25+ Years",
+      "erfahrungDetail": "Experience in Othmarschen"
+    },
+    "philosophie": {
+      "label": "Our Philosophy",
+      "titel": "Dentistry that",
+      "titelAkzent": "earns your trust",
+      "bildAlt": "The welcoming practice rooms",
+      "text1": "In the Parkstraße in Hamburg-Othmarschen we have created a place where dentistry feels natural and anxiety-free. We know that many people associate a dental visit with unease — that is exactly why we take extra time for you.",
+      "text2": "What would a good practice be without outstanding staff? Many of our team members have been with us for years and stayed loyal even through family expansions. Together we offer you the full spectrum of modern dentistry.",
+      "badge": "Specialist Dentist",
+      "badgeDetail": "for Oral Surgery",
+      "werte": {
+        "einfuehlsam": "Empathetic",
+        "einfuehlsamDetail": "Anxiety-free treatment",
+        "erfahren": "Experienced",
+        "erfahrenDetail": "Since 1998 in Othmarschen",
+        "ganzheitlich": "Holistic",
+        "ganzheitlichDetail": "People come first"
+      }
+    },
+    "leistungen": {
+      "label": "Our Services",
+      "titel": "Rooted in",
+      "titelAkzent": "Expertise",
+      "subtext": "From gentle preventive care to advanced implantology — we offer you a wide range of modern dentistry under one roof.",
+      "items": {
+        "oralchirurgie": {
+          "titel": "Oral Surgery",
+          "beschreibung": "Implants, bone and soft tissue augmentation, wisdom tooth removal and surgical periodontal therapy."
+        },
+        "zahnheilkunde": {
+          "titel": "General Dentistry",
+          "beschreibung": "Check-ups, preventive care, high-quality dental prosthetics, fillings and paediatric dentistry — all at the highest level."
+        },
+        "wurzelbehandlung": {
+          "titel": "Root Canal Treatment",
+          "beschreibung": "Endodontic curriculum — with mechanical preparation and electronic length measurement for the best possible tooth preservation."
+        },
+        "prophylaxe": {
+          "titel": "Preventive Care",
+          "beschreibung": "Professional teeth cleaning and individual preventive care programmes for radiantly healthy teeth."
+        },
+        "implantologie": {
+          "titel": "Implantology",
+          "beschreibung": "Fixed dental restorations on implants — we use almost exclusively autologous tissue."
+        }
+      },
+      "alleAnsehen": "VIEW ALL SERVICES"
+    },
+    "patientJourney": {
+      "label": "Your Path to Us",
+      "titel": "Healthy teeth in",
+      "titelAkzent": "four simple steps",
+      "schritte": {
+        "s1": {
+          "titel": "Book an Appointment",
+          "text": "Online, by phone or by email — whichever you prefer."
+        },
+        "s2": {
+          "titel": "Arrive & Feel at Ease",
+          "text": "We take time for a thorough initial consultation and get to know you and your wishes."
+        },
+        "s3": {
+          "titel": "Individual Treatment",
+          "text": "Together we discuss the best approach and treat you at the highest professional level."
+        },
+        "s4": {
+          "titel": "Aftercare & Prevention",
+          "text": "Regular preventive care and personal attention — so your teeth stay healthy for a lifetime."
+        }
+      },
+      "mehrZumErstenBesuch": "MORE ABOUT YOUR FIRST VISIT"
+    },
+    "testimonials": {
+      "label": "Patient Testimonials",
+      "titel": "What our",
+      "titelAkzent": "patients say",
+      "items": {
+        "t1": {
+          "text": "I was afraid of the dentist for years. At Dr. Schwegmann's practice I finally feel truly comfortable.",
+          "autor": "Patient since 2019"
+        },
+        "t2": {
+          "text": "The root canal treatment with Dr. Janz was so gentle that I couldn't believe it was already over.",
+          "autor": "Patient since 2021"
+        },
+        "t3": {
+          "text": "Finally a practice that truly takes its time. Here you are not just a number.",
+          "autor": "Patient since 2016"
+        }
+      }
+    },
+    "team": {
+      "label": "Our Team",
+      "titel": "The people behind",
+      "titelAkzent": "your smile",
+      "aerztinnen": {
+        "schwegmann": {
+          "rolle": "Specialist Dentist for Oral Surgery"
+        },
+        "janz": {
+          "rolle": "Dentist · Endodontics"
+        },
+        "prueter": {
+          "rolle": "Dentist"
+        }
+      },
+      "alleKennenlernen": "MEET THE TEAM"
+    },
+    "kontakt": {
+      "label": "Contact",
+      "titel": "We are here",
+      "titelAkzent": "for you",
+      "adresse": "Address",
+      "telefon": "Phone",
+      "sprechzeiten": "Office Hours",
+      "nachVereinbarung": "and by appointment",
+      "jetztTermin": "BOOK YOUR APPOINTMENT NOW"
+    }
+  },
+  "Team": {
+    "meta": {
+      "title": "Our Team — Dr. Schwegmann, Dr. Janz & Dr. Prüter",
+      "description": "Meet our dentists: Dr. Claudia Schwegmann (Specialist in Oral Surgery), Dr. Nina Janz (Endodontics) and Dr. Julia Prüter. In Othmarschen since 1998."
+    },
+    "hero": {
+      "label": "Our Team",
+      "titel": "The people behind",
+      "titelAkzent": "your smile",
+      "subtext": "Three dentists, one well-coordinated team and a shared conviction: every patient deserves our full attention."
+    },
+    "aerztinnen": {
+      "schwegmann": {
+        "rolle": "Practice Owner · Specialist Dentist for Oral Surgery",
+        "zitat": "I want my patients to go home with a good feeling — not just with healthy teeth.",
+        "ueber": "Dr. Claudia Schwegmann has been practising in Othmarschen since 1998 and has established herself as a specialist dentist for oral surgery. Her focus lies on implantology and bone augmentation — using almost exclusively autologous tissue.",
+        "timeline": {
+          "t1": {
+            "jahr": "1988–1993",
+            "text": "Dental studies"
+          },
+          "t2": {
+            "jahr": "1993–1998",
+            "text": "AK Altona, Oral and Maxillofacial Surgery"
+          },
+          "t3": {
+            "jahr": "1997",
+            "text": "Specialist Dentist for Oral Surgery"
+          },
+          "t4": {
+            "jahr": "1998",
+            "text": "Established practice in Hamburg-Othmarschen"
+          },
+          "t5": {
+            "jahr": "2000–2009",
+            "text": "Study Group Dragoo (Periodontics & Implantology)"
+          },
+          "t6": {
+            "jahr": "Since 2008",
+            "text": "Lectures and study clubs for dentists"
+          }
+        },
+        "tags": [
+          "Oral Surgery",
+          "Implantology",
+          "Bone Augmentation",
+          "Soft Tissue Surgery"
+        ]
+      },
+      "janz": {
+        "rolle": "Dentist · Endodontics Specialist",
+        "zitat": "A good root canal treatment can save a tooth that would otherwise be lost. That motivates me every day.",
+        "ueber": "Dr. Nina Janz has been strengthening the practice since 2008. Her particular focus is endodontics — the treatment of the tooth interior. With her endodontic curriculum and state-of-the-art technology she saves teeth that others would give up on.",
+        "timeline": {
+          "t1": {
+            "jahr": "1995–2001",
+            "text": "Dental studies"
+          },
+          "t2": {
+            "jahr": "2001–2008",
+            "text": "Practice experience in Tostedt"
+          },
+          "t3": {
+            "jahr": "Since 2008",
+            "text": "Together with Dr. Schwegmann"
+          },
+          "t4": {
+            "jahr": "2012–2014",
+            "text": "Endodontic curriculum"
+          }
+        },
+        "tags": [
+          "Endodontics",
+          "Root Canal Treatment",
+          "General Dentistry"
+        ]
+      },
+      "prueter": {
+        "rolle": "Dentist",
+        "zitat": "I am delighted to be part of this experienced team and to learn from the best.",
+        "ueber": "Dr. Julia Prüter is the newest addition to our team. After her state examination in 2022 at UKE Hamburg she brings fresh knowledge and current treatment methods to the practice.",
+        "timeline": {
+          "t1": {
+            "jahr": "2022",
+            "text": "State examination at UKE Hamburg"
+          },
+          "t2": {
+            "jahr": "Since 10/2024",
+            "text": "Dentist at the practice"
+          }
+        },
+        "tags": [
+          "General Dentistry"
+        ]
+      }
+    },
+    "praxisteam": {
+      "label": "Our Practice Team",
+      "titel": "Well-coordinated, warm,",
+      "titelAkzent": "competent",
+      "text": "What would a good practice be without outstanding staff? Many have been with us for years and stayed loyal even through family expansions. Our team at reception and in treatment ensures that you feel comfortable from the very first moment.",
+      "gruppenfotoAlt": "The entire team at Zahnärzte Parkstrasse",
+      "gruppenfoto2Alt": "The practice team in front of the practice"
+    },
+    "cta": {
+      "titel": "Get to know us",
+      "titelAkzent": "in person",
+      "text": "We look forward to welcoming you in our practice."
+    }
+  },
+  "Kontakt": {
+    "meta": {
+      "title": "Contact & Directions",
+      "description": "How to find us: Parkstraße 10, 22605 Hamburg-Othmarschen. Phone: 040 880 21 50. Parking available."
+    },
+    "hero": {
+      "label": "Contact",
+      "titel": "How to",
+      "titelAkzent": "find us"
+    },
+    "kontaktdaten": {
+      "adresse": "Address",
+      "telefonEmail": "Phone & Email",
+      "sprechzeiten": "Office Hours",
+      "nachVereinbarung": "and by appointment"
+    },
+    "anfahrt": {
+      "label": "Directions",
+      "titel": "How to",
+      "titelAkzent": "get to us",
+      "sbahn": {
+        "titel": "S-Bahn (Suburban Rail)",
+        "text": "S1 / S11 — Stop Othmarschen (approx. 8 minutes on foot)"
+      },
+      "bus": {
+        "titel": "Bus",
+        "text": "Line 1 — Stop Parkstraße (right at our door)\nLine 15 — Stop Othmarschen, Waitzstraße (approx. 5 min.)"
+      },
+      "auto": {
+        "titel": "By Car",
+        "text": "Parking available directly on the street. Access via Waitzstraße or Reventlowstraße."
+      }
+    },
+    "fortbildungen": {
+      "label": "For Dentists",
+      "titel": "Training & Study Clubs",
+      "text": "Hands-on training in implantology and periodontics — led by Dr. Schwegmann.",
+      "mehrErfahren": "LEARN MORE"
+    }
+  },
+  "Termin": {
+    "meta": {
+      "title": "Book an Appointment",
+      "description": "Book your appointment at Zahnärzte Parkstrasse in Hamburg-Othmarschen — online, by phone or by email."
+    },
+    "hero": {
+      "label": "Appointment Booking",
+      "titel": "Book your",
+      "titelAkzent": "appointment",
+      "subtext": "Book your preferred appointment conveniently online or give us a call."
+    },
+    "optionen": {
+      "telefon": "Phone",
+      "email": "Email",
+      "vorOrt": "In Person"
+    },
+    "online": {
+      "label": "Book Online",
+      "titel": "Your preferred appointment",
+      "titelAkzent": "in just a few clicks",
+      "platzhalter": "Online booking will be activated shortly.",
+      "bissDahin": "In the meantime you can reach us by phone at {telefon} or by email."
+    },
+    "sprechzeiten": {
+      "label": "Office Hours",
+      "titel": "When you can",
+      "titelAkzent": "reach us",
+      "tage": {
+        "montag": "Monday",
+        "dienstag": "Tuesday",
+        "mittwoch": "Wednesday",
+        "donnerstag": "Thursday",
+        "freitag": "Friday"
+      },
+      "zeiten": {
+        "montag": "9:00 AM — 6:00 PM",
+        "dienstag": "9:00 AM — 6:00 PM",
+        "mittwoch": "9:00 AM — 4:00 PM",
+        "donnerstag": "9:00 AM — 8:00 PM",
+        "freitag": "9:00 AM — 1:00 PM"
+      },
+      "nachVereinbarung": "and by appointment",
+      "erstbesuchHinweis": "Please allow approximately 45 minutes for your first visit."
+    },
+    "mitbringen": {
+      "titel": "What should I bring to my first appointment?",
+      "items": [
+        "Insurance card",
+        "Recent X-rays (if available)",
+        "Medication list (if applicable)",
+        "Bonus booklet (dental check-up record)"
+      ]
+    }
+  },
+  "Leistungen": {
+    "meta": {
+      "title": "Our Services",
+      "description": "Our range of services: oral surgery, implants, dental prosthetics, root canal treatment, preventive care, periodontics, paediatric dentistry and cosmetic dentistry in Othmarschen."
+    },
+    "hero": {
+      "label": "Our Services",
+      "titel": "Rooted in",
+      "titelAkzent": "Expertise",
+      "subtext": "From gentle preventive care to advanced implantology — we offer you the full spectrum of modern dentistry under one roof."
+    },
+    "items": {
+      "oralchirurgie": {
+        "titel": "Oral Surgery",
+        "kurz": "Implants, bone and soft tissue augmentation, wisdom tooth removal and surgical periodontal therapy — with specialist dentist Dr. Schwegmann you are in the best hands."
+      },
+      "implantate": {
+        "titel": "Dental Implants",
+        "kurz": "Fixed dental restorations on implants — we use almost exclusively autologous tissue for bone and soft tissue augmentation."
+      },
+      "zahnersatz": {
+        "titel": "Dental Prosthetics",
+        "kurz": "Crowns, bridges and dentures — crafted with an intraoral scanner by our partner laboratory in Bönningstedt. Quality from the region."
+      },
+      "wurzelbehandlung": {
+        "titel": "Root Canal Treatment",
+        "kurz": "Dr. Nina Janz brings her endodontic curriculum — with mechanical preparation and electronic length measurement for the best possible tooth preservation."
+      },
+      "prophylaxe": {
+        "titel": "Preventive Care & Dental Hygiene",
+        "kurz": "Professional teeth cleaning and individual preventive care programmes — for brilliantly clean teeth and healthy gums, for a lifetime."
+      },
+      "parodontologie": {
+        "titel": "Periodontics",
+        "kurz": "Individual therapy for gum inflammation and bone loss — conservative and surgical."
+      },
+      "kinderzahnheilkunde": {
+        "titel": "Paediatric Dentistry",
+        "kurz": "As parents ourselves, we know how important a trusting and anxiety-free atmosphere is for little ones."
+      },
+      "aesthetik": {
+        "titel": "Cosmetic Dentistry",
+        "kurz": "Professional bleaching, veneers and cosmetic corrections for your most beautiful smile."
+      }
+    },
+    "mehrErfahren": "Learn more",
+    "schwerpunkt": {
+      "label": "Our Focus",
+      "titel": "Oral Surgery &",
+      "titelAkzent": "Implantology",
+      "text": "Dr. Claudia Schwegmann is one of the few specialist dentists for oral surgery in Hamburg. This specialisation means for you: surgical procedures at the highest level, minimally invasive and with autologous materials.",
+      "link": "MORE ABOUT ORAL SURGERY",
+      "bildAlt": "Dr. Claudia Schwegmann — Specialist Dentist for Oral Surgery"
+    },
+    "cta": {
+      "titel": "Which treatment",
+      "titelAkzent": "do you need?",
+      "text": "We are happy to advise you — schedule an appointment for a no-obligation consultation."
+    }
+  },
+  "Innovationen": {
+    "meta": {
+      "title": "Innovations",
+      "description": "Modern dentistry in Hamburg-Othmarschen: Enamel-identical crowns, dental trauma treatment, mucogingival surgery and bone preservation using your own teeth."
+    },
+    "hero": {
+      "label": "What sets us apart",
+      "titel": "Innovations",
+      "titelAkzent": "in our practice",
+      "subtext": "Modern methods and special competencies you will find with us — for gentler treatments and better results."
+    },
+    "items": {
+      "kronen": {
+        "titel": "Enamel-Identical Crowns and Fillings",
+        "kurztext": "Tooth-coloured ceramics with the same hardness as natural enamel — bonded to the tooth like new enamel.",
+        "langtext": "Many ceramic crowns are very hard and can damage the opposing teeth or the crowned tooth in the long term. That is why we prefer tooth-coloured ceramics with the same hardness as natural enamel, bonded firmly to the teeth like new enamel. This procedure is particularly important for complex rehabilitations, e.g. when teeth are severely worn. Thanks to modern AI-assisted impression techniques (scan) without impression trays."
+      },
+      "zahntrauma": {
+        "titel": "Dental Trauma",
+        "kurztext": "Specialisation in the treatment and aesthetic restoration of injured front teeth.",
+        "langtext": "In dental trauma one or more front teeth are usually injured. In the worst case teeth can even be completely knocked out. This not infrequently leads to long-term problems which, however, are well solvable in the right hands. With us you are in exactly the right place when it comes to the treatment and aesthetic restoration of front teeth."
+      },
+      "zahnfleisch": {
+        "titel": "Gum Surgery",
+        "kurztext": "25 years of expertise in restoring healthy gum conditions.",
+        "langtext": "Restoring healthy gum conditions — such as improving blood circulation, aesthetic improvements in the visible area, and before or after placing implants — requires sound knowledge of periodontics and mucogingival surgery. We have had this expertise for 25 years and can thus keep implants and teeth in our patients' mouths for as long as possible."
+      },
+      "knochenerhalt": {
+        "titel": "Bone Preservation Using Your Own Teeth",
+        "kurztext": "Parts of the extracted tooth are used for bone preservation — expensive bone augmentations are often no longer needed.",
+        "langtext": "This refers to a procedure in which parts of the tooth can be used for bone preservation when extracting a tooth. This often eliminates the need for expensive and lengthy bone augmentations before implantation."
+      }
+    }
+  },
+  "Fortbildungen": {
+    "meta": {
+      "title": "Continuing Education for Dentists",
+      "description": "Study Clubs Implantology & Periodontics — hands-on training for dentists. Led by Dr. Claudia Schwegmann in cooperation with Fraga Dental."
+    },
+    "hero": {
+      "label": "For Colleagues",
+      "titel": "Continuing Education",
+      "titelAkzent": "for Dentists",
+      "subtext": "Hands-on study clubs in implantology and periodontics — operate on your own patients under supervision."
+    },
+    "einleitung": {
+      "titel": "Dear Colleagues",
+      "titelAkzent": "",
+      "text1": "If you are interested in everything related to periodontics and implants but have not yet dared to take the step, or find other training courses too theoretical, then a study club is ideal.",
+      "text2": "Since Mick Dragoo brought this concept to Hamburg in 2000, I have been enthusiastic about it. I have now been leading two study clubs since 2005 — one in Pinneberg (Ladies only — more women in surgery!) and one in Oldenburg, Lower Saxony.",
+      "text3": "If you are interested, please feel free to contact me at the practice or register directly with Fraga Dental. They also organise study clubs by other colleagues which I highly recommend.",
+      "signatur": "— Dr. Claudia Schwegmann"
+    },
+    "prinzip": {
+      "titel": "The Concept",
+      "tag1": {
+        "titel": "Day 1 — Theory",
+        "text": "Presentation of your own cases, discussion of the procedure and planning of the surgeries."
+      },
+      "tag2": {
+        "titel": "Day 2 — Practice",
+        "text": "Surgery on your own patient, with your own instruments under supervision of the instructor."
+      }
+    },
+    "vorteile": {
+      "label": "Why a Study Club?",
+      "titel": "Practice rather than",
+      "titelAkzent": "just theory",
+      "items": {
+        "eigenePatienten": {
+          "titel": "Your Own Patients",
+          "text": "You operate yourself — on your own patient, with your own instruments."
+        },
+        "supervision": {
+          "titel": "Supervision",
+          "text": "All steps are discussed beforehand and accompanied during execution."
+        },
+        "echteFaelle": {
+          "titel": "10–15 Real Cases",
+          "text": "Per study club you will see and discuss just as many real patient cases."
+        },
+        "selbstvertrauen": {
+          "titel": "Confidence",
+          "text": "Optimal confidence to get started in your own practice."
+        }
+      }
+    },
+    "termine": {
+      "label": "Dates",
+      "titel": "The upcoming",
+      "titelAkzent": "Study Clubs",
+      "studyClubs": {
+        "pinneberg": {
+          "titel": "Study Club Implantology 11 — Pinneberg",
+          "daten": [
+            "Dates to be announced shortly"
+          ]
+        },
+        "oldenburg": {
+          "titel": "Study Club Implantology – Periodontics 8 — Oldenburg",
+          "daten": [
+            "Dates to be announced shortly"
+          ]
+        }
+      },
+      "detailsLink": "Details at Fraga Dental →"
+    },
+    "kontaktSection": {
+      "label": "Interested?",
+      "titel": "Get in touch",
+      "titelAkzent": "with us",
+      "text": "If you are interested in the study clubs, you can contact Dr. Schwegmann directly at the practice or register with Fraga Dental. Fraga Dental also organises study clubs by other colleagues which are equally recommended."
+    }
+  },
+  "FAQ": {
+    "meta": {
+      "title": "Frequently Asked Questions",
+      "description": "Answers to the most common questions: costs, procedures, insurance, anxious patients. Zahnärzte Parkstrasse in Hamburg-Othmarschen."
+    },
+    "hero": {
+      "label": "FAQ",
+      "titel": "Frequently asked",
+      "titelAkzent": "questions",
+      "subtext": "Here you will find answers to the questions we are asked most often."
+    },
+    "kategorien": {
+      "allgemein": {
+        "titel": "General",
+        "fragen": {
+          "wartezeit": {
+            "frage": "Will I have to wait long for an appointment?",
+            "antwort": "As a rule we can offer you an appointment within 1–2 weeks. For acute complaints we strive to arrange a short-notice appointment."
+          },
+          "angstpatienten": {
+            "frage": "Do you also treat anxious patients?",
+            "antwort": "Yes, absolutely. We take extra time and explain every step. Many of our patients initially came to us with dental anxiety."
+          },
+          "sprachen": {
+            "frage": "What languages do you speak?",
+            "antwort": "German, English, French and Spanish."
+          }
+        }
+      },
+      "kostenVersicherung": {
+        "titel": "Costs & Insurance",
+        "fragen": {
+          "kosten": {
+            "frage": "How much does a treatment cost?",
+            "antwort": "We always prepare a transparent cost plan in advance. Statutory health insurance patients receive the standard benefit; additional services are discussed beforehand."
+          },
+          "privatpatienten": {
+            "frage": "Do you accept private patients?",
+            "antwort": "Yes, we treat both statutory and privately insured patients."
+          },
+          "ratenzahlung": {
+            "frage": "Do you offer payment plans?",
+            "antwort": "For larger treatments we offer individual payment arrangements."
+          }
+        }
+      },
+      "behandlungen": {
+        "titel": "Treatments",
+        "fragen": {
+          "wurzelbehandlung": {
+            "frage": "Does a root canal treatment hurt?",
+            "antwort": "No — under anaesthesia you will feel nothing. More details on our root canal treatment page."
+          },
+          "implantate": {
+            "frage": "How long do implants last?",
+            "antwort": "With proper care, a lifetime. The crown on top lasts on average 15–20 years."
+          },
+          "kinderzahnarzt": {
+            "frage": "At what age should my child see a dentist?",
+            "antwort": "From the first milk tooth — usually around 6 months of age."
+          }
+        }
+      }
+    },
+    "mehrErfahren": "Learn more",
+    "cta": {
+      "titel": "Still have questions?",
+      "titelAkzent": "Give us a call",
+      "text": "We are happy to answer any further questions personally."
+    }
+  },
+  "Praxis": {
+    "meta": {
+      "title": "Our Practice in Hamburg-Othmarschen",
+      "description": "Discover our dental practice on Parkstraße: modern equipment, a warm atmosphere and over 25 years of experience in Hamburg-Othmarschen."
+    },
+    "hero": {
+      "label": "Our Practice",
+      "titel": "Where dentistry feels like",
+      "titelAkzent": "home",
+      "subtext": "On Parkstraße since 1998 — a place where expertise and humanity come together."
+    },
+    "philosophie": {
+      "label": "Our Philosophy",
+      "titel": "More than",
+      "titelAkzent": "perfect technique",
+      "bildAlt": "Welcoming practice rooms",
+      "text1": "We believe that good dentistry is more than perfect technique. It is about seeing people, listening and treating individually. In our practice we take the time your health deserves.",
+      "text2": "Our approach: we do not just treat teeth, we treat people. Every patient brings their own story — and we respond to it."
+    },
+    "raeume": {
+      "label": "Our Rooms",
+      "titel": "Bright rooms,",
+      "titelAkzent": "warm atmosphere",
+      "subtext": "Bright, friendly rooms with views of the greenery — in the heart of Othmarschen. Our practice combines modern equipment with an atmosphere in which you can feel at ease.",
+      "bilder": {
+        "behandlung": "Modern treatment room",
+        "empfang": "Our reception area"
+      }
+    },
+    "ausstattung": {
+      "label": "Equipment",
+      "titel": "State-of-the-art technology,",
+      "titelAkzent": "gentle treatment",
+      "items": {
+        "intraoralscanner": {
+          "titel": "Intraoral Scanner",
+          "text": "Digital impressions without unpleasant impression material"
+        },
+        "lupenbrille": {
+          "titel": "Magnifying Loupes & Microscope",
+          "text": "Highest precision in every treatment"
+        },
+        "roentgen": {
+          "titel": "Digital X-Ray",
+          "text": "Less radiation, instant results"
+        },
+        "gewebe": {
+          "titel": "Autologous Tissue",
+          "text": "Bone augmentation with your own material"
+        }
+      }
+    },
+    "sprachen": {
+      "label": "Languages:",
+      "text": "We treat and consult in German, English, French and Spanish."
+    },
+    "netzwerk": {
+      "label": "Our Network",
+      "titel": "Strong partners for",
+      "titelAkzent": "the best results",
+      "partner": {
+        "hamburgerZahntechnik": {
+          "name": "Hamburger Zahntechnik",
+          "text": "Our dental prosthetics come from Bönningstedt — not from abroad."
+        },
+        "fairImplant": {
+          "name": "FairImplant",
+          "text": "High-quality implant systems for long-lasting results."
+        },
+        "fragaDental": {
+          "name": "Fraga Dental",
+          "text": "Partner for training and practice supplies."
+        }
+      }
+    },
+    "cta": {
+      "titel": "See for",
+      "titelAkzent": "yourself",
+      "text": "Visit us on Parkstraße and experience our practice in person."
+    }
+  },
+  "Impressum": {
+    "meta": {
+      "title": "Legal Notice",
+      "description": "Legal notice of Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann, Dr. Janz & Dr. Prüter, Hamburg."
+    },
+    "titel": "Legal Notice",
+    "angabenDDG": {
+      "titel": "Information pursuant to § 5 DDG",
+      "text": "Dr. Claudia Schwegmann\nDentist (Practice Owner)\nParkstraße 10\n22605 Hamburg"
+    },
+    "kontakt": {
+      "titel": "Contact",
+      "text": "Phone: 040 — 880 21 50\nEmail: info@zahnarzt-othmarschen.de"
+    },
+    "berufsbezeichnung": {
+      "titel": "Professional Title",
+      "text": "Statutory professional title: Dentists\n(conferred in the Federal Republic of Germany)",
+      "details": "Dr. Claudia Schwegmann: Specialist Dentist for Oral Surgery\nDr. Nina Janz: Dentist — Endodontic Curriculum\nDr. Julia Prüter: Dentist"
+    },
+    "kammer": {
+      "titel": "Responsible Chamber",
+      "text": "Zahnärztekammer Hamburg\nMöllner Landstraße 31\n22111 Hamburg"
+    },
+    "aufsicht": {
+      "titel": "Responsible Supervisory Authority",
+      "text": "Authority for Labour, Health, Social Affairs, Family and Integration (Social Authority)\nHamburger Straße 47\n22083 Hamburg"
+    },
+    "kzv": {
+      "titel": "Association of Statutory Health Insurance Dentists",
+      "text": "Kassenzahnärztliche Vereinigung Hamburg\nGroße Bleichen 23\n20354 Hamburg"
+    },
+    "berufsrecht": {
+      "titel": "Professional Regulations",
+      "text": "The following professional regulations apply:",
+      "items": [
+        "Dental Practice Act (ZHG)",
+        "Hamburg Chamber Act for Health Professions (HmbKGH)",
+        "Professional Code of the Hamburg Dental Chamber",
+        "Fee Schedule for Dentists (GOZ)"
+      ],
+      "hinweis": "The regulations can be viewed at: www.zahnaerztekammer-hh.de"
+    },
+    "streitschlichtung": {
+      "titel": "Dispute Resolution",
+      "text": "The European Commission provides a platform for online dispute resolution (ODR):",
+      "nichtBereit": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+    }
+  },
+  "Datenschutz": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Privacy policy of Zahnärzte Parkstrasse Othmarschen — information about the handling of your personal data."
+    },
+    "titel": "Privacy Policy",
+    "ueberblick": {
+      "titel": "1. Data Protection at a Glance",
+      "text": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you can be personally identified. Detailed information on data protection can be found in the following sections."
+    },
+    "verantwortlich": {
+      "titel": "2. Responsible Party",
+      "text": "Responsible for data processing on this website is:",
+      "details": "Dr. Claudia Schwegmann\nParkstraße 10\n22605 Hamburg\nPhone: 040 — 880 21 50\nEmail: info@zahnarzt-othmarschen.de",
+      "erklaerung": "The responsible party decides alone or jointly with others on the purposes and means of processing personal data (e.g. names, email addresses)."
+    },
+    "hosting": {
+      "titel": "3. Hosting",
+      "text": "This website is hosted on a server in Germany. When you visit our website, the web server automatically collects technical access data (see section 'Server Log Files'). Processing is based on our legitimate interest in the efficient and secure provision of our website (Art. 6 para. 1 lit. f GDPR)."
+    },
+    "ssl": {
+      "titel": "4. SSL/TLS Encryption",
+      "text": "This site uses SSL/TLS encryption for security reasons and to protect the transmission of data. You can recognise an encrypted connection by the address bar of the browser changing from 'http://' to 'https://' and by the lock symbol in your browser bar."
+    },
+    "datenerfassung": {
+      "titel": "5. Data Collection on This Website",
+      "serverLog": {
+        "titel": "Server Log Files",
+        "text": "The web server of this website automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:",
+        "items": [
+          "Browser type and version",
+          "Operating system used",
+          "Referrer URL (previously visited page)",
+          "Hostname of the accessing computer",
+          "Time of the server request",
+          "IP address"
+        ],
+        "hinweis": "This data is not merged with other data sources. The collection of this data is based on Art. 6 para. 1 lit. f GDPR. We have a legitimate interest in the technically error-free presentation and optimisation of our website. The server log files are regularly deleted and not stored permanently."
+      },
+      "cookies": {
+        "titel": "Cookies",
+        "text": "This website itself does not set its own cookies. However, through the integration of Google Maps on our contact page, cookies from Google may be set (see section 'Google Maps'). No further tracking cookies or analytics tools are used."
+      }
+    },
+    "externeDienste": {
+      "titel": "6. External Services",
+      "fonts": {
+        "titel": "Fonts (Google Fonts — local)",
+        "text": "This website uses fonts from Google Fonts. The fonts are embedded locally on our server and loaded directly from there when you access our website. No connection to Google servers is established. Your IP address is not transmitted to Google."
+      },
+      "maps": {
+        "titel": "Google Maps",
+        "text": "On our contact page Google Maps is used as an embedded map. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When you access the contact page, a connection to Google's servers is established, whereby your IP address, among other things, is transmitted to Google. Google may set cookies. The legal basis is Art. 6 para. 1 lit. f GDPR (legitimate interest in an appealing presentation of our directions). Further information can be found in Google's privacy policy."
+      }
+    },
+    "rechte": {
+      "titel": "7. Your Rights as a Data Subject",
+      "text": "Within the framework of the applicable legal provisions you have the following rights at any time regarding your personal data:",
+      "items": {
+        "auskunft": "Right to information about your data stored by us (Art. 15 GDPR)",
+        "berichtigung": "Right to rectification of inaccurate data (Art. 16 GDPR)",
+        "loeschung": "Right to erasure of your data (Art. 17 GDPR)",
+        "einschraenkung": "Right to restriction of processing (Art. 18 GDPR)",
+        "uebertragbarkeit": "Right to data portability (Art. 20 GDPR)",
+        "widerspruch": "Right to object to processing (Art. 21 GDPR)"
+      },
+      "kontaktHinweis": "To exercise your rights you can contact us at any time (contact details see above)."
+    },
+    "beschwerde": {
+      "titel": "8. Right to Complain to the Supervisory Authority",
+      "text": "If you believe that the processing of your personal data violates the GDPR, you have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). The responsible authority is:",
+      "behoerde": "The Hamburg Commissioner for Data Protection and Freedom of Information\nLudwig-Erhard-Str 22, 7th floor\n20459 Hamburg\nPhone: 040 / 428 54 - 4040\nEmail: mailbox@datenschutz.hamburg.de"
+    },
+    "aktualitaet": {
+      "titel": "9. Currency and Changes to This Privacy Policy",
+      "text": "This privacy policy is currently valid as of March 2026. Due to the further development of our website or changes in legal or regulatory requirements, it may become necessary to amend this privacy policy."
+    }
+  },
+  "Wissenswertes": {
+    "meta": {
+      "title": "Resources — Guide to Your Dental Health",
+      "description": "Helpful articles about dental health: implants, preventive care, children's teeth, anxious patients and more. From your dentists in Othmarschen."
+    },
+    "hero": {
+      "label": "Resources",
+      "titel": "Well informed,",
+      "titelAkzent": "better cared for",
+      "subtext": "Our guide articles help you make informed decisions about your dental health."
+    },
+    "artikel": {
+      "angst": {
+        "titel": "Afraid of the Dentist? How We Help You",
+        "kategorie": "Well-being",
+        "kurz": "Dental anxiety affects many people. Learn how we specifically address this in our practice and make your visit as pleasant as possible."
+      },
+      "implantate": {
+        "titel": "Implants: What You Should Know",
+        "kategorie": "Treatment",
+        "kurz": "Everything important about dental implants — from planning to aftercare. When are implants a good choice and how much does the treatment cost?"
+      },
+      "kinderzaehne": {
+        "titel": "Dental Care Tips for Children",
+        "kategorie": "Children's Teeth",
+        "kurz": "When to start brushing? Which toothpaste? How do I motivate my child? Practical tips for healthy children's teeth from the start."
+      },
+      "zahnschmerzen": {
+        "titel": "What to Do About Toothache?",
+        "kategorie": "First Aid",
+        "kurz": "Sudden toothache can be unsettling. Learn what you can do immediately and when a dental visit is necessary."
+      },
+      "parodontose": {
+        "titel": "Recognising and Treating Periodontal Disease",
+        "kategorie": "Prevention",
+        "kurz": "Periodontal disease is the most common cause of tooth loss in adults — but it is very treatable. Here is how to recognise the warning signs."
+      },
+      "wurzelbehandlung": {
+        "titel": "Root Canal Treatment: 5 Myths Debunked",
+        "kategorie": "Treatment",
+        "kurz": "Root canal treatment has a bad reputation — unjustly so. We clear up the most common misconceptions."
+      }
+    },
+    "mehrErfahren": "Learn more",
+    "fortbildungenHinweis": {
+      "label": "For Colleagues",
+      "titel": "Continuing Education for Dentists",
+      "text": "Dr. Schwegmann has been leading study clubs in implantology and periodontics since 2005 — with surgical training on your own patients under supervision.",
+      "link": "View Training Programmes"
+    },
+    "cta": {
+      "titel": "Do you have",
+      "titelAkzent": "any questions?",
+      "text": "We are happy to advise you personally — schedule an appointment."
+    }
+  }
+}

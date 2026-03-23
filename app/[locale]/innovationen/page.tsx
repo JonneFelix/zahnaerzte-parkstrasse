@@ -3,54 +3,45 @@ import Image from "next/image";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import CTABanner from "../../components/CTABanner";
+import { getDictionary, type Locale } from "../../../lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Innovationen",
-  description:
-    "Moderne Zahnmedizin in Hamburg-Othmarschen: Schmelzidentische Kronen, Zahntrauma-Behandlung, Mucogingivalchirurgie und Knochenerhalt durch eigene Zähne.",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Innovationen as Record<string, unknown>;
+  const meta = t.meta as Record<string, string>;
+  return { title: meta.title, description: meta.description };
+}
+
+const innovationsBilder: Record<string, string | undefined> = {
+  kronen: "/images/patientenberatung.jpg",
+  zahntrauma: undefined,
+  zahnfleisch: "/images/mikroskop-in-aktion.jpg",
+  knochenerhalt: undefined,
 };
 
-const innovationen = [
-  {
-    titel: "Schmelzidentische Kronen und Füllungen",
-    kurztext:
-      "Zahnfarbene Keramiken mit der gleichen Härte wie natürlicher Zahnschmelz — fest aufgeklebt wie neuer Schmelz.",
-    langtext:
-      "Viele Kronen aus Keramik sind sehr hart und können die Gegenbezahnung oder den überkronten Zahn langfristig schädigen. Daher verwenden wir gerne zahnfarbene Keramiken, die die gleiche Härte wie natürlicher Zahnschmelz haben, und auf die Zähne fest aufgeklebt werden, wie neuer Schmelz. Besondere Bedeutung kommt dieses Verfahren bei komplexen Rehabilitationen, z.B. wenn die Zähne stark abgenutzt sind. Dank moderner KI-gestützter Abdrucktechniken (Scan) ohne Abdrucklöffel.",
-    bild: "/images/patientenberatung.jpg",
-  },
-  {
-    titel: "Zahntrauma",
-    kurztext:
-      "Spezialisierung auf die Behandlung und ästhetische Wiederherstellung verletzter Frontzähne.",
-    langtext:
-      "Bei einem Zahntrauma wird meistens einer oder mehrere Frontzähne verletzt. Im schlimmsten Fall können Zähne sogar ganz aus dem Mund herausgebrochen werden. Daraus entwickeln sich nicht selten langfristige Probleme, die aber in den richtigen Händen gut lösbar sind. Bei uns sind Sie genau richtig, wenn es um die Behandlung und ästhetische Wiederherstellung der Frontzähne geht.",
-  },
-  {
-    titel: "Zahnfleischchirurgie",
-    kurztext:
-      "25 Jahre Expertise in der Wiederherstellung gesunder Zahnfleischverhältnisse.",
-    langtext:
-      "Zur Wiederherstellung gesunder Zahnfleischverhältnisse, wie Durchblutungsverbesserungen, ästhetische Verbesserungen im sichtbaren Bereich sowie vor oder nach dem Setzen von Implantaten braucht man gute Kenntnisse in Parodontologie und Mucogingivalchirurgie. Seit 25 Jahren haben wir hier Expertise, und können so Implantate und Zähne möglichst lebenslang im Mund unserer Patienten belassen.",
-    bild: "/images/mikroskop-in-aktion.jpg",
-  },
-  {
-    titel: "Knochenerhalt durch eigene Zähne",
-    kurztext:
-      "Teile des entfernten Zahnes werden zum Knochenerhalt verwendet — teure Knochenaufbauten entfallen oft.",
-    langtext:
-      "Damit bezeichnet man ein Verfahren, durch das beim Entfernen des Zahnes Teile des Zahnes zum Knochenerhalt verwendet werden können. So entfallen oft teure und langwierige Knochenaufbauten vor einer Implantation.",
-  },
-];
+export default async function InnovationenSeite({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Innovationen as Record<string, unknown>;
+  const hero = t.hero as Record<string, string>;
+  const items = t.items as Record<string, Record<string, string>>;
 
-export default function InnovationenSeite() {
+  const innovationsKeys = ["kronen", "zahntrauma", "zahnfleisch", "knochenerhalt"];
+  const innovationen = innovationsKeys.map((key) => ({
+    titel: items[key].titel,
+    kurztext: items[key].kurztext,
+    langtext: items[key].langtext,
+    bild: innovationsBilder[key],
+  }));
+
   return (
     <>
       <SeiteHero
-        label="Was uns auszeichnet"
-        titel="Innovationen"
-        titelAkzent="in unserer Praxis"
-        subtext="Moderne Methoden und besondere Kompetenzen, die Sie bei uns finden — für schonendere Behandlungen und bessere Ergebnisse."
+        label={hero.label}
+        titel={hero.titel}
+        titelAkzent={hero.titelAkzent}
+        subtext={hero.subtext}
       />
 
       {/* Innovationen-Blöcke */}

@@ -3,81 +3,55 @@ import Link from "next/link";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import CTABanner from "../../components/CTABanner";
+import { getDictionary, type Locale } from "../../../lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Häufige Fragen",
-  description:
-    "Antworten auf die häufigsten Fragen: Kosten, Ablauf, Versicherung, Angstpatienten. Zahnärzte Parkstrasse in Hamburg-Othmarschen.",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.FAQ as Record<string, unknown>;
+  const meta = t.meta as Record<string, string>;
+  return { title: meta.title, description: meta.description };
+}
+
+const faqLinks: Record<string, string | undefined> = {
+  wurzelbehandlung: "/leistungen/wurzelbehandlung",
+  implantate: "/leistungen/implantate",
+  kinderzahnarzt: "/leistungen/kinderzahnheilkunde",
 };
 
-const kategorien = [
-  {
-    titel: "Allgemein",
-    fragen: [
-      {
-        frage: "Muss ich lange auf einen Termin warten?",
-        antwort: "In der Regel können wir Ihnen innerhalb von 1–2 Wochen einen Termin anbieten. Bei akuten Beschwerden bemühen wir uns um einen kurzfristigen Termin.",
-      },
-      {
-        frage: "Behandeln Sie auch Angstpatienten?",
-        antwort: "Ja, ausdrücklich. Wir nehmen uns besonders viel Zeit und erklären jeden Schritt. Viele unserer Patienten kamen anfangs mit Zahnarztangst zu uns.",
-      },
-      {
-        frage: "Welche Sprachen sprechen Sie?",
-        antwort: "Deutsch, Englisch, Französisch und Spanisch.",
-      },
-    ],
-  },
-  {
-    titel: "Kosten & Versicherung",
-    fragen: [
-      {
-        frage: "Was kostet eine Behandlung?",
-        antwort: "Wir erstellen immer vorab einen transparenten Kostenplan. Gesetzlich Versicherte erhalten die Kassenleistung; Zusatzleistungen werden vorher besprochen.",
-      },
-      {
-        frage: "Nehmen Sie Privatpatienten?",
-        antwort: "Ja, wir behandeln sowohl gesetzlich als auch privat versicherte Patienten.",
-      },
-      {
-        frage: "Bieten Sie Ratenzahlung an?",
-        antwort: "Bei größeren Behandlungen bieten wir Ihnen individuelle Zahlungsvereinbarungen an.",
-      },
-    ],
-  },
-  {
-    titel: "Behandlungen",
-    fragen: [
-      {
-        frage: "Tut eine Wurzelbehandlung weh?",
-        antwort: "Nein — unter Betäubung spüren Sie nichts. Mehr dazu auf unserer Seite zur Wurzelbehandlung.",
-        link: "/leistungen/wurzelbehandlung",
-      },
-      {
-        frage: "Wie lange halten Implantate?",
-        antwort: "Bei guter Pflege ein Leben lang. Die aufgesetzte Krone hält durchschnittlich 15–20 Jahre.",
-        link: "/leistungen/implantate",
-      },
-      {
-        frage: "Ab welchem Alter sollte mein Kind zum Zahnarzt?",
-        antwort: "Ab dem ersten Milchzahn — meist um den 6. Lebensmonat.",
-        link: "/leistungen/kinderzahnheilkunde",
-      },
-    ],
-  },
-];
+export default async function FAQSeite({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.FAQ as Record<string, unknown>;
+  const hero = t.hero as Record<string, string>;
+  const kategorien = t.kategorien as Record<string, Record<string, unknown>>;
+  const mehrErfahren = t.mehrErfahren as string;
+  const cta = t.cta as Record<string, string>;
 
-export default function FAQSeite() {
+  const katKeys = ["allgemein", "kostenVersicherung", "behandlungen"];
+  const kats = katKeys.map((key) => {
+    const kat = kategorien[key];
+    const fragen = kat.fragen as Record<string, Record<string, string>>;
+    return {
+      titel: kat.titel as string,
+      fragen: Object.entries(fragen).map(([frageKey, f]) => ({
+        frage: f.frage,
+        antwort: f.antwort,
+        link: faqLinks[frageKey],
+      })),
+    };
+  });
+
   return (
     <>
       <SeiteHero
-        label="FAQ"
-        titel="Häufig gestellte"
-        titelAkzent="Fragen"
-        subtext="Hier finden Sie Antworten auf die Fragen, die uns am häufigsten gestellt werden."
+        label={hero.label}
+        titel={hero.titel}
+        titelAkzent={hero.titelAkzent}
+        subtext={hero.subtext}
       />
 
-      {kategorien.map((kat, katIdx) => (
+      {kats.map((kat, katIdx) => (
         <section
           key={kat.titel}
           className="relative py-20 lg:py-28 overflow-hidden"
@@ -113,13 +87,13 @@ export default function FAQSeite() {
                   >
                     {f.antwort}
                   </p>
-                  {"link" in f && f.link && (
+                  {f.link && (
                     <Link
                       href={f.link}
                       className="inline-flex items-center gap-1.5 mt-3 text-sm transition-colors duration-300 hover:text-[#e3541a]"
                       style={{ color: "#F26522", fontWeight: 500 }}
                     >
-                      Mehr erfahren
+                      {mehrErfahren}
                       <svg
                         viewBox="0 0 16 16"
                         className="w-3.5 h-3.5"
@@ -139,9 +113,9 @@ export default function FAQSeite() {
       ))}
 
       <CTABanner
-        titel="Noch Fragen?"
-        titelAkzent="Rufen Sie uns an"
-        text="Wir beantworten gern alle weiteren Fragen persönlich."
+        titel={cta.titel}
+        titelAkzent={cta.titelAkzent}
+        text={cta.text}
       />
     </>
   );

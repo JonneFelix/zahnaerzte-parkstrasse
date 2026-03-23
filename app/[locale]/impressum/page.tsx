@@ -1,19 +1,37 @@
 import type { Metadata } from "next";
 import SeiteHero from "../../components/SeiteHero";
+import { getDictionary, type Locale } from "../../../lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Impressum",
-  description: "Impressum der Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann, Dr. Janz & Dr. Prüter, Hamburg.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Impressum as Record<string, unknown>;
+  const meta = t.meta as Record<string, string>;
+  return { title: meta.title, description: meta.description };
+}
 
 // Wiederverwendbare Styles
 const h2Style = { fontFamily: "var(--font-cormorant), serif", fontWeight: 600 as const, color: "#2d3a3a" };
 const textStyle = { fontWeight: 300 as const, lineHeight: 1.8 };
 
-export default function ImpressumSeite() {
+export default async function ImpressumSeite({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Impressum as Record<string, unknown>;
+  const titel = t.titel as string;
+  const angabenDDG = t.angabenDDG as Record<string, string>;
+  const kontakt = t.kontakt as Record<string, string>;
+  const berufsbezeichnung = t.berufsbezeichnung as Record<string, string>;
+  const kammer = t.kammer as Record<string, string>;
+  const aufsicht = t.aufsicht as Record<string, string>;
+  const kzv = t.kzv as Record<string, string>;
+  const berufsrecht = t.berufsrecht as Record<string, unknown>;
+  const berufsrechtItems = berufsrecht.items as string[];
+  const streitschlichtung = t.streitschlichtung as Record<string, string>;
+
   return (
     <>
-      <SeiteHero titel="Impressum" />
+      <SeiteHero titel={titel} />
 
       <section className="relative py-20 lg:py-28" style={{ background: "#f4f1ec" }}>
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10 prose-sm" style={{ color: "#4a5959" }}>
@@ -21,102 +39,58 @@ export default function ImpressumSeite() {
 
             {/* Angaben gemäß DDG */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Angaben gemäß § 5 DDG
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Dr. Claudia Schwegmann<br />
-                Zahnärztin (Praxisinhaberin)<br />
-                Parkstraße 10<br />
-                22605 Hamburg
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{angabenDDG.titel}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle} dangerouslySetInnerHTML={{ __html: angabenDDG.text.replace(/\n/g, "<br />") }} />
             </div>
 
             {/* Kontakt */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Kontakt
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Telefon: 040 — 880 21 50<br />
-                E-Mail: info@zahnarzt-othmarschen.de
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{kontakt.titel}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle} dangerouslySetInnerHTML={{ __html: kontakt.text.replace(/\n/g, "<br />") }} />
             </div>
 
             {/* Berufsbezeichnung */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Berufsbezeichnung
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Gesetzliche Berufsbezeichnung: Zahnärztinnen<br />
-                (verliehen in der Bundesrepublik Deutschland)
-              </p>
-              <p className="text-sm leading-relaxed mt-2" style={textStyle}>
-                Dr. Claudia Schwegmann: Fachzahnärztin für Oralchirurgie<br />
-                Dr. Nina Janz: Zahnärztin — Curriculum Endodontie<br />
-                Dr. Julia Prüter: Zahnärztin
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{berufsbezeichnung.titel}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle} dangerouslySetInnerHTML={{ __html: berufsbezeichnung.text.replace(/\n/g, "<br />") }} />
+              <p className="text-sm leading-relaxed mt-2" style={textStyle} dangerouslySetInnerHTML={{ __html: berufsbezeichnung.details.replace(/\n/g, "<br />") }} />
             </div>
 
             {/* Zuständige Kammer */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Zuständige Kammer
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Zahnärztekammer Hamburg<br />
-                Möllner Landstraße 31<br />
-                22111 Hamburg<br />
-                <a href="https://www.zahnaerztekammer-hh.de" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
-                  www.zahnaerztekammer-hh.de
-                </a>
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{kammer.titel}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle} dangerouslySetInnerHTML={{ __html: kammer.text.replace(/\n/g, "<br />") }} />
+              <a href="https://www.zahnaerztekammer-hh.de" target="_blank" rel="noopener noreferrer" className="text-sm underline" style={{ color: "#697B7B" }}>
+                www.zahnaerztekammer-hh.de
+              </a>
             </div>
 
             {/* Zuständige Aufsichtsbehörde */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Zuständige Aufsichtsbehörde
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Behörde für Arbeit, Gesundheit, Soziales, Familie und Integration (Sozialbehörde)<br />
-                Hamburger Straße 47<br />
-                22083 Hamburg
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{aufsicht.titel}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle} dangerouslySetInnerHTML={{ __html: aufsicht.text.replace(/\n/g, "<br />") }} />
             </div>
 
             {/* Kassenzahnärztliche Vereinigung */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Kassenzahnärztliche Vereinigung
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Kassenzahnärztliche Vereinigung Hamburg<br />
-                Große Bleichen 23<br />
-                20354 Hamburg<br />
-                <a href="https://www.kzv-hamburg.de" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
-                  www.kzv-hamburg.de
-                </a>
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{kzv.titel}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle} dangerouslySetInnerHTML={{ __html: kzv.text.replace(/\n/g, "<br />") }} />
+              <a href="https://www.kzv-hamburg.de" target="_blank" rel="noopener noreferrer" className="text-sm underline" style={{ color: "#697B7B" }}>
+                www.kzv-hamburg.de
+              </a>
             </div>
 
             {/* Berufsrechtliche Regelungen */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Berufsrechtliche Regelungen
-              </h2>
-              <p className="text-sm leading-relaxed" style={textStyle}>
-                Es gelten folgende berufsrechtliche Regelungen:
-              </p>
+              <h2 className="text-xl mb-3" style={h2Style}>{berufsrecht.titel as string}</h2>
+              <p className="text-sm leading-relaxed" style={textStyle}>{berufsrecht.text as string}</p>
               <ul className="text-sm mt-2 space-y-1" style={textStyle}>
-                <li>Zahnheilkundegesetz (ZHG)</li>
-                <li>Hamburgisches Kammergesetz für die Heilberufe (HmbKGH)</li>
-                <li>Berufsordnung der Zahnärztekammer Hamburg</li>
-                <li>Gebührenordnung für Zahnärzte (GOZ)</li>
+                {berufsrechtItems.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
               <p className="text-sm leading-relaxed mt-2" style={textStyle}>
-                Die Regelungen sind einsehbar unter:{" "}
+                {(berufsrecht.hinweis as string).split("www.zahnaerztekammer-hh.de")[0]}
                 <a href="https://www.zahnaerztekammer-hh.de" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
                   www.zahnaerztekammer-hh.de
                 </a>
@@ -125,17 +99,15 @@ export default function ImpressumSeite() {
 
             {/* Streitschlichtung */}
             <div>
-              <h2 className="text-xl mb-3" style={h2Style}>
-                Streitschlichtung
-              </h2>
+              <h2 className="text-xl mb-3" style={h2Style}>{streitschlichtung.titel}</h2>
               <p className="text-sm leading-relaxed" style={textStyle}>
-                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
+                {streitschlichtung.text}{" "}
                 <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
                   https://ec.europa.eu/consumers/odr/
                 </a>
               </p>
               <p className="text-sm leading-relaxed mt-2" style={textStyle}>
-                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                {streitschlichtung.nichtBereit}
               </p>
             </div>
 

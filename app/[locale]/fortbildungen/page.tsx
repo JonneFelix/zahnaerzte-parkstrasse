@@ -2,32 +2,45 @@ import type { Metadata } from "next";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
+import { getDictionary, type Locale } from "../../../lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Fortbildungen für Zahnärzte",
-  description:
-    "Study Clubs Implantologie & Parodontologie — praktische Fortbildungen für Zahnärztinnen und Zahnärzte. Geleitet von Dr. Claudia Schwegmann in Kooperation mit Fraga Dental.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Fortbildungen as Record<string, unknown>;
+  const meta = t.meta as Record<string, string>;
+  return { title: meta.title, description: meta.description };
+}
 
-const termine = [
-  {
-    titel: "Study Club Implantologie 11 — Pinneberg",
-    daten: ["Termine werden in Kürze bekannt gegeben"],
-  },
-  {
-    titel: "Study Club Implantologie – Parodontologie 8 — Oldenburg",
-    daten: ["Termine werden in Kürze bekannt gegeben"],
-  },
-];
+export default async function FortbildungenSeite({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Fortbildungen as Record<string, unknown>;
+  const hero = t.hero as Record<string, string>;
+  const einleitung = t.einleitung as Record<string, string>;
+  const prinzip = t.prinzip as Record<string, unknown>;
+  const tag1 = prinzip.tag1 as Record<string, string>;
+  const tag2 = prinzip.tag2 as Record<string, string>;
+  const vorteile = t.vorteile as Record<string, unknown>;
+  const vorteilItems = vorteile.items as Record<string, Record<string, string>>;
+  const termine = t.termine as Record<string, unknown>;
+  const studyClubs = termine.studyClubs as Record<string, Record<string, unknown>>;
+  const kontaktSection = t.kontaktSection as Record<string, string>;
 
-export default function FortbildungenSeite() {
+  const termineArr = Object.values(studyClubs).map((sc) => ({
+    titel: sc.titel as string,
+    daten: sc.daten as string[],
+  }));
+
+  const vorteilKeys = ["eigenePatienten", "supervision", "echteFaelle", "selbstvertrauen"];
+
   return (
     <>
       <SeiteHero
-        label="Für Kolleginnen & Kollegen"
-        titel="Fortbildungen"
-        titelAkzent="für Zahnärzte"
-        subtext="Praktische Study Clubs in Implantologie und Parodontologie — operieren Sie an eigenen Patienten unter Supervision."
+        label={hero.label}
+        titel={hero.titel}
+        titelAkzent={hero.titelAkzent}
+        subtext={hero.subtext}
       />
 
       {/* Einleitung */}
@@ -47,17 +60,17 @@ export default function FortbildungenSeite() {
                   lineHeight: 1.2,
                 }}
               >
-                Liebe Kolleginnen{" "}
-                <span style={{ fontWeight: 600, color: "#697B7B" }}>und Kollegen</span>
+                {einleitung.titel}{" "}
+                <span style={{ fontWeight: 600, color: "#697B7B" }}>{einleitung.titelAkzent}</span>
               </h2>
               <p className="text-sm" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.9 }}>
-                Wenn man sich für alles, was mit Parodontologie und Implantaten zusammenhängt, interessiert, aber sich noch nicht recht herantraut oder die anderen Fortbildungen zu theoretisch findet, dann ist ein Study Club ideal.
+                {einleitung.text1}
               </p>
               <p className="text-sm" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.9 }}>
-                Seit Mick Dragoo dieses Prinzip 2000 nach Hamburg brachte, bin ich davon begeistert. Mittlerweile leite ich seit 2005 zwei Study Clubs — einen in Pinneberg (<em style={{ color: "#697B7B" }}>Ladies only — mehr Frauen in die Chirurgie!</em>) und einen in Oldenburg in Niedersachsen.
+                {einleitung.text2}
               </p>
               <p className="text-sm" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.9 }}>
-                Wer sich dafür interessiert, kann mich gerne in der Praxis kontaktieren oder meldet sich direkt bei{" "}
+                {einleitung.text3.split("Fraga Dental")[0]}
                 <a
                   href="https://www.fraga-dental.de/"
                   target="_blank"
@@ -67,10 +80,10 @@ export default function FortbildungenSeite() {
                 >
                   Fraga Dental
                 </a>
-                . Die organisieren auch Study Clubs anderer Kollegen, die ich sehr empfehlen kann.
+                {einleitung.text3.split("Fraga Dental").slice(1).join("Fraga Dental")}
               </p>
               <p className="text-xs mt-4" style={{ color: "#697B7B", fontWeight: 500, fontStyle: "italic" }}>
-                — Dr. Claudia Schwegmann
+                {einleitung.signatur}
               </p>
             </div>
 
@@ -92,7 +105,7 @@ export default function FortbildungenSeite() {
                     color: "#2d3a3a",
                   }}
                 >
-                  Das Prinzip
+                  {prinzip.titel as string}
                 </h3>
                 <div className="space-y-4">
                   <div className="flex gap-4">
@@ -103,9 +116,9 @@ export default function FortbildungenSeite() {
                       1
                     </div>
                     <div>
-                      <p className="text-sm" style={{ color: "#2d3a3a", fontWeight: 500 }}>Tag 1 — Theorie</p>
+                      <p className="text-sm" style={{ color: "#2d3a3a", fontWeight: 500 }}>{tag1.titel}</p>
                       <p className="text-xs mt-1" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.6 }}>
-                        Präsentation eigener Fälle, Besprechung des Procedere und Planung der OPs.
+                        {tag1.text}
                       </p>
                     </div>
                   </div>
@@ -117,9 +130,9 @@ export default function FortbildungenSeite() {
                       2
                     </div>
                     <div>
-                      <p className="text-sm" style={{ color: "#2d3a3a", fontWeight: 500 }}>Tag 2 — Praxis</p>
+                      <p className="text-sm" style={{ color: "#2d3a3a", fontWeight: 500 }}>{tag2.titel}</p>
                       <p className="text-xs mt-1" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.6 }}>
-                        OP am eigenen Patienten, mit eigenem Instrumentarium unter Supervision des Referenten.
+                        {tag2.text}
                       </p>
                     </div>
                   </div>
@@ -133,51 +146,12 @@ export default function FortbildungenSeite() {
       {/* Vorteile */}
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f0ede8" }}>
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
-          <SektionsHeader label="Warum ein Study Club?" titel="Praxis statt" titelAkzent="nur Theorie" />
+          <SektionsHeader label={vorteile.label as string} titel={vorteile.titel as string} titelAkzent={vorteile.titelAkzent as string} />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              {
-                icon: (
-                  <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5">
-                    <circle cx="14" cy="8" r="5" />
-                    <path d="M5 25c0-5 4-9 9-9s9 4 9 9" />
-                  </svg>
-                ),
-                titel: "Eigene Patienten",
-                text: "Sie operieren selbst — am eigenen Patienten, mit eigenen Instrumenten.",
-              },
-              {
-                icon: (
-                  <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5">
-                    <path d="M14 3v22M3 14h22" strokeLinecap="round" />
-                    <circle cx="14" cy="14" r="11" />
-                  </svg>
-                ),
-                titel: "Supervision",
-                text: "Alle Schritte werden vorher besprochen und in der Ausführung begleitet.",
-              },
-              {
-                icon: (
-                  <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5">
-                    <path d="M4 14h5l3-8 4 16 3-8h5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                ),
-                titel: "10–15 echte Fälle",
-                text: "Pro Study Club sehen und diskutieren Sie ebenso viele reale Patientenfälle.",
-              },
-              {
-                icon: (
-                  <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5">
-                    <path d="M14 3l3 8h8l-6.5 5 2.5 8L14 19l-7 5 2.5-8L3 11h8z" />
-                  </svg>
-                ),
-                titel: "Selbstvertrauen",
-                text: "Optimales Selbstvertrauen, um in der eigenen Praxis durchzustarten.",
-              },
-            ].map((v, i) => (
+            {vorteilKeys.map((key, i) => (
               <div
-                key={i}
+                key={key}
                 className="text-center p-6 karte-hover"
                 style={{
                   background: "rgba(255,255,255,0.6)",
@@ -189,10 +163,15 @@ export default function FortbildungenSeite() {
                   className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full"
                   style={{ background: "rgba(242,101,34,0.08)" }}
                 >
-                  {v.icon}
+                  {[
+                    <svg key="1" viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><circle cx="14" cy="8" r="5" /><path d="M5 25c0-5 4-9 9-9s9 4 9 9" /></svg>,
+                    <svg key="2" viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><path d="M14 3v22M3 14h22" strokeLinecap="round" /><circle cx="14" cy="14" r="11" /></svg>,
+                    <svg key="3" viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><path d="M4 14h5l3-8 4 16 3-8h5" strokeLinecap="round" strokeLinejoin="round" /></svg>,
+                    <svg key="4" viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><path d="M14 3l3 8h8l-6.5 5 2.5 8L14 19l-7 5 2.5-8L3 11h8z" /></svg>,
+                  ][i]}
                 </div>
-                <h3 className="text-sm mb-2" style={{ color: "#2d3a3a", fontWeight: 600 }}>{v.titel}</h3>
-                <p className="text-xs" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}>{v.text}</p>
+                <h3 className="text-sm mb-2" style={{ color: "#2d3a3a", fontWeight: 600 }}>{vorteilItems[key].titel}</h3>
+                <p className="text-xs" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}>{vorteilItems[key].text}</p>
               </div>
             ))}
           </div>
@@ -204,10 +183,10 @@ export default function FortbildungenSeite() {
         <BaumDekor className="absolute -left-12 bottom-10 w-48 opacity-[0.03] -rotate-12 hidden lg:block" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-10">
-          <SektionsHeader label="Termine" titel="Die nächsten" titelAkzent="Study Clubs" />
+          <SektionsHeader label={termine.label as string} titel={termine.titel as string} titelAkzent={termine.titelAkzent as string} />
 
           <div className="grid md:grid-cols-2 gap-7">
-            {termine.map((sc, i) => (
+            {termineArr.map((sc, i) => (
               <div
                 key={i}
                 className="p-7 karte-hover"
@@ -252,7 +231,7 @@ export default function FortbildungenSeite() {
                   className="inline-block mt-5 text-sm transition-colors duration-300 hover:text-[#e3541a]"
                   style={{ color: "#F26522", fontWeight: 500 }}
                 >
-                  Details bei Fraga Dental →
+                  {termine.detailsLink as string}
                 </a>
               </div>
             ))}
@@ -263,7 +242,7 @@ export default function FortbildungenSeite() {
       {/* Kontakt für Fortbildungen */}
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f0ede8" }}>
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10 text-center">
-          <SektionsHeader label="Interesse?" titel="Melden Sie sich" titelAkzent="bei uns" />
+          <SektionsHeader label={kontaktSection.label} titel={kontaktSection.titel} titelAkzent={kontaktSection.titelAkzent} />
 
           <div
             className="p-8 karte-hover"
@@ -274,8 +253,7 @@ export default function FortbildungenSeite() {
             }}
           >
             <p className="text-sm mb-6" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.8 }}>
-              Wer sich für die Study Clubs interessiert, kann Dr. Schwegmann direkt in der Praxis kontaktieren
-              oder sich bei{" "}
+              {kontaktSection.text.split("Fraga Dental")[0]}
               <a
                 href="https://www.fraga-dental.de/"
                 target="_blank"
@@ -284,8 +262,8 @@ export default function FortbildungenSeite() {
                 style={{ color: "#F26522", fontWeight: 500 }}
               >
                 Fraga Dental
-              </a>{" "}
-              anmelden. Fraga Dental organisiert auch Study Clubs anderer Kollegen, die ebenfalls sehr zu empfehlen sind.
+              </a>
+              {kontaktSection.text.split("Fraga Dental").slice(1).join("Fraga Dental")}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">

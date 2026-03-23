@@ -5,72 +5,63 @@ import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import CTABanner from "../../components/CTABanner";
 import BaumDekor from "../../components/BaumDekor";
+import { getDictionary, type Locale } from "../../../lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Unsere Leistungen",
-  description:
-    "Unser Leistungsspektrum: Oralchirurgie, Implantate, Zahnersatz, Wurzelbehandlung, Prophylaxe, Parodontologie, Kinderzähne und ästhetische Zahnheilkunde in Othmarschen.",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Leistungen as Record<string, unknown>;
+  const meta = t.meta as Record<string, string>;
+  return { title: meta.title, description: meta.description };
+}
+
+const leistungsBilder: Record<string, string> = {
+  oralchirurgie: "/images/behandlung.jpg",
+  implantate: "/images/lupenbrille.jpg",
+  zahnersatz: "/images/zahnmodell.jpg",
+  wurzelbehandlung: "/images/wurzelbehandlung.jpg",
+  prophylaxe: "/images/prophylaxe.jpg",
+  parodontologie: "/images/behandlung.jpg",
+  kinderzahnheilkunde: "/images/kinder-behandlung.jpg",
+  aesthetik: "/images/zahnmodell.jpg",
 };
 
-const leistungen = [
-  {
-    titel: "Oralchirurgie",
-    kurz: "Implantate, Knochen- und Schleimhautaufbau, Weisheitszahn-Entfernungen und chirurgische Parodontose-Therapie — bei Fachzahnärztin Dr. Schwegmann sind Sie bestens aufgehoben.",
-    bild: "/images/behandlung.jpg",
-    href: "/leistungen/oralchirurgie",
-  },
-  {
-    titel: "Zahnimplantate",
-    kurz: "Festsitzender Zahnersatz auf Implantaten — wir verwenden fast ausschließlich körpereigenes Gewebe für den Knochen- und Schleimhautaufbau.",
-    bild: "/images/lupenbrille.jpg",
-    href: "/leistungen/implantate",
-  },
-  {
-    titel: "Zahnersatz",
-    kurz: "Kronen, Brücken und Prothesen — gefertigt mit Intraoralscanner von unserem Partnerlabor in Bönningstedt. Qualität aus der Region.",
-    bild: "/images/zahnmodell.jpg",
-    href: "/leistungen/zahnersatz",
-  },
-  {
-    titel: "Wurzelbehandlung",
-    kurz: "Dr. Nina Janz bringt ihr Curriculum Endodontie ein — mit maschineller Aufbereitung und elektronischer Längenmessung für den bestmöglichen Zahnerhalt.",
-    bild: "/images/wurzelbehandlung.jpg",
-    href: "/leistungen/wurzelbehandlung",
-  },
-  {
-    titel: "Prophylaxe & Dentalhygiene",
-    kurz: "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme — für strahlend saubere Zähne und gesundes Zahnfleisch, ein Leben lang.",
-    bild: "/images/prophylaxe.jpg",
-    href: "/leistungen/prophylaxe",
-  },
-  {
-    titel: "Parodontologie",
-    kurz: "Individuelle Therapie bei Zahnfleischentzündung und Knochenschwund — konservativ und chirurgisch.",
-    bild: "/images/behandlung.jpg",
-    href: "/leistungen/parodontologie",
-  },
-  {
-    titel: "Kinderzahnheilkunde",
-    kurz: "Da wir selber Kinder haben, wissen wir, wie wichtig eine vertrauensvolle und angstfreie Atmosphäre für die Kleinen ist.",
-    bild: "/images/kinder-behandlung.jpg",
-    href: "/leistungen/kinderzahnheilkunde",
-  },
-  {
-    titel: "Ästhetische Zahnheilkunde",
-    kurz: "Professionelles Bleaching, Veneers und ästhetische Korrekturen für Ihr schönstes Lächeln.",
-    bild: "/images/zahnmodell.jpg",
-    href: "/leistungen/aesthetik",
-  },
-];
+const leistungsHrefs: Record<string, string> = {
+  oralchirurgie: "/leistungen/oralchirurgie",
+  implantate: "/leistungen/implantate",
+  zahnersatz: "/leistungen/zahnersatz",
+  wurzelbehandlung: "/leistungen/wurzelbehandlung",
+  prophylaxe: "/leistungen/prophylaxe",
+  parodontologie: "/leistungen/parodontologie",
+  kinderzahnheilkunde: "/leistungen/kinderzahnheilkunde",
+  aesthetik: "/leistungen/aesthetik",
+};
 
-export default function LeistungenSeite() {
+export default async function LeistungenSeite({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Leistungen as Record<string, unknown>;
+  const hero = t.hero as Record<string, string>;
+  const items = t.items as Record<string, Record<string, string>>;
+  const mehrErfahren = t.mehrErfahren as string;
+  const schwerpunkt = t.schwerpunkt as Record<string, string>;
+  const cta = t.cta as Record<string, string>;
+
+  const leistungsKeys = ["oralchirurgie", "implantate", "zahnersatz", "wurzelbehandlung", "prophylaxe", "parodontologie", "kinderzahnheilkunde", "aesthetik"];
+  const leistungen = leistungsKeys.map((key) => ({
+    titel: items[key].titel,
+    kurz: items[key].kurz,
+    bild: leistungsBilder[key],
+    href: leistungsHrefs[key],
+  }));
+
   return (
     <>
       <SeiteHero
-        label="Unsere Leistungen"
-        titel="Verwurzelt in"
-        titelAkzent="Kompetenz"
-        subtext="Von der sanften Prophylaxe bis zur anspruchsvollen Implantologie — wir bieten Ihnen das gesamte Spektrum moderner Zahnmedizin unter einem Dach."
+        label={hero.label}
+        titel={hero.titel}
+        titelAkzent={hero.titelAkzent}
+        subtext={hero.subtext}
       />
 
       {/* ============================================================
@@ -137,7 +128,7 @@ export default function LeistungenSeite() {
                     {l.kurz}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-sm" style={{ color: "#F26522", fontWeight: 500 }}>
-                    Mehr erfahren
+                    {mehrErfahren}
                     <svg viewBox="0 0 20 20" className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" stroke="currentColor" strokeWidth="2" fill="none"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
                   </div>
                 </div>
@@ -165,7 +156,7 @@ export default function LeistungenSeite() {
                   letterSpacing: "0.25em",
                 }}
               >
-                Unser Schwerpunkt
+                {schwerpunkt.label}
               </span>
               <h2
                 className="mt-4 mb-6"
@@ -178,9 +169,9 @@ export default function LeistungenSeite() {
                   lineHeight: 1.2,
                 }}
               >
-                Oralchirurgie &{" "}
+                {schwerpunkt.titel}{" "}
                 <span style={{ fontWeight: 600, color: "#697B7B" }}>
-                  Implantologie
+                  {schwerpunkt.titelAkzent}
                 </span>
               </h2>
               <p
@@ -191,10 +182,7 @@ export default function LeistungenSeite() {
                   lineHeight: 1.85,
                 }}
               >
-                Dr. Claudia Schwegmann ist eine von wenigen Fachzahnärztinnen
-                für Oralchirurgie in Hamburg. Diese Spezialisierung bedeutet
-                für Sie: chirurgische Eingriffe auf höchstem Niveau,
-                minimalinvasiv und mit körpereigenen Materialien.
+                {schwerpunkt.text}
               </p>
               <Link
                 href="/leistungen/oralchirurgie"
@@ -205,7 +193,7 @@ export default function LeistungenSeite() {
                   letterSpacing: "0.08em",
                 }}
               >
-                MEHR ÜBER ORALCHIRURGIE
+                {schwerpunkt.link}
                 <svg
                   viewBox="0 0 20 20"
                   className="w-4 h-4"
@@ -228,7 +216,7 @@ export default function LeistungenSeite() {
             >
               <Image
                 src="/images/team/dr-schwegmann-portrait.jpg"
-                alt="Dr. Claudia Schwegmann — Fachzahnärztin für Oralchirurgie"
+                alt={schwerpunkt.bildAlt}
                 width={500}
                 height={600}
                 className="w-full h-auto object-cover"
@@ -243,9 +231,9 @@ export default function LeistungenSeite() {
       </section>
 
       <CTABanner
-        titel="Welche Behandlung"
-        titelAkzent="brauchen Sie?"
-        text="Wir beraten Sie gern — vereinbaren Sie einen Termin für ein unverbindliches Gespräch."
+        titel={cta.titel}
+        titelAkzent={cta.titelAkzent}
+        text={cta.text}
       />
     </>
   );

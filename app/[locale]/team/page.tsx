@@ -5,86 +5,56 @@ import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import CTABanner from "../../components/CTABanner";
 import BaumDekor from "../../components/BaumDekor";
+import { getDictionary, type Locale } from "../../../lib/i18n";
 
-export const metadata: Metadata = {
-  title: "Unser Team — Dr. Schwegmann, Dr. Janz & Dr. Prüter",
-  description:
-    "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie), Dr. Nina Janz (Endodontie) und Dr. Julia Prüter. Seit 1998 in Othmarschen.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Team as Record<string, unknown>;
+  const meta = t.meta as Record<string, string>;
+  return { title: meta.title, description: meta.description };
+}
 
-/* ============================================================
-   Ärztinnen-Daten
-   ============================================================ */
-const aerztinnen = [
-  {
-    name: "Dr. Claudia Schwegmann",
-    rolle: "Praxisinhaberin · Fachzahnärztin für Oralchirurgie",
-    bild: "/images/dr-schwegmann.jpg",
-    zitat:
-      "Ich möchte, dass meine Patienten mit einem guten Gefühl nach Hause gehen — nicht nur mit gesunden Zähnen.",
-    ueber:
-      "Dr. Claudia Schwegmann ist seit 1998 in Othmarschen tätig und hat sich als Fachzahnärztin für Oralchirurgie einen Namen gemacht. Ihr Schwerpunkt liegt auf Implantologie und Knochenaufbau — dabei setzt sie fast ausschließlich auf körpereigenes Gewebe.",
-    timeline: [
-      { jahr: "1988–1993", text: "Studium der Zahnmedizin" },
-      {
-        jahr: "1993–1998",
-        text: "AK Altona, Mund-Kiefer-Gesichtschirurgie",
-      },
-      { jahr: "1997", text: "Fachzahnärztin für Oralchirurgie" },
-      { jahr: "1998", text: "Niederlassung in Hamburg-Othmarschen" },
-      {
-        jahr: "2000–2009",
-        text: "Study Group Dragoo (Parodontologie & Implantologie)",
-      },
-      { jahr: "Seit 2008", text: "Vorträge und Study Clubs für Zahnärzte" },
-    ],
-    tags: [
-      "Oralchirurgie",
-      "Implantologie",
-      "Knochenaufbau",
-      "Schleimhautchirurgie",
-    ],
-  },
-  {
-    name: "Dr. Nina Janz",
-    rolle: "Zahnärztin · Spezialistin für Endodontie",
-    bild: "/images/dr-janz.jpg",
-    zitat:
-      "Eine gute Wurzelbehandlung kann einen Zahn retten, der sonst verloren wäre. Das motiviert mich jeden Tag.",
-    ueber:
-      "Dr. Nina Janz verstärkt die Praxis seit 2008. Ihr besonderer Schwerpunkt ist die Endodontie — die Behandlung des Zahninneren. Mit ihrem Curriculum Endodontie und modernster Technik rettet sie Zähne, die andere aufgeben würden.",
-    timeline: [
-      { jahr: "1995–2001", text: "Studium der Zahnmedizin" },
-      { jahr: "2001–2008", text: "Praxiserfahrung in Tostedt" },
-      { jahr: "Seit 2008", text: "Gemeinsam mit Dr. Schwegmann" },
-      { jahr: "2012–2014", text: "Curriculum Endodontie" },
-    ],
-    tags: ["Endodontie", "Wurzelbehandlung", "Allgemeine Zahnheilkunde"],
-  },
-  {
-    name: "Dr. Julia Prüter",
-    rolle: "Zahnärztin",
-    bild: "/images/team/dr-prueter.jpg",
-    zitat:
-      "Ich freue mich, Teil dieses erfahrenen Teams zu sein und von den Besten zu lernen.",
-    ueber:
-      "Dr. Julia Prüter ist die jüngste Verstärkung unseres Teams. Nach ihrem Examen 2022 am UKE Hamburg bringt sie frisches Wissen und aktuelle Behandlungsmethoden in die Praxis ein.",
-    timeline: [
-      { jahr: "2022", text: "Staatsexamen am UKE Hamburg" },
-      { jahr: "Seit 10/2024", text: "Zahnärztin in der Praxis" },
-    ],
-    tags: ["Allgemeine Zahnheilkunde"],
-  },
-];
+/* Nicht-übersetzbare Daten */
+const aerztinnenBilder = ["/images/dr-schwegmann.jpg", "/images/dr-janz.jpg", "/images/team/dr-prueter.jpg"];
+const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz", "Dr. Julia Prüter"];
+const aerztinnenKeys = ["schwegmann", "janz", "prueter"];
 
-export default function TeamSeite() {
+export default async function TeamSeite({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  const t = dict.Team as Record<string, unknown>;
+  const hero = t.hero as Record<string, string>;
+  const aerztinnenData = t.aerztinnen as Record<string, Record<string, unknown>>;
+  const praxisteam = t.praxisteam as Record<string, string>;
+  const cta = t.cta as Record<string, string>;
+
+  // Ärztinnen-Daten zusammenbauen
+  const aerztinnen = aerztinnenKeys.map((key, i) => {
+    const a = aerztinnenData[key];
+    const timeline = a.timeline as Record<string, Record<string, string>>;
+    const timelineArr = Object.values(timeline).map((entry) => ({
+      jahr: entry.jahr,
+      text: entry.text,
+    }));
+    return {
+      name: aerztinnenNamen[i],
+      bild: aerztinnenBilder[i],
+      rolle: a.rolle as string,
+      zitat: a.zitat as string,
+      ueber: a.ueber as string,
+      timeline: timelineArr,
+      tags: a.tags as string[],
+    };
+  });
+
   return (
     <>
       <SeiteHero
-        label="Unser Team"
-        titel="Die Menschen hinter"
-        titelAkzent="Ihrem Lächeln"
-        subtext="Drei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
+        label={hero.label}
+        titel={hero.titel}
+        titelAkzent={hero.titelAkzent}
+        subtext={hero.subtext}
       />
 
       {/* ============================================================
@@ -203,8 +173,8 @@ export default function TeamSeite() {
 
                 {/* Timeline */}
                 <div className="space-y-3 mb-8">
-                  {a.timeline.map((t) => (
-                    <div key={t.jahr} className="flex gap-4 items-baseline">
+                  {a.timeline.map((tl) => (
+                    <div key={tl.jahr} className="flex gap-4 items-baseline">
                       <span
                         className="text-xs shrink-0 w-24 text-right tracking-wider"
                         style={{
@@ -213,7 +183,7 @@ export default function TeamSeite() {
                           letterSpacing: "0.05em",
                         }}
                       >
-                        {t.jahr}
+                        {tl.jahr}
                       </span>
                       <div
                         className="w-1.5 h-1.5 rounded-full shrink-0 mt-1.5"
@@ -227,7 +197,7 @@ export default function TeamSeite() {
                           lineHeight: 1.6,
                         }}
                       >
-                        {t.text}
+                        {tl.text}
                       </span>
                     </div>
                   ))}
@@ -265,9 +235,9 @@ export default function TeamSeite() {
       >
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
           <SektionsHeader
-            label="Unser Praxisteam"
-            titel="Eingespielt, herzlich,"
-            titelAkzent="kompetent"
+            label={praxisteam.label}
+            titel={praxisteam.titel}
+            titelAkzent={praxisteam.titelAkzent}
           />
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -281,7 +251,7 @@ export default function TeamSeite() {
             >
               <Image
                 src="/images/team/team-gruppenfoto-treppe.jpg"
-                alt="Das gesamte Praxisteam der Zahnärzte Parkstrasse"
+                alt={praxisteam.gruppenfotoAlt}
                 width={700}
                 height={500}
                 className="w-full h-auto object-cover"
@@ -300,11 +270,7 @@ export default function TeamSeite() {
                   lineHeight: 1.85,
                 }}
               >
-                Was wäre eine gute Praxis ohne hervorragende
-                Mitarbeiterinnen? Viele sind schon lange Jahre dabei und
-                haben uns trotz Familienzuwachs die Treue gehalten. Unser
-                Team am Empfang und in der Behandlung sorgt dafür, dass
-                Sie sich von der ersten Sekunde an wohlfühlen.
+                {praxisteam.text}
               </p>
 
               <div
@@ -317,7 +283,7 @@ export default function TeamSeite() {
               >
                 <Image
                   src="/images/team/team-gruppenfoto-stehend.webp"
-                  alt="Das Praxisteam vor der Praxis"
+                  alt={praxisteam.gruppenfoto2Alt}
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"
@@ -332,9 +298,9 @@ export default function TeamSeite() {
       </section>
 
       <CTABanner
-        titel="Lernen Sie uns"
-        titelAkzent="persönlich kennen"
-        text="Wir freuen uns darauf, Sie in unserer Praxis begrüßen zu dürfen."
+        titel={cta.titel}
+        titelAkzent={cta.titelAkzent}
+        text={cta.text}
       />
     </>
   );

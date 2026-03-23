@@ -943,5 +943,546 @@
       "titelAkzent": "alguna pregunta?",
       "text": "Le asesoramos con gusto personalmente — reserve una cita."
     }
+  },
+  "LeistungOralchirurgie": {
+    "meta": {
+      "title": "Oralchirurgie Hamburg Othmarschen | Fachzahnärztin Dr. Schwegmann",
+      "description": "Oralchirurgie in Hamburg-Othmarschen: Implantate, Knochenaufbau, Weisheitszahn-OP, Schleimhautchirurgie. Fachzahnärztin Dr. Schwegmann — über 25 Jahre Erfahrung."
+    },
+    "hero": {
+      "label": "Unser Schwerpunkt",
+      "titel": "Oralchirurgie —",
+      "titelAkzent": "unser Schwerpunkt",
+      "subtext": "Chirurgische Eingriffe erfordern Erfahrung, Präzision und Einfühlungsvermögen. Als Fachzahnärztin für Oralchirurgie vereint Dr. Schwegmann alle drei — seit über 25 Jahren.",
+      "badge": "Dr. Claudia Schwegmann — Fachzahnärztin für Oralchirurgie"
+    },
+    "bereiche": {
+      "label": "Behandlungsspektrum",
+      "titel": "Was wir für",
+      "titelAkzent": "Sie tun",
+      "items": {
+        "implantate": {
+          "titel": "Implantate & Knochenaufbau",
+          "text": "Festsitzende Zähne auf Implantaten — bei Bedarf mit Knochenaufbau aus körpereigenem Gewebe. Wir vermeiden Fremdmaterial wo immer möglich."
+        },
+        "schleimhaut": {
+          "titel": "Schleimhautchirurgie",
+          "text": "Wiederherstellung von Schleimhaut und Zahnfleisch: bei freiliegenden Zahnhälsen, nach Implantationen oder zur ästhetischen Korrektur."
+        },
+        "weisheitszahn": {
+          "titel": "Weisheitszahn-Entfernung",
+          "text": "Schonend und kompetent — auch bei schwierigen Verhältnissen. In unserer Praxis, nicht im Krankenhaus."
+        },
+        "parodontose": {
+          "titel": "Chirurgische Parodontose-Therapie",
+          "text": "Wenn die konservative Behandlung nicht ausreicht: chirurgische Taschen-Reinigung und regenerative Verfahren."
+        },
+        "praeprothetisch": {
+          "titel": "Präprothetische Chirurgie",
+          "text": "Vorbereitung des Kiefers für Zahnersatz: Knochenaufbau, Schleimhautkorrektur, Alveolarkamm-Plastik."
+        }
+      },
+      "mehrErfahren": "Mehr erfahren"
+    },
+    "vorteile": {
+      "label": "Ihre Vorteile",
+      "titel": "Warum Oralchirurgie",
+      "titelAkzent": "bei uns?",
+      "items": {
+        "fachzahnaerztin": {
+          "titel": "Fachzahnärztin",
+          "text": "Nicht jeder Zahnarzt darf sich so nennen. Die Weiterbildung umfasst 4 Jahre klinische Chirurgie."
+        },
+        "gewebe": {
+          "titel": "Körpereigenes Gewebe",
+          "text": "Knochenaufbau bevorzugt mit Ihrem eigenen Material — für bessere Einheilung."
+        },
+        "lupenbrille": {
+          "titel": "Lupenbrille & Mikroskop",
+          "text": "Höchste Präzision auch bei kleinsten Strukturen."
+        },
+        "minimalinvasiv": {
+          "titel": "Minimalinvasiv",
+          "text": "So viel wie nötig, so schonend wie möglich."
+        }
+      }
+    },
+    "faq": {
+      "label": "Häufige Fragen",
+      "titel": "Ihre Fragen,",
+      "titelAkzent": "unsere Antworten",
+      "fragen": {
+        "schmerzhaft": {
+          "frage": "Ist eine Oralchirurgie schmerzhaft?",
+          "antwort": "Nein. Dank moderner Betäubung spüren Sie während des Eingriffs nichts. Danach erhalten Sie ein individuelles Schmerzmanagement."
+        },
+        "unterschied": {
+          "frage": "Was ist der Unterschied zwischen Zahnarzt und Oralchirurg?",
+          "antwort": "Eine Fachzahnärztin für Oralchirurgie hat nach dem Studium eine 4-jährige klinische Weiterbildung in Chirurgie absolviert — vergleichbar mit einer Facharzt-Ausbildung in der Medizin."
+        },
+        "ueberweisung": {
+          "frage": "Brauche ich eine Überweisung?",
+          "antwort": "Nein. Sie können sich direkt bei uns vorstellen."
+        }
+      }
+    },
+    "interneLinks": {
+      "implantate": "Implantate",
+      "parodontologie": "Parodontologie",
+      "team": "Unser Team"
+    },
+    "cta": {
+      "titel": "Beratungstermin für",
+      "titelAkzent": "chirurgische Fragen",
+      "text": "Vereinbaren Sie einen unverbindlichen Beratungstermin."
+    }
+  },
+  "LeistungImplantate": {
+    "meta": {
+      "title": "Zahnimplantate Hamburg | Implantologie Dr. Schwegmann — Othmarschen",
+      "description": "Zahnimplantate in Hamburg-Othmarschen: Feste dritte Zähne mit körpereigenem Knochenaufbau. Fachzahnärztin für Oralchirurgie. Individuelle Beratung."
+    },
+    "hero": {
+      "label": "Implantologie",
+      "titel": "Zahnimplantate —",
+      "titelAkzent": "feste Zähne, natürliches Gefühl",
+      "subtext": "Ein Implantat ist mehr als ein Zahnersatz — es gibt Ihnen ein Stück Lebensqualität zurück. Als Fachzahnärztin für Oralchirurgie ist Dr. Schwegmann Ihre Spezialistin für Implantologie."
+    },
+    "grundlagen": {
+      "label": "Grundlagen",
+      "titel": "Was ist ein",
+      "titelAkzent": "Zahnimplantat?",
+      "text": "Ein Zahnimplantat ist eine kleine Schraube aus Titan oder Keramik, die in den Kieferknochen eingesetzt wird. Darauf wird der eigentliche Zahnersatz — eine Krone, Brücke oder Prothese — fest verankert. Das Ergebnis: Zähne, die aussehen, sich anfühlen und funktionieren wie Ihre eigenen."
+    },
+    "ablauf": {
+      "label": "Ihr Weg zum Implantat",
+      "titel": "So läuft eine",
+      "titelAkzent": "Implantation ab",
+      "schritte": {
+        "s1": {
+          "nr": "01",
+          "titel": "Beratung & Planung",
+          "text": "Ausführliches Erstgespräch, digitales Röntgen und 3D-Planung."
+        },
+        "s2": {
+          "nr": "02",
+          "titel": "Vorbereitung",
+          "text": "Falls nötig: Knochenaufbau mit körpereigenem Gewebe."
+        },
+        "s3": {
+          "nr": "03",
+          "titel": "Implantation",
+          "text": "Der eigentliche Eingriff dauert meist nur 30–60 Minuten pro Implantat."
+        },
+        "s4": {
+          "nr": "04",
+          "titel": "Einheilphase",
+          "text": "2–6 Monate, in denen das Implantat fest mit dem Knochen verwächst."
+        },
+        "s5": {
+          "nr": "05",
+          "titel": "Versorgung",
+          "text": "Ihr neuer Zahn wird eingesetzt — gefertigt von unserem Partnerlabor in Bönningstedt."
+        }
+      }
+    },
+    "vorteile": {
+      "label": "Ihre Vorteile",
+      "titel": "Was uns",
+      "titelAkzent": "auszeichnet",
+      "items": [
+        "Fachzahnärztin für Oralchirurgie — höchste chirurgische Kompetenz",
+        "Körpereigener Knochenaufbau — kein Fremdmaterial",
+        "Zahnersatz aus Hamburg — nicht aus dem Ausland",
+        "Über 25 Jahre Erfahrung mit Implantaten"
+      ]
+    },
+    "kosten": {
+      "label": "Transparenz",
+      "titel": "Was kosten",
+      "titelAkzent": "Zahnimplantate?",
+      "text": "Die Kosten für ein Zahnimplantat variieren je nach Aufwand und individuellem Befund. Wir erstellen Ihnen immer einen transparenten Heil- und Kostenplan — bevor wir mit der Behandlung beginnen. Gesetzliche Krankenkassen übernehmen den Festzuschuss für den Zahnersatz, den Implantatkörper zahlen Sie als Eigenanteil.",
+      "orientierung": "Orientierung: Ein einzelnes Implantat mit Krone liegt in der Regel zwischen 1.800 und 3.500 Euro."
+    },
+    "faq": {
+      "label": "Häufige Fragen",
+      "titel": "Ihre Fragen zu",
+      "titelAkzent": "Implantaten",
+      "fragen": {
+        "haltbarkeit": {
+          "frage": "Wie lange halten Implantate?",
+          "antwort": "Bei guter Pflege und regelmäßiger Prophylaxe halten Zahnimplantate ein Leben lang. Die aufgesetzte Krone hält durchschnittlich 15–20 Jahre."
+        },
+        "schmerzhaft": {
+          "frage": "Ist die Implantation schmerzhaft?",
+          "antwort": "Unter örtlicher Betäubung spüren Sie nichts. Nach dem Eingriff kann es zu leichten Schwellungen kommen, die mit einfachen Schmerzmitteln gut zu behandeln sind."
+        },
+        "knochenaufbau": {
+          "frage": "Geht das auch ohne Knochenaufbau?",
+          "antwort": "Oft ja. Ob ein Knochenaufbau nötig ist, klären wir im Erstgespräch mit einer 3D-Aufnahme."
+        }
+      }
+    },
+    "interneLinks": {
+      "oralchirurgie": "Oralchirurgie",
+      "zahnersatz": "Zahnersatz",
+      "team": "Dr. Schwegmann"
+    },
+    "cta": {
+      "titel": "Kostenlose Erstberatung",
+      "titelAkzent": "zu Implantaten",
+      "text": "Lassen Sie sich unverbindlich beraten — wir nehmen uns Zeit für Ihre Fragen."
+    }
+  },
+  "LeistungWurzelbehandlung": {
+    "meta": {
+      "title": "Wurzelbehandlung Hamburg | Endodontie Dr. Janz — Othmarschen",
+      "description": "Schmerzfreie Wurzelbehandlung in Hamburg-Othmarschen: Modernste Endodontie mit Mikroskop und elektronischer Längenmessung. Dr. Nina Janz — Spezialistin für Zahnerhalt."
+    },
+    "hero": {
+      "label": "Endodontie",
+      "titel": "Wurzelbehandlung —",
+      "titelAkzent": "Zahnerhalt auf höchstem Niveau",
+      "subtext": "Eine Wurzelbehandlung hat heute nichts mehr mit ihrem alten Ruf zu tun. Dr. Nina Janz behandelt mit modernster Technik — sanft, präzise und mit dem Ziel, Ihren Zahn zu retten.",
+      "badge": "Dr. Nina Janz — Curriculum Endodontie"
+    },
+    "zahnerhalt": {
+      "label": "Zahnerhalt",
+      "titel": "Warum Ihr eigener Zahn",
+      "titelAkzent": "der beste ist",
+      "text": "Kein Implantat und kein Zahnersatz kann einen eigenen, gesunden Zahn vollständig ersetzen. Deshalb setzen wir alles daran, Ihren natürlichen Zahn zu erhalten — auch wenn er stark geschädigt ist. Die moderne Endodontie macht es möglich."
+    },
+    "technik": {
+      "label": "Modernste Technik",
+      "titel": "So behandeln wir",
+      "titelAkzent": "Ihre Wurzelkanäle",
+      "items": {
+        "mikroskop": {
+          "titel": "Mikroskop-Einsatz",
+          "text": "Vergrößerung bis 25-fach — für maximale Übersicht und Präzision in den feinen Wurzelkanälen."
+        },
+        "instrumente": {
+          "titel": "Biegsame Instrumente",
+          "text": "Maschinelle Aufbereitung mit flexiblen Nickel-Titan-Feilen — schonend und gründlich."
+        },
+        "laengenmessung": {
+          "titel": "Elektronische Längenmessung",
+          "text": "Exakte Bestimmung der Kanallänge — weniger Röntgenbilder, mehr Sicherheit."
+        },
+        "fuellung": {
+          "titel": "Thermoplastische Füllung",
+          "text": "Dreidimensionale Versiegelung der Kanäle — für einen dauerhaften Verschluss."
+        }
+      }
+    },
+    "faq": {
+      "label": "Häufige Fragen",
+      "titel": "Ihre Fragen zur",
+      "titelAkzent": "Wurzelbehandlung",
+      "fragen": {
+        "schmerzhaft": {
+          "frage": "Tut eine Wurzelbehandlung weh?",
+          "antwort": "Nein. Unter Betäubung spüren Sie nichts — viele Patienten sind überrascht, wie wenig sie merken."
+        },
+        "dauer": {
+          "frage": "Wie lange dauert eine Wurzelbehandlung?",
+          "antwort": "In der Regel 60–90 Minuten, manchmal verteilt auf zwei Sitzungen."
+        },
+        "tot": {
+          "frage": "Ist der Zahn danach tot?",
+          "antwort": "Der Zahn hat keinen Nerv mehr, bleibt aber als fester Bestandteil Ihres Gebisses erhalten und funktionsfähig."
+        }
+      }
+    },
+    "interneLinks": {
+      "team": "Dr. Nina Janz",
+      "prophylaxe": "Prophylaxe",
+      "zahnersatz": "Zahnersatz"
+    },
+    "cta": {
+      "titel": "Zahnschmerzen?",
+      "titelAkzent": "Wir helfen Ihnen",
+      "text": "Vereinbaren Sie schnell einen Termin — wir kümmern uns um Ihren Zahn."
+    }
+  },
+  "LeistungProphylaxe": {
+    "meta": {
+      "title": "Prophylaxe & Zahnreinigung Hamburg | Zahnärzte Parkstrasse Othmarschen",
+      "description": "Professionelle Zahnreinigung in Hamburg-Othmarschen: Individuelle Prophylaxe-Programme für gesunde Zähne und gesundes Zahnfleisch. Ein Leben lang."
+    },
+    "hero": {
+      "label": "Prophylaxe",
+      "titel": "Prophylaxe —",
+      "titelAkzent": "Vorsorge ist die beste Medizin",
+      "subtext": "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme — für strahlend saubere Zähne und gesundes Zahnfleisch. Regelmäßige Vorsorge ist der beste Schutz vor Karies und Parodontose."
+    },
+    "warum": {
+      "label": "Warum Prophylaxe",
+      "titel": "Vorsorge statt",
+      "titelAkzent": "Nachsorge",
+      "text": "Auch bei bester Zahnpflege zu Hause erreicht die Zahnbürste nicht alle Stellen. Die professionelle Zahnreinigung entfernt Beläge und Bakterien dort, wo Sie selbst nicht hinkommen — und senkt das Risiko für Karies, Parodontose und Zahnverlust erheblich."
+    },
+    "ablauf": {
+      "label": "Ablauf",
+      "titel": "So läuft Ihre",
+      "titelAkzent": "Zahnreinigung ab",
+      "schritte": {
+        "s1": {
+          "titel": "Befundaufnahme",
+          "text": "Wir prüfen den Zustand Ihrer Zähne und Ihres Zahnfleisches und besprechen Ihre individuellen Bedürfnisse."
+        },
+        "s2": {
+          "titel": "Reinigung",
+          "text": "Entfernung von Zahnstein, Belägen und Verfärbungen — mit Ultraschall und feinen Handinstrumenten."
+        },
+        "s3": {
+          "titel": "Politur",
+          "text": "Glatte Zahnoberflächen sind der beste Schutz gegen neue Beläge — Ihre Zähne fühlen sich sofort sauberer an."
+        },
+        "s4": {
+          "titel": "Fluoridierung",
+          "text": "Schutzlack für den Zahnschmelz — stärkt Ihre Zähne und macht sie widerstandsfähiger."
+        },
+        "s5": {
+          "titel": "Beratung",
+          "text": "Individuelle Tipps für Ihre Mundhygiene zu Hause — damit die Wirkung lange anhält."
+        }
+      }
+    },
+    "recall": {
+      "titel": "Wir erinnern Sie",
+      "text": "Unser Recall-System erinnert Sie rechtzeitig an Ihren nächsten Prophylaxe-Termin — damit Sie die Vorsorge nie vergessen. Wir empfehlen eine professionelle Zahnreinigung alle 6 Monate."
+    },
+    "interneLinks": {
+      "parodontologie": "Parodontologie",
+      "kinderzahnheilkunde": "Kinderzahnheilkunde"
+    },
+    "cta": {
+      "titel": "Zeit für Ihre",
+      "titelAkzent": "Zahnreinigung?",
+      "text": "Buchen Sie jetzt Ihren Prophylaxe-Termin."
+    }
+  },
+  "LeistungParodontologie": {
+    "meta": {
+      "title": "Parodontosebehandlung Hamburg | Parodontologie Othmarschen",
+      "description": "Parodontosebehandlung in Hamburg-Othmarschen: Individuelle Therapie bei Zahnfleischentzündung und Knochenschwund. Konservative und chirurgische Behandlung."
+    },
+    "hero": {
+      "label": "Parodontologie",
+      "titel": "Parodontologie —",
+      "titelAkzent": "Ihre Zähne fest verankert",
+      "subtext": "Parodontose ist im fortgeschrittenen Alter die häufigste Ursache für Zahnverlust — aber gut behandelbar. Wir bieten Ihnen das gesamte Spektrum: von der konservativen Therapie bis zur chirurgischen Parodontosebehandlung."
+    },
+    "was": {
+      "label": "Verstehen",
+      "titel": "Was ist",
+      "titelAkzent": "Parodontose?",
+      "text": "Parodontose (Parodontitis) ist eine chronische Entzündung des Zahnhalteapparats — also des Zahnfleisches und des Knochens, der Ihre Zähne hält. Unbehandelt führt sie zum Knochenabbau und letztlich zum Zahnverlust. Die gute Nachricht: Früh erkannt, ist Parodontose sehr gut behandelbar."
+    },
+    "warnsignale": {
+      "label": "Erkennen",
+      "titel": "Warnsignale",
+      "titelAkzent": "ernst nehmen",
+      "items": [
+        "Zahnfleischbluten beim Zähneputzen",
+        "Rötung und Schwellung des Zahnfleisches",
+        "Zahnfleischrückgang — Zähne wirken länger",
+        "Mundgeruch trotz guter Mundhygiene",
+        "Lockere Zähne oder veränderte Zahnstellung"
+      ]
+    },
+    "behandlung": {
+      "label": "Behandlung",
+      "titel": "Ihr Weg zu",
+      "titelAkzent": "gesundem Zahnfleisch",
+      "items": {
+        "diagnostik": {
+          "titel": "Diagnostik",
+          "text": "Gründliche Untersuchung mit Messung der Zahnfleischtaschen und Röntgendiagnostik."
+        },
+        "konservativ": {
+          "titel": "Konservative Therapie",
+          "text": "Gründliche Reinigung der Zahnfleischtaschen unter Betäubung — die Basis jeder Parodontosebehandlung."
+        },
+        "chirurgisch": {
+          "titel": "Chirurgische Therapie",
+          "text": "Bei fortgeschrittener Erkrankung: chirurgische Taschen-Reinigung und regenerative Verfahren durch Fachzahnärztin Dr. Schwegmann."
+        },
+        "nachsorge": {
+          "titel": "Nachsorge",
+          "text": "Regelmäßige Kontrollen und Prophylaxe — damit die Parodontose dauerhaft unter Kontrolle bleibt."
+        }
+      }
+    },
+    "interneLinks": {
+      "prophylaxe": "Prophylaxe",
+      "oralchirurgie": "Oralchirurgie"
+    },
+    "cta": {
+      "titel": "Zahnfleischprobleme?",
+      "titelAkzent": "Wir helfen",
+      "text": "Vereinbaren Sie einen Beratungstermin — je früher, desto besser."
+    }
+  },
+  "LeistungZahnersatz": {
+    "meta": {
+      "title": "Zahnersatz Hamburg Othmarschen | Kronen, Brücken & Prothesen",
+      "description": "Hochwertiger Zahnersatz in Hamburg-Othmarschen: Kronen, Brücken, Prothesen — gefertigt mit Intraoralscanner. Zahntechnik aus der Region, nicht aus dem Ausland."
+    },
+    "hero": {
+      "label": "Zahnersatz",
+      "titel": "Zahnersatz —",
+      "titelAkzent": "so natürlich wie Ihre eigenen Zähne",
+      "subtext": "Ob Krone, Brücke oder Prothese: Wir finden die beste Lösung für Sie — gefertigt von unserem Partnerlabor in Bönningstedt, mit modernster Scannertechnologie."
+    },
+    "optionen": {
+      "label": "Ihre Optionen",
+      "titel": "Die richtige Lösung",
+      "titelAkzent": "für Sie",
+      "items": {
+        "kronen": {
+          "titel": "Kronen",
+          "text": "Vollkeramik-Kronen für natürliche Ästhetik und maximale Haltbarkeit — passgenau dank digitalem Abdruck."
+        },
+        "bruecken": {
+          "titel": "Brücken",
+          "text": "Festsitzende Brücken zum Schließen von Zahnlücken — für ein lückenloses Lächeln und volle Kaufunktion."
+        },
+        "teilprothesen": {
+          "titel": "Teilprothesen",
+          "text": "Herausnehmbarer Zahnersatz mit präziser Passform — wenn mehrere Zähne fehlen."
+        },
+        "vollprothesen": {
+          "titel": "Vollprothesen",
+          "text": "Hochwertige Totalprothesen mit natürlichem Aussehen — für neuen Halt und Lebensqualität."
+        },
+        "implantatgetragen": {
+          "titel": "Implantatgetragener Zahnersatz",
+          "text": "Festsitzende Zähne auf Implantaten — die komfortabelste Lösung, die sich wie eigene Zähne anfühlt."
+        }
+      }
+    },
+    "qualitaet": {
+      "label": "Qualität",
+      "titel": "Zahnersatz aus",
+      "titelAkzent": "der Region",
+      "items": [
+        "Intraoralscanner statt unangenehmer Abdrücke — digital, präzise, schnell.",
+        "Zahnersatz aus Bönningstedt, nicht aus China — regionale Qualität, kurze Wege.",
+        "Transparente Kosten: Kassenleistung und Eigenanteil klar erklärt, bevor wir beginnen."
+      ]
+    },
+    "interneLinks": {
+      "implantate": "Implantate",
+      "aesthetik": "Ästhetik"
+    },
+    "cta": {
+      "titel": "Beratung zu",
+      "titelAkzent": "Ihrem Zahnersatz",
+      "text": "Wir finden gemeinsam die beste Lösung — vereinbaren Sie einen Beratungstermin."
+    }
+  },
+  "LeistungKinderzahnheilkunde": {
+    "meta": {
+      "title": "Kinderzahnarzt Hamburg Othmarschen | Zahnärzte Parkstrasse",
+      "description": "Kinderzahnheilkunde in Hamburg-Othmarschen: Einfühlsame Behandlung für Kinder jeden Alters. Weil wir selbst Kinder haben, wissen wir, worauf es ankommt."
+    },
+    "hero": {
+      "label": "Kinderzahnheilkunde",
+      "titel": "Gesunde Zähne",
+      "titelAkzent": "von Anfang an",
+      "subtext": "Da wir selber Kinder haben, wissen wir, wie wichtig eine vertrauensvolle und angstfreie Atmosphäre für die Kleinen ist. Bei uns lernen Kinder spielerisch, dass der Zahnarztbesuch gar nicht schlimm ist."
+    },
+    "ansatz": {
+      "label": "Unser Ansatz",
+      "titel": "Wir sind",
+      "titelAkzent": "selbst Mütter",
+      "text": "Othmarschen ist ein Familienstadtteil — und wir sind ein Familienteam. Als Mütter wissen wir genau, wie wichtig es ist, dass Kinder positive Erfahrungen beim Zahnarzt machen. Deshalb nehmen wir uns besonders viel Zeit, erklären kindgerecht und arbeiten ganz ohne Druck."
+    },
+    "leistungen": {
+      "label": "Für Ihre Kinder",
+      "titel": "Was wir für die",
+      "titelAkzent": "Kleinen tun",
+      "items": {
+        "vorsorge": {
+          "titel": "Vorsorge-Untersuchungen",
+          "text": "Regelmäßige Kontrollen ab dem ersten Zahn — spielerisch und ohne Druck."
+        },
+        "fissurenversiegelung": {
+          "titel": "Fissurenversiegelung",
+          "text": "Schutz der Backenzähne vor Karies — eine der wirksamsten Vorsorgemaßnahmen für Kinder."
+        },
+        "fluoridierung": {
+          "titel": "Fluoridierung",
+          "text": "Stärkung des Zahnschmelzes mit altersgerechter Fluoridierung — für widerstandsfähige Zähne."
+        },
+        "fuellungen": {
+          "titel": "Füllungen",
+          "text": "Wenn doch mal eine Karies entsteht: schmerzarme Behandlung mit modernen, zahnfarbenen Materialien."
+        },
+        "beratung": {
+          "titel": "Zahnpflege-Beratung",
+          "text": "Tipps für Eltern und Kinder — damit die Zahnpflege zu Hause Spaß macht und richtig funktioniert."
+        }
+      }
+    },
+    "ersterBesuch": {
+      "titel": "Ab wann zum Zahnarzt?",
+      "text": "Wir empfehlen den ersten Zahnarztbesuch ab dem ersten Milchzahn — meist um den 6. Lebensmonat. So gewöhnen sich die Kleinen früh an die Umgebung und lernen, dass ein Zahnarztbesuch nichts Schlimmes ist. Milchzähne sind wichtige Platzhalter für die bleibenden Zähne und verdienen genauso viel Aufmerksamkeit."
+    },
+    "interneLinks": {
+      "prophylaxe": "Prophylaxe",
+      "ersterBesuch": "Erster Besuch"
+    },
+    "cta": {
+      "titel": "Termin für Ihr",
+      "titelAkzent": "Kind buchen",
+      "text": "Vereinbaren Sie einen kindgerechten Kennenlerntermin — wir freuen uns auf die Kleinen."
+    }
+  },
+  "LeistungAesthetik": {
+    "meta": {
+      "title": "Ästhetische Zahnheilkunde Hamburg | Bleaching & Veneers Othmarschen",
+      "description": "Ästhetische Zahnheilkunde in Hamburg-Othmarschen: Professionelles Bleaching, Veneers und ästhetische Korrekturen für Ihr schönstes Lächeln."
+    },
+    "hero": {
+      "label": "Ästhetik",
+      "titel": "Ästhetische Zahnheilkunde —",
+      "titelAkzent": "für Ihr schönstes Lächeln",
+      "subtext": "Manchmal geht es nicht nur um Gesundheit, sondern auch um Ästhetik. Wir bieten Ihnen schonende Verfahren für strahlend weiße und perfekt geformte Zähne."
+    },
+    "behandlungen": {
+      "label": "Behandlungen",
+      "titel": "Ihr Weg zum",
+      "titelAkzent": "perfekten Lächeln",
+      "items": {
+        "bleaching": {
+          "titel": "Professionelles Bleaching",
+          "text": "Schonende Aufhellung Ihrer Zähne — in der Praxis (In-Office) oder komfortabel zu Hause (Home-Bleaching). Sichtbare Ergebnisse nach einer Sitzung."
+        },
+        "veneers": {
+          "titel": "Veneers",
+          "text": "Hauchdünne Keramikschalen für perfekte Zahnformen und -farben. Ideal bei Verfärbungen, leichten Fehlstellungen oder abgebrochenen Kanten."
+        },
+        "fuellungen": {
+          "titel": "Ästhetische Füllungen",
+          "text": "Zahnfarbene Composite-Füllungen statt dunklem Amalgam — unsichtbar und haltbar. Für ein natürliches Lächeln ohne Kompromisse."
+        },
+        "zahnfleisch": {
+          "titel": "Zahnfleischkorrektur",
+          "text": "Ästhetische Korrektur des Zahnfleischverlaufs — für ein harmonisches Lächeln. Durch Fachzahnärztin Dr. Schwegmann mit chirurgischer Präzision."
+        }
+      }
+    },
+    "interneLinks": {
+      "zahnersatz": "Zahnersatz",
+      "oralchirurgie": "Oralchirurgie"
+    },
+    "cta": {
+      "titel": "Beratung für Ihr",
+      "titelAkzent": "schönstes Lächeln",
+      "text": "Lassen Sie sich unverbindlich beraten — wir finden die passende ästhetische Lösung für Sie."
+    }
   }
 }

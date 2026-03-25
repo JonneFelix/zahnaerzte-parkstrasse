@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { type Locale } from "../../../../lib/i18n";
-import { getArtikel, getAlleSlugs, getAlleArtikel } from "../../../../lib/ratgeber";
+import { getArtikel, getAlleSlugs, getAlleArtikel } from "../../../../lib/zahnwissen";
 import SeiteHero from "../../../components/SeiteHero";
 import CTABanner from "../../../components/CTABanner";
 
@@ -50,10 +50,10 @@ function renderMarkdown(text: string): string {
 }
 
 const uiTexts: Record<string, { zurueck: string; von: string; weitereLesen: string }> = {
-  de: { zurueck: "← Zurück zum Ratgeber", von: "von", weitereLesen: "Weitere Artikel" },
-  en: { zurueck: "← Back to guide", von: "by", weitereLesen: "More articles" },
-  fr: { zurueck: "← Retour au guide", von: "par", weitereLesen: "Plus d'articles" },
-  es: { zurueck: "← Volver a la guía", von: "por", weitereLesen: "Más artículos" },
+  de: { zurueck: "← Zurück zum Zahnwissen", von: "von", weitereLesen: "Weitere Artikel" },
+  en: { zurueck: "← Back to Dental Knowledge", von: "by", weitereLesen: "More articles" },
+  fr: { zurueck: "← Retour au Savoir dentaire", von: "par", weitereLesen: "Plus d'articles" },
+  es: { zurueck: "← Volver al Conocimiento dental", von: "por", weitereLesen: "Más artículos" },
 };
 
 export default async function ArtikelSeite({

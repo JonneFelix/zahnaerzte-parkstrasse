@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { getDictionary, type Locale } from "../../../lib/i18n";
-import { getAlleArtikel } from "../../../lib/ratgeber";
+import { getAlleArtikel } from "../../../lib/zahnwissen";
 import SeiteHero from "../../components/SeiteHero";
 
 const metaTexts: Record<string, { title: string; description: string }> = {
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: m.title, description: m.description };
 }
 
-export default async function RatgeberSeite({ params }: { params: Promise<{ locale: string }> }) {
+export default async function ZahnwissenSeite({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const artikel = getAlleArtikel(locale as Locale);
   const hero = heroTexts[locale] || heroTexts.de;

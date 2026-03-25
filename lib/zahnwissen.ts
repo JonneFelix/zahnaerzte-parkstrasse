@@ -5,7 +5,7 @@ import { type Locale } from "./i18n";
 
 const CONTENT_DIR = path.join(process.cwd(), "content/zahnwissen");
 
-export interface RatgeberArtikel {
+export interface ZahnwissenArtikel {
   slug: string;
   titel: string;
   beschreibung: string;
@@ -20,7 +20,7 @@ export interface RatgeberArtikel {
 }
 
 /* Alle Artikel für eine Sprache laden */
-export function getAlleArtikel(locale: Locale): RatgeberArtikel[] {
+export function getAlleArtikel(locale: Locale): ZahnwissenArtikel[] {
   const localeDir = path.join(CONTENT_DIR, locale);
 
   if (!fs.existsSync(localeDir)) return [];
@@ -51,7 +51,7 @@ export function getAlleArtikel(locale: Locale): RatgeberArtikel[] {
 }
 
 /* Einzelnen Artikel laden */
-export function getArtikel(slug: string, locale: Locale): RatgeberArtikel | null {
+export function getArtikel(slug: string, locale: Locale): ZahnwissenArtikel | null {
   const dateiPfad = path.join(CONTENT_DIR, locale, `${slug}.md`);
 
   if (!fs.existsSync(dateiPfad)) return null;

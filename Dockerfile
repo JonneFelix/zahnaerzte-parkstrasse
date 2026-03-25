@@ -1,5 +1,6 @@
 # ─── Zahnärzte Parkstrasse Dockerfile ─────────────────────────────────────────
 # Multi-Stage Build: Bun Build → Nginx Static Serving
+# Cache-Bust: 2026-03-25-v2
 
 FROM oven/bun:latest AS builder
 WORKDIR /app

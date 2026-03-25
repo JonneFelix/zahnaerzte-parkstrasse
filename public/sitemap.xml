@@ -109,6 +109,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://zahnaerzte-parkstrasse.de/de/zahnwissen</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zahnaerzte-parkstrasse.de/de/zahnwissen/zahnimplantate-kosten-hamburg</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://zahnaerzte-parkstrasse.de/impressum</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>yearly</changefreq>

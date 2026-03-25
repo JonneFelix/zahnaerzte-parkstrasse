@@ -24,7 +24,7 @@ export async function generateMetadata({
     title: artikel.titel,
     description: artikel.beschreibung,
     alternates: {
-      canonical: `https://zahnaerzte-parkstrasse.de/${locale}/ratgeber/${slug}`,
+      canonical: `https://zahnaerzte-parkstrasse.de/${locale}/zahnwissen/${slug}`,
     },
   };
 }
@@ -92,7 +92,7 @@ export default async function ArtikelSeite({
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10">
           {/* Zurück-Link */}
           <Link
-            href={`/${locale}/ratgeber`}
+            href={`/${locale}/zahnwissen`}
             className="inline-flex items-center gap-2 mb-8 text-sm transition-colors duration-300 hover:text-[#F26522]"
             style={{ color: "#697B7B", fontWeight: 400 }}
           >
@@ -147,7 +147,7 @@ export default async function ArtikelSeite({
                 {verwandte.map((a) => (
                   <Link
                     key={a.slug}
-                    href={`/${locale}/ratgeber/${a.slug}`}
+                    href={`/${locale}/zahnwissen/${a.slug}`}
                     className="block p-4 transition-all duration-300 hover:bg-white/60"
                     style={{
                       borderRadius: "12px",

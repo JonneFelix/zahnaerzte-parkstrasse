@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { type Locale } from "./i18n";
 
-const CONTENT_DIR = path.join(process.cwd(), "content/ratgeber");
+const CONTENT_DIR = path.join(process.cwd(), "content/zahnwissen");
 
 export interface RatgeberArtikel {
   slug: string;

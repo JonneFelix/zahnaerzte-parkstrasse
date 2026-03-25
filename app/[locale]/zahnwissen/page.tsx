@@ -6,17 +6,17 @@ import { getAlleArtikel } from "../../../lib/ratgeber";
 import SeiteHero from "../../components/SeiteHero";
 
 const metaTexts: Record<string, { title: string; description: string }> = {
-  de: { title: "Ratgeber — Zahngesundheit & Wissen", description: "Ratgeber und Wissenswertes rund um Zahngesundheit, Behandlungen und Vorsorge. Von den Zahnärzten Parkstrasse Othmarschen." },
-  en: { title: "Guide — Dental Health & Knowledge", description: "Guides and knowledge about dental health, treatments and prevention. From Zahnärzte Parkstrasse Othmarschen." },
-  fr: { title: "Guide — Santé dentaire & Savoir", description: "Guides et informations sur la santé dentaire, les traitements et la prévention. Par Zahnärzte Parkstrasse Othmarschen." },
-  es: { title: "Guía — Salud dental & Conocimiento", description: "Guías e información sobre salud dental, tratamientos y prevención. De Zahnärzte Parkstrasse Othmarschen." },
+  de: { title: "Zahnwissen — Artikel rund um Zahngesundheit", description: "Zahnwissen: Informative Artikel rund um Zahngesundheit, Behandlungen und Vorsorge. Von den Zahnärzten Parkstrasse Othmarschen." },
+  en: { title: "Dental Knowledge — Articles about dental health", description: "Dental Knowledge: Informative articles about dental health, treatments and prevention. From Zahnärzte Parkstrasse Othmarschen." },
+  fr: { title: "Savoir dentaire — Articles sur la santé dentaire", description: "Savoir dentaire : Articles informatifs sur la santé dentaire, les traitements et la prévention. Par Zahnärzte Parkstrasse Othmarschen." },
+  es: { title: "Conocimiento dental — Artículos sobre salud dental", description: "Conocimiento dental: Artículos informativos sobre salud dental, tratamientos y prevención. De Zahnärzte Parkstrasse Othmarschen." },
 };
 
 const heroTexts: Record<string, { label: string; titel: string; akzent: string; subtext: string }> = {
-  de: { label: "Ratgeber", titel: "Wissen für", akzent: "Ihre Zahngesundheit", subtext: "Informative Artikel rund um Zahnmedizin, Vorsorge und moderne Behandlungsmethoden." },
-  en: { label: "Guide", titel: "Knowledge for", akzent: "your dental health", subtext: "Informative articles about dentistry, prevention and modern treatment methods." },
-  fr: { label: "Guide", titel: "Savoir pour", akzent: "votre santé dentaire", subtext: "Articles informatifs sur la dentisterie, la prévention et les méthodes de traitement modernes." },
-  es: { label: "Guía", titel: "Conocimiento para", akzent: "su salud dental", subtext: "Artículos informativos sobre odontología, prevención y métodos de tratamiento modernos." },
+  de: { label: "Zahnwissen", titel: "Wissen für", akzent: "Ihre Zahngesundheit", subtext: "Informative Artikel rund um Zahnmedizin, Vorsorge und moderne Behandlungsmethoden." },
+  en: { label: "Dental Knowledge", titel: "Knowledge for", akzent: "your dental health", subtext: "Informative articles about dentistry, prevention and modern treatment methods." },
+  fr: { label: "Savoir dentaire", titel: "Savoir pour", akzent: "votre santé dentaire", subtext: "Articles informatifs sur la dentisterie, la prévention et les méthodes de traitement modernes." },
+  es: { label: "Conocimiento dental", titel: "Conocimiento para", akzent: "su salud dental", subtext: "Artículos informativos sobre odontología, prevención y métodos de tratamiento modernos." },
 };
 
 const uiTexts: Record<string, { lesenMehr: string; keinArtikel: string; von: string }> = {
@@ -53,7 +53,7 @@ export default async function RatgeberSeite({ params }: { params: Promise<{ loca
               {artikel.map((a) => (
                 <Link
                   key={a.slug}
-                  href={`/${locale}/ratgeber/${a.slug}`}
+                  href={`/${locale}/zahnwissen/${a.slug}`}
                   className="group block transition-all duration-300 hover:translate-y-[-2px]"
                 >
                   <article

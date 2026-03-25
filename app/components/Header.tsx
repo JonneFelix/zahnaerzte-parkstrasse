@@ -42,6 +42,13 @@ const navTexts: Record<string, {
   },
 };
 
+const zahnwissenTexts: Record<string, string> = {
+  de: "Zahnwissen",
+  en: "Dental Knowledge",
+  fr: "Savoir dentaire",
+  es: "Conocimiento dental",
+};
+
 function getNavLinks(locale: Locale) {
   const t = navTexts[locale] || navTexts.de;
   return [
@@ -203,6 +210,19 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
                         >
                           {(navTexts[locale] || navTexts.de).alleLeistungen} →
                         </Link>
+                        {/* Zahnwissen-Bereich */}
+                        <div
+                          className="col-span-2 mt-1 pt-2"
+                          style={{ borderTop: "1px solid rgba(105, 123, 123, 0.06)" }}
+                        >
+                          <Link
+                            href={l("/zahnwissen", locale)}
+                            className="block px-4 py-2.5 text-sm font-medium transition-all duration-200 hover:bg-[rgba(242,101,34,0.05)]"
+                            style={{ color: "#697B7B", fontWeight: 500, borderRadius: "10px" }}
+                          >
+                            {zahnwissenTexts[locale] || zahnwissenTexts.de} →
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   )}

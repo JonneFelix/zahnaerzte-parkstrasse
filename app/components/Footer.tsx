@@ -69,9 +69,9 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
             <Image
               src="/logo-white.svg"
               alt="Zahnärzte Parkstrasse — Logo"
-              width={320}
-              height={55}
-              className="mb-5 opacity-90"
+              width={400}
+              height={65}
+              className="mb-5 opacity-90 max-w-full h-auto"
             />
             <p
               className="text-sm max-w-sm leading-relaxed"

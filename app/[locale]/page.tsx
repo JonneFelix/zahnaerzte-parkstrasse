@@ -227,7 +227,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
             </div>
 
             {/* Bild */}
-            <div className="order-1 lg:order-2 relative anim-einblenden-rechts d3 max-h-[45vh] lg:max-h-none overflow-hidden">
+            <div className="order-1 lg:order-2 relative anim-einblenden-rechts d3 max-h-[50vh] lg:max-h-none">
               <div className="absolute -inset-5 anim-blob hidden lg:block" style={{ border: "1.5px solid rgba(242, 101, 34, 0.1)", borderRadius: "55% 45% 52% 48% / 48% 58% 42% 52%" }} />
               <div className="absolute -inset-12 anim-blob hidden lg:block" style={{ border: "1px solid rgba(105, 123, 123, 0.06)", borderRadius: "42% 58% 48% 52% / 55% 42% 58% 45%", animationDelay: "3.5s" }} />
               <div className="relative overflow-hidden" style={{ borderRadius: "58% 42% 52% 48% / 44% 56% 44% 56%", boxShadow: "0 28px 56px -14px rgba(105, 123, 123, 0.22)" }}>
@@ -257,7 +257,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div className="relative anim-einblenden-links d2">
               <div className="overflow-hidden" style={{ borderRadius: "40% 60% 45% 55% / 55% 38% 62% 45%", boxShadow: "0 20px 44px -10px rgba(105, 123, 123, 0.16)" }}>
-                <Image src="/images/home-banner.jpg" alt={philosophie.bildAlt as string} width={600} height={500} className="w-full h-auto object-cover" style={{ aspectRatio: "6/5", filter: "saturate(0.88) brightness(1.03)" }} />
+                <Image src="/images/home-banner.jpg" alt={philosophie.bildAlt as string} width={600} height={500} className="w-full h-auto object-cover" style={{ aspectRatio: "6/5", filter: "saturate(0.88) brightness(1.03)", objectPosition: "30% center" }} />
               </div>
               <div className="absolute -bottom-5 -right-3 lg:-right-6 px-7 py-4 anim-einblenden d6" style={{ background: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(8px)", borderRadius: "18px", boxShadow: "0 10px 28px rgba(105, 123, 123, 0.1)", border: "1px solid rgba(105, 123, 123, 0.06)" }}>
                 <div className="text-2xl" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 700, color: "#697B7B" }}>{philosophie.badge as string}</div>

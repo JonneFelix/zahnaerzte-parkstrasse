@@ -1,135 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <loc>https://zahnaerzte-parkstrasse.de/de</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zahnaerzte-parkstrasse.de/de"/>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/team</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/team</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/team"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/team"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/team"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/team"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/oralchirurgie</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/oralchirurgie</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/oralchirurgie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/oralchirurgie"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/oralchirurgie"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/oralchirurgie"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/implantate</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/implantate</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/implantate"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/implantate"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/implantate"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/implantate"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/wurzelbehandlung</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/wurzelbehandlung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/wurzelbehandlung"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/wurzelbehandlung"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/wurzelbehandlung"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/wurzelbehandlung"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/zahnersatz</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/prophylaxe</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/prophylaxe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/prophylaxe"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/prophylaxe"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/prophylaxe"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/prophylaxe</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/parodontologie</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/parodontologie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/parodontologie"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/parodontologie"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/parodontologie"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/parodontologie</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/zahnersatz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/zahnersatz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/zahnersatz"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/zahnersatz"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/zahnersatz"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/kinderzahnheilkunde</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/kinderzahnheilkunde</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/kinderzahnheilkunde"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/kinderzahnheilkunde"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/kinderzahnheilkunde"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/kinderzahnheilkunde"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/leistungen/aesthetik</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/leistungen/aesthetik</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/leistungen/aesthetik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/leistungen/aesthetik"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/leistungen/aesthetik"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/leistungen/aesthetik"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/kontakt</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/kontakt"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/termin</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/termin</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/termin"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/termin"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/termin"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/termin"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/innovationen</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/innovationen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/innovationen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/innovationen"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/innovationen"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/innovationen"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/fortbildungen</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/fortbildungen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/fortbildungen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/fortbildungen"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/fortbildungen"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/fortbildungen"/>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zahnaerzte-parkstrasse.de/faq</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zahnaerzte-parkstrasse.de/praxis</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zahnaerzte-parkstrasse.de/wissenswertes</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://zahnaerzte-parkstrasse.de/de/zahnwissen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/zahnwissen"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/zahnwissen"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/zahnwissen"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/zahnwissen"/>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zahnaerzte-parkstrasse.de/de/zahnwissen/zahnimplantate-kosten-hamburg</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/zahnwissen/zahnimplantate-kosten-hamburg"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/zahnwissen/dental-implants-cost-hamburg"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/zahnwissen/implants-dentaires-cout-hambourg"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/zahnwissen/implantes-dentales-coste-hamburgo"/>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/impressum</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/faq</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zahnaerzte-parkstrasse.de/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zahnaerzte-parkstrasse.de/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zahnaerzte-parkstrasse.de/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zahnaerzte-parkstrasse.de/es/faq"/>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://zahnaerzte-parkstrasse.de/de/impressum</loc>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://zahnaerzte-parkstrasse.de/datenschutz</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://zahnaerzte-parkstrasse.de/de/datenschutz</loc>
+    <lastmod>2026-03-25</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>

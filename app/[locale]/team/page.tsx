@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 /* Nicht-übersetzbare Daten */
 const aerztinnenBilder = ["/images/team/dr-schwegmann-portrait-neu.jpg", "/images/dr-janz.jpg", "/images/team/dr-prueter.jpg"];
+const aerztinnenBildPosition = ["center 25%", "center center", "center center"];
 const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz", "Dr. Julia Prüter"];
 const aerztinnenKeys = ["schwegmann", "janz", "prueter"];
 
@@ -40,6 +41,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
     return {
       name: aerztinnenNamen[i],
       bild: aerztinnenBilder[i],
+      bildPosition: aerztinnenBildPosition[i] || "center center",
       rolle: a.rolle as string,
       zitat: a.zitat as string,
       ueber: a.ueber as string,
@@ -104,6 +106,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                       className="object-cover"
                       style={{
                         filter: "saturate(0.92) brightness(1.02)",
+                        objectPosition: a.bildPosition,
                       }}
                     />
                     <div

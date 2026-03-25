@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 /* Nicht-übersetzbare Daten */
-const aerztinnenBilder = ["/images/dr-schwegmann.jpg", "/images/dr-janz.jpg", "/images/team/dr-prueter.jpg"];
+const aerztinnenBilder = ["/images/team/dr-schwegmann-portrait-neu.jpg", "/images/dr-janz.jpg", "/images/team/dr-prueter.jpg"];
 const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz", "Dr. Julia Prüter"];
 const aerztinnenKeys = ["schwegmann", "janz", "prueter"];
 

@@ -61,7 +61,7 @@ const leistungsBilder = [
   "/images/zahnmodell.jpg",
   "/images/wurzelbehandlung.jpg",
   "/images/prophylaxe.jpg",
-  "/images/lupenbrille.jpg",
+  "/images/mikroskop-ausstattung.jpg",
 ];
 
 const leistungsHrefs = [
@@ -73,7 +73,7 @@ const leistungsHrefs = [
 ];
 
 const aerztinnenBilder = [
-  "/images/dr-schwegmann.jpg",
+  "/images/team/dr-schwegmann-portrait-neu.jpg",
   "/images/dr-janz.jpg",
   "/images/team/dr-prueter.jpg",
 ];
@@ -257,7 +257,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div className="relative anim-einblenden-links d2">
               <div className="overflow-hidden" style={{ borderRadius: "40% 60% 45% 55% / 55% 38% 62% 45%", boxShadow: "0 20px 44px -10px rgba(105, 123, 123, 0.16)" }}>
-                <Image src="/images/home-banner.jpg" alt={philosophie.bildAlt as string} width={600} height={500} className="w-full h-auto object-cover" style={{ aspectRatio: "6/5", filter: "saturate(0.88) brightness(1.03)", objectPosition: "30% center" }} />
+                <Image src="/images/patientenberatung.jpg" alt={philosophie.bildAlt as string} width={600} height={500} className="w-full h-auto object-cover" style={{ aspectRatio: "6/5", filter: "saturate(0.88) brightness(1.03)", objectPosition: "30% center" }} />
               </div>
               <div className="absolute -bottom-5 -right-3 lg:-right-6 px-7 py-4 anim-einblenden d6" style={{ background: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(8px)", borderRadius: "18px", boxShadow: "0 10px 28px rgba(105, 123, 123, 0.1)", border: "1px solid rgba(105, 123, 123, 0.06)" }}>
                 <div className="text-2xl" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 700, color: "#697B7B" }}>{philosophie.badge as string}</div>

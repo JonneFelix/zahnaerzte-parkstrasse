@@ -17,13 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 const leistungsBilder: Record<string, string> = {
   oralchirurgie: "/images/behandlung.jpg",
-  implantate: "/images/lupenbrille.jpg",
+  implantate: "/images/mikroskop-ausstattung.jpg",
   zahnersatz: "/images/zahnmodell.jpg",
   wurzelbehandlung: "/images/wurzelbehandlung.jpg",
   prophylaxe: "/images/prophylaxe.jpg",
-  parodontologie: "/images/behandlung.jpg",
+  parodontologie: "/images/praxis-mit-logo.jpg",
   kinderzahnheilkunde: "/images/kinder-behandlung.jpg",
-  aesthetik: "/images/zahnmodell.jpg",
+  aesthetik: "/images/aligner-schiene.jpg",
 };
 
 const leistungsHrefs: Record<string, string> = {
@@ -215,7 +215,7 @@ export default async function LeistungenSeite({ params }: { params: Promise<{ lo
               }}
             >
               <Image
-                src="/images/team/dr-schwegmann-portrait.jpg"
+                src="/images/team/dr-schwegmann-portrait-neu.jpg"
                 alt={schwerpunkt.bildAlt}
                 width={500}
                 height={600}

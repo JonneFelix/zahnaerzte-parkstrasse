@@ -71,7 +71,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
               alt="Zahnärzte Parkstrasse — Logo"
               width={600}
               height={100}
-              className="mb-5 opacity-90 w-full max-w-[380px] h-auto"
+              className="mb-5 opacity-90 w-full h-auto"
             />
             <p
               className="text-sm max-w-sm leading-relaxed"

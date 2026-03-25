@@ -437,7 +437,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
                 <div className="relative mb-6 inline-block">
                   <div className="absolute -inset-3 anim-blob opacity-40" style={{ border: "1.5px solid rgba(242, 101, 34, 0.12)", borderRadius: "54% 46% 51% 49% / 49% 54% 46% 51%", animationDelay: `${i * 2}s` }} />
                   <div className="team-bild-hover relative overflow-hidden w-56 h-56 mx-auto" style={{ borderRadius: "50% 50% 44% 56% / 54% 44% 56% 46%", boxShadow: "0 22px 44px -10px rgba(105, 123, 123, 0.16)" }}>
-                    <Image src={a.bild} alt={a.name} fill className="object-cover" style={{ filter: "saturate(0.92) brightness(1.02)", objectPosition: i === 0 ? "35% 15%" : "center center" }} />
+                    <Image src={a.bild} alt={a.name} fill className="object-cover" style={{ filter: "saturate(0.92) brightness(1.02)", objectPosition: i === 0 ? "50% 20%" : "center center" }} />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(105, 123, 123, 0.08), transparent 40%)" }} />
                   </div>
                 </div>

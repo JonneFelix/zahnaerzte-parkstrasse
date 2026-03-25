@@ -66,13 +66,39 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
           {/* Logo & Beschreibung */}
           <div className="lg:col-span-2">
-            <Image
-              src="/logo-white.svg"
-              alt="Zahnärzte Parkstrasse — Logo"
-              width={600}
-              height={100}
-              className="mb-5 opacity-90 w-full max-w-[320px] h-auto"
-            />
+            <div className="flex items-center gap-3 mb-5">
+              <Image
+                src="/logo-icon-white.svg"
+                alt="Zahnärzte Parkstrasse — Baum-Logo"
+                width={48}
+                height={52}
+                className="opacity-80"
+              />
+              <div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-cormorant), 'Cormorant Garamond', serif",
+                    fontWeight: 600,
+                    color: "rgba(255, 255, 255, 0.85)",
+                    fontSize: "1.1rem",
+                    letterSpacing: "0.12em",
+                  }}
+                >
+                  ZAHNÄRZTE PARKSTRASSE
+                </div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-work-sans), 'Work Sans', sans-serif",
+                    fontWeight: 500,
+                    color: "#F26522",
+                    fontSize: "0.65rem",
+                    letterSpacing: "0.18em",
+                  }}
+                >
+                  OTHMARSCHEN
+                </div>
+              </div>
+            </div>
             <p
               className="text-sm max-w-sm leading-relaxed"
               style={{ color: "rgba(255, 255, 255, 0.42)", fontWeight: 300, lineHeight: 1.8 }}

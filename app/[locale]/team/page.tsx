@@ -45,6 +45,10 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
       rolle: a.rolle as string,
       zitat: a.zitat as string,
       ueber: a.ueber as string,
+      sprachen: (a.sprachen as string[] | undefined) || [],
+      aufklappTitel: (a.aufklappTitel as string | undefined) || "",
+      aufklappText1: (a.aufklappText1 as string | undefined) || "",
+      aufklappText2: (a.aufklappText2 as string | undefined) || "",
       timeline: timelineArr,
       tags: a.tags as string[],
     };
@@ -206,6 +210,19 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                   ))}
                 </div>
 
+                {/* Sprachkompetenz */}
+                {a.sprachen.length > 0 && (
+                  <div className="flex items-center gap-2 mb-6">
+                    <svg viewBox="0 0 20 20" className="w-4 h-4 shrink-0" fill="none" stroke="#697B7B" strokeWidth="1.5">
+                      <circle cx="10" cy="10" r="8" />
+                      <path d="M2 10h16M10 2c2.5 3 3.5 5 3.5 8s-1 5-3.5 8M10 2c-2.5 3-3.5 5-3.5 8s1 5 3.5 8" />
+                    </svg>
+                    <span className="text-xs tracking-wider" style={{ color: "#697B7B", fontWeight: 500, letterSpacing: "0.05em" }}>
+                      {a.sprachen.join(" · ")}
+                    </span>
+                  </div>
+                )}
+
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2">
                   {a.tags.map((tag) => (
@@ -223,6 +240,27 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                     </span>
                   ))}
                 </div>
+
+                {/* Aufklappbar (nur bei Dr. Schwegmann) */}
+                {a.aufklappTitel && (
+                  <details className="mt-8 group" style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)" }}>
+                    <summary
+                      className="flex items-center justify-between cursor-pointer px-7 py-5 text-base"
+                      style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 500, color: "#2d3a3a" }}
+                    >
+                      {a.aufklappTitel}
+                      <span className="text-sm transition-transform duration-300 group-open:rotate-180" style={{ color: "#F26522" }}>▾</span>
+                    </summary>
+                    <div className="px-7 pb-6 space-y-4">
+                      <p className="text-sm leading-relaxed" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.8 }}>
+                        {a.aufklappText1}
+                      </p>
+                      <p className="text-sm leading-relaxed" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.8 }}>
+                        {a.aufklappText2}
+                      </p>
+                    </div>
+                  </details>
+                )}
               </div>
             </div>
           </div>

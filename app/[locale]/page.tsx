@@ -255,6 +255,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           <SektionsHeader label={philosophie.label as string} titel={philosophie.titel as string} titelAkzent={philosophie.titelAkzent as string} />
 
           <div className="grid lg:grid-cols-2 gap-14 items-center">
+            {/* Bild links */}
             <div className="relative anim-einblenden-links d2">
               <div className="overflow-hidden" style={{ borderRadius: "40% 60% 45% 55% / 55% 38% 62% 45%", boxShadow: "0 20px 44px -10px rgba(105, 123, 123, 0.16)" }}>
                 <Image src="/images/patientenberatung.jpg" alt={philosophie.bildAlt as string} width={600} height={500} className="w-full h-auto object-cover" style={{ aspectRatio: "6/5", filter: "saturate(0.88) brightness(1.03)", objectPosition: "30% center" }} />
@@ -265,28 +266,53 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
               </div>
             </div>
 
+            {/* Zitat + Werte rechts */}
             <div className="anim-einblenden-rechts d3">
-              <p className="text-lg leading-relaxed mb-5" style={{ color: "#4a5959", fontWeight: 300, lineHeight: 1.85 }}>
-                {philosophie.text1 as string}
-              </p>
-              <p className="text-lg leading-relaxed mb-8" style={{ color: "#4a5959", fontWeight: 300, lineHeight: 1.85 }}>
-                {philosophie.text2 as string}
+              {/* Zitat mit Orange-Akzentlinie */}
+              <blockquote className="relative pl-6 mb-6" style={{ borderLeft: "3px solid #F26522" }}>
+                <p className="text-lg lg:text-xl leading-relaxed italic" style={{ color: "#2d3a3a", fontFamily: "var(--font-cormorant), serif", fontWeight: 500, lineHeight: 1.7 }}>
+                  &bdquo;{philosophie.zitat as string}&ldquo;
+                </p>
+                <footer className="mt-4">
+                  <div className="text-sm font-semibold" style={{ color: "#2d3a3a" }}>{philosophie.zitatAutor as string}</div>
+                  <div className="text-xs" style={{ color: "#7a8a8a" }}>{philosophie.zitatRolle as string}</div>
+                </footer>
+              </blockquote>
+
+              <p className="text-base leading-relaxed mb-8" style={{ color: "#4a5959", fontWeight: 300, lineHeight: 1.85 }}>
+                {philosophie.text as string}
               </p>
 
-              <div className="grid grid-cols-3 gap-5 mt-10">
-                {([
-                  { key: "einfuehlsam" },
-                  { key: "erfahren" },
-                  { key: "ganzheitlich" },
-                ] as const).map((item, i) => (
-                  <div key={item.key} className={`text-center anim-einblenden d${i + 5}`}>
-                    <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center rounded-full" style={{ background: "rgba(242, 101, 34, 0.08)" }}>
-                      <BaumDekor className="w-5 h-7" />
-                    </div>
-                    <div className="text-sm font-semibold mb-1" style={{ color: "#2d3a3a" }}>{werte[item.key][item.key]}</div>
-                    <div className="text-xs" style={{ color: "#7a8a8a", lineHeight: 1.5 }}>{werte[item.key][`${item.key}Detail`]}</div>
+              {/* 3 Werte-Tags mit individuellen Icons */}
+              <div className="grid grid-cols-3 gap-5">
+                <div className="text-center anim-einblenden d5">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center rounded-full" style={{ background: "rgba(242, 101, 34, 0.08)" }}>
+                    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#F26522" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
                   </div>
-                ))}
+                  <div className="text-sm font-semibold mb-1" style={{ color: "#2d3a3a" }}>{werte.einfuehlsam.einfuehlsam}</div>
+                  <div className="text-xs" style={{ color: "#7a8a8a", lineHeight: 1.5 }}>{werte.einfuehlsam.einfuehlsamDetail}</div>
+                </div>
+                <div className="text-center anim-einblenden d6">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center rounded-full" style={{ background: "rgba(242, 101, 34, 0.08)" }}>
+                    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#F26522" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                  </div>
+                  <div className="text-sm font-semibold mb-1" style={{ color: "#2d3a3a" }}>{werte.erfahren.erfahren}</div>
+                  <div className="text-xs" style={{ color: "#7a8a8a", lineHeight: 1.5 }}>{werte.erfahren.erfahrenDetail}</div>
+                </div>
+                <div className="text-center anim-einblenden d7">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center rounded-full" style={{ background: "rgba(242, 101, 34, 0.08)" }}>
+                    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#F26522" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                  </div>
+                  <div className="text-sm font-semibold mb-1" style={{ color: "#2d3a3a" }}>{werte.ganzheitlich.ganzheitlich}</div>
+                  <div className="text-xs" style={{ color: "#7a8a8a", lineHeight: 1.5 }}>{werte.ganzheitlich.ganzheitlichDetail}</div>
+                </div>
               </div>
             </div>
           </div>
@@ -308,25 +334,10 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
             subtext={leistungenSection.subtext as string}
           />
 
-          <div className="grid md:grid-cols-3 gap-7 mb-7">
-            {leistungen.slice(0, 3).map((l, i) => (
-              <Link key={l.titel} href={l.href} className={`karte-hover relative group block anim-einblenden d${i + 2}`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
-                <div className="relative h-44 overflow-hidden">
-                  <Image src={l.bild} alt={l.titel} fill className="object-cover transition-transform duration-700 group-hover:scale-105" style={{ filter: "saturate(0.88) brightness(1.02)" }} />
-                  <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.92))" }} />
-                  <div className="absolute bottom-3 left-5 p-2.5 rounded-full" style={{ background: "rgba(255, 255, 255, 0.92)", color: "#697B7B", boxShadow: "0 4px 12px rgba(105, 123, 123, 0.12)" }}>{l.icon}</div>
-                </div>
-                <div className="p-5 pt-3">
-                  <h3 className="text-lg mb-2" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{l.titel}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}>{l.beschreibung}</p>
-                  <div className="mt-4 h-0.5 w-10 transition-all duration-500 group-hover:w-full" style={{ background: "linear-gradient(to right, #F26522, transparent)" }} />
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div className="grid md:grid-cols-2 gap-7 max-w-2xl mx-auto">
-            {leistungen.slice(3, 5).map((l, i) => (
-              <Link key={l.titel} href={l.href} className={`karte-hover relative group block anim-einblenden d${i + 5}`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
+          {/* Mobile: Karussell mit Peek, Desktop: Grid */}
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-3 md:gap-7 md:overflow-visible md:pb-0 md:snap-none" style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
+            {leistungen.map((l, i) => (
+              <Link key={l.titel} href={l.href} className={`karte-hover relative group block anim-einblenden d${i + 2} shrink-0 w-[75vw] snap-start md:w-auto md:shrink`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
                 <div className="relative h-44 overflow-hidden">
                   <Image src={l.bild} alt={l.titel} fill className="object-cover transition-transform duration-700 group-hover:scale-105" style={{ filter: "saturate(0.88) brightness(1.02)" }} />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.92))" }} />
@@ -357,12 +368,13 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={patientJourney.label as string} titel={patientJourney.titel as string} titelAkzent={patientJourney.titelAkzent as string} />
 
-          <div className="grid md:grid-cols-4 gap-8">
+          {/* Mobile: Vertikale Timeline, Desktop: 4-Spalten-Grid */}
+          {/* Desktop */}
+          <div className="hidden md:grid md:grid-cols-4 gap-8">
             {schritteArr.map((s, i) => (
               <div key={s.nr} className={`relative text-center anim-einblenden d${i + 2}`}>
-                {/* Verbindungslinie */}
                 {i < 3 && (
-                  <div className="hidden md:block absolute top-8 left-[60%] w-[80%] h-px" style={{ background: "linear-gradient(to right, rgba(242, 101, 34, 0.2), rgba(242, 101, 34, 0.05))" }} />
+                  <div className="absolute top-8 left-[60%] w-[80%] h-px" style={{ background: "linear-gradient(to right, rgba(242, 101, 34, 0.2), rgba(242, 101, 34, 0.05))" }} />
                 )}
                 <div className="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full" style={{ background: "rgba(242, 101, 34, 0.08)", border: "1.5px solid rgba(242, 101, 34, 0.15)" }}>
                   <span style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 700, color: "#F26522", fontSize: "1.25rem" }}>{s.nr}</span>
@@ -371,6 +383,25 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
                 <p className="text-sm" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}>{s.text}</p>
               </div>
             ))}
+          </div>
+          {/* Mobile: Vertikale Timeline */}
+          <div className="md:hidden relative pl-10">
+            {/* Vertikale Linie */}
+            <div className="absolute left-[17px] top-2 bottom-2 w-px" style={{ background: "linear-gradient(to bottom, rgba(242, 101, 34, 0.3), rgba(242, 101, 34, 0.05))" }} />
+            <div className="space-y-6">
+              {schritteArr.map((s) => (
+                <div key={s.nr} className="relative flex gap-5 items-start">
+                  {/* Nummernkreis auf der Linie */}
+                  <div className="absolute -left-10 w-9 h-9 flex items-center justify-center rounded-full shrink-0" style={{ background: "#f4f1ec", border: "1.5px solid rgba(242, 101, 34, 0.25)" }}>
+                    <span style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 700, color: "#F26522", fontSize: "0.95rem" }}>{s.nr}</span>
+                  </div>
+                  <div>
+                    <h3 className="text-base mb-1" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{s.titel}</h3>
+                    <p className="text-sm" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.6 }}>{s.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="text-center mt-14 anim-einblenden d7">
@@ -395,11 +426,12 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={testimonialsSection.label as string} titel={testimonialsSection.titel as string} titelAkzent={testimonialsSection.titelAkzent as string} />
 
-          <div className="grid md:grid-cols-3 gap-7">
+          {/* Mobile: Karussell mit Peek, Desktop: Grid */}
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-3 md:gap-7 md:overflow-visible md:pb-0 md:snap-none" style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className={`karte-hover p-7 anim-einblenden d${i + 2}`}
+                className={`karte-hover p-7 anim-einblenden d${i + 2} shrink-0 w-[80vw] snap-start md:w-auto md:shrink`}
                 style={{
                   background: "rgba(255, 255, 255, 0.6)",
                   backdropFilter: "blur(8px)",
@@ -431,19 +463,20 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={teamSection.label as string} titel={teamSection.titel as string} titelAkzent={teamSection.titelAkzent as string} />
 
-          <div className="grid md:grid-cols-3 gap-10 lg:gap-14">
+          {/* Mobile: Alle 3 kompakt nebeneinander, Desktop: Grid mit großen Bildern */}
+          <div className="grid grid-cols-3 gap-3 md:gap-10 lg:gap-14">
             {aerztinnen.map((a, i) => (
-              <div key={a.name} className={`text-center anim-einblenden d${i + 2}`}>
-                <div className="relative mb-6 inline-block">
-                  <div className="absolute -inset-3 anim-blob opacity-40" style={{ border: "1.5px solid rgba(242, 101, 34, 0.12)", borderRadius: "54% 46% 51% 49% / 49% 54% 46% 51%", animationDelay: `${i * 2}s` }} />
-                  <div className="team-bild-hover relative overflow-hidden w-56 h-56 mx-auto" style={{ borderRadius: "50% 50% 44% 56% / 54% 44% 56% 46%", boxShadow: "0 22px 44px -10px rgba(105, 123, 123, 0.16)" }}>
+              <Link key={a.name} href={`/${locale}/team`} className={`text-center anim-einblenden d${i + 2} block`}>
+                <div className="relative mb-3 md:mb-6 inline-block">
+                  <div className="absolute -inset-3 anim-blob opacity-40 hidden md:block" style={{ border: "1.5px solid rgba(242, 101, 34, 0.12)", borderRadius: "54% 46% 51% 49% / 49% 54% 46% 51%", animationDelay: `${i * 2}s` }} />
+                  <div className="team-bild-hover relative overflow-hidden w-24 h-24 md:w-56 md:h-56 mx-auto" style={{ borderRadius: "50% 50% 44% 56% / 54% 44% 56% 46%", boxShadow: "0 22px 44px -10px rgba(105, 123, 123, 0.16)" }}>
                     <Image src={a.bild} alt={a.name} fill className="object-cover" style={{ filter: "saturate(0.92) brightness(1.02)", objectPosition: i === 0 ? "65% center" : "center center" }} />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(105, 123, 123, 0.08), transparent 40%)" }} />
                   </div>
                 </div>
-                <h3 className="text-xl mb-1" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{a.name}</h3>
-                <p className="text-sm tracking-wider" style={{ color: "#F26522", fontWeight: 500, letterSpacing: "0.08em" }}>{a.rolle}</p>
-              </div>
+                <h3 className="text-sm md:text-xl mb-0.5 md:mb-1" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{a.name}</h3>
+                <p className="text-[10px] md:text-sm tracking-wider leading-tight" style={{ color: "#F26522", fontWeight: 500, letterSpacing: "0.06em" }}>{a.rolle}</p>
+              </Link>
             ))}
           </div>
 

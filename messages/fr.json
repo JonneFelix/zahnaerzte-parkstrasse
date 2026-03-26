@@ -118,16 +118,21 @@
       "label": "Notre philosophie",
       "titel": "Une dentisterie qui",
       "titelAkzent": "mérite votre confiance",
-      "bildAlt": "Les locaux accueillants du cabinet",
-      "text1": "Dans la Parkstraße à Hamburg-Othmarschen, nous avons créé un lieu où la dentisterie se vit de manière naturelle et sans appréhension. Nous savons que beaucoup de gens associent la visite chez le dentiste à un malaise — c'est exactement pourquoi nous prenons particulièrement le temps pour vous.",
-      "text2": "Que serait un bon cabinet sans d'excellentes collaboratrices ? Beaucoup font partie de l'équipe depuis de longues années et nous sont restées fidèles malgré les agrandissements familiaux. Ensemble, nous vous offrons tout le spectre de la dentisterie moderne.",
-      "badge": "Chirurgien-dentiste spécialiste",
-      "badgeDetail": "en chirurgie orale",
+      "bildAlt": "Dr. Claudia Schwegmann — Propriétaire du cabinet",
+      "zitat": "C'est toujours un sentiment merveilleux lorsque des patients que nous avons traités reviennent année après année uniquement pour des nettoyages et des contrôles, avec peu ou pas de traitement supplémentaire nécessaire. C'est ainsi que la dentisterie devrait être — et c'est ainsi que nous la vivons dans notre cabinet.",
+      "zitatAutor": "Dr. Claudia Schwegmann",
+      "zitatRolle": "Propriétaire du cabinet depuis 1998",
+      "text": "L'humain est au cœur de nos traitements — et ce depuis des décennies. Compétence professionnelle, méthodes innovantes et beaucoup de passion pour notre métier nous caractérisent.",
+      "aufklappTitel": "Pourquoi je suis devenue dentiste",
+      "aufklappText1": "Dès l'adolescence, j'ai réalisé que j'avais beaucoup de patience, que je pouvais bien me concentrer, que j'aimais bricoler, que j'étais communicative et que j'adorais les sciences naturelles. Quoi de plus naturel que de devenir dentiste ?",
+      "aufklappText2": "Heureusement, cela a fonctionné — et aujourd'hui encore, avec plus de 30 ans d'expérience professionnelle, je suis toujours avide d'apprendre de nouvelles choses. Je prends également grand plaisir à partager ces connaissances avec d'autres collègues.",
+      "badge": "Depuis 1998",
+      "badgeDetail": "à Othmarschen",
       "werte": {
         "einfuehlsam": "Bienveillant",
         "einfuehlsamDetail": "Traitement sans appréhension",
         "erfahren": "Expérimenté",
-        "erfahrenDetail": "Depuis 1998 à Othmarschen",
+        "erfahrenDetail": "Plus de 25 ans d'expertise",
         "ganzheitlich": "Holistique",
         "ganzheitlichDetail": "L'humain au centre"
       }
@@ -248,6 +253,10 @@
         "rolle": "Propriétaire du cabinet · Chirurgien-dentiste spécialiste en chirurgie orale",
         "zitat": "Je souhaite que mes patients rentrent chez eux avec un bon sentiment — pas seulement avec des dents saines.",
         "ueber": "Dr. Claudia Schwegmann exerce à Othmarschen depuis 1998 et s'est fait un nom en tant que chirurgien-dentiste spécialiste en chirurgie orale. Son domaine de prédilection est l'implantologie et la greffe osseuse — en utilisant presque exclusivement des tissus autologues.",
+        "sprachen": ["Allemand", "Anglais", "Français"],
+        "aufklappTitel": "Pourquoi je suis devenue dentiste",
+        "aufklappText1": "Dès mon adolescence, j'ai constaté que j'avais beaucoup de patience, que je savais bien me concentrer, que j'aimais bricoler, que j'étais communicative et que j'adorais les sciences naturelles. Quoi de plus évident alors que de devenir dentiste ?",
+        "aufklappText2": "Heureusement, tout s'est bien passé, et aujourd'hui encore, avec plus de 30 ans d'expérience professionnelle, je suis avide d'apprendre de nouvelles choses. Je partage aussi très volontiers ce savoir avec mes collègues.",
         "timeline": {
           "t1": {
             "jahr": "1988–1993",
@@ -285,6 +294,7 @@
         "rolle": "Dentiste · Spécialiste en endodontie",
         "zitat": "Un bon traitement de canal peut sauver une dent qui serait autrement perdue. Cela me motive chaque jour.",
         "ueber": "Dr. Nina Janz renforce le cabinet depuis 2008. Sa spécialité est l'endodontie — le traitement de l'intérieur de la dent. Grâce à son curriculum en endodontie et à une technologie de pointe, elle sauve des dents que d'autres abandonneraient.",
+        "sprachen": ["Allemand", "Anglais", "Espagnol"],
         "timeline": {
           "t1": {
             "jahr": "1995–2001",
@@ -313,6 +323,7 @@
         "rolle": "Dentiste",
         "zitat": "Je suis ravie de faire partie de cette équipe expérimentée et d'apprendre des meilleurs.",
         "ueber": "Dr. Julia Prüter est la plus récente recrue de notre équipe. Après son examen d'État en 2022 à l'UKE Hamburg, elle apporte un savoir frais et des méthodes de traitement actuelles au cabinet.",
+        "sprachen": ["Allemand", "Anglais"],
         "timeline": {
           "t1": {
             "jahr": "2022",
@@ -332,7 +343,7 @@
       "label": "Notre équipe de cabinet",
       "titel": "Soudée, chaleureuse,",
       "titelAkzent": "compétente",
-      "text": "Que serait un bon cabinet sans d'excellentes collaboratrices ? Beaucoup font partie de l'équipe depuis de longues années et nous sont restées fidèles malgré les agrandissements familiaux. Notre équipe à l'accueil et en salle de traitement veille à ce que vous vous sentiez à l'aise dès la première seconde.",
+      "text": "Un mot sur notre équipe : de nombreuses collaboratrices nous sont fidèles depuis des années. Que serions-nous sans elles ? C'est aussi grâce à leurs compétences que nous pouvons proposer autant de traitements complexes. Un grand merci pour cela.",
       "gruppenfotoAlt": "Toute l'équipe des Zahnärzte Parkstrasse",
       "gruppenfoto2Alt": "L'équipe du cabinet devant le cabinet"
     },
@@ -953,7 +964,7 @@
       "label": "Notre spécialité",
       "titel": "Chirurgie orale —",
       "titelAkzent": "notre spécialité",
-      "subtext": "Les interventions chirurgicales exigent expérience, précision et empathie. En tant que spécialiste en chirurgie orale, Dr. Schwegmann réunit ces trois qualités — depuis plus de 25 ans.",
+      "subtext": "Cette discipline englobe l'extraction chirurgicale et atraumatique des dents et des dents de sagesse, la pose d'implants, la chirurgie des muqueuses et la thérapie parodontale chirurgicale. Notre cabinet dispose d'une compétence spécialisée dans ce domaine.",
       "badge": "Dr. Claudia Schwegmann — Spécialiste en chirurgie orale"
     },
     "bereiche": {
@@ -1143,7 +1154,7 @@
       "label": "Endodontie",
       "titel": "Traitement de canal —",
       "titelAkzent": "Conservation dentaire au plus haut niveau",
-      "subtext": "Un traitement de canal n'a aujourd'hui plus rien à voir avec sa mauvaise réputation d'antan. Dr. Nina Janz traite avec la technologie la plus moderne — en douceur, avec précision et dans le but de sauver votre dent.",
+      "subtext": "Les traitements de canal peuvent aujourd'hui être réalisés de manière beaucoup plus sûre. Les instruments et techniques modernes, associés à l'utilisation d'un microscope, permettent de voir en profondeur dans la racine dentaire et d'éliminer les obstacles plus efficacement. Dans notre cabinet, le Dr Janz s'est spécialisée dans ce domaine.",
       "badge": "Dr. Nina Janz — Curriculum Endodontie"
     },
     "zahnerhalt": {
@@ -1214,7 +1225,7 @@
       "label": "Prophylaxie",
       "titel": "Prophylaxie —",
       "titelAkzent": "Mieux vaut prévenir que guérir",
-      "subtext": "Nettoyage dentaire professionnel et programmes de prophylaxie individuels — pour des dents éclatantes de propreté et des gencives saines. La prévention régulière est la meilleure protection contre les caries et les maladies parodontales."
+      "subtext": "Pourquoi la prophylaxie quand on se brosse bien les dents ? Même avec la meilleure technique de brossage, on n'atteint malheureusement jamais tout. Notre service de prophylaxie s'occupe des détails que seul un regard extérieur peut bien voir ou déceler. Idéalement, combinez le détartrage professionnel avec un examen général. Ce n'est que lorsque les dents sont constamment bien nettoyées qu'elles restent saines toute la vie."
     },
     "warum": {
       "label": "Pourquoi la prophylaxie",
@@ -1272,7 +1283,7 @@
       "label": "Parodontologie",
       "titel": "Parodontologie —",
       "titelAkzent": "Vos dents solidement ancrées",
-      "subtext": "La parodontose est la cause la plus fréquente de perte de dents à un âge avancé — mais elle est bien traitable. Nous vous offrons le spectre complet : de la thérapie conservatrice au traitement parodontal chirurgical."
+      "subtext": "L'os qui entoure les dents se résorbe et celles-ci se déchaussent, jusqu'à leur perte. Des études récentes démontrent en outre des liens entre les maladies parodontales et la maladie d'Alzheimer ou les maladies cardiovasculaires. La parodontite se traite très bien — un détartrage professionnel régulier et une excellente hygiène à domicile sont indispensables."
     },
     "was": {
       "label": "Comprendre",
@@ -1334,7 +1345,7 @@
       "label": "Prothèses dentaires",
       "titel": "Prothèses dentaires —",
       "titelAkzent": "aussi naturelles que vos propres dents",
-      "subtext": "Qu'il s'agisse d'une couronne, d'un bridge ou d'une prothèse : nous trouvons la meilleure solution pour vous — fabriquée par notre laboratoire partenaire à Bönningstedt, avec la technologie de scanner la plus moderne."
+      "subtext": "Qu'il s'agisse de prothèses amovibles ou de couronnes et bridges fixes — nous vous offrons un travail de haute qualité issu de notre laboratoire de maître artisan. Grâce à l'utilisation d'un scanner, sans empreintes fastidieuses et avec une précision absolue."
     },
     "optionen": {
       "label": "Vos options",
@@ -1392,7 +1403,7 @@
       "label": "Dentisterie pédiatrique",
       "titel": "Des dents saines",
       "titelAkzent": "dès le départ",
-      "subtext": "Parce que nous avons nous-mêmes des enfants, nous savons combien une atmosphère de confiance et sans anxiété est importante pour les petits. Chez nous, les enfants apprennent en jouant que la visite chez le dentiste n'a rien d'effrayant."
+      "subtext": "Nous pouvons nous appuyer sur des années d'observation, car les anciens enfants-patients ont déjà leurs propres enfants. Comme nous avons nous-mêmes des enfants, nous savons très bien combien il est important d'avoir un dentiste bienveillant dès le plus jeune âge. Outre les scellements de sillons et la prophylaxie, nous misons tout particulièrement sur une motivation adaptée à l'âge."
     },
     "ansatz": {
       "label": "Notre approche",
@@ -1450,7 +1461,7 @@
       "label": "Dentisterie esthétique",
       "titel": "Dentisterie esthétique —",
       "titelAkzent": "pour votre plus beau sourire",
-      "subtext": "Parfois, il ne s'agit pas seulement de santé, mais aussi d'esthétique. Nous vous proposons des procédures douces pour des dents d'un blanc éclatant et parfaitement formées."
+      "subtext": "Parfois, il ne s'agit pas seulement de santé, mais aussi d'esthétique. L'orthodontie peut aujourd'hui s'appuyer sur l'intelligence artificielle pour aider à aligner les dents. Des gouttières extra-fines déplacent progressivement les dents vers la position souhaitée et sont quasiment invisibles. Une obturation de qualité contribue également à la longévité absolue de la dent."
     },
     "behandlungen": {
       "label": "Traitements",

@@ -118,16 +118,21 @@
       "label": "Nuestra filosofía",
       "titel": "Odontología que",
       "titelAkzent": "merece su confianza",
-      "bildAlt": "Las acogedoras instalaciones de la clínica",
-      "text1": "En la Parkstraße en Hamburg-Othmarschen hemos creado un lugar donde la odontología se vive de forma natural y sin miedo. Sabemos que muchas personas asocian la visita al dentista con malestar — por eso nos tomamos especialmente el tiempo para usted.",
-      "text2": "¿Qué sería una buena clínica sin excelentes colaboradoras? Muchas llevan años con nosotros y nos han sido fieles a pesar de los cambios familiares. Juntos le ofrecemos todo el espectro de la odontología moderna.",
-      "badge": "Odontóloga especialista",
-      "badgeDetail": "en cirugía oral",
+      "bildAlt": "Dr. Claudia Schwegmann — Propietaria de la clínica",
+      "zitat": "Siempre es una sensación maravillosa cuando pacientes que hemos tratado vuelven año tras año solo para limpiezas y controles, con poca o ninguna necesidad de tratamiento adicional. Así debería ser la odontología — y así la vivimos en nuestra clínica.",
+      "zitatAutor": "Dr. Claudia Schwegmann",
+      "zitatRolle": "Propietaria de la clínica desde 1998",
+      "text": "La persona está en el centro de nuestros tratamientos — y lo ha estado durante décadas. Competencia profesional, métodos innovadores y mucha pasión por nuestra profesión nos caracterizan.",
+      "aufklappTitel": "Por qué me hice dentista",
+      "aufklappText1": "Ya de adolescente me di cuenta de que tengo mucha paciencia, me concentro bien, me gusta hacer manualidades, soy comunicativa y me encantan las ciencias naturales. ¿Qué podría ser más natural que hacerse dentista?",
+      "aufklappText2": "Afortunadamente funcionó — y hoy, con más de 30 años de experiencia profesional, sigo teniendo ganas de aprender cosas nuevas. También disfruto mucho compartiendo estos conocimientos con otros colegas.",
+      "badge": "Desde 1998",
+      "badgeDetail": "en Othmarschen",
       "werte": {
         "einfuehlsam": "Empática",
         "einfuehlsamDetail": "Tratamiento sin miedo",
         "erfahren": "Experimentada",
-        "erfahrenDetail": "Desde 1998 en Othmarschen",
+        "erfahrenDetail": "Más de 25 años de experiencia",
         "ganzheitlich": "Holística",
         "ganzheitlichDetail": "La persona en el centro"
       }
@@ -248,6 +253,10 @@
         "rolle": "Propietaria de la clínica · Odontóloga especialista en cirugía oral",
         "zitat": "Quiero que mis pacientes vuelvan a casa con una buena sensación — no solo con dientes sanos.",
         "ueber": "La Dra. Claudia Schwegmann ejerce en Othmarschen desde 1998 y se ha forjado un nombre como odontóloga especialista en cirugía oral. Su especialidad es la implantología y los injertos óseos — utilizando casi exclusivamente tejido autólogo.",
+        "sprachen": ["Alemán", "Inglés", "Francés"],
+        "aufklappTitel": "Por qué me hice dentista",
+        "aufklappText1": "Ya de adolescente descubrí que tengo mucha paciencia, que me concentro bien, que me gusta crear con las manos, que soy comunicativa y que me encantan las ciencias naturales. Entonces, ¿qué hay más lógico que hacerse dentista?",
+        "aufklappText2": "Afortunadamente, todo salió bien, y hoy, con más de 30 años de experiencia profesional, sigo ávida de aprender cosas nuevas. También disfruto mucho compartiendo estos conocimientos con colegas.",
         "timeline": {
           "t1": {
             "jahr": "1988–1993",
@@ -285,6 +294,7 @@
         "rolle": "Dentista · Especialista en endodoncia",
         "zitat": "Una buena endodoncia puede salvar un diente que de otro modo se perdería. Eso me motiva cada día.",
         "ueber": "La Dra. Nina Janz refuerza la clínica desde 2008. Su especialidad es la endodoncia — el tratamiento del interior del diente. Con su currículum en endodoncia y tecnología de vanguardia salva dientes que otros darían por perdidos.",
+        "sprachen": ["Alemán", "Inglés", "Español"],
         "timeline": {
           "t1": {
             "jahr": "1995–2001",
@@ -313,6 +323,7 @@
         "rolle": "Dentista",
         "zitat": "Me alegra formar parte de este equipo experimentado y aprender de los mejores.",
         "ueber": "La Dra. Julia Prüter es la incorporación más reciente de nuestro equipo. Tras su examen estatal en 2022 en el UKE Hamburg, aporta conocimientos actualizados y métodos de tratamiento modernos a la clínica.",
+        "sprachen": ["Alemán", "Inglés"],
         "timeline": {
           "t1": {
             "jahr": "2022",
@@ -332,7 +343,7 @@
       "label": "Nuestro equipo de clínica",
       "titel": "Coordinado, cálido,",
       "titelAkzent": "competente",
-      "text": "¿Qué sería una buena clínica sin excelentes colaboradoras? Muchas llevan años con nosotros y nos han sido fieles a pesar de los cambios familiares. Nuestro equipo en recepción y en el tratamiento se asegura de que se sienta cómodo desde el primer momento.",
+      "text": "Unas palabras sobre nuestro equipo: muchas de nuestras colaboradoras nos son fieles desde hace años. ¿Qué seríamos sin ellas? También gracias a sus habilidades podemos ofrecer tantos tratamientos complejos. Un sincero agradecimiento por ello.",
       "gruppenfotoAlt": "Todo el equipo de Zahnärzte Parkstrasse",
       "gruppenfoto2Alt": "El equipo de la clínica frente a la clínica"
     },
@@ -953,7 +964,7 @@
       "label": "Nuestra especialidad",
       "titel": "Cirugía oral —",
       "titelAkzent": "nuestra especialidad",
-      "subtext": "Las intervenciones quirúrgicas requieren experiencia, precisión y empatía. Como especialista en cirugía oral, la Dra. Schwegmann reúne las tres cualidades — desde hace más de 25 años.",
+      "subtext": "Esta disciplina abarca la extracción quirúrgica y atraumática de dientes y muelas del juicio, la colocación de implantes, la cirugía de mucosas y la terapia periodontal quirúrgica. Nuestra consulta cuenta con competencia especializada en este campo.",
       "badge": "Dra. Claudia Schwegmann — Especialista en cirugía oral"
     },
     "bereiche": {
@@ -1143,7 +1154,7 @@
       "label": "Endodoncia",
       "titel": "Endodoncia —",
       "titelAkzent": "conservación dental al más alto nivel",
-      "subtext": "Un tratamiento de conducto hoy no tiene nada que ver con su antigua reputación. La Dra. Nina Janz trata con la tecnología más moderna — con suavidad, precisión y el objetivo de salvar su diente.",
+      "subtext": "Los tratamientos de conducto pueden realizarse hoy de forma mucho más segura. Los instrumentos y técnicas modernos, junto con el uso del microscopio, permiten ver en profundidad dentro de la raíz dental y eliminar obstáculos con mayor eficacia. En nuestra consulta, la Dra. Janz se ha especializado en este campo.",
       "badge": "Dra. Nina Janz — Curriculum Endodoncia"
     },
     "zahnerhalt": {
@@ -1214,7 +1225,7 @@
       "label": "Profilaxis",
       "titel": "Profilaxis —",
       "titelAkzent": "prevenir es la mejor medicina",
-      "subtext": "Limpieza dental profesional y programas de profilaxis individuales — para dientes relucientes y encías sanas. La prevención regular es la mejor protección contra las caries y la enfermedad periodontal."
+      "subtext": "¿Por qué profilaxis si uno se cepilla bien? Incluso con la mejor técnica de cepillado, lamentablemente nunca se llega a todo. Nuestro departamento de profilaxis se encarga de los detalles que solo pueden verse o detectarse bien con ojos ajenos. Lo ideal es combinar la limpieza profesional con un examen general. Solo cuando los dientes están siempre bien limpios se mantienen sanos toda la vida."
     },
     "warum": {
       "label": "Por qué la profilaxis",
@@ -1272,7 +1283,7 @@
       "label": "Periodoncia",
       "titel": "Periodoncia —",
       "titelAkzent": "sus dientes firmemente anclados",
-      "subtext": "La enfermedad periodontal es la causa más frecuente de pérdida de dientes en edad avanzada — pero es tratable. Le ofrecemos el espectro completo: desde la terapia conservadora hasta el tratamiento periodontal quirúrgico."
+      "subtext": "El hueso que rodea los dientes se reduce y estos se aflojan, pudiendo llegar a perderse. Estudios recientes demuestran además vínculos entre las enfermedades periodontales y el alzhéimer o las enfermedades cardiovasculares. La periodontitis es muy tratable — la limpieza dental profesional regular y una excelente higiene en casa son imprescindibles."
     },
     "was": {
       "label": "Comprender",
@@ -1334,7 +1345,7 @@
       "label": "Prótesis dentales",
       "titel": "Prótesis dentales —",
       "titelAkzent": "tan naturales como sus propios dientes",
-      "subtext": "Ya sea corona, puente o prótesis: encontramos la mejor solución para usted — fabricada por nuestro laboratorio asociado en Bönningstedt, con la tecnología de escáner más moderna."
+      "subtext": "Ya sean prótesis removibles o coronas y puentes fijos — le ofrecemos un trabajo de alta calidad de nuestro laboratorio maestro. Gracias al uso de un escáner, sin molestas impresiones y con absoluta precisión."
     },
     "optionen": {
       "label": "Sus opciones",
@@ -1392,7 +1403,7 @@
       "label": "Odontopediatría",
       "titel": "Dientes sanos",
       "titelAkzent": "desde el principio",
-      "subtext": "Porque nosotras mismas tenemos hijos, sabemos lo importante que es un ambiente de confianza y sin miedo para los más pequeños. Con nosotras, los niños aprenden jugando que la visita al dentista no tiene nada de malo."
+      "subtext": "Aquí podemos recurrir a años de observación, ya que los antiguos pacientes infantiles ya tienen hijos propios. Como nosotras mismas tenemos hijos, sabemos muy bien lo importante que es tener un dentista empático desde la infancia. Además del sellado de fisuras y la profilaxis, apostamos especialmente por una motivación adaptada a la edad."
     },
     "ansatz": {
       "label": "Nuestro enfoque",
@@ -1450,7 +1461,7 @@
       "label": "Odontología estética",
       "titel": "Odontología estética —",
       "titelAkzent": "para su sonrisa más bonita",
-      "subtext": "A veces no se trata solo de salud, sino también de estética. Le ofrecemos procedimientos suaves para dientes de un blanco radiante y perfectamente formados."
+      "subtext": "A veces no se trata solo de salud, sino también de estética. La ortodoncia hoy puede ayudar a alinear los dientes con tecnología asistida por inteligencia artificial. Férulas extrafinas mueven gradualmente los dientes a la posición deseada y son prácticamente invisibles. Un empaste bien realizado también garantiza la longevidad absoluta del diente."
     },
     "behandlungen": {
       "label": "Tratamientos",

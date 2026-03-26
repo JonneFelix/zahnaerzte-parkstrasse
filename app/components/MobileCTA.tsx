@@ -14,18 +14,26 @@ const ctaTexts: Record<string, { anrufen: string; termin: string }> = {
 export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale }) {
   const ct = ctaTexts[locale] || ctaTexts.de;
   const [sichtbar, setSichtbar] = useState(false);
+  const [menuOffen, setMenuOffen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setSichtbar(window.scrollY > 400);
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    // Menü-Status beobachten (Header setzt data-menu-open auf body)
+    const observer = new MutationObserver(() => {
+      setMenuOffen(document.body.dataset.menuOpen === "true");
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ["data-menu-open"] });
+
+    return () => { window.removeEventListener("scroll", handleScroll); observer.disconnect(); };
   }, []);
 
   return (
     <div
       className={`fixed bottom-0 left-0 right-0 z-40 lg:hidden
         transition-transform duration-300 ease-out
-        ${sichtbar ? "translate-y-0" : "translate-y-full"}`}
+        ${sichtbar && !menuOffen ? "translate-y-0" : "translate-y-full"}`}
       style={{
         background: "rgba(255,255,255,0.95)",
         backdropFilter: "blur(12px)",

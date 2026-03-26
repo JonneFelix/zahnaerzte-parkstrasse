@@ -118,16 +118,21 @@
       "label": "Unsere Philosophie",
       "titel": "Zahnmedizin, die",
       "titelAkzent": "Vertrauen verdient",
-      "bildAlt": "Die einladenden Praxisräume",
-      "text1": "In der Parkstraße in Hamburg-Othmarschen haben wir einen Ort geschaffen, an dem Zahnmedizin sich natürlich und angstfrei anfühlt. Wir wissen, dass viele Menschen den Zahnarztbesuch mit Unbehagen verbinden — genau deshalb nehmen wir uns besonders viel Zeit für Sie.",
-      "text2": "Was wäre eine gute Praxis ohne hervorragende Mitarbeiterinnen? Viele sind schon lange Jahre dabei und haben uns trotz Familienzuwachs die Treue gehalten. Gemeinsam bieten wir Ihnen das gesamte Spektrum moderner Zahnmedizin.",
-      "badge": "Fachzahnärztin",
-      "badgeDetail": "für Oralchirurgie",
+      "bildAlt": "Dr. Claudia Schwegmann — Praxisinhaberin",
+      "zitat": "Es ist immer ein gutes Gefühl, wenn Patienten, die wir behandelt haben, jahrelang nur noch zur Zahnreinigung und Kontrolle kommen, und wenig bis gar keinen Behandlungsbedarf mehr haben. So sollte Zahnmedizin sein, und so leben wir es in unserer Praxis.",
+      "zitatAutor": "Dr. Claudia Schwegmann",
+      "zitatRolle": "Praxisinhaberin seit 1998",
+      "text": "Der Mensch steht im Mittelpunkt unserer Behandlungen — und das seit Jahrzehnten. Fachliche Kompetenz, innovative Methoden und viel Herz für unseren Beruf zeichnen uns aus.",
+      "aufklappTitel": "Warum ich Zahnärztin geworden bin",
+      "aufklappText1": "Schon als Teenager habe ich für mich festgestellt, dass ich viel Geduld habe, mich gut konzentrieren kann, gerne bastele, kommunikativ bin und Naturwissenschaften liebe. Was liegt da also näher, als Zahnärztin zu werden?",
+      "aufklappText2": "Zum Glück hat das ja auch geklappt, und ich bin heute noch, mit über 30 Jahren Berufserfahrung, begierig Neues zu lernen. Dieses Wissen gebe ich auch sehr gerne an andere Kolleginnen und Kollegen weiter.",
+      "badge": "Seit 1998",
+      "badgeDetail": "in Othmarschen",
       "werte": {
         "einfuehlsam": "Einfühlsam",
         "einfuehlsamDetail": "Angstfrei behandelt",
         "erfahren": "Erfahren",
-        "erfahrenDetail": "Seit 1998 in Othmarschen",
+        "erfahrenDetail": "Über 25 Jahre Kompetenz",
         "ganzheitlich": "Ganzheitlich",
         "ganzheitlichDetail": "Mensch im Mittelpunkt"
       }
@@ -248,6 +253,10 @@
         "rolle": "Praxisinhaberin · Fachzahnärztin für Oralchirurgie",
         "zitat": "Ich möchte, dass meine Patienten mit einem guten Gefühl nach Hause gehen — nicht nur mit gesunden Zähnen.",
         "ueber": "Dr. Claudia Schwegmann ist seit 1998 in Othmarschen tätig und hat sich als Fachzahnärztin für Oralchirurgie einen Namen gemacht. Ihr Schwerpunkt liegt auf Implantologie und Knochenaufbau — dabei setzt sie fast ausschließlich auf körpereigenes Gewebe.",
+        "sprachen": ["Deutsch", "Englisch", "Französisch"],
+        "aufklappTitel": "Warum ich Zahnärztin geworden bin",
+        "aufklappText1": "Schon als Teenager habe ich für mich festgestellt, dass ich viel Geduld habe, mich gut konzentrieren kann, gerne bastele, kommunikativ bin und Naturwissenschaften liebe. Was liegt da also näher, als Zahnärztin zu werden?",
+        "aufklappText2": "Zum Glück hat das ja auch geklappt, und ich bin heute noch, mit über 30 Jahren Berufserfahrung, begierig Neues zu lernen. Dieses Wissen gebe ich auch sehr gerne an andere Kolleginnen und Kollegen weiter.",
         "timeline": {
           "t1": {
             "jahr": "1988–1993",
@@ -285,6 +294,7 @@
         "rolle": "Zahnärztin · Spezialistin für Endodontie",
         "zitat": "Eine gute Wurzelbehandlung kann einen Zahn retten, der sonst verloren wäre. Das motiviert mich jeden Tag.",
         "ueber": "Dr. Nina Janz verstärkt die Praxis seit 2008. Ihr besonderer Schwerpunkt ist die Endodontie — die Behandlung des Zahninneren. Mit ihrem Curriculum Endodontie und modernster Technik rettet sie Zähne, die andere aufgeben würden.",
+        "sprachen": ["Deutsch", "Englisch", "Spanisch"],
         "timeline": {
           "t1": {
             "jahr": "1995–2001",
@@ -313,6 +323,7 @@
         "rolle": "Zahnärztin",
         "zitat": "Ich freue mich, Teil dieses erfahrenen Teams zu sein und von den Besten zu lernen.",
         "ueber": "Dr. Julia Prüter ist die jüngste Verstärkung unseres Teams. Nach ihrem Examen 2022 am UKE Hamburg bringt sie frisches Wissen und aktuelle Behandlungsmethoden in die Praxis ein.",
+        "sprachen": ["Deutsch", "Englisch"],
         "timeline": {
           "t1": {
             "jahr": "2022",
@@ -332,7 +343,7 @@
       "label": "Unser Praxisteam",
       "titel": "Eingespielt, herzlich,",
       "titelAkzent": "kompetent",
-      "text": "Was wäre eine gute Praxis ohne hervorragende Mitarbeiterinnen? Viele sind schon lange Jahre dabei und haben uns trotz Familienzuwachs die Treue gehalten. Unser Team am Empfang und in der Behandlung sorgt dafür, dass Sie sich von der ersten Sekunde an wohlfühlen.",
+      "text": "Noch ein Wort zu unserem Team: Viele Mitarbeiterinnen halten uns seit Jahren die Treue. Was wären wir ohne sie? Auch dank ihrer Fähigkeiten können wir so viele komplexe Behandlungen anbieten. Einen herzlichen Dank dafür.",
       "gruppenfotoAlt": "Das gesamte Praxisteam der Zahnärzte Parkstrasse",
       "gruppenfoto2Alt": "Das Praxisteam vor der Praxis"
     },
@@ -953,7 +964,7 @@
       "label": "Unser Schwerpunkt",
       "titel": "Oralchirurgie —",
       "titelAkzent": "unser Schwerpunkt",
-      "subtext": "Chirurgische Eingriffe erfordern Erfahrung, Präzision und Einfühlungsvermögen. Als Fachzahnärztin für Oralchirurgie vereint Dr. Schwegmann alle drei — seit über 25 Jahren.",
+      "subtext": "Diese Disziplin umfasst das operative, gewebeschonende Entfernen von Zähnen und Weisheitszähnen, das Setzen von Implantaten, Schleimhautchirurgie und chirurgische Parodontosetherapie. In unserer Praxis gibt es dazu fachärztliche Kompetenz.",
       "badge": "Dr. Claudia Schwegmann — Fachzahnärztin für Oralchirurgie"
     },
     "bereiche": {
@@ -1123,7 +1134,7 @@
       "label": "Endodontie",
       "titel": "Wurzelbehandlung —",
       "titelAkzent": "Zahnerhalt auf höchstem Niveau",
-      "subtext": "Eine Wurzelbehandlung hat heute nichts mehr mit ihrem alten Ruf zu tun. Dr. Nina Janz behandelt mit modernster Technik — sanft, präzise und mit dem Ziel, Ihren Zahn zu retten.",
+      "subtext": "Wurzelbehandlungen können heute viel sicherer durchgeführt werden. Moderne Instrumente und Verfahren sowie der Einsatz eines Mikroskops ermöglichen es, bis tief in die Zahnwurzel hineinzuschauen und Hindernisse effektiver zu beseitigen. In unserer Praxis hat sich Frau Dr. Janz auf dieses Thema spezialisiert.",
       "badge": "Dr. Nina Janz — Curriculum Endodontie"
     },
     "zahnerhalt": {
@@ -1182,7 +1193,7 @@
       "label": "Prophylaxe",
       "titel": "Prophylaxe —",
       "titelAkzent": "Vorsorge ist die beste Medizin",
-      "subtext": "Professionelle Zahnreinigung und individuelle Prophylaxe-Programme — für strahlend saubere Zähne und gesundes Zahnfleisch. Regelmäßige Vorsorge ist der beste Schutz vor Karies und Parodontose."
+      "subtext": "Warum Prophylaxe, wenn man doch selber gut putzt? Auch bei bester Putztechnik: Alles erreicht man leider nie. Unsere Prophylaxeabteilung kümmert sich um die Details, die man nur mit fremden Augen gut sehen oder ertasten kann. Im Idealfall kombinieren Sie die PZR mit einer allgemeinen Untersuchung. Nur wenn Zähne ständig gut sauber sind, bleiben diese lebenslang gesund."
     },
     "warum": {
       "label": "Warum Prophylaxe",
@@ -1225,7 +1236,7 @@
       "label": "Parodontologie",
       "titel": "Parodontologie —",
       "titelAkzent": "Ihre Zähne fest verankert",
-      "subtext": "Parodontose ist im fortgeschrittenen Alter die häufigste Ursache für Zahnverlust — aber gut behandelbar. Wir bieten Ihnen das gesamte Spektrum: von der konservativen Therapie bis zur chirurgischen Parodontosebehandlung."
+      "subtext": "Das Zahnbett um die Zähne schwindet und sie lockern sich, bis hin zum Verlust. Neuere Studien belegen außerdem Zusammenhänge zwischen parodontalen Erkrankungen mit Alzheimer oder Herzerkrankungen. Die Parodontose ist sehr gut behandelbar — regelmäßige professionelle Zahnreinigung und sehr gute Pflege zuhause sind dabei unabdingbar."
     },
     "was": {
       "label": "Verstehen",
@@ -1275,7 +1286,7 @@
       "label": "Zahnersatz",
       "titel": "Zahnersatz —",
       "titelAkzent": "so natürlich wie Ihre eigenen Zähne",
-      "subtext": "Ob Krone, Brücke oder Prothese: Wir finden die beste Lösung für Sie — gefertigt von unserem Partnerlabor in Bönningstedt, mit modernster Scannertechnologie."
+      "subtext": "Ob als herausnehmbarer Zahnersatz oder festsitzende Kronen und Brücken — wir bieten Ihnen hochwertige Arbeit aus unserem Meisterlabor. Dank der Benutzung eines Scanners, ohne lästige Abdrücke und mit absoluter Präzision."
     },
     "optionen": {
       "label": "Ihre Optionen",
@@ -1318,7 +1329,7 @@
       "label": "Kinderzahnheilkunde",
       "titel": "Gesunde Zähne",
       "titelAkzent": "von Anfang an",
-      "subtext": "Da wir selber Kinder haben, wissen wir, wie wichtig eine vertrauensvolle und angstfreie Atmosphäre für die Kleinen ist. Bei uns lernen Kinder spielerisch, dass der Zahnarztbesuch gar nicht schlimm ist."
+      "subtext": "Hier können wir auf jahrelange Beobachtungen zurückgreifen, denn die ehemaligen Patienten-\u201EKinder\u201C haben bereits eigene Kinder. Da wir selbst Kinder haben, wissen wir sehr gut, wie wichtig es ist, schon als Kind einen einfühlsamen Zahnarzt zu haben. Wir setzen neben Fissurenversiegelungen und Prophylaxe besonders auf eine altersgerechte Motivation."
     },
     "ansatz": {
       "label": "Unser Ansatz",
@@ -1361,7 +1372,7 @@
       "label": "Ästhetik",
       "titel": "Ästhetische Zahnheilkunde —",
       "titelAkzent": "für Ihr schönstes Lächeln",
-      "subtext": "Manchmal geht es nicht nur um Gesundheit, sondern auch um Ästhetik. Wir bieten Ihnen schonende Verfahren für strahlend weiße und perfekt geformte Zähne."
+      "subtext": "Manchmal geht es nicht nur um Gesundheit, sondern auch um Ästhetik. Kieferorthopädie kann heute KI-gestützt helfen, Zähne zu begradigen. Extra dünne Schienen bewegen nach und nach die Zähne in die gewünschte Position und sind nahezu unsichtbar. Auch eine gute Füllung sorgt für die absolute Langlebigkeit des Zahns."
     },
     "behandlungen": {
       "label": "Behandlungen",

@@ -118,16 +118,21 @@
       "label": "Our Philosophy",
       "titel": "Dentistry that",
       "titelAkzent": "earns your trust",
-      "bildAlt": "The welcoming practice rooms",
-      "text1": "In the Parkstraße in Hamburg-Othmarschen we have created a place where dentistry feels natural and anxiety-free. We know that many people associate a dental visit with unease — that is exactly why we take extra time for you.",
-      "text2": "What would a good practice be without outstanding staff? Many of our team members have been with us for years and stayed loyal even through family expansions. Together we offer you the full spectrum of modern dentistry.",
-      "badge": "Specialist Dentist",
-      "badgeDetail": "for Oral Surgery",
+      "bildAlt": "Dr. Claudia Schwegmann — Practice Owner",
+      "zitat": "It is always a wonderful feeling when patients we have treated come back year after year only for cleanings and check-ups, with little to no further treatment needed. That is how dentistry should be — and that is how we live it in our practice.",
+      "zitatAutor": "Dr. Claudia Schwegmann",
+      "zitatRolle": "Practice Owner since 1998",
+      "text": "People are at the heart of everything we do — and have been for decades. Professional expertise, innovative methods and a deep passion for our work define us.",
+      "aufklappTitel": "Why I became a dentist",
+      "aufklappText1": "Even as a teenager, I realised that I have a lot of patience, can concentrate well, enjoy crafting, am communicative and love natural sciences. So what could be more natural than becoming a dentist?",
+      "aufklappText2": "Fortunately, that worked out — and even today, with over 30 years of professional experience, I am still eager to learn new things. I also greatly enjoy sharing this knowledge with other colleagues.",
+      "badge": "Since 1998",
+      "badgeDetail": "in Othmarschen",
       "werte": {
         "einfuehlsam": "Empathetic",
         "einfuehlsamDetail": "Anxiety-free treatment",
         "erfahren": "Experienced",
-        "erfahrenDetail": "Since 1998 in Othmarschen",
+        "erfahrenDetail": "Over 25 years of expertise",
         "ganzheitlich": "Holistic",
         "ganzheitlichDetail": "People come first"
       }
@@ -248,6 +253,10 @@
         "rolle": "Practice Owner · Specialist Dentist for Oral Surgery",
         "zitat": "I want my patients to go home with a good feeling — not just with healthy teeth.",
         "ueber": "Dr. Claudia Schwegmann has been practising in Othmarschen since 1998 and has established herself as a specialist dentist for oral surgery. Her focus lies on implantology and bone augmentation — using almost exclusively autologous tissue.",
+        "sprachen": ["German", "English", "French"],
+        "aufklappTitel": "Why I became a dentist",
+        "aufklappText1": "Even as a teenager, I realised that I have a lot of patience, can concentrate well, enjoy crafting, am communicative and love natural sciences. So what could be more obvious than becoming a dentist?",
+        "aufklappText2": "Fortunately, it all worked out, and even today, with over 30 years of professional experience, I am eager to learn new things. I also very much enjoy passing this knowledge on to fellow colleagues.",
         "timeline": {
           "t1": {
             "jahr": "1988–1993",
@@ -285,6 +294,7 @@
         "rolle": "Dentist · Endodontics Specialist",
         "zitat": "A good root canal treatment can save a tooth that would otherwise be lost. That motivates me every day.",
         "ueber": "Dr. Nina Janz has been strengthening the practice since 2008. Her particular focus is endodontics — the treatment of the tooth interior. With her endodontic curriculum and state-of-the-art technology she saves teeth that others would give up on.",
+        "sprachen": ["German", "English", "Spanish"],
         "timeline": {
           "t1": {
             "jahr": "1995–2001",
@@ -313,6 +323,7 @@
         "rolle": "Dentist",
         "zitat": "I am delighted to be part of this experienced team and to learn from the best.",
         "ueber": "Dr. Julia Prüter is the newest addition to our team. After her state examination in 2022 at UKE Hamburg she brings fresh knowledge and current treatment methods to the practice.",
+        "sprachen": ["German", "English"],
         "timeline": {
           "t1": {
             "jahr": "2022",
@@ -332,7 +343,7 @@
       "label": "Our Practice Team",
       "titel": "Well-coordinated, warm,",
       "titelAkzent": "competent",
-      "text": "What would a good practice be without outstanding staff? Many have been with us for years and stayed loyal even through family expansions. Our team at reception and in treatment ensures that you feel comfortable from the very first moment.",
+      "text": "A word about our team: Many of our staff members have been loyal to us for years. What would we be without them? Thanks to their skills, we are able to offer so many complex treatments. A heartfelt thank you for that.",
       "gruppenfotoAlt": "The entire team at Zahnärzte Parkstrasse",
       "gruppenfoto2Alt": "The practice team in front of the practice"
     },
@@ -953,7 +964,7 @@
       "label": "Our Speciality",
       "titel": "Oral Surgery —",
       "titelAkzent": "our speciality",
-      "subtext": "Surgical procedures require experience, precision and empathy. As a specialist in oral surgery, Dr. Schwegmann combines all three — for over 25 years.",
+      "subtext": "This discipline encompasses the surgical, tissue-preserving removal of teeth and wisdom teeth, the placement of implants, soft tissue surgery and surgical periodontal therapy. Our practice offers specialist expertise in this field.",
       "badge": "Dr. Claudia Schwegmann — Specialist in Oral Surgery"
     },
     "bereiche": {
@@ -1143,7 +1154,7 @@
       "label": "Endodontics",
       "titel": "Root Canal Treatment —",
       "titelAkzent": "tooth preservation at the highest level",
-      "subtext": "A root canal treatment today has nothing to do with its old reputation. Dr. Nina Janz treats with state-of-the-art technology — gently, precisely and with the goal of saving your tooth.",
+      "subtext": "Root canal treatments can be performed much more safely today. Modern instruments and techniques, along with the use of a microscope, allow us to see deep into the tooth root and remove obstructions more effectively. In our practice, Dr. Janz has specialised in this field.",
       "badge": "Dr. Nina Janz — Curriculum Endodontics"
     },
     "zahnerhalt": {
@@ -1214,7 +1225,7 @@
       "label": "Prophylaxis",
       "titel": "Prophylaxis —",
       "titelAkzent": "prevention is the best medicine",
-      "subtext": "Professional dental cleaning and individual prophylaxis programmes — for sparkling clean teeth and healthy gums. Regular prevention is the best protection against cavities and periodontal disease."
+      "subtext": "Why prophylaxis when you brush well yourself? Even with the best brushing technique, unfortunately you can never reach everything. Our prophylaxis team takes care of the details that can only be properly seen or felt by another pair of eyes. Ideally, combine your professional cleaning with a general examination. Only when teeth are consistently well cleaned do they stay healthy for a lifetime."
     },
     "warum": {
       "label": "Why Prophylaxis",
@@ -1272,7 +1283,7 @@
       "label": "Periodontology",
       "titel": "Periodontology —",
       "titelAkzent": "your teeth firmly anchored",
-      "subtext": "Periodontal disease is the most common cause of tooth loss in later life — but it is very treatable. We offer you the full spectrum: from conservative therapy to surgical periodontal treatment."
+      "subtext": "The bone supporting the teeth recedes and they become loose, eventually leading to tooth loss. Recent studies also show links between periodontal disease and Alzheimer's or heart disease. Periodontitis is very treatable — regular professional dental cleaning and excellent home care are essential."
     },
     "was": {
       "label": "Understanding",
@@ -1334,7 +1345,7 @@
       "label": "Dental Prosthetics",
       "titel": "Dental Prosthetics —",
       "titelAkzent": "as natural as your own teeth",
-      "subtext": "Whether crown, bridge or denture: we find the best solution for you — crafted by our partner laboratory in Bönningstedt, with state-of-the-art scanner technology."
+      "subtext": "Whether removable dentures or fixed crowns and bridges — we offer you high-quality work from our master laboratory. Thanks to the use of a scanner, without cumbersome impressions and with absolute precision."
     },
     "optionen": {
       "label": "Your Options",
@@ -1392,7 +1403,7 @@
       "label": "Paediatric Dentistry",
       "titel": "Healthy teeth",
       "titelAkzent": "from the very start",
-      "subtext": "As we have children ourselves, we know how important a trusting and anxiety-free atmosphere is for the little ones. With us, children learn through play that visiting the dentist isn't scary at all."
+      "subtext": "Here we can draw on years of observation, as the former child patients already have children of their own. Since we ourselves have children, we know very well how important it is to have a compassionate dentist from an early age. Alongside fissure sealants and prophylaxis, we place particular emphasis on age-appropriate motivation."
     },
     "ansatz": {
       "label": "Our Approach",
@@ -1450,7 +1461,7 @@
       "label": "Aesthetics",
       "titel": "Cosmetic Dentistry —",
       "titelAkzent": "for your most beautiful smile",
-      "subtext": "Sometimes it's not just about health, but also about aesthetics. We offer gentle procedures for brilliantly white and perfectly shaped teeth."
+      "subtext": "Sometimes it's not just about health, but also about aesthetics. Orthodontics can now use AI-assisted technology to help straighten teeth. Extra-thin aligners gradually move teeth into the desired position and are virtually invisible. A well-crafted filling also ensures the absolute longevity of the tooth."
     },
     "behandlungen": {
       "label": "Treatments",

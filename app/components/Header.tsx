@@ -89,10 +89,11 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* Body-Scroll sperren wenn mobiles Menü offen */
+  /* Body-Scroll sperren + Menü-Status signalisieren wenn mobiles Menü offen */
   useEffect(() => {
     document.body.style.overflow = mobileOffen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    document.body.dataset.menuOpen = mobileOffen ? "true" : "";
+    return () => { document.body.style.overflow = ""; document.body.dataset.menuOpen = ""; };
   }, [mobileOffen]);
 
   return (

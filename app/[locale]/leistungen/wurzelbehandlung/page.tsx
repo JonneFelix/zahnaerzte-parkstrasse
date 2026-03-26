@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import SeiteHero from "../../../components/SeiteHero";
 import SektionsHeader from "../../../components/SektionsHeader";
@@ -48,11 +49,16 @@ export default async function WurzelbehandlungSeite({ params }: { params: Promis
 
       {/* Warum Zahnerhalt */}
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f4f1ec" }}>
-        <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={zahnerhalt.label} titel={zahnerhalt.titel} titelAkzent={zahnerhalt.titelAkzent} />
-          <p className="text-base leading-relaxed text-center" style={{ color: "#4a5959", fontWeight: 300, lineHeight: 1.85 }}>
-            {zahnerhalt.text}
-          </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <p className="text-base leading-relaxed" style={{ color: "#4a5959", fontWeight: 300, lineHeight: 1.85 }}>
+              {zahnerhalt.text}
+            </p>
+            <div className="overflow-hidden anim-einblenden d2" style={{ borderRadius: "22px", boxShadow: "0 16px 36px -8px rgba(105,123,123,0.14)" }}>
+              <Image src="/images/mikroskop-ausstattung.jpg" alt="Dental-Mikroskop für präzise Wurzelbehandlungen" width={600} height={400} className="w-full h-auto object-cover" style={{ filter: "saturate(0.90) brightness(1.02)" }} />
+            </div>
+          </div>
         </div>
       </section>
 

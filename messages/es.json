@@ -107,7 +107,7 @@
       "badge": "Hamburg Othmarschen",
       "titel": "Aquí puede",
       "titelAkzent": "sentirse a gusto",
-      "text": "Dientes sanos toda la vida — qué idea tan maravillosa. En nuestra clínica en Othmarschen encontrará las condiciones ideales: tratamiento empático, métodos de vanguardia y un equipo que se toma su tiempo para usted.",
+      "text": "¿Qué nos motiva cada día? Cuando pacientes que hemos tratado solo vuelven para revisiones. Así debería ser la odontología — y así la vivimos desde hace más de 25 años.",
       "ctaPrimaer": "RESERVAR CITA",
       "ctaSekundaer": "CONOCER AL EQUIPO",
       "bildAlt": "El equipo de Zahnärzte Parkstrasse en Othmarschen",
@@ -162,6 +162,10 @@
         "implantologie": {
           "titel": "Implantología",
           "beschreibung": "Prótesis dentales fijas sobre implantes — utilizamos casi exclusivamente tejido autólogo."
+        },
+        "aesthetik": {
+          "titel": "Estética & Alineadores",
+          "beschreibung": "Alineadores invisibles para dientes rectos, blanqueamiento profesional y empastes estéticos — para su sonrisa más bella."
         }
       },
       "alleAnsehen": "VER TODOS LOS SERVICIOS"

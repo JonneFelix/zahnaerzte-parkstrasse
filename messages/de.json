@@ -107,7 +107,7 @@
       "badge": "Hamburg Othmarschen",
       "titel": "Hier dürfen Sie",
       "titelAkzent": "sich wohlfühlen",
-      "text": "Ein Leben lang gesunde Zähne — das ist eine tolle Vorstellung. In unserer Praxis in Othmarschen finden Sie ideale Bedingungen dafür: einfühlsame Behandlung, modernste Methoden und ein Team, das sich Zeit für Sie nimmt.",
+      "text": "Was uns jeden Tag antreibt? Wenn Patienten, die wir behandelt haben, nur noch zur Vorsorge kommen. So sollte Zahnmedizin sein — und so leben wir es seit über 25 Jahren.",
       "ctaPrimaer": "TERMIN VEREINBAREN",
       "ctaSekundaer": "TEAM KENNENLERNEN",
       "bildAlt": "Das Team der Zahnärzte Parkstrasse in Othmarschen",
@@ -162,6 +162,10 @@
         "implantologie": {
           "titel": "Implantologie",
           "beschreibung": "Festsitzender Zahnersatz auf Implantaten — wir verwenden fast ausschließlich körpereigenes Gewebe."
+        },
+        "aesthetik": {
+          "titel": "Ästhetik & Aligner",
+          "beschreibung": "Unsichtbare Schienen für gerade Zähne, professionelles Bleaching und ästhetische Füllungen — für Ihr schönstes Lächeln."
         }
       },
       "alleAnsehen": "ALLE LEISTUNGEN ANSEHEN"

@@ -4,6 +4,7 @@ import Link from "next/link";
 import BaumDekor from "../components/BaumDekor";
 import OrganischerTrenner from "../components/OrganischerTrenner";
 import SektionsHeader from "../components/SektionsHeader";
+import MobileKarussell from "../components/MobileKarussell";
 import { getDictionary, type Locale } from "../../lib/i18n";
 
 /* ============================================================
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
    Leistungs-Icons (nicht übersetzbar)
    ============================================================ */
 const leistungsIcons = [
+  // Oralchirurgie — Skalpell
   (
     <svg key="oral" viewBox="0 0 40 40" fill="none" className="w-8 h-8">
       <path d="M14 15 C14 11 18 9 20 9 C22 9 26 11 26 15 C26 21 22 23 22 28 L18 28 C18 23 14 21 14 15Z" stroke="currentColor" strokeWidth="1.5" fill="none" />
@@ -31,27 +33,42 @@ const leistungsIcons = [
       <path d="M20 15 L20 22" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
     </svg>
   ),
+  // Zahnheilkunde — Zahn mit Kreuz (medizinisch)
   (
     <svg key="zahn" viewBox="0 0 40 40" fill="none" className="w-8 h-8">
       <path d="M15 14 C15 10 17 8 20 8 C23 8 25 10 25 14 C25 18 23 20 23 25 C23 28 22 30 20 30 C18 30 17 28 17 25 C17 20 15 18 15 14Z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <path d="M20 13 L20 19 M17 16 L23 16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
     </svg>
   ),
+  // Wurzelbehandlung — Zahn mit Wurzelkanälen
   (
     <svg key="wurzel" viewBox="0 0 40 40" fill="none" className="w-8 h-8">
       <path d="M20 8 L20 18 M20 18 C16 22 14 28 16 34 M20 18 C24 22 26 28 24 34" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
     </svg>
   ),
+  // Prophylaxe — Zahnbürste + Glanz
   (
     <svg key="prophylaxe" viewBox="0 0 40 40" fill="none" className="w-8 h-8">
-      <path d="M13 27 C15 15 18 11 20 11 C22 11 25 15 27 27" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      <path d="M16 20 L24 20 M14 24 L26 24" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+      <rect x="18" y="8" width="4" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M16 24 L24 24 L24 30 C24 32 22 34 20 34 C18 34 16 32 16 30Z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <path d="M27 10 L29 8 M27 14 L30 14 M27 12 L29 10" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
     </svg>
   ),
+  // Implantologie — Implantat-Schraube
   (
     <svg key="implant" viewBox="0 0 40 40" fill="none" className="w-8 h-8">
       <rect x="17" y="8" width="6" height="7" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" />
       <line x1="16" y1="17" x2="24" y2="17" stroke="currentColor" strokeWidth="1.5" />
       <path d="M18 17 L17 32 M22 17 L23 32" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  ),
+  // Ästhetik — Lächeln/Smile
+  (
+    <svg key="aesthetik" viewBox="0 0 40 40" fill="none" className="w-8 h-8">
+      <circle cx="20" cy="20" r="12" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M14 22 C16 26 24 26 26 22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+      <circle cx="15" cy="17" r="1.5" fill="currentColor" opacity="0.6" />
+      <circle cx="25" cy="17" r="1.5" fill="currentColor" opacity="0.6" />
     </svg>
   ),
 ];
@@ -62,6 +79,7 @@ const leistungsBilder = [
   "/images/wurzelbehandlung.jpg",
   "/images/prophylaxe.jpg",
   "/images/mikroskop-ausstattung.jpg",
+  "/images/aligner-schiene.png",
 ];
 
 const leistungsHrefs = [
@@ -70,6 +88,7 @@ const leistungsHrefs = [
   "/leistungen/wurzelbehandlung",
   "/leistungen/prophylaxe",
   "/leistungen/implantate",
+  "/leistungen/aesthetik",
 ];
 
 const aerztinnenBilder = [
@@ -105,7 +124,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
   const kontaktSection = hp.kontakt as Record<string, string>;
 
   // Leistungs-Daten mit übersetzten Texten zusammenbauen
-  const leistungsKeys = ["oralchirurgie", "zahnheilkunde", "wurzelbehandlung", "prophylaxe", "implantologie"];
+  const leistungsKeys = ["oralchirurgie", "zahnheilkunde", "wurzelbehandlung", "prophylaxe", "implantologie", "aesthetik"];
   const leistungen = leistungsKeys.map((key, i) => ({
     titel: leistungsItems[key].titel,
     beschreibung: leistungsItems[key].beschreibung,
@@ -141,7 +160,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           HERO
           ============================================================ */}
       <section
-        className="relative min-h-[85vh] lg:min-h-screen flex items-center overflow-hidden"
+        className="relative min-h-0 lg:min-h-screen flex items-center overflow-hidden"
         style={{
           background: "linear-gradient(155deg, #f4f1ec 0%, #eaf0ea 30%, #dde6dd 55%, #c8d6c8 85%, #b8c8b8 100%)",
         }}
@@ -153,10 +172,10 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         <div className="absolute left-8 top-0 bottom-0 w-px hidden lg:block" style={{ background: "linear-gradient(to bottom, transparent, rgba(105,123,123,0.08), transparent)" }} />
         <div className="absolute right-8 top-0 bottom-0 w-px hidden lg:block" style={{ background: "linear-gradient(to bottom, transparent, rgba(105,123,123,0.08), transparent)" }} />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-20 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Text */}
-            <div className="order-2 lg:order-1">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-24 pb-14 lg:pt-28 lg:pb-20 w-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
+            {/* Text — auf Mobile zuerst sichtbar */}
+            <div className="order-1 lg:order-1">
               <div
                 className="anim-einblenden inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-8"
                 style={{ background: "rgba(105, 123, 123, 0.07)", border: "1px solid rgba(105, 123, 123, 0.12)" }}
@@ -226,15 +245,15 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
               </div>
             </div>
 
-            {/* Bild */}
-            <div className="order-1 lg:order-2 relative anim-einblenden-rechts d3 max-h-[50vh] lg:max-h-none">
+            {/* Bild — auf Mobile unter dem Text, kleiner */}
+            <div className="order-2 lg:order-2 relative anim-einblenden-rechts d3 max-h-[35vh] lg:max-h-none">
               <div className="absolute -inset-5 anim-blob hidden lg:block" style={{ border: "1.5px solid rgba(242, 101, 34, 0.1)", borderRadius: "55% 45% 52% 48% / 48% 58% 42% 52%" }} />
               <div className="absolute -inset-12 anim-blob hidden lg:block" style={{ border: "1px solid rgba(105, 123, 123, 0.06)", borderRadius: "42% 58% 48% 52% / 55% 42% 58% 45%", animationDelay: "3.5s" }} />
               <div className="relative overflow-hidden" style={{ borderRadius: "58% 42% 52% 48% / 44% 56% 44% 56%", boxShadow: "0 28px 56px -14px rgba(105, 123, 123, 0.22)" }}>
                 <Image src="/images/hero-team.jpeg" alt={hero.bildAlt} width={600} height={700} className="w-full h-auto object-cover" style={{ aspectRatio: "5/6", filter: "saturate(0.92) brightness(1.02)" }} priority quality={90} sizes="(max-width: 768px) 100vw, 50vw" />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(105, 123, 123, 0.04), rgba(105, 123, 123, 0.1))" }} />
               </div>
-              <div className="absolute -bottom-4 -left-4 lg:-left-6 px-6 py-4 anim-einblenden d7" style={{ background: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(10px)", borderRadius: "18px", boxShadow: "0 12px 28px rgba(105, 123, 123, 0.12)", border: "1px solid rgba(242, 101, 34, 0.1)" }}>
+              <div className="hidden lg:block absolute -bottom-4 -left-6 px-6 py-4 anim-einblenden d7" style={{ background: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(10px)", borderRadius: "18px", boxShadow: "0 12px 28px rgba(105, 123, 123, 0.12)", border: "1px solid rgba(242, 101, 34, 0.1)" }}>
                 <div className="text-2xl" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 700, color: "#F26522" }}>{hero.erfahrung}</div>
                 <div className="text-xs tracking-wider mt-0.5" style={{ color: "#5a6a6a", fontWeight: 400, letterSpacing: "0.08em" }}>{hero.erfahrungDetail}</div>
               </div>
@@ -334,10 +353,9 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
             subtext={leistungenSection.subtext as string}
           />
 
-          {/* Mobile: Karussell mit Peek, Desktop: Grid */}
-          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-3 md:gap-7 md:overflow-visible md:pb-0 md:snap-none" style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
+          <MobileKarussell itemBreite="w-[75vw]" desktopCols={3}>
             {leistungen.map((l, i) => (
-              <Link key={l.titel} href={l.href} className={`karte-hover relative group block anim-einblenden d${i + 2} shrink-0 w-[75vw] snap-start md:w-auto md:shrink`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
+              <Link key={l.titel} href={l.href} className={`karte-hover relative group block h-full anim-einblenden d${i + 2}`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
                 <div className="relative h-44 overflow-hidden">
                   <Image src={l.bild} alt={l.titel} fill className="object-cover transition-transform duration-700 group-hover:scale-105" style={{ filter: "saturate(0.88) brightness(1.02)" }} />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.92))" }} />
@@ -350,7 +368,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
                 </div>
               </Link>
             ))}
-          </div>
+          </MobileKarussell>
 
           <div className="text-center mt-12 anim-einblenden d8">
             <Link href={`/${locale}/leistungen`} className="inline-flex items-center gap-2 text-sm tracking-wider transition-colors duration-300 hover:text-[#F26522]" style={{ color: "#697B7B", fontWeight: 500, letterSpacing: "0.1em" }}>
@@ -426,12 +444,11 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={testimonialsSection.label as string} titel={testimonialsSection.titel as string} titelAkzent={testimonialsSection.titelAkzent as string} />
 
-          {/* Mobile: Karussell mit Peek, Desktop: Grid */}
-          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 md:grid md:grid-cols-3 md:gap-7 md:overflow-visible md:pb-0 md:snap-none" style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}>
+          <MobileKarussell itemBreite="w-[80vw]" desktopCols={3}>
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className={`karte-hover p-7 anim-einblenden d${i + 2} shrink-0 w-[80vw] snap-start md:w-auto md:shrink`}
+                className={`karte-hover p-7 h-full anim-einblenden d${i + 2}`}
                 style={{
                   background: "rgba(255, 255, 255, 0.6)",
                   backdropFilter: "blur(8px)",
@@ -450,7 +467,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
                 </div>
               </div>
             ))}
-          </div>
+          </MobileKarussell>
         </div>
       </section>
 

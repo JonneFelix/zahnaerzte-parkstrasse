@@ -107,7 +107,7 @@
       "badge": "Hamburg Othmarschen",
       "titel": "Where you can",
       "titelAkzent": "feel at ease",
-      "text": "Healthy teeth for a lifetime — what a wonderful thought. In our practice in Othmarschen you will find the ideal conditions: compassionate treatment, state-of-the-art methods and a team that takes time for you.",
+      "text": "What drives us every day? When patients we have treated only come back for check-ups. That is how dentistry should be — and that is how we have lived it for over 25 years.",
       "ctaPrimaer": "BOOK APPOINTMENT",
       "ctaSekundaer": "MEET THE TEAM",
       "bildAlt": "The team at Zahnärzte Parkstrasse in Othmarschen",
@@ -162,6 +162,10 @@
         "implantologie": {
           "titel": "Implantology",
           "beschreibung": "Fixed dental restorations on implants — we use almost exclusively autologous tissue."
+        },
+        "aesthetik": {
+          "titel": "Aesthetics & Aligners",
+          "beschreibung": "Invisible aligners for straight teeth, professional whitening and aesthetic fillings — for your most beautiful smile."
         }
       },
       "alleAnsehen": "VIEW ALL SERVICES"

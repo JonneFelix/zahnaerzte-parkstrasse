@@ -603,16 +603,18 @@
       "titel": "Los próximos",
       "titelAkzent": "Study Clubs",
       "studyClubs": {
-        "pinneberg": {
-          "titel": "Study Club Implantología 11 — Pinneberg",
-          "daten": [
-            "Fechas se comunicarán próximamente"
-          ]
-        },
         "oldenburg": {
           "titel": "Study Club Implantología – Periodoncia 8 — Oldenburg",
           "daten": [
-            "Fechas se comunicarán próximamente"
+            "19 + 20 de junio de 2026",
+            "25 + 26 de septiembre de 2026"
+          ]
+        },
+        "pinneberg": {
+          "titel": "Study Club Implantología 11 — Pinneberg",
+          "daten": [
+            "26 + 27 de junio de 2026",
+            "20 + 21 de noviembre de 2026"
           ]
         }
       },

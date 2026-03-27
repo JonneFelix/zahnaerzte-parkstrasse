@@ -1,0 +1,55 @@
+name: Deploy to Production (Andre Hotzler)
+
+# Nur bei Push auf main deployen — andere Branches gehen an Dokploy (Staging)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy via HTTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Bun installieren
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Abhängigkeiten installieren
+        run: bun install --frozen-lockfile
+
+      - name: Seite bauen
+        run: bun run build
+
+      - name: ZIP-Archiv erstellen
+        run: cd out && zip -r ../deploy.zip . -x "*.DS_Store"
+
+      - name: Per HTTP deployen
+        run: |
+          response=$(curl -s -w "\n%{http_code}" \
+            -X POST "${{ secrets.DEPLOY_URL }}" \
+            -H "X-Deploy-Key: ${{ secrets.DEPLOY_KEY }}" \
+            -F "archive=@deploy.zip" \
+            --max-time 120)
+
+          http_code=$(echo "$response" | tail -1)
+          body=$(echo "$response" | sed '$d')
+
+          echo "$body"
+
+          if [ "$http_code" != "200" ]; then
+            echo "Deploy fehlgeschlagen mit HTTP $http_code"
+            exit 1
+          fi
+
+          if ! echo "$body" | grep -q "Deploy OK"; then
+            echo "Deploy-Antwort enthält kein 'Deploy OK'"
+            exit 1
+          fi
+
+          echo "Deploy erfolgreich!"

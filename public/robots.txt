@@ -1,5 +1,5 @@
 # Zahnärzte Parkstrasse Othmarschen
-# https://zahnaerzte-parkstrasse.de
+# https://www.zahnarzt-othmarschen.de
 
 User-agent: *
 Allow: /
@@ -33,4 +33,4 @@ Allow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://zahnaerzte-parkstrasse.de/sitemap.xml
+Sitemap: https://www.zahnarzt-othmarschen.de/sitemap.xml

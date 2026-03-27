@@ -1,0 +1,174 @@
+# ===========================================
+# Zahnärzte Parkstrasse Othmarschen
+# Apache-Konfiguration für statische Next.js-Seite
+# ===========================================
+
+# Rewrite-Engine aktivieren
+RewriteEngine On
+
+# -------------------------------------------
+# 1. Domain-Redirects (301)
+# Alle Nicht-Hauptdomains auf zahnarzt-othmarschen.de umleiten
+# -------------------------------------------
+
+# implantologie-othmarschen.de → zahnarzt-othmarschen.de
+RewriteCond %{HTTP_HOST} ^(www\.)?implantologie-othmarschen\.de$ [NC]
+RewriteRule ^(.*)$ https://www.zahnarzt-othmarschen.de/$1 [R=301,L]
+
+# zahnärztin-schwegmann.de (Punycode: xn--zahnrztin-schwegmann-ezb.de)
+RewriteCond %{HTTP_HOST} ^(www\.)?xn--zahnrztin-schwegmann-ezb\.de$ [NC]
+RewriteRule ^(.*)$ https://www.zahnarzt-othmarschen.de/$1 [R=301,L]
+
+# zahnärztin-schwegmann.de (falls der Server den Umlaut direkt versteht)
+RewriteCond %{HTTP_HOST} ^(www\.)?zahnärztin-schwegmann\.de$ [NC]
+RewriteRule ^(.*)$ https://www.zahnarzt-othmarschen.de/$1 [R=301,L]
+
+# new2017.zahnarzt-othmarschen.de → zahnarzt-othmarschen.de
+RewriteCond %{HTTP_HOST} ^new2017\.zahnarzt-othmarschen\.de$ [NC]
+RewriteRule ^(.*)$ https://www.zahnarzt-othmarschen.de/$1 [R=301,L]
+
+# -------------------------------------------
+# 2. www-Redirect
+# zahnarzt-othmarschen.de → www.zahnarzt-othmarschen.de
+# (konsistent mit der LiveConfig-Einstellung "bevorzugte Domain: www")
+# -------------------------------------------
+
+RewriteCond %{HTTP_HOST} ^zahnarzt-othmarschen\.de$ [NC]
+RewriteRule ^(.*)$ https://www.zahnarzt-othmarschen.de/$1 [R=301,L]
+
+# -------------------------------------------
+# 3. Alte WordPress/Joomla-URL-Redirects (301)
+# Alte Seiten auf neue Pfade umleiten
+# -------------------------------------------
+
+# --- Navigationsseiten ---
+RewriteRule ^erster-besuch/?$ /termin [R=301,L]
+RewriteRule ^erster-besuch-2/?$ /termin [R=301,L]
+RewriteRule ^aktuelles/?$ / [R=301,L]
+RewriteRule ^fortbildungen-fuer-zahnaerzte/?$ /fortbildungen [R=301,L]
+RewriteRule ^kontakt-2/?$ /kontakt [R=301,L]
+RewriteRule ^kontakt/?$ /impressum [R=301,L]
+RewriteRule ^kontakt-anfahrt/?$ /kontakt [R=301,L]
+RewriteRule ^datenschutzerklaerung/?$ /datenschutz [R=301,L]
+
+# --- Leistungsseiten ---
+RewriteRule ^oralchirurgie/?$ /leistungen/oralchirurgie [R=301,L]
+RewriteRule ^oralchirurgie-2/?$ /leistungen/oralchirurgie [R=301,L]
+RewriteRule ^wurzelbehandlungen/?$ /leistungen/wurzelbehandlung [R=301,L]
+RewriteRule ^aesthetische-zahnheilkunde/?$ /leistungen/aesthetik [R=301,L]
+RewriteRule ^prophylaxe/?$ /leistungen/prophylaxe [R=301,L]
+RewriteRule ^dentalhygiene/?$ /leistungen/prophylaxe [R=301,L]
+RewriteRule ^implantate/?$ /leistungen/implantate [R=301,L]
+RewriteRule ^implantologie/?$ /leistungen/implantate [R=301,L]
+RewriteRule ^parodontologie/?$ /leistungen/parodontologie [R=301,L]
+RewriteRule ^zahnersatz/?$ /leistungen/zahnersatz [R=301,L]
+RewriteRule ^kinderzahnheilkunde/?$ /leistungen/kinderzahnheilkunde [R=301,L]
+RewriteRule ^allgemeine-zahnheilkunde/?$ /leistungen [R=301,L]
+RewriteRule ^leistungen-im-ueberblick/?$ /leistungen [R=301,L]
+RewriteRule ^service-list/?$ /leistungen [R=301,L]
+RewriteRule ^service-list/service-1/?$ /leistungen [R=301,L]
+RewriteRule ^service-list/teeth-cleaning-service/?$ /leistungen/prophylaxe [R=301,L]
+RewriteRule ^service-category/?(.*)$ /leistungen [R=301,L]
+
+# --- Team-Seiten ---
+RewriteRule ^dr-claudia-schwegmann/?$ /team [R=301,L]
+RewriteRule ^dr-nina-janz/?$ /team [R=301,L]
+RewriteRule ^unsere-praxis/?$ /praxis [R=301,L]
+RewriteRule ^unser-team/?$ /team [R=301,L]
+RewriteRule ^all-staff/?$ /team [R=301,L]
+RewriteRule ^about/?$ /team [R=301,L]
+
+# --- Innovationen & Wissenswertes ---
+RewriteRule ^innovative-verfahren/?$ /innovationen [R=301,L]
+RewriteRule ^7-innovative-techniken/?$ /innovationen [R=301,L]
+RewriteRule ^01-schleimhautchirurgie/?$ /innovationen [R=301,L]
+RewriteRule ^02-kinder/?$ /leistungen/kinderzahnheilkunde [R=301,L]
+RewriteRule ^03-parodontose/?$ /leistungen/parodontologie [R=301,L]
+RewriteRule ^04-neue-zaehne/?$ /leistungen/zahnersatz [R=301,L]
+RewriteRule ^05-allgemeinerkrankungen/?$ /wissenswertes [R=301,L]
+RewriteRule ^06-fortbildungen/?$ /fortbildungen [R=301,L]
+RewriteRule ^fortbildung-.*/?$ /fortbildungen [R=301,L]
+RewriteRule ^veranstaltungskalender/?$ /fortbildungen [R=301,L]
+RewriteRule ^dental-education/?$ /fortbildungen [R=301,L]
+
+# --- WordPress-Artefakte → Startseite ---
+RewriteRule ^sample-page/?$ / [R=301,L]
+RewriteRule ^home-1/?$ / [R=301,L]
+RewriteRule ^praxis-home/?$ / [R=301,L]
+RewriteRule ^coming-soooon/?$ / [R=301,L]
+RewriteRule ^demo-page/?$ / [R=301,L]
+RewriteRule ^aloha/?$ / [R=301,L]
+RewriteRule ^blog/?$ / [R=301,L]
+RewriteRule ^gallery/?(.*)$ / [R=301,L]
+RewriteRule ^testimonials/?$ / [R=301,L]
+RewriteRule ^contact/?$ /kontakt [R=301,L]
+RewriteRule ^contact-v[0-9]+/?$ /kontakt [R=301,L]
+RewriteRule ^login/?$ / [R=301,L]
+RewriteRule ^profile/?$ / [R=301,L]
+RewriteRule ^category/(.*)$ / [R=301,L]
+RewriteRule ^author/(.*)$ / [R=301,L]
+
+# --- WordPress-System (Admin, Login, wp-content) ---
+RewriteRule ^wp-admin/?(.*)$ / [R=301,L]
+RewriteRule ^wp-login\.php$ / [R=301,L]
+RewriteRule ^wp-content/(.*)$ / [R=301,L]
+RewriteRule ^wp-includes/(.*)$ / [R=301,L]
+RewriteRule ^xmlrpc\.php$ / [R=301,L]
+
+# -------------------------------------------
+# 4. Fehlerseiten
+# -------------------------------------------
+
+ErrorDocument 404 /404.html
+
+# -------------------------------------------
+# 5. Caching und Performance
+# -------------------------------------------
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # HTML: kurz cachen (für schnelle Updates)
+    ExpiresByType text/html "access plus 1 hour"
+
+    # CSS/JS: lang cachen (Next.js nutzt Content-Hashes in Dateinamen)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+
+    # Bilder: lang cachen
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts: lang cachen
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# Komprimierung aktivieren
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json text/xml image/svg+xml
+</IfModule>
+
+# -------------------------------------------
+# 6. Sicherheits-Header
+# -------------------------------------------
+
+<IfModule mod_headers.c>
+    # Clickjacking-Schutz
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # XSS-Schutz
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Referrer-Policy (DSGVO-freundlich)
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions-Policy (keine Kamera/Mikrofon/etc.)
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>

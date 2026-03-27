@@ -18,7 +18,7 @@ const workSans = Work_Sans({
 
 export const metadata: Metadata = {
   title: "Zahnärzte Parkstrasse Othmarschen",
-  metadataBase: new URL("https://zahnaerzte-parkstrasse.de"),
+  metadataBase: new URL("https://www.zahnarzt-othmarschen.de"),
 };
 
 export default function RootLayout({

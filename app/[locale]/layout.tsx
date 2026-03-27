@@ -39,14 +39,36 @@ export async function generateMetadata({
     },
     description: descriptions[locale] || descriptions.de,
     alternates: {
-      canonical: `https://zahnaerzte-parkstrasse.de/${locale}`,
+      canonical: `https://www.zahnarzt-othmarschen.de/${locale}`,
       languages: {
-        de: "https://zahnaerzte-parkstrasse.de/de",
-        en: "https://zahnaerzte-parkstrasse.de/en",
-        fr: "https://zahnaerzte-parkstrasse.de/fr",
-        es: "https://zahnaerzte-parkstrasse.de/es",
-        "x-default": "https://zahnaerzte-parkstrasse.de/de",
+        de: "https://www.zahnarzt-othmarschen.de/de",
+        en: "https://www.zahnarzt-othmarschen.de/en",
+        fr: "https://www.zahnarzt-othmarschen.de/fr",
+        es: "https://www.zahnarzt-othmarschen.de/es",
+        "x-default": "https://www.zahnarzt-othmarschen.de/de",
       },
+    },
+    openGraph: {
+      title: titles[locale] || titles.de,
+      description: descriptions[locale] || descriptions.de,
+      url: `https://www.zahnarzt-othmarschen.de/${locale}`,
+      siteName: "Zahnärzte Parkstrasse Othmarschen",
+      locale: locale === "de" ? "de_DE" : locale === "en" ? "en_US" : locale === "fr" ? "fr_FR" : "es_ES",
+      type: "website",
+      images: [
+        {
+          url: "/images/praxis-mit-logo.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Zahnärzte Parkstrasse Othmarschen — Zahnarztpraxis in Hamburg",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titles[locale] || titles.de,
+      description: descriptions[locale] || descriptions.de,
+      images: ["/images/praxis-mit-logo.jpg"],
     },
   };
 }
@@ -57,11 +79,11 @@ const schemaOrg = {
   "@type": "Dentist",
   "name": "Zahnärzte Parkstrasse Othmarschen",
   "description": "Zahnarztpraxis in Hamburg-Othmarschen unter der Leitung von Dr. Claudia Schwegmann, Fachzahnärztin für Oralchirurgie.",
-  "url": "https://zahnaerzte-parkstrasse.de",
+  "url": "https://www.zahnarzt-othmarschen.de",
   "telephone": "+494088021050",
   "email": "info@zahnarzt-othmarschen.de",
   "address": { "@type": "PostalAddress", "streetAddress": "Parkstraße 10", "addressLocality": "Hamburg", "addressRegion": "HH", "postalCode": "22605", "addressCountry": "DE" },
-  "geo": { "@type": "GeoCoordinates", "latitude": 53.5511, "longitude": 9.8689 },
+  "geo": { "@type": "GeoCoordinates", "latitude": 53.5528, "longitude": 9.8832 },
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday"], "opens": "09:00", "closes": "18:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "16:00" },
@@ -75,6 +97,8 @@ const schemaOrg = {
     { "@type": "Language", "name": "Spanish" },
   ],
   "medicalSpecialty": "Dentistry",
+  "image": "https://www.zahnarzt-othmarschen.de/images/praxis-mit-logo.jpg",
+  "priceRange": "$$",
 };
 
 export default async function LocaleLayout({

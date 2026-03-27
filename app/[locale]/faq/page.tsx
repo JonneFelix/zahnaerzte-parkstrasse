@@ -42,8 +42,29 @@ export default async function FAQSeite({ params }: { params: Promise<{ locale: s
     };
   });
 
+  /* FAQPage Schema.org für Rich Snippets in Google */
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": kats.flatMap((kat) =>
+      kat.fragen.map((f) => ({
+        "@type": "Question",
+        "name": f.frage,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.antwort,
+        },
+      }))
+    ),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <SeiteHero
         label={hero.label}
         titel={hero.titel}

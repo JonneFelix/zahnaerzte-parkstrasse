@@ -101,6 +101,33 @@ const schemaOrg = {
   "priceRange": "$$",
 };
 
+/* WebSite Schema — signalisiert Google die Seitenstruktur für Sitelinks */
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Zahnärzte Parkstrasse Othmarschen",
+  "url": "https://www.zahnarzt-othmarschen.de",
+  "inLanguage": ["de", "en", "fr", "es"],
+  "publisher": {
+    "@type": "Dentist",
+    "name": "Zahnärzte Parkstrasse Othmarschen",
+  },
+};
+
+/* SiteNavigationElement Schema — listet Hauptnavigation für Google */
+const navigationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    { "@type": "SiteNavigationElement", "position": 1, "name": "Leistungen", "url": "https://www.zahnarzt-othmarschen.de/de/leistungen/" },
+    { "@type": "SiteNavigationElement", "position": 2, "name": "Team", "url": "https://www.zahnarzt-othmarschen.de/de/team/" },
+    { "@type": "SiteNavigationElement", "position": 3, "name": "Innovationen", "url": "https://www.zahnarzt-othmarschen.de/de/innovationen/" },
+    { "@type": "SiteNavigationElement", "position": 4, "name": "Fortbildungen", "url": "https://www.zahnarzt-othmarschen.de/de/fortbildungen/" },
+    { "@type": "SiteNavigationElement", "position": 5, "name": "Kontakt", "url": "https://www.zahnarzt-othmarschen.de/de/kontakt/" },
+    { "@type": "SiteNavigationElement", "position": 6, "name": "Termin buchen", "url": "https://www.zahnarzt-othmarschen.de/de/termin/" },
+  ],
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -115,10 +142,18 @@ export default async function LocaleLayout({
       {/* Client-seitig html lang setzen */}
       <SetLocale locale={locale} />
 
-      {/* Schema.org */}
+      {/* Schema.org — Dentist + WebSite + Navigation */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }}
       />
 
       <Header locale={locale as Locale} />

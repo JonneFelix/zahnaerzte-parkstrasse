@@ -171,4 +171,10 @@ ErrorDocument 404 /404.html
 
     # Permissions-Policy (keine Kamera/Mikrofon/etc.)
     Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+    # HSTS (HTTPS erzwingen für 1 Jahr)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+    # Cross-Origin-Opener-Policy
+    Header always set Cross-Origin-Opener-Policy "same-origin"
 </IfModule>

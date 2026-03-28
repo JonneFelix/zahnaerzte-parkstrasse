@@ -250,7 +250,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
               <div className="absolute -inset-5 anim-blob hidden lg:block" style={{ border: "1.5px solid rgba(242, 101, 34, 0.1)", borderRadius: "55% 45% 52% 48% / 48% 58% 42% 52%" }} />
               <div className="absolute -inset-12 anim-blob hidden lg:block" style={{ border: "1px solid rgba(105, 123, 123, 0.06)", borderRadius: "42% 58% 48% 52% / 55% 42% 58% 45%", animationDelay: "3.5s" }} />
               <div className="relative overflow-hidden" style={{ borderRadius: "58% 42% 52% 48% / 44% 56% 44% 56%", boxShadow: "0 28px 56px -14px rgba(105, 123, 123, 0.22)" }}>
-                <Image src="/images/hero-team.jpeg" alt={hero.bildAlt} width={600} height={700} className="w-full h-auto object-cover" style={{ aspectRatio: "5/6", filter: "saturate(0.92) brightness(1.02)" }} priority quality={90} sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src="/images/hero-team.webp" alt={hero.bildAlt} width={600} height={700} className="w-full h-auto object-cover" style={{ aspectRatio: "5/6", filter: "saturate(0.92) brightness(1.02)" }} priority quality={90} sizes="(max-width: 768px) 100vw, 50vw" />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(105, 123, 123, 0.04), rgba(105, 123, 123, 0.1))" }} />
               </div>
               <div className="hidden lg:block absolute -bottom-4 -left-6 px-6 py-4 anim-einblenden d7" style={{ background: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(10px)", borderRadius: "18px", boxShadow: "0 12px 28px rgba(105, 123, 123, 0.12)", border: "1px solid rgba(242, 101, 34, 0.1)" }}>

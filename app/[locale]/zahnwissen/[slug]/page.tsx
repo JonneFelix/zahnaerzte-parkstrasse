@@ -32,6 +32,7 @@ export async function generateMetadata({
 /* Einfacher Markdown→HTML Renderer (ohne externe Lib) */
 function renderMarkdown(text: string): string {
   return text
+    .trim()
     .split("\n\n")
     .map((absatz) => {
       if (absatz.startsWith("## ")) {

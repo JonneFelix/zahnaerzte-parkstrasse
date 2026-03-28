@@ -225,7 +225,7 @@ export default async function FortbildungenSeite({ params }: { params: Promise<{
                   ))}
                 </div>
                 <a
-                  href="https://www.fraga-dental.de/fortbildungen/studyclubs/"
+                  href="https://www.study-club.de/termine-orte/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-5 text-sm transition-colors duration-300 hover:text-[#e3541a]"

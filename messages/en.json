@@ -298,7 +298,7 @@
         "rolle": "Dentist · Endodontics Specialist",
         "zitat": "A good root canal treatment can save a tooth that would otherwise be lost. That motivates me every day.",
         "ueber": "Dr. Nina Janz has been strengthening the practice since 2008. Her particular focus is endodontics — the treatment of the tooth interior. With her endodontic curriculum and state-of-the-art technology she saves teeth that others would give up on.",
-        "sprachen": ["German", "English", "Spanish"],
+        "sprachen": ["German", "English"],
         "timeline": {
           "t1": {
             "jahr": "1995–2001",
@@ -327,7 +327,7 @@
         "rolle": "Dentist",
         "zitat": "I am delighted to be part of this experienced team and to learn from the best.",
         "ueber": "Dr. Julia Prüter is the newest addition to our team. After her state examination in 2022 at UKE Hamburg she brings fresh knowledge and current treatment methods to the practice.",
-        "sprachen": ["German", "English"],
+        "sprachen": ["German", "English", "Spanish"],
         "timeline": {
           "t1": {
             "jahr": "2022",

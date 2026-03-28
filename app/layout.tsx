@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <Script
           src="https://praxis-analytics.jonne-schwegmann.com/script.js"
-          data-website-id="555d0c21-8ed9-4b57-9cfa-b5b858b8764d"
+          data-website-id="01234bb6-9bf1-430c-a7dd-2348ad6f5429"
           strategy="afterInteractive"
         />
         {/* KEIN meta-refresh hier — das ist im Root-Layout und würde ALLE Seiten betreffen! */}

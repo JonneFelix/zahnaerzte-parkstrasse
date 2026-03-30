@@ -94,6 +94,7 @@ RewriteRule ^dental-education/?$ /fortbildungen [R=301,L]
 # --- WordPress-Artefakte → Startseite ---
 RewriteRule ^sample-page/?$ / [R=301,L]
 RewriteRule ^home-1/?$ / [R=301,L]
+RewriteRule ^home-2/?$ / [R=301,L]
 RewriteRule ^praxis-home/?$ / [R=301,L]
 RewriteRule ^coming-soooon/?$ / [R=301,L]
 RewriteRule ^demo-page/?$ / [R=301,L]
@@ -107,6 +108,13 @@ RewriteRule ^login/?$ / [R=301,L]
 RewriteRule ^profile/?$ / [R=301,L]
 RewriteRule ^category/(.*)$ / [R=301,L]
 RewriteRule ^author/(.*)$ / [R=301,L]
+RewriteRule ^tag/(.*)$ / [R=301,L]
+RewriteRule ^Dr/?$ /de/team/ [R=301,L]
+RewriteRule ^elementor-hf/(.*)$ / [R=301,L]
+RewriteRule ^unsere-leistungen/(.*)$ /de/leistungen/ [R=301,L]
+
+# RSS-Feeds der alten WordPress-Seite
+RewriteRule ^(.+)/feed/?$ /$1 [R=301,L]
 
 # --- WordPress-System (Admin, Login, wp-content) ---
 RewriteRule ^wp-admin/?(.*)$ / [R=301,L]

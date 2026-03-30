@@ -5,13 +5,14 @@ import SeiteHero from "../../../components/SeiteHero";
 import SektionsHeader from "../../../components/SektionsHeader";
 import CTABanner from "../../../components/CTABanner";
 import { getDictionary, type Locale } from "../../../../lib/i18n";
+import { createMetadata } from "../../../../lib/metadata";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   const t = dict.LeistungWurzelbehandlung as Record<string, unknown>;
   const meta = t.meta as Record<string, string>;
-  return { title: meta.title, description: meta.description };
+  return createMetadata(locale, "leistungen/wurzelbehandlung", meta);
 }
 
 export default async function WurzelbehandlungSeite({ params }: { params: Promise<{ locale: string }> }) {

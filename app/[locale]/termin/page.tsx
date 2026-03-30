@@ -3,13 +3,14 @@ import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
 import { getDictionary, type Locale } from "../../../lib/i18n";
+import { createMetadata } from "../../../lib/metadata";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   const t = dict.Termin as Record<string, unknown>;
   const meta = t.meta as Record<string, string>;
-  return { title: meta.title, description: meta.description };
+  return createMetadata(locale, "termin", meta);
 }
 
 export default async function TerminSeite({ params }: { params: Promise<{ locale: string }> }) {

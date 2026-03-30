@@ -38,16 +38,7 @@ export async function generateMetadata({
       template: `%s | Zahnärzte Parkstrasse Othmarschen`,
     },
     description: descriptions[locale] || descriptions.de,
-    alternates: {
-      canonical: `https://www.zahnarzt-othmarschen.de/${locale}`,
-      languages: {
-        de: "https://www.zahnarzt-othmarschen.de/de",
-        en: "https://www.zahnarzt-othmarschen.de/en",
-        fr: "https://www.zahnarzt-othmarschen.de/fr",
-        es: "https://www.zahnarzt-othmarschen.de/es",
-        "x-default": "https://www.zahnarzt-othmarschen.de/de",
-      },
-    },
+    /* Canonical und hreflang werden pro Seite via createMetadata() gesetzt */
     openGraph: {
       title: titles[locale] || titles.de,
       description: descriptions[locale] || descriptions.de,

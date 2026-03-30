@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import SeiteHero from "../../components/SeiteHero";
 import { getDictionary, type Locale } from "../../../lib/i18n";
+import { createMetadata } from "../../../lib/metadata";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   const t = dict.Impressum as Record<string, unknown>;
   const meta = t.meta as Record<string, string>;
-  return { title: meta.title, description: meta.description };
+  return createMetadata(locale, "impressum", meta);
 }
 
 // Wiederverwendbare Styles

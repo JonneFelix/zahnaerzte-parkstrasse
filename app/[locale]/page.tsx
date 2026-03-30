@@ -6,6 +6,7 @@ import OrganischerTrenner from "../components/OrganischerTrenner";
 import SektionsHeader from "../components/SektionsHeader";
 import MobileKarussell from "../components/MobileKarussell";
 import { getDictionary, type Locale } from "../../lib/i18n";
+import { createMetadata } from "../../lib/metadata";
 
 /* ============================================================
    Metadata
@@ -15,10 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const dict = await getDictionary(locale as Locale);
   const hp = dict.HomePage as Record<string, unknown>;
   const meta = hp.meta as Record<string, string>;
-  return {
-    title: meta.title,
-    description: meta.description,
-  };
+  return createMetadata(locale, "", meta);
 }
 
 /* ============================================================

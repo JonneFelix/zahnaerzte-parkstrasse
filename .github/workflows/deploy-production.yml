@@ -1,6 +1,6 @@
 name: Deploy to Production (Andre Hotzler)
 
-# Nur bei Push auf main deployen — andere Branches gehen an Dokploy (Staging)
+# Nur bei Push auf main deployen
 on:
   push:
     branches:

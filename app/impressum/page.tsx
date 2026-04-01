@@ -3,7 +3,7 @@ import SeiteHero from "../components/SeiteHero";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum der Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann, Dr. Janz & Dr. Prüter, Hamburg.",
+  description: "Impressum der Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann & Dr. Janz, Hamburg.",
 };
 
 // Wiederverwendbare Styles
@@ -54,8 +54,7 @@ export default function ImpressumSeite() {
               </p>
               <p className="text-sm leading-relaxed mt-2" style={textStyle}>
                 Dr. Claudia Schwegmann: Fachzahnärztin für Oralchirurgie<br />
-                Dr. Nina Janz: Zahnärztin — Curriculum Endodontie<br />
-                Dr. Julia Prüter: Zahnärztin
+                Dr. Nina Janz: Zahnärztin — Curriculum Endodontie
               </p>
             </div>
 

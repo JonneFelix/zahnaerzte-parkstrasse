@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 /* Nicht-übersetzbare Daten */
-const aerztinnenBilder = ["/images/team/dr-schwegmann-portrait-neu.jpg", "/images/dr-janz.jpg", "/images/team/dr-prueter.jpg"];
-const aerztinnenBildPosition = ["70% center", "center center", "center center"];
-const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz", "Dr. Julia Prüter"];
-const aerztinnenKeys = ["schwegmann", "janz", "prueter"];
+const aerztinnenBilder = ["/images/team/dr-schwegmann-portrait-neu.jpg", "/images/dr-janz.jpg"];
+const aerztinnenBildPosition = ["70% center", "center center"];
+const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz"];
+const aerztinnenKeys = ["schwegmann", "janz"];
 
 export default async function TeamSeite({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

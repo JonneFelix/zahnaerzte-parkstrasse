@@ -92,13 +92,11 @@ const leistungsHrefs = [
 const aerztinnenBilder = [
   "/images/team/dr-schwegmann-portrait-neu.jpg",
   "/images/dr-janz.jpg",
-  "/images/team/dr-prueter.jpg",
 ];
 
 const aerztinnenNamen = [
   "Dr. Claudia Schwegmann",
   "Dr. Nina Janz",
-  "Dr. Julia Prüter",
 ];
 
 /* ============================================================
@@ -145,7 +143,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
   }));
 
   // Ärztinnen
-  const rollenKeys = ["schwegmann", "janz", "prueter"];
+  const rollenKeys = ["schwegmann", "janz"];
   const aerztinnen = rollenKeys.map((key, i) => ({
     name: aerztinnenNamen[i],
     rolle: aerztinnenRollen[key].rolle,

@@ -7,9 +7,9 @@ import CTABanner from "../components/CTABanner";
 import BaumDekor from "../components/BaumDekor";
 
 export const metadata: Metadata = {
-  title: "Unser Team — Dr. Schwegmann, Dr. Janz & Dr. Prüter",
+  title: "Unser Team — Dr. Schwegmann & Dr. Janz",
   description:
-    "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie), Dr. Nina Janz (Endodontie) und Dr. Julia Prüter. Seit 1998 in Othmarschen.",
+    "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie) und Dr. Nina Janz (Endodontie). Seit 1998 in Othmarschen.",
 };
 
 /* ============================================================
@@ -61,20 +61,6 @@ const aerztinnen = [
     ],
     tags: ["Endodontie", "Wurzelbehandlung", "Allgemeine Zahnheilkunde"],
   },
-  {
-    name: "Dr. Julia Prüter",
-    rolle: "Zahnärztin",
-    bild: "/images/team/dr-prueter.jpg",
-    zitat:
-      "Ich freue mich, Teil dieses erfahrenen Teams zu sein und von den Besten zu lernen.",
-    ueber:
-      "Dr. Julia Prüter ist die jüngste Verstärkung unseres Teams. Nach ihrem Examen 2022 am UKE Hamburg bringt sie frisches Wissen und aktuelle Behandlungsmethoden in die Praxis ein.",
-    timeline: [
-      { jahr: "2022", text: "Staatsexamen am UKE Hamburg" },
-      { jahr: "Seit 10/2024", text: "Zahnärztin in der Praxis" },
-    ],
-    tags: ["Allgemeine Zahnheilkunde"],
-  },
 ];
 
 export default function TeamSeite() {
@@ -84,7 +70,7 @@ export default function TeamSeite() {
         label="Unser Team"
         titel="Die Menschen hinter"
         titelAkzent="Ihrem Lächeln"
-        subtext="Drei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
+        subtext="Zwei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
       />
 
       {/* ============================================================

@@ -223,9 +223,6 @@
         },
         "janz": {
           "rolle": "Dentiste · Endodontie"
-        },
-        "prueter": {
-          "rolle": "Dentiste"
         }
       },
       "alleKennenlernen": "RENCONTRER L'ÉQUIPE"
@@ -243,14 +240,14 @@
   },
   "Team": {
     "meta": {
-      "title": "Notre équipe — Dr. Schwegmann, Dr. Janz & Dr. Prüter",
-      "description": "Découvrez nos dentistes : Dr. Claudia Schwegmann (spécialiste en chirurgie orale), Dr. Nina Janz (endodontie) et Dr. Julia Prüter. À Othmarschen depuis 1998."
+      "title": "Notre équipe — Dr. Schwegmann & Dr. Janz",
+      "description": "Découvrez nos dentistes : Dr. Claudia Schwegmann (spécialiste en chirurgie orale) et Dr. Nina Janz (endodontie). À Othmarschen depuis 1998."
     },
     "hero": {
       "label": "Notre équipe",
       "titel": "Les personnes derrière",
       "titelAkzent": "votre sourire",
-      "subtext": "Trois dentistes, une équipe soudée et une conviction commune : chaque patient mérite toute notre attention."
+      "subtext": "Deux dentistes, une équipe soudée et une conviction commune : chaque patient mérite toute notre attention."
     },
     "aerztinnen": {
       "schwegmann": {
@@ -320,25 +317,6 @@
         "tags": [
           "Endodontie",
           "Traitement de canal",
-          "Dentisterie générale"
-        ]
-      },
-      "prueter": {
-        "rolle": "Dentiste",
-        "zitat": "Je suis ravie de faire partie de cette équipe expérimentée et d'apprendre des meilleurs.",
-        "ueber": "Dr. Julia Prüter est la plus récente recrue de notre équipe. Après son examen d'État en 2022 à l'UKE Hamburg, elle apporte un savoir frais et des méthodes de traitement actuelles au cabinet.",
-        "sprachen": ["Allemand", "Anglais", "Espagnol"],
-        "timeline": {
-          "t1": {
-            "jahr": "2022",
-            "text": "Examen d'État à l'UKE Hamburg"
-          },
-          "t2": {
-            "jahr": "Depuis 10/2024",
-            "text": "Dentiste au cabinet"
-          }
-        },
-        "tags": [
           "Dentisterie générale"
         ]
       }
@@ -782,7 +760,7 @@
   "Impressum": {
     "meta": {
       "title": "Mentions légales",
-      "description": "Mentions légales des Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann, Dr. Janz & Dr. Prüter, Hambourg."
+      "description": "Mentions légales des Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann & Dr. Janz, Hambourg."
     },
     "titel": "Mentions légales",
     "angabenDDG": {
@@ -796,7 +774,7 @@
     "berufsbezeichnung": {
       "titel": "Titre professionnel",
       "text": "Titre professionnel légal : Dentistes\n(délivré en République fédérale d'Allemagne)",
-      "details": "Dr. Claudia Schwegmann : Chirurgien-dentiste spécialiste en chirurgie orale\nDr. Nina Janz : Dentiste — Curriculum en endodontie\nDr. Julia Prüter : Dentiste"
+      "details": "Dr. Claudia Schwegmann : Chirurgien-dentiste spécialiste en chirurgie orale\nDr. Nina Janz : Dentiste — Curriculum en endodontie"
     },
     "kammer": {
       "titel": "Chambre compétente",

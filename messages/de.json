@@ -223,9 +223,6 @@
         },
         "janz": {
           "rolle": "Zahnärztin · Endodontie"
-        },
-        "prueter": {
-          "rolle": "Zahnärztin"
         }
       },
       "alleKennenlernen": "ALLE KENNENLERNEN"
@@ -243,14 +240,14 @@
   },
   "Team": {
     "meta": {
-      "title": "Unser Team — Dr. Schwegmann, Dr. Janz & Dr. Prüter",
-      "description": "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie), Dr. Nina Janz (Endodontie) und Dr. Julia Prüter. Seit 1998 in Othmarschen."
+      "title": "Unser Team — Dr. Schwegmann & Dr. Janz",
+      "description": "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie) und Dr. Nina Janz (Endodontie). Seit 1998 in Othmarschen."
     },
     "hero": {
       "label": "Unser Team",
       "titel": "Die Menschen hinter",
       "titelAkzent": "Ihrem Lächeln",
-      "subtext": "Drei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
+      "subtext": "Zwei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
     },
     "aerztinnen": {
       "schwegmann": {
@@ -320,25 +317,6 @@
         "tags": [
           "Endodontie",
           "Wurzelbehandlung",
-          "Allgemeine Zahnheilkunde"
-        ]
-      },
-      "prueter": {
-        "rolle": "Zahnärztin",
-        "zitat": "Ich freue mich, Teil dieses erfahrenen Teams zu sein und von den Besten zu lernen.",
-        "ueber": "Dr. Julia Prüter ist die jüngste Verstärkung unseres Teams. Nach ihrem Examen 2022 am UKE Hamburg bringt sie frisches Wissen und aktuelle Behandlungsmethoden in die Praxis ein.",
-        "sprachen": ["Deutsch", "Englisch", "Spanisch"],
-        "timeline": {
-          "t1": {
-            "jahr": "2022",
-            "text": "Staatsexamen am UKE Hamburg"
-          },
-          "t2": {
-            "jahr": "Seit 10/2024",
-            "text": "Zahnärztin in der Praxis"
-          }
-        },
-        "tags": [
           "Allgemeine Zahnheilkunde"
         ]
       }
@@ -782,7 +760,7 @@
   "Impressum": {
     "meta": {
       "title": "Impressum",
-      "description": "Impressum der Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann, Dr. Janz & Dr. Prüter, Hamburg."
+      "description": "Impressum der Zahnärzte Parkstrasse Othmarschen — Dr. Schwegmann & Dr. Janz, Hamburg."
     },
     "titel": "Impressum",
     "angabenDDG": {
@@ -796,7 +774,7 @@
     "berufsbezeichnung": {
       "titel": "Berufsbezeichnung",
       "text": "Gesetzliche Berufsbezeichnung: Zahnärztinnen\n(verliehen in der Bundesrepublik Deutschland)",
-      "details": "Dr. Claudia Schwegmann: Fachzahnärztin für Oralchirurgie\nDr. Nina Janz: Zahnärztin — Curriculum Endodontie\nDr. Julia Prüter: Zahnärztin"
+      "details": "Dr. Claudia Schwegmann: Fachzahnärztin für Oralchirurgie\nDr. Nina Janz: Zahnärztin — Curriculum Endodontie"
     },
     "kammer": {
       "titel": "Zuständige Kammer",

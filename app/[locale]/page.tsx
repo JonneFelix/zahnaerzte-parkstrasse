@@ -476,13 +476,13 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={teamSection.label as string} titel={teamSection.titel as string} titelAkzent={teamSection.titelAkzent as string} />
 
-          {/* Mobile: Alle 3 kompakt nebeneinander, Desktop: Grid mit großen Bildern */}
-          <div className="grid grid-cols-3 gap-3 md:gap-10 lg:gap-14">
+          {/* Zwei Ärztinnen nebeneinander, zentriert */}
+          <div className="grid grid-cols-2 gap-6 md:gap-14 lg:gap-20 max-w-3xl mx-auto">
             {aerztinnen.map((a, i) => (
               <Link key={a.name} href={`/${locale}/team`} className={`text-center anim-einblenden d${i + 2} block`}>
                 <div className="relative mb-3 md:mb-6 inline-block">
                   <div className="absolute -inset-3 anim-blob opacity-40 hidden md:block" style={{ border: "1.5px solid rgba(242, 101, 34, 0.12)", borderRadius: "54% 46% 51% 49% / 49% 54% 46% 51%", animationDelay: `${i * 2}s` }} />
-                  <div className="team-bild-hover relative overflow-hidden w-24 h-24 md:w-56 md:h-56 mx-auto" style={{ borderRadius: "50% 50% 44% 56% / 54% 44% 56% 46%", boxShadow: "0 22px 44px -10px rgba(105, 123, 123, 0.16)" }}>
+                  <div className="team-bild-hover relative overflow-hidden w-32 h-32 md:w-56 md:h-56 mx-auto" style={{ borderRadius: "50% 50% 44% 56% / 54% 44% 56% 46%", boxShadow: "0 22px 44px -10px rgba(105, 123, 123, 0.16)" }}>
                     <Image src={a.bild} alt={a.name} fill className="object-cover" style={{ filter: "saturate(0.92) brightness(1.02)", objectPosition: i === 0 ? "65% center" : "center center" }} />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(105, 123, 123, 0.08), transparent 40%)" }} />
                   </div>

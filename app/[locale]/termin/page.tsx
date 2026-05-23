@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
+import HeydentWidget from "../../components/HeydentWidget";
 import { getDictionary, type Locale } from "../../../lib/i18n";
 import { createMetadata } from "../../../lib/metadata";
 
@@ -82,20 +83,12 @@ export default async function TerminSeite({ params }: { params: Promise<{ locale
         </div>
       </section>
 
-      {/* Online-Kalender Platzhalter */}
+      {/* Online-Kalender — HeyDent-Widget */}
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f0ede8" }}>
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={online.label} titel={online.titel} titelAkzent={online.titelAkzent} />
-          <div className="p-10 text-center" style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)" }}>
-            <p className="text-base mb-4" style={{ color: "#697B7B", fontWeight: 400 }}>
-              {online.platzhalter}
-            </p>
-            <p className="text-sm" style={{ color: "#8a9a9a", fontWeight: 300, lineHeight: 1.7 }}>
-              {online.bissDahin.replace("{telefon}", "")}{" "}
-              <a href="tel:+494088021050" className="transition-colors hover:text-[#F26522]" style={{ color: "#F26522", fontWeight: 500 }}>
-                040 — 880 21 50
-              </a>{" "}
-            </p>
+          <div style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)", overflow: "hidden" }}>
+            <HeydentWidget slug="zahnaerzte-parkstrasse-othmarschen" minHeight={720} />
           </div>
         </div>
       </section>

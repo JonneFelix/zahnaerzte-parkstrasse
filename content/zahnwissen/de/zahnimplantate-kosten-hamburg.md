@@ -4,7 +4,7 @@ beschreibung: "Was kosten Zahnimplantate in Hamburg? Wir erklären den Ablauf, d
 kategorie: "Implantate"
 datum: "2026-03-23"
 autor: "Dr. Claudia Schwegmann"
-bild: "/images/behandlung.jpg"
+bild: "/images/implantate.jpg"
 pillar: "/leistungen/implantate"
 tags: ["implantate", "kosten", "hamburg"]
 ---

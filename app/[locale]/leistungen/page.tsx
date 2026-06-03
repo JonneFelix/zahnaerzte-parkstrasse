@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 const leistungsBilder: Record<string, string> = {
   oralchirurgie: "/images/behandlung.jpg",
-  implantate: "/images/mikroskop-ausstattung.jpg",
+  implantate: "/images/implantate.jpg",
   zahnersatz: "/images/zahnmodell.jpg",
   wurzelbehandlung: "/images/wurzelbehandlung.jpg",
   prophylaxe: "/images/prophylaxe.jpg",
-  parodontologie: "/images/praxis-mit-logo.jpg",
+  parodontologie: "/images/parodontologie.jpg",
   kinderzahnheilkunde: "/images/kinder-behandlung.jpg",
   aesthetik: "/images/aligner-schiene.jpg",
 };

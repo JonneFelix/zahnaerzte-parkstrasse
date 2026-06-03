@@ -76,7 +76,7 @@ const leistungsBilder = [
   "/images/zahnmodell.jpg",
   "/images/wurzelbehandlung.jpg",
   "/images/prophylaxe.jpg",
-  "/images/mikroskop-ausstattung.jpg",
+  "/images/implantate.jpg",
   "/images/aligner-schiene.png",
 ];
 

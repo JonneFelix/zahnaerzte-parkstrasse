@@ -4,7 +4,7 @@ beschreibung: "Combien coûtent les implants dentaires à Hambourg ? Nous expliq
 kategorie: "Implants"
 datum: "2026-03-23"
 autor: "Dr. Claudia Schwegmann"
-bild: "/images/behandlung.jpg"
+bild: "/images/implantate.jpg"
 pillar: "/leistungen/implantate"
 tags: ["implants", "coûts", "hambourg"]
 ---

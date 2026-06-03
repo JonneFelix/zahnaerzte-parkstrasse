@@ -157,7 +157,7 @@ export default async function PraxisSeite({ params }: { params: Promise<{ locale
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { src: "/images/behandlung.jpg", alt: bilder.behandlung },
+              { src: "/images/behandlungsraum.jpg", alt: bilder.behandlung },
               { src: "/images/team-foto.webp", alt: bilder.empfang },
             ].map((bild, i) => (
               <div

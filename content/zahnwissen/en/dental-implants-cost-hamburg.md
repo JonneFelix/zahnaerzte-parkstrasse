@@ -4,7 +4,7 @@ beschreibung: "How much do dental implants cost in Hamburg? We explain the proce
 kategorie: "Implants"
 datum: "2026-03-23"
 autor: "Dr. Claudia Schwegmann"
-bild: "/images/behandlung.jpg"
+bild: "/images/implantate.jpg"
 pillar: "/leistungen/implantate"
 tags: ["implants", "costs", "hamburg"]
 ---

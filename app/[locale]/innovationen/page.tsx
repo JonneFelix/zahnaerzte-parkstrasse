@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const innovationsBilder: Record<string, string | undefined> = {
-  kronen: "/images/patientenberatung.jpg",
+  kronen: "/images/zahnmodell.jpg",
   zahntrauma: undefined,
   zahnfleisch: "/images/mikroskop-in-aktion.jpg",
   knochenerhalt: undefined,

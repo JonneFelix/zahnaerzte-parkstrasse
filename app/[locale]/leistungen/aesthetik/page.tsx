@@ -44,7 +44,7 @@ export default async function AesthetikSeite({ params }: { params: Promise<{ loc
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="overflow-hidden anim-einblenden" style={{ borderRadius: "22px", boxShadow: "0 16px 36px -8px rgba(105,123,123,0.14)" }}>
-              <Image src="/images/aligner-schiene.png" alt="Transparente Aligner-Schiene für unsichtbare Zahnkorrektur" width={600} height={400} className="w-full h-auto object-cover" style={{ filter: "saturate(0.90) brightness(1.02)" }} />
+              <Image src="/images/aligner-schiene.jpg" alt="Transparente Aligner-Schiene für unsichtbare Zahnkorrektur" width={600} height={400} className="w-full h-auto object-cover" style={{ filter: "saturate(0.90) brightness(1.02)" }} />
             </div>
             <p className="text-base leading-relaxed" style={{ color: "#4a5959", fontWeight: 300, lineHeight: 1.85 }}>
               {hero.subtext}

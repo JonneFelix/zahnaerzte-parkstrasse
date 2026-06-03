@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { type Locale } from "../../../../lib/i18n";
+import { createMetadata } from "../../../../lib/metadata";
 import { getArtikel, getAlleSlugs, getAlleArtikel } from "../../../../lib/zahnwissen";
 import SeiteHero from "../../../components/SeiteHero";
 import CTABanner from "../../../components/CTABanner";
@@ -20,13 +21,10 @@ export async function generateMetadata({
 
   if (!artikel) return { title: "Artikel nicht gefunden" };
 
-  return {
+  return createMetadata(locale, `zahnwissen/${slug}`, {
     title: artikel.titel,
     description: artikel.beschreibung,
-    alternates: {
-      canonical: `https://zahnaerzte-parkstrasse.de/${locale}/zahnwissen/${slug}`,
-    },
-  };
+  });
 }
 
 /* Einfacher Markdown→HTML Renderer (ohne externe Lib) */

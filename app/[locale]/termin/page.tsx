@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
-import HeydentWidget from "../../components/HeydentWidget";
 import { getDictionary, type Locale } from "../../../lib/i18n";
 import { createMetadata } from "../../../lib/metadata";
 
@@ -87,8 +86,13 @@ export default async function TerminSeite({ params }: { params: Promise<{ locale
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f0ede8" }}>
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={online.label} titel={online.titel} titelAkzent={online.titelAkzent} />
-          <div style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)", overflow: "hidden" }}>
-            <HeydentWidget slug="zahnaerzte-parkstrasse-othmarschen" minHeight={720} locale={locale} />
+          {/* Online-Buchung vorübergehend deaktiviert — "Coming Soon" (HeyDent-Widget bei Reaktivierung wieder einsetzen) */}
+          <div className="p-12 lg:p-16 text-center" style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)" }}>
+            <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full" style={{ background: "rgba(242,101,34,0.08)" }}>
+              <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><circle cx="14" cy="14" r="11" /><path d="M14 7v7l5 3" strokeLinecap="round" /></svg>
+            </div>
+            <p className="text-base mb-2" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{online.platzhalter}</p>
+            <p className="text-sm" style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.7 }}>{online.bissDahin.replace("{telefon}", "040 — 880 21 50")}</p>
           </div>
         </div>
       </section>

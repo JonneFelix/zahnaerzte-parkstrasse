@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
@@ -144,6 +145,22 @@ export default async function FortbildungenSeite({ params }: { params: Promise<{
         </div>
       </section>
 
+      {/* Bild: Mikroskop / Supervision */}
+      <section className="relative pb-6 lg:pb-10 overflow-hidden" style={{ background: "#f4f1ec" }}>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="overflow-hidden anim-einblenden" style={{ borderRadius: "22px", boxShadow: "0 16px 36px -8px rgba(105,123,123,0.14)" }}>
+            <Image
+              src="/images/fortbildung-mikroskop.jpg"
+              alt="Fortbildung am Operationsmikroskop — gemeinsames Lernen unter Supervision"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover"
+              style={{ aspectRatio: "3/2", filter: "saturate(0.92) brightness(1.02)" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Vorteile */}
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f0ede8" }}>
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-10">
@@ -175,6 +192,22 @@ export default async function FortbildungenSeite({ params }: { params: Promise<{
                 <p className="text-xs" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}>{vorteilItems[key].text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bild: Study Club */}
+      <section className="relative pb-6 lg:pb-10 overflow-hidden" style={{ background: "#f0ede8" }}>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-10">
+          <div className="overflow-hidden anim-einblenden" style={{ borderRadius: "22px", boxShadow: "0 16px 36px -8px rgba(105,123,123,0.14)" }}>
+            <Image
+              src="/images/fortbildung-studyclub.jpg"
+              alt="Study Club: praktische chirurgische Fortbildung — Operationen am eigenen Patienten unter Anleitung"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover"
+              style={{ aspectRatio: "3/2", objectPosition: "center 30%", filter: "saturate(0.92) brightness(1.02)" }}
+            />
           </div>
         </div>
       </section>

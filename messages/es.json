@@ -857,7 +857,7 @@
       },
       "maps": {
         "titel": "Google Maps",
-        "text": "En nuestra página de contacto se utiliza Google Maps como mapa integrado. El proveedor es Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda. Al acceder a la página de contacto se establece una conexión con los servidores de Google, por lo que, entre otras cosas, su dirección IP se transmite a Google. Google puede establecer cookies. La base jurídica es el art. 6 párr. 1 letra f RGPD (interés legítimo en una presentación atractiva de nuestra descripción de acceso). Encontrará más información en la política de privacidad de Google."
+        "text": "En nuestra página de contacto se utiliza Google Maps como mapa integrado. El proveedor es Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda. El mapa solo se carga después de que usted haya hecho clic activamente en «Cargar mapa» o haya dado su consentimiento. Solo entonces se establece una conexión con los servidores de Google, transmitiéndose, entre otras cosas, su dirección IP a Google (también a EE. UU., país tercero) y pudiendo Google establecer cookies. La base jurídica es su consentimiento (art. 6 párr. 1 letra a RGPD en relación con el art. 25 párr. 1 TDDDG), que puede revocar en cualquier momento con efecto para el futuro. Encontrará más información en la política de privacidad de Google."
       },
       "analytics": {
         "titel": "Análisis web (Umami)",
@@ -865,7 +865,7 @@
       },
       "terminbuchung": {
         "titel": "Reserva de citas en línea (HeyDent)",
-        "text": "En nuestra página de citas integramos el sistema de reserva de citas en línea HeyDent como iframe. Al cargar la página de citas se establece una conexión con los servidores del proveedor, transmitiéndose datos técnicamente necesarios (incluida su dirección IP). Si solicita una cita a través del widget, los datos que introduzca (p. ej. nombre, datos de contacto, fecha deseada) se tratan con el fin de concertar la cita. La base jurídica es el art. 6, apdo. 1, letras b y f del RGPD."
+        "text": "En nuestra página de citas ofrecemos la reserva de citas en línea a través de nuestro proveedor HeyDent (integrado como iframe). Por motivos de protección de datos, la herramienta de reservas solo se carga después de que usted haya dado su consentimiento activo (solución de dos clics); solo entonces se establece una conexión con los servidores del proveedor y se transmite su dirección IP. Cuando solicita una cita, los datos que introduce (p. ej. nombre, datos de contacto, fecha deseada y, en su caso, el motivo de la visita) se tratan para concertar la cita; como puede existir un contexto relacionado con la salud, el tratamiento se basa en su consentimiento explícito (art. 9.2.a en relación con el art. 6.1.a RGPD), que puede revocar en cualquier momento. Los datos se tratan por encargo de la clínica (encargo de tratamiento según el art. 28 RGPD). Por supuesto, también puede concertar citas por teléfono en el 040 880 21 50."
       }
     },
     "rechte": {
@@ -888,7 +888,7 @@
     },
     "aktualitaet": {
       "titel": "9. Vigencia y modificación de esta política de privacidad",
-      "text": "Esta política de privacidad está actualmente en vigor con fecha de marzo de 2026. Debido a la evolución de nuestro sitio web o a cambios en los requisitos legales o reglamentarios, puede ser necesario modificar esta política de privacidad."
+      "text": "Esta política de privacidad está actualmente en vigor con fecha de junio de 2026. Debido a la evolución de nuestro sitio web o a cambios en los requisitos legales o reglamentarios, puede ser necesario modificar esta política de privacidad."
     }
   },
   "Wissenswertes": {

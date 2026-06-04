@@ -857,7 +857,7 @@
       },
       "maps": {
         "titel": "Google Maps",
-        "text": "On our contact page Google Maps is used as an embedded map. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When you access the contact page, a connection to Google's servers is established, whereby your IP address, among other things, is transmitted to Google. Google may set cookies. The legal basis is Art. 6 para. 1 lit. f GDPR (legitimate interest in an appealing presentation of our directions). Further information can be found in Google's privacy policy."
+        "text": "On our contact page Google Maps is used as an embedded map. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. The map is only loaded after you have actively clicked 'Load map' or given your consent. Only then is a connection to Google's servers established, whereby, among other things, your IP address is transmitted to Google (including to the USA, a third country) and Google may set cookies. The legal basis is your consent (Art. 6 para. 1 lit. a GDPR in conjunction with Sec. 25 para. 1 TDDDG), which you can withdraw at any time with effect for the future. Further information can be found in Google's privacy policy."
       },
       "analytics": {
         "titel": "Web analytics (Umami)",
@@ -865,7 +865,7 @@
       },
       "terminbuchung": {
         "titel": "Online appointment booking (HeyDent)",
-        "text": "On our appointment page we embed the online appointment booking system HeyDent as an iframe. When the appointment page is loaded, a connection to the provider's servers is established, transmitting technically necessary data (including your IP address). If you request an appointment via the widget, the data you enter (e.g. name, contact details, preferred date) is processed for the purpose of arranging the appointment. The legal basis is Art. 6(1)(b) GDPR (initiation of the treatment relationship) and Art. 6(1)(f) GDPR."
+        "text": "On our appointment page we offer online appointment booking via our service provider HeyDent (embedded as an iframe). For data protection reasons, the booking tool is only loaded after you have actively consented (two-click solution); only then is a connection to the provider's servers established and your IP address transmitted. When you request an appointment, the data you enter (e.g. name, contact details, preferred date, possibly the reason for the visit) is processed to arrange the appointment; as this may have a health-related context, the processing is based on your explicit consent (Art. 9(2)(a) in conjunction with Art. 6(1)(a) GDPR), which you can withdraw at any time. The data is processed on behalf of the practice (processing under Art. 28 GDPR). You can of course also arrange appointments by phone at 040 880 21 50."
       }
     },
     "rechte": {
@@ -888,7 +888,7 @@
     },
     "aktualitaet": {
       "titel": "9. Currency and Changes to This Privacy Policy",
-      "text": "This privacy policy is currently valid as of March 2026. Due to the further development of our website or changes in legal or regulatory requirements, it may become necessary to amend this privacy policy."
+      "text": "This privacy policy is currently valid as of June 2026. Due to the further development of our website or changes in legal or regulatory requirements, it may become necessary to amend this privacy policy."
     }
   },
   "Wissenswertes": {

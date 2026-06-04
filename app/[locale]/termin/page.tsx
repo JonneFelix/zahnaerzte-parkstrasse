@@ -88,7 +88,7 @@ export default async function TerminSeite({ params }: { params: Promise<{ locale
         <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={online.label} titel={online.titel} titelAkzent={online.titelAkzent} />
           <div style={{ background: "rgba(255,255,255,0.6)", borderRadius: "22px", border: "1px solid rgba(105,123,123,0.07)", overflow: "hidden" }}>
-            <HeydentWidget slug="zahnaerzte-parkstrasse-othmarschen" minHeight={720} />
+            <HeydentWidget slug="zahnaerzte-parkstrasse-othmarschen" minHeight={720} locale={locale} />
           </div>
         </div>
       </section>

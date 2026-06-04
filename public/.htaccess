@@ -124,6 +124,14 @@ RewriteRule ^wp-includes/(.*)$ / [R=301,L]
 RewriteRule ^xmlrpc\.php$ / [R=301,L]
 
 # -------------------------------------------
+# 3b. Nicht-lokalisierte Seitenpfade auf die deutsche Sprachversion umleiten
+#     (neutralisiert den alten, nicht-lokalisierten Seitenbaum inkl. veralteter /datenschutz)
+# -------------------------------------------
+RewriteCond %{REQUEST_URI} !^/(de|en|fr|es)(/|$) [NC]
+RewriteCond %{REQUEST_URI} !^/(_next|images|fonts)/ [NC]
+RewriteRule ^(datenschutz|impressum|team|praxis|kontakt|termin|faq|fortbildungen|innovationen|wissenswertes|zahnwissen|leistungen)(/.*)?$ /de/$1$2 [R=301,L]
+
+# -------------------------------------------
 # 4. Fehlerseiten
 # -------------------------------------------
 

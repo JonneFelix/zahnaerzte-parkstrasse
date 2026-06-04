@@ -396,6 +396,8 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
                   if (loc === locale) return;
                   (e.currentTarget as HTMLButtonElement).textContent = "...";
                   localStorage.setItem("preferred-locale", loc);
+                  const alt = document.querySelector(`link[rel="alternate"][hreflang="${loc}"]`)?.getAttribute("href");
+                  if (alt) { window.location.href = alt; return; }
                   const currentPath = window.location.pathname.replace(`/${locale}`, "").replace(/\/$/, "") || "";
                   window.location.href = `/${loc}${currentPath}`;
                 }}
@@ -424,9 +426,14 @@ function LanguageSwitcher({ locale }: { locale: Locale }) {
 
   const handleSwitch = (newLocale: Locale) => {
     localStorage.setItem("preferred-locale", newLocale);
-    /* Aktuellen Pfad umschreiben: /de/team → /en/team */
+    /* Falls die Seite ein hreflang-Alternate für die Zielsprache hat (z.B. übersetzte Artikel-Slugs), direkt dorthin */
+    const alt = document.querySelector(`link[rel="alternate"][hreflang="${newLocale}"]`)?.getAttribute("href");
+    if (alt) {
+      window.location.href = alt;
+      return;
+    }
+    /* Fallback: Locale-Prefix tauschen (/de/team → /en/team) */
     const currentPath = window.location.pathname.replace(`/${locale}`, "");
-    /* Trailing Slash entfernen und zu neuer Locale navigieren */
     const cleanPath = currentPath.replace(/\/$/, "") || "";
     window.location.href = `/${newLocale}${cleanPath}`;
   };

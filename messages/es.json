@@ -846,7 +846,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Este sitio web no establece cookies propias. Sin embargo, mediante la integración de Google Maps en nuestra página de contacto, Google puede establecer cookies (véase la sección 'Google Maps'). No se utilizan otras cookies de seguimiento ni herramientas de análisis."
+        "text": "Este sitio web no establece cookies propias. Mediante la integración de Google Maps en nuestra página de contacto, Google puede establecer cookies, pero solo tras su consentimiento expreso (véase la sección 'Google Maps'). Para la medición de audiencia utilizamos Umami, que funciona sin cookies y sin seguimiento entre sitios (véase la sección 'Análisis web')."
       }
     },
     "externeDienste": {
@@ -858,6 +858,14 @@
       "maps": {
         "titel": "Google Maps",
         "text": "En nuestra página de contacto se utiliza Google Maps como mapa integrado. El proveedor es Google Ireland Limited, Gordon House, Barrow Street, Dublín 4, Irlanda. Al acceder a la página de contacto se establece una conexión con los servidores de Google, por lo que, entre otras cosas, su dirección IP se transmite a Google. Google puede establecer cookies. La base jurídica es el art. 6 párr. 1 letra f RGPD (interés legítimo en una presentación atractiva de nuestra descripción de acceso). Encontrará más información en la política de privacidad de Google."
+      },
+      "analytics": {
+        "titel": "Análisis web (Umami)",
+        "text": "Para el análisis estadístico del uso del sitio utilizamos el software de análisis sin cookies Umami, que operamos en nuestro propio servidor (praxis-analytics.jonne-schwegmann.com). Umami recopila datos de uso anonimizados (p. ej. páginas visitadas, origen aproximado, tipo de dispositivo) y prescinde de cookies y del seguimiento entre sitios. No es posible identificar a visitantes individuales ni se transmiten datos a terceros. La base jurídica es el art. 6, apdo. 1, letra f del RGPD (interés legítimo en una medición de audiencia respetuosa con los datos)."
+      },
+      "terminbuchung": {
+        "titel": "Reserva de citas en línea (HeyDent)",
+        "text": "En nuestra página de citas integramos el sistema de reserva de citas en línea HeyDent como iframe. Al cargar la página de citas se establece una conexión con los servidores del proveedor, transmitiéndose datos técnicamente necesarios (incluida su dirección IP). Si solicita una cita a través del widget, los datos que introduzca (p. ej. nombre, datos de contacto, fecha deseada) se tratan con el fin de concertar la cita. La base jurídica es el art. 6, apdo. 1, letras b y f del RGPD."
       }
     },
     "rechte": {

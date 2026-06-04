@@ -97,7 +97,7 @@ export default async function ParodontologieSeite({ params }: { params: Promise<
         </div>
       </section>
 
-      <CTABanner titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
+      <CTABanner locale={locale} titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
     </>
   );
 }

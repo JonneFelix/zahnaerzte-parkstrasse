@@ -8,12 +8,14 @@ export default function CTABanner({
   text = "Vereinbaren Sie Ihren Termin — online, telefonisch oder per E-Mail.",
   ctaText = "TERMIN VEREINBAREN",
   ctaHref = "/termin",
+  locale = "de",
 }: {
   titel?: string;
   titelAkzent?: string;
   text?: string;
   ctaText?: string;
   ctaHref?: string;
+  locale?: string;
 }) {
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
@@ -48,7 +50,7 @@ export default function CTABanner({
           {text}
         </p>
         <Link
-          href={ctaHref}
+          href={ctaHref.startsWith("http") ? ctaHref : `/${locale}${ctaHref}`}
           className="cta-schimmer group inline-flex items-center gap-3 mt-8 px-10 py-4 text-sm tracking-wider transition-all duration-500"
           style={{
             fontWeight: 600,

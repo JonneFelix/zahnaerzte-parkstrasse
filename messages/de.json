@@ -846,7 +846,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können jedoch Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Weitere Tracking-Cookies oder Analyse-Tools werden nicht eingesetzt."
+        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können — erst nach Ihrer ausdrücklichen Zustimmung — Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Zur Reichweitenmessung nutzen wir Umami, das ohne Cookies und ohne websiteübergreifendes Tracking arbeitet (siehe Abschnitt 'Webanalyse')."
       }
     },
     "externeDienste": {
@@ -858,6 +858,14 @@
       "maps": {
         "titel": "Google Maps",
         "text": "Auf unserer Kontaktseite wird Google Maps als Karteneinbettung genutzt. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf der Kontaktseite wird eine Verbindung zu den Servern von Google hergestellt, wodurch unter anderem Ihre IP-Adresse an Google übermittelt wird. Google kann hierbei Cookies setzen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer ansprechenden Darstellung unserer Anfahrtsbeschreibung). Weitere Informationen finden Sie in der Datenschutzerklärung von Google."
+      },
+      "analytics": {
+        "titel": "Webanalyse (Umami)",
+        "text": "Zur statistischen Auswertung der Websitenutzung setzen wir die cookiefreie Analyse-Software Umami ein, die wir selbst auf einem Server betreiben (praxis-analytics.jonne-schwegmann.com). Umami erhebt anonymisierte Nutzungsdaten (z.B. aufgerufene Seiten, ungefähre Herkunft, Gerätetyp) und verzichtet auf Cookies sowie auf ein websiteübergreifendes Tracking. Eine Identifizierung einzelner Besucher ist nicht möglich, es werden keine Daten an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer datensparsamen Reichweitenmessung)."
+      },
+      "terminbuchung": {
+        "titel": "Online-Terminbuchung (HeyDent)",
+        "text": "Auf unserer Terminseite binden wir das Online-Terminbuchungssystem HeyDent als iframe ein. Beim Aufruf der Terminseite wird eine Verbindung zu den Servern des Anbieters hergestellt, wobei technisch notwendige Daten (u.a. Ihre IP-Adresse) übertragen werden. Wenn Sie über das Widget einen Termin anfragen, werden die von Ihnen eingegebenen Daten (z.B. Name, Kontaktdaten, Wunschtermin) zum Zweck der Terminvereinbarung verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung des Behandlungsverhältnisses) sowie Art. 6 Abs. 1 lit. f DSGVO."
       }
     },
     "rechte": {

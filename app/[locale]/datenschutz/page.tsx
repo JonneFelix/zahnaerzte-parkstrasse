@@ -32,6 +32,8 @@ export default async function DatenschutzSeite({ params }: { params: Promise<{ l
   const externeDienste = t.externeDienste as Record<string, unknown>;
   const fonts = externeDienste.fonts as Record<string, string>;
   const maps = externeDienste.maps as Record<string, string>;
+  const analytics = externeDienste.analytics as Record<string, string>;
+  const terminbuchung = externeDienste.terminbuchung as Record<string, string>;
   const rechte = t.rechte as Record<string, unknown>;
   const rechteItems = rechte.items as Record<string, string>;
   const beschwerde = t.beschwerde as Record<string, string>;
@@ -102,6 +104,12 @@ export default async function DatenschutzSeite({ params }: { params: Promise<{ l
                   Datenschutzerklärung von Google
                 </a>.
               </p>
+
+              <h3 className="text-base font-semibold mb-2 mt-4" style={h3Style}>{analytics.titel}</h3>
+              <p className="text-sm leading-relaxed mb-4" style={textStyle}>{analytics.text}</p>
+
+              <h3 className="text-base font-semibold mb-2" style={h3Style}>{terminbuchung.titel}</h3>
+              <p className="text-sm leading-relaxed" style={textStyle}>{terminbuchung.text}</p>
             </div>
 
             {/* 7. Ihre Rechte */}

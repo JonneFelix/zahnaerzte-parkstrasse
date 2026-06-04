@@ -6,6 +6,7 @@ datum: "2026-03-23"
 autor: "Dr. Claudia Schwegmann"
 bild: "/images/implantate.jpg"
 pillar: "/leistungen/implantate"
+translationKey: "implantate-kosten-hamburg"
 tags: ["implantate", "kosten", "hamburg"]
 ---
 

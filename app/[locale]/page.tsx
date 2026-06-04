@@ -351,7 +351,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
 
           <MobileKarussell itemBreite="w-[75vw]" desktopCols={3}>
             {leistungen.map((l, i) => (
-              <Link key={l.titel} href={l.href} className={`karte-hover relative group block h-full anim-einblenden d${i + 2}`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
+              <Link key={l.titel} href={`/${locale}${l.href}`} className={`karte-hover relative group block h-full anim-einblenden d${i + 2}`} style={{ background: "rgba(255, 255, 255, 0.72)", backdropFilter: "blur(8px)", borderRadius: "22px", border: "1px solid rgba(105, 123, 123, 0.07)", overflow: "hidden" }}>
                 <div className="relative h-44 overflow-hidden">
                   <Image src={l.bild} alt={l.titel} fill className="object-cover transition-transform duration-700 group-hover:scale-105" style={{ filter: "saturate(0.88) brightness(1.02)" }} />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, rgba(255,255,255,0.92))" }} />

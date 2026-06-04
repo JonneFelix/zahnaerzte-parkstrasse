@@ -96,7 +96,7 @@ export default async function WissenswertesSeite({ params }: { params: Promise<{
                   {a.kurz}
                 </p>
                 <Link
-                  href={a.leistung}
+                  href={`/${locale}${a.leistung}`}
                   className="inline-flex items-center gap-1.5 text-sm transition-colors duration-300 hover:text-[#e3541a]"
                   style={{ color: "#F26522", fontWeight: 500 }}
                 >
@@ -161,7 +161,7 @@ export default async function WissenswertesSeite({ params }: { params: Promise<{
         </div>
       </section>
 
-      <CTABanner
+      <CTABanner locale={locale}
         titel={cta.titel}
         titelAkzent={cta.titelAkzent}
         text={cta.text}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { type Locale } from "../../../../lib/i18n";
 import { createMetadata } from "../../../../lib/metadata";
-import { getArtikel, getAlleSlugs, getAlleArtikel } from "../../../../lib/zahnwissen";
+import { getArtikel, getAlleSlugs, getAlleArtikel, getArtikelAlternates } from "../../../../lib/zahnwissen";
 import SeiteHero from "../../../components/SeiteHero";
 import CTABanner from "../../../components/CTABanner";
 
@@ -21,10 +21,16 @@ export async function generateMetadata({
 
   if (!artikel) return { title: "Artikel nicht gefunden" };
 
-  return createMetadata(locale, `zahnwissen/${slug}`, {
-    title: artikel.titel,
-    description: artikel.beschreibung,
-  });
+  const alternateSlugs = getArtikelAlternates(artikel.translationKey);
+  const alternatePaths = Object.fromEntries(
+    Object.entries(alternateSlugs).map(([loc, s]) => [loc, `zahnwissen/${s}`])
+  );
+  return createMetadata(
+    locale,
+    `zahnwissen/${slug}`,
+    { title: artikel.titel, description: artikel.beschreibung },
+    { alternatePaths, image: artikel.bild }
+  );
 }
 
 /* Einfacher Markdown→HTML Renderer (ohne externe Lib) */
@@ -167,7 +173,7 @@ export default async function ArtikelSeite({
         </div>
       </section>
 
-      <CTABanner />
+      <CTABanner locale={locale} />
     </>
   );
 }

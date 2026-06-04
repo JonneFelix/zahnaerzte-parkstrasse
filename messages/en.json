@@ -846,7 +846,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "This website itself does not set its own cookies. However, through the integration of Google Maps on our contact page, cookies from Google may be set (see section 'Google Maps'). No further tracking cookies or analytics tools are used."
+        "text": "This website itself does not set its own cookies. Through the embedding of Google Maps on our contact page, cookies from Google may be set — only after your explicit consent (see section 'Google Maps'). For reach measurement we use Umami, which works without cookies and without cross-site tracking (see section 'Web analytics')."
       }
     },
     "externeDienste": {
@@ -858,6 +858,14 @@
       "maps": {
         "titel": "Google Maps",
         "text": "On our contact page Google Maps is used as an embedded map. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When you access the contact page, a connection to Google's servers is established, whereby your IP address, among other things, is transmitted to Google. Google may set cookies. The legal basis is Art. 6 para. 1 lit. f GDPR (legitimate interest in an appealing presentation of our directions). Further information can be found in Google's privacy policy."
+      },
+      "analytics": {
+        "titel": "Web analytics (Umami)",
+        "text": "For the statistical analysis of website usage we use the cookieless analytics software Umami, which we operate on our own server (praxis-analytics.jonne-schwegmann.com). Umami collects anonymised usage data (e.g. pages visited, approximate origin, device type) and dispenses with cookies and cross-site tracking. Identification of individual visitors is not possible, and no data is passed on to third parties. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in privacy-friendly reach measurement)."
+      },
+      "terminbuchung": {
+        "titel": "Online appointment booking (HeyDent)",
+        "text": "On our appointment page we embed the online appointment booking system HeyDent as an iframe. When the appointment page is loaded, a connection to the provider's servers is established, transmitting technically necessary data (including your IP address). If you request an appointment via the widget, the data you enter (e.g. name, contact details, preferred date) is processed for the purpose of arranging the appointment. The legal basis is Art. 6(1)(b) GDPR (initiation of the treatment relationship) and Art. 6(1)(f) GDPR."
       }
     },
     "rechte": {

@@ -135,7 +135,7 @@ export default async function InnovationenSeite({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      <CTABanner />
+      <CTABanner locale={locale} />
     </>
   );
 }

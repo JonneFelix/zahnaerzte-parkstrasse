@@ -79,7 +79,7 @@ export default async function LeistungenSeite({ params }: { params: Promise<{ lo
             {leistungen.map((l, i) => (
               <Link
                 key={l.titel}
-                href={l.href}
+                href={`/${locale}${l.href}`}
                 className={`karte-hover relative group block anim-einblenden d${Math.min(i + 2, 8)}`}
                 style={{
                   background: "rgba(255, 255, 255, 0.72)",
@@ -231,7 +231,7 @@ export default async function LeistungenSeite({ params }: { params: Promise<{ lo
         </div>
       </section>
 
-      <CTABanner
+      <CTABanner locale={locale}
         titel={cta.titel}
         titelAkzent={cta.titelAkzent}
         text={cta.text}

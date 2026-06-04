@@ -112,7 +112,7 @@ export default async function WurzelbehandlungSeite({ params }: { params: Promis
         </div>
       </section>
 
-      <CTABanner titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
+      <CTABanner locale={locale} titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
     </>
   );
 }

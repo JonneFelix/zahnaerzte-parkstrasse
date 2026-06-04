@@ -14,6 +14,7 @@ export interface ZahnwissenArtikel {
   autor: string;
   bild?: string;
   pillar?: string;
+  translationKey?: string;
   tags: string[];
   locale: string;
   inhalt: string;
@@ -42,6 +43,7 @@ export function getAlleArtikel(locale: Locale): ZahnwissenArtikel[] {
         autor: data.autor || data.author || "Dr. Claudia Schwegmann",
         bild: data.bild || data.image || undefined,
         pillar: data.pillar || undefined,
+        translationKey: data.translationKey || undefined,
         tags: data.tags || [],
         locale,
         inhalt: content,
@@ -68,6 +70,7 @@ export function getArtikel(slug: string, locale: Locale): ZahnwissenArtikel | nu
     autor: data.autor || data.author || "Dr. Claudia Schwegmann",
     bild: data.bild || data.image || undefined,
     pillar: data.pillar || undefined,
+    translationKey: data.translationKey || undefined,
     tags: data.tags || [],
     locale,
     inhalt: content,
@@ -97,4 +100,15 @@ export function getAlleTags(locale: Locale): string[] {
   const tags = new Set<string>();
   artikel.forEach((a) => a.tags.forEach((t) => tags.add(t)));
   return Array.from(tags).sort();
+}
+
+/* Alternate-Slugs eines Artikels über alle Sprachen (für hreflang + Sprachwechsel) */
+export function getArtikelAlternates(translationKey?: string): Record<string, string> {
+  const result: Record<string, string> = {};
+  if (!translationKey) return result;
+  for (const loc of ["de", "en", "fr", "es"] as Locale[]) {
+    const match = getAlleArtikel(loc).find((a) => a.translationKey === translationKey);
+    if (match) result[loc] = match.slug;
+  }
+  return result;
 }

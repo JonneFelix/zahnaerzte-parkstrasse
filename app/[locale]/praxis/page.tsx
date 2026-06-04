@@ -279,7 +279,7 @@ export default async function PraxisSeite({ params }: { params: Promise<{ locale
         </div>
       </section>
 
-      <CTABanner
+      <CTABanner locale={locale}
         titel={cta.titel}
         titelAkzent={cta.titelAkzent}
         text={cta.text}

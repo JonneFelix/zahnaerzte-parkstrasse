@@ -89,7 +89,7 @@ export default async function OralchirurgieSeite({ params }: { params: Promise<{
                 </p>
                 {b.link && (
                   <Link
-                    href={b.link}
+                    href={`/${locale}${b.link}`}
                     className="inline-flex items-center gap-1.5 mt-3 text-sm transition-colors duration-300 hover:text-[#e3541a]"
                     style={{ color: "#F26522", fontWeight: 500 }}
                   >
@@ -173,7 +173,7 @@ export default async function OralchirurgieSeite({ params }: { params: Promise<{
         </div>
       </section>
 
-      <CTABanner titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
+      <CTABanner locale={locale} titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
     </>
   );
 }

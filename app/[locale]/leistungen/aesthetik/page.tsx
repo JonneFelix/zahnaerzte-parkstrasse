@@ -82,7 +82,7 @@ export default async function AesthetikSeite({ params }: { params: Promise<{ loc
         </div>
       </section>
 
-      <CTABanner titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
+      <CTABanner locale={locale} titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
     </>
   );
 }

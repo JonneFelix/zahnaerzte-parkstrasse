@@ -339,7 +339,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
         </div>
       </section>
 
-      <CTABanner
+      <CTABanner locale={locale}
         titel={cta.titel}
         titelAkzent={cta.titelAkzent}
         text={cta.text}

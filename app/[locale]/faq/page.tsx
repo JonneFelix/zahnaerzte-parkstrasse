@@ -111,7 +111,7 @@ export default async function FAQSeite({ params }: { params: Promise<{ locale: s
                   </p>
                   {f.link && (
                     <Link
-                      href={f.link}
+                      href={`/${locale}${f.link}`}
                       className="inline-flex items-center gap-1.5 mt-3 text-sm transition-colors duration-300 hover:text-[#e3541a]"
                       style={{ color: "#F26522", fontWeight: 500 }}
                     >
@@ -134,7 +134,7 @@ export default async function FAQSeite({ params }: { params: Promise<{ locale: s
         </section>
       ))}
 
-      <CTABanner
+      <CTABanner locale={locale}
         titel={cta.titel}
         titelAkzent={cta.titelAkzent}
         text={cta.text}

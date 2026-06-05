@@ -823,7 +823,7 @@
     },
     "hosting": {
       "titel": "3. Hébergement",
-      "text": "Ce site web est hébergé sur un serveur en Allemagne. Lorsque vous visitez notre site web, le serveur web collecte automatiquement des données d'accès techniques (voir la section 'Fichiers journaux du serveur'). Le traitement est basé sur notre intérêt légitime à une mise à disposition efficace et sécurisée de notre site web (art. 6 par. 1 let. f RGPD)."
+      "text": "Ce site web est hébergé sur un serveur en Allemagne. Lorsque vous visitez notre site web, le serveur web collecte automatiquement des données d'accès techniques (voir la section 'Fichiers journaux du serveur'). Le traitement est basé sur notre intérêt légitime à une mise à disposition efficace et sécurisée de notre site web (art. 6 par. 1 let. f RGPD). L'hébergeur est Andre Hotzler EDV-Dienstleistungen (server6.andrehotzler.de), qui traite les données exclusivement pour notre compte et selon nos instructions."
     },
     "ssl": {
       "titel": "4. Chiffrement SSL/TLS",
@@ -846,7 +846,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Ce site web ne dépose pas ses propres cookies. Par l'intégration de Google Maps sur notre page de contact, des cookies de Google peuvent être déposés — uniquement après votre consentement explicite (voir la section 'Google Maps'). Pour la mesure d'audience, nous utilisons Umami, qui fonctionne sans cookies et sans suivi inter-sites (voir la section 'Analyse web')."
+        "text": "Ce site web ne dépose pas ses propres cookies. Par l'intégration de Google Maps sur notre page de contact, des cookies de Google peuvent être déposés — uniquement après votre consentement explicite (voir la section 'Google Maps'). Pour la mesure d'audience, nous utilisons Umami, qui fonctionne sans cookies et sans suivi inter-sites (voir la section 'Analyse web'). Pour des raisons techniques, nous enregistrons uniquement votre choix de cookies et votre langue localement dans votre navigateur (localStorage) ; ces informations servent exclusivement au fonctionnement du site et ne sont pas transmises à des tiers."
       }
     },
     "externeDienste": {
@@ -861,7 +861,7 @@
       },
       "analytics": {
         "titel": "Analyse web (Umami)",
-        "text": "Pour l'analyse statistique de l'utilisation du site, nous utilisons le logiciel d'analyse sans cookies Umami, que nous exploitons sur notre propre serveur (praxis-analytics.jonne-schwegmann.com). Umami collecte des données d'utilisation anonymisées (p. ex. pages consultées, origine approximative, type d'appareil) et renonce aux cookies ainsi qu'au suivi inter-sites. L'identification de visiteurs individuels n'est pas possible et aucune donnée n'est transmise à des tiers. La base juridique est l'art. 6, par. 1, point f du RGPD (intérêt légitime à une mesure d'audience respectueuse des données)."
+        "text": "Pour l'analyse statistique de l'utilisation du site, nous utilisons le logiciel d'analyse sans cookies Umami, que nous exploitons sur notre propre serveur (praxis-analytics.jonne-schwegmann.com). Umami collecte des données d'utilisation anonymisées (p. ex. pages consultées, origine approximative, type d'appareil) et renonce aux cookies ainsi qu'au suivi inter-sites. L'identification de visiteurs individuels n'est pas possible et aucune donnée n'est transmise à des tiers. La base juridique est l'art. 6, par. 1, point f du RGPD (intérêt légitime à une mesure d'audience respectueuse des données). Vous pouvez vous opposer à tout moment, avec effet pour l'avenir, à cette mesure d'audience anonyme (art. 21 RGPD) ; un simple message à info@zahnarzt-othmarschen.de suffit."
       },
       "terminbuchung": {
         "titel": "Prise de rendez-vous en ligne (HeyDent)",

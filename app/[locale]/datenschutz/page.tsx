@@ -101,8 +101,8 @@ export default async function DatenschutzSeite({ params }: { params: Promise<{ l
               <p className="text-sm leading-relaxed" style={textStyle}>
                 {maps.text}{" "}
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#697B7B" }}>
-                  Datenschutzerklärung von Google
-                </a>.
+                  policies.google.com/privacy
+                </a>
               </p>
 
               <h3 className="text-base font-semibold mb-2 mt-4" style={h3Style}>{analytics.titel}</h3>

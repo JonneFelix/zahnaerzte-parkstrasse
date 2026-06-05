@@ -3,6 +3,7 @@ import Image from "next/image";
 import OrganischerTrenner from "./OrganischerTrenner";
 import BaumDekor from "./BaumDekor";
 import { type Locale } from "../../lib/i18n";
+import CookieResetLink from "./CookieResetLink";
 
 function l(href: string, locale: Locale) {
   return `/${locale}${href}`;
@@ -234,6 +235,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
             >
               Datenschutz
             </Link>
+            <CookieResetLink locale={locale} />
           </div>
         </div>
       </div>

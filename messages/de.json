@@ -823,7 +823,7 @@
     },
     "hosting": {
       "titel": "3. Hosting",
-      "text": "Diese Website wird auf einem Server in Deutschland gehostet. Wenn Sie unsere Website besuchen, erfasst der Webserver automatisch technische Zugriffsdaten (siehe Abschnitt 'Server-Log-Dateien'). Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer effizienten und sicheren Bereitstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO)."
+      "text": "Diese Website wird auf einem Server in Deutschland gehostet. Wenn Sie unsere Website besuchen, erfasst der Webserver automatisch technische Zugriffsdaten (siehe Abschnitt 'Server-Log-Dateien'). Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer effizienten und sicheren Bereitstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO). Hosting-Anbieter ist die Andre Hotzler EDV-Dienstleistungen (server6.andrehotzler.de), die die Daten ausschließlich weisungsgebunden in unserem Auftrag verarbeitet."
     },
     "ssl": {
       "titel": "4. SSL- bzw. TLS-Verschlüsselung",
@@ -846,7 +846,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können — erst nach Ihrer ausdrücklichen Zustimmung — Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Zur Reichweitenmessung nutzen wir Umami, das ohne Cookies und ohne websiteübergreifendes Tracking arbeitet (siehe Abschnitt 'Webanalyse')."
+        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können — erst nach Ihrer ausdrücklichen Zustimmung — Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Zur Reichweitenmessung nutzen wir Umami, das ohne Cookies und ohne websiteübergreifendes Tracking arbeitet (siehe Abschnitt 'Webanalyse'). Technisch notwendig speichern wir lediglich Ihre Cookie-Auswahl sowie Ihre Sprachwahl lokal in Ihrem Browser (localStorage); diese Angaben dienen ausschließlich der Funktion der Website und werden nicht an Dritte übermittelt."
       }
     },
     "externeDienste": {
@@ -861,7 +861,7 @@
       },
       "analytics": {
         "titel": "Webanalyse (Umami)",
-        "text": "Zur statistischen Auswertung der Websitenutzung setzen wir die cookiefreie Analyse-Software Umami ein, die wir selbst auf einem Server betreiben (praxis-analytics.jonne-schwegmann.com). Umami erhebt anonymisierte Nutzungsdaten (z.B. aufgerufene Seiten, ungefähre Herkunft, Gerätetyp) und verzichtet auf Cookies sowie auf ein websiteübergreifendes Tracking. Eine Identifizierung einzelner Besucher ist nicht möglich, es werden keine Daten an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer datensparsamen Reichweitenmessung)."
+        "text": "Zur statistischen Auswertung der Websitenutzung setzen wir die cookiefreie Analyse-Software Umami ein, die wir selbst auf einem Server betreiben (praxis-analytics.jonne-schwegmann.com). Umami erhebt anonymisierte Nutzungsdaten (z.B. aufgerufene Seiten, ungefähre Herkunft, Gerätetyp) und verzichtet auf Cookies sowie auf ein websiteübergreifendes Tracking. Eine Identifizierung einzelner Besucher ist nicht möglich, es werden keine Daten an Dritte weitergegeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer datensparsamen Reichweitenmessung). Sie können dieser anonymen Reichweitenmessung jederzeit mit Wirkung für die Zukunft widersprechen (Art. 21 DSGVO) — eine formlose Nachricht an info@zahnarzt-othmarschen.de genügt."
       },
       "terminbuchung": {
         "titel": "Online-Terminbuchung (HeyDent)",

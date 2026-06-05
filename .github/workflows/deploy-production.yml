@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Repository auschecken
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Bun installieren
         uses: oven-sh/setup-bun@v2

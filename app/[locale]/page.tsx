@@ -5,6 +5,7 @@ import BaumDekor from "../components/BaumDekor";
 import OrganischerTrenner from "../components/OrganischerTrenner";
 import SektionsHeader from "../components/SektionsHeader";
 import MobileKarussell from "../components/MobileKarussell";
+import Bauhinweis from "../components/Bauhinweis";
 import { getDictionary, type Locale } from "../../lib/i18n";
 import { createMetadata } from "../../lib/metadata";
 
@@ -259,6 +260,13 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
         </div>
 
         <OrganischerTrenner className="absolute bottom-0 left-0 w-full h-16" style={{ color: "#f4f1ec" }} />
+      </section>
+
+      {/* Temporärer Anfahrts-Hinweis (Bauarbeiten) — siehe app/components/Bauhinweis.tsx */}
+      <section className="px-6 lg:px-10 pt-10" style={{ background: "#f4f1ec" }}>
+        <div className="max-w-5xl mx-auto">
+          <Bauhinweis locale={locale} />
+        </div>
       </section>
 
       {/* ============================================================

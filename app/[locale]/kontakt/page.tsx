@@ -4,6 +4,7 @@ import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
 import GoogleMap from "../../components/GoogleMap";
+import Bauhinweis from "../../components/Bauhinweis";
 import { getDictionary, type Locale } from "../../../lib/i18n";
 import { createMetadata } from "../../../lib/metadata";
 
@@ -90,6 +91,10 @@ export default async function KontaktSeite({ params }: { params: Promise<{ local
       <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: "#f0ede8" }}>
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
           <SektionsHeader label={anfahrt.label as string} titel={anfahrt.titel as string} titelAkzent={anfahrt.titelAkzent as string} />
+
+          <div className="mb-8">
+            <Bauhinweis locale={locale} />
+          </div>
 
           <div className="grid lg:grid-cols-2 gap-10">
             {/* Karte */}

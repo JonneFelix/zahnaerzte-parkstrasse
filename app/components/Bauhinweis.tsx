@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 /**
  * Temporärer Anfahrts-/Bauarbeiten-Hinweis.
  *
@@ -10,11 +12,12 @@
  * Erscheint automatisch an beiden Stellen: Startseite (unter dem Hero)
  * UND Kontaktseite (Anfahrts-Bereich).
  *
- * Idee: Da die Auto-Zufahrt gesperrt ist, navigiert man in ZWEI Schritten —
- *   1) mit dem Auto zum Parken an den Klein Flottbeker Weg,
- *   2) von dort zu Fuß zur Praxis (Parkstraße 10).
- * Karten-Apps können "fahren + laufen" nicht in einem Link kombinieren,
- * darum zwei getrennte Routen-Links (je Apple + Google).
+ * Situation: Parken geht wie gewohnt DIREKT an der Praxis (Parkstraße 10).
+ * Nur die ANFAHRT ist eingeschränkt — derzeit nur über Klein Flottbeker Weg
+ * ODER Grottenstraße (eine der zwei üblichen Zufahrten ist gesperrt).
+ * Darum: Buttons = Route direkt zur Praxis (Apple + Google), Telefon-Link.
+ * Die Karten-App wählt die Route selbst — die zwei offenen Straßen stehen
+ * im Text (eine Route über eine bestimmte Straße lässt sich nicht erzwingen).
  *
  * BEIM BAUENDE ZWEI STELLEN ZURÜCKSETZEN:
  *   1) Hier HINWEIS_AKTIV = false.
@@ -22,56 +25,45 @@
  *      Original-Text (de: "Parkplätze direkt in der Straße vorhanden. Anfahrt
  *      über Waitzstraße oder Reventlowstraße." — analog en/fr/es).
  *
- * Text/Straße ändern: `texte` + STRASSE + die Karten-Links (KFW_ENC / ADRESSE_ENC)
- * unten anpassen. Deutsche Texte mit echten Umlauten.
+ * Straßen/Text ändern: STRASSEN + `texte` unten. Deutsche Texte mit echten Umlauten.
  */
 const HINWEIS_AKTIV = true;
 
-// Straße, über die geparkt wird — muss exakt einmal in jedem `satz` vorkommen (wird hervorgehoben)
-const STRASSE = "Klein Flottbeker Weg";
+// Straßen, über die die Anfahrt derzeit möglich ist — werden im Text hervorgehoben
+const STRASSEN = ["Klein Flottbeker Weg", "Grottenstraße"];
 
-// Ziele als URL-kodierte Strings (KEINE Koordinaten — iOS-Snapping-Regression)
-const KFW_ENC = "Klein%20Flottbeker%20Weg%2C%20Hamburg"; // Park-Stelle
-const ADRESSE_ENC = "Parkstra%C3%9Fe%2010%2C%2022605%20Hamburg"; // Praxis "Parkstraße 10, 22605 Hamburg"
-
-// Schritt 1 — mit dem Auto zum Parken am Klein Flottbeker Weg
-const AUTO_GOOGLE = `https://www.google.com/maps/dir/?api=1&destination=${KFW_ENC}&travelmode=driving`;
-const AUTO_APPLE = `https://maps.apple.com/?daddr=${KFW_ENC}&dirflg=d`;
-// Schritt 2 — zu Fuß zur Praxis (Ziel: Parkstraße 10), Start = aktueller Standort am Parkplatz
-const FUSS_GOOGLE = `https://www.google.com/maps/dir/?api=1&destination=${ADRESSE_ENC}&travelmode=walking`;
-const FUSS_APPLE = `https://maps.apple.com/?daddr=${ADRESSE_ENC}&dirflg=w`;
+// Routen-Ziel = Praxis-Adresse als URL-kodierter String (KEINE Koordinaten)
+const ADRESSE_ENC = "Parkstra%C3%9Fe%2010%2C%2022605%20Hamburg"; // "Parkstraße 10, 22605 Hamburg"
+const ROUTE_GOOGLE = `https://www.google.com/maps/dir/?api=1&destination=${ADRESSE_ENC}&travelmode=driving`;
+const ROUTE_APPLE = `https://maps.apple.com/?daddr=${ADRESSE_ENC}&dirflg=d`;
 // Telefon — E.164 ohne Leerzeichen (aus "040 880 21 50"); am echten Handy gegenprüfen
 const TELEFON_TEL = "tel:+49408802150";
 const TELEFON_TEXT = "040 880 21 50";
 
-type Texte = { titel: string; satz: string; autoSchritt: string; fussSchritt: string; hilfssatz: string };
+type Texte = { titel: string; satz: string; routenLabel: string; hilfssatz: string };
 const texte: Record<string, Texte> = {
   de: {
     titel: "Hinweis zur Anfahrt",
-    satz: "Wegen Bauarbeiten auf der Parkstraße ist die direkte Zufahrt zur Praxis derzeit gesperrt. Parken Sie bitte kostenfrei in einer der umliegenden Straßen — gut geeignet ist der Klein Flottbeker Weg — und kommen Sie die letzten Minuten zu Fuß zur Parkstraße 10. Mit Bus und S-Bahn erreichen Sie uns wie gewohnt.",
-    autoSchritt: "Mit dem Auto zum Parken am Klein Flottbeker Weg",
-    fussSchritt: "Von dort zu Fuß zur Praxis (Parkstraße 10)",
+    satz: "Wegen Bauarbeiten ist die Anfahrt zur Praxis derzeit nur über den Klein Flottbeker Weg oder die Grottenstraße möglich — die andere übliche Zufahrt ist gesperrt. Parken können Sie wie gewohnt direkt an der Praxis (Parkstraße 10).",
+    routenLabel: "Route zur Praxis:",
     hilfssatz: "Unsicher beim Weg? Rufen Sie uns gern an:",
   },
   en: {
     titel: "How to reach us",
-    satz: "Due to construction work on Parkstraße, direct access to the practice is currently closed. Please park free of charge in one of the surrounding streets — Klein Flottbeker Weg works well — and walk the last few minutes to Parkstraße 10. By bus and train you can reach us as usual.",
-    autoSchritt: "By car to parking on Klein Flottbeker Weg",
-    fussSchritt: "Then on foot to the practice (Parkstraße 10)",
+    satz: "Due to construction work, the practice can currently only be reached via Klein Flottbeker Weg or Grottenstraße — the other usual approach is closed. You can park as usual directly at the practice (Parkstraße 10).",
+    routenLabel: "Directions to the practice:",
     hilfssatz: "Unsure of the way? Just give us a call:",
   },
   fr: {
     titel: "Comment nous rejoindre",
-    satz: "En raison de travaux sur la Parkstraße, l'accès direct au cabinet est actuellement fermé. Garez-vous gratuitement dans l'une des rues voisines — le Klein Flottbeker Weg convient bien — puis rejoignez la Parkstraße 10 à pied en quelques minutes. En bus et en train, vous nous rejoignez comme d'habitude.",
-    autoSchritt: "En voiture jusqu'au stationnement (Klein Flottbeker Weg)",
-    fussSchritt: "Puis à pied jusqu'au cabinet (Parkstraße 10)",
+    satz: "En raison de travaux, le cabinet n'est actuellement accessible que par le Klein Flottbeker Weg ou la Grottenstraße — l'autre accès habituel est fermé. Vous pouvez vous garer comme d'habitude directement au cabinet (Parkstraße 10).",
+    routenLabel: "Itinéraire vers le cabinet :",
     hilfssatz: "Un doute sur le chemin ? Appelez-nous :",
   },
   es: {
     titel: "Cómo llegar",
-    satz: "Debido a obras en la Parkstraße, el acceso directo a la clínica está cerrado actualmente. Aparque gratis en una de las calles cercanas — el Klein Flottbeker Weg es una buena opción — y llegue a pie en pocos minutos a Parkstraße 10. En autobús y en tren puede llegar como de costumbre.",
-    autoSchritt: "En coche hasta el aparcamiento (Klein Flottbeker Weg)",
-    fussSchritt: "Luego a pie hasta la clínica (Parkstraße 10)",
+    satz: "Debido a obras, actualmente solo se puede llegar a la clínica por el Klein Flottbeker Weg o la Grottenstraße — el otro acceso habitual está cerrado. Puede aparcar como de costumbre directamente en la clínica (Parkstraße 10).",
+    routenLabel: "Cómo llegar a la clínica:",
     hilfssatz: "¿Dudas sobre el camino? Llámenos:",
   },
 };
@@ -84,44 +76,40 @@ const appLabel: Record<string, App> = {
   es: { google: "Google Maps", apple: "Apple Maps" },
 };
 
-const pillStil = {
+// Gefüllte Route-Pille (#BC4015 = AA-tauglicher Kontrast für weißen Text)
+const fuellStil = {
   display: "inline-flex",
   alignItems: "center",
-  gap: "7px",
-  minHeight: "44px",
-  padding: "0 16px",
-  background: "transparent",
-  color: "#7A3000",
+  gap: "8px",
+  minHeight: "48px",
+  padding: "0 20px",
+  background: "#BC4015",
+  color: "#fff",
   fontWeight: 600,
-  fontSize: "14px",
-  border: "1.5px solid rgba(188,64,21,0.45)",
+  fontSize: "15px",
   borderRadius: "9999px",
   textDecoration: "none",
 } as const;
 
 function PinIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#7A3000" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
       <circle cx="12" cy="10" r="3" />
     </svg>
   );
 }
 
-function StepNum({ n }: { n: number }) {
-  return (
-    <span style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "22px", height: "22px", borderRadius: "9999px", background: "#BC4015", color: "#fff", fontSize: "12px", fontWeight: 700, flexShrink: 0 }}>
-      {n}
-    </span>
-  );
-}
-
-function MapPill({ href, label }: { href: string; label: string }) {
-  return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-[1.02]" style={pillStil}>
-      <PinIcon />
-      {label}
-    </a>
+// Hebt die Anfahrtsstraßen im Fließtext fett hervor
+function highlight(text: string, phrases: string[]) {
+  if (!phrases.length) return text;
+  const re = new RegExp(`(${phrases.join("|")})`, "g");
+  return text.split(re).map((part, i) =>
+    phrases.includes(part) ? (
+      <strong key={i} style={{ fontWeight: 700, color: "#7A3000" }}>{part}</strong>
+    ) : (
+      <Fragment key={i}>{part}</Fragment>
+    )
   );
 }
 
@@ -129,7 +117,6 @@ export default function Bauhinweis({ locale = "de" }: { locale?: string }) {
   if (!HINWEIS_AKTIV) return null;
   const t = texte[locale] || texte.de;
   const app = appLabel[locale] || appLabel.de;
-  const [vor, nach] = t.satz.split(STRASSE);
 
   return (
     <div
@@ -164,34 +151,20 @@ export default function Bauhinweis({ locale = "de" }: { locale?: string }) {
         </h3>
 
         <p style={{ color: "#2d3a3a", fontWeight: 400, fontSize: "15px", lineHeight: 1.6, margin: 0 }}>
-          {vor}
-          <strong style={{ fontWeight: 700, color: "#7A3000" }}>{STRASSE}</strong>
-          {nach || ""}
+          {highlight(t.satz, STRASSEN)}
         </p>
 
-        {/* Zwei-Schritte-Navigation */}
-        <div style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "14px" }}>
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-              <StepNum n={1} />
-              <span style={{ fontWeight: 600, fontSize: "14px", color: "#2d3a3a" }}>{t.autoSchritt}</span>
-            </div>
-            <div className="flex flex-wrap gap-2" style={{ paddingLeft: "30px" }}>
-              <MapPill href={AUTO_APPLE} label={app.apple} />
-              <MapPill href={AUTO_GOOGLE} label={app.google} />
-            </div>
-          </div>
-
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-              <StepNum n={2} />
-              <span style={{ fontWeight: 600, fontSize: "14px", color: "#2d3a3a" }}>{t.fussSchritt}</span>
-            </div>
-            <div className="flex flex-wrap gap-2" style={{ paddingLeft: "30px" }}>
-              <MapPill href={FUSS_APPLE} label={app.apple} />
-              <MapPill href={FUSS_GOOGLE} label={app.google} />
-            </div>
-          </div>
+        {/* Route direkt zur Praxis */}
+        <p style={{ color: "#6a7a7a", fontSize: "13px", fontWeight: 500, margin: "16px 0 8px" }}>{t.routenLabel}</p>
+        <div className="flex flex-wrap gap-3">
+          <a href={ROUTE_APPLE} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-[1.02]" style={fuellStil}>
+            <PinIcon />
+            {app.apple}
+          </a>
+          <a href={ROUTE_GOOGLE} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-[1.02]" style={fuellStil}>
+            <PinIcon />
+            {app.google}
+          </a>
         </div>
 
         <p style={{ color: "#6a7a7a", fontSize: "13px", fontWeight: 300, margin: "14px 0 0" }}>

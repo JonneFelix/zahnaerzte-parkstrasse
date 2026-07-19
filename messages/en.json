@@ -396,7 +396,10 @@
       "titel": "Your preferred appointment",
       "titelAkzent": "in just a few clicks",
       "platzhalter": "Online booking will be activated shortly.",
-      "bissDahin": "In the meantime you can reach us by phone at {telefon} or by email."
+      "bissDahin": "In the meantime you can reach us by phone at {telefon} or by email.",
+      "beschreibung": "Choose your preferred appointment conveniently online — the booking opens right here on this page.",
+      "cta": "Open online booking",
+      "hinweis": "Opening the booking establishes a connection to our service provider HeyDent; data (including your IP address) is transmitted. Alternatively, you can reach us by phone at {telefon}."
     },
     "sprechzeiten": {
       "label": "Office Hours",

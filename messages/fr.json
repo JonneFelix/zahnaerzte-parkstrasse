@@ -396,7 +396,10 @@
       "titel": "Votre rendez-vous souhaité",
       "titelAkzent": "en quelques clics",
       "platzhalter": "La réservation en ligne sera activée prochainement.",
-      "bissDahin": "En attendant, vous pouvez nous joindre par téléphone au {telefon} ou par e-mail."
+      "bissDahin": "En attendant, vous pouvez nous joindre par téléphone au {telefon} ou par e-mail.",
+      "beschreibung": "Choisissez votre rendez-vous en toute simplicité en ligne — la réservation s'ouvre directement sur cette page.",
+      "cta": "Ouvrir la prise de rendez-vous",
+      "hinweis": "L'ouverture de la réservation établit une connexion avec notre prestataire HeyDent ; des données (dont votre adresse IP) sont transmises. Vous pouvez aussi nous joindre par téléphone au {telefon}."
     },
     "sprechzeiten": {
       "label": "Horaires de consultation",

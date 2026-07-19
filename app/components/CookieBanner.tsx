@@ -14,25 +14,25 @@ export function getConsent(): ConsentStatus {
 /* Übersetzungen für den Cookie-Banner */
 const texts: Record<string, { text: string; link: string; necessary: string; accept: string }> = {
   de: {
-    text: "Wir nutzen Google Maps, um Ihnen unseren Standort zu zeigen. Dabei können Daten an Google übermittelt werden.",
+    text: "Wir nutzen Google Maps für die Standortkarte und HeyDent für die Online-Terminbuchung. Beim Laden dieser Dienste können Daten (u.a. Ihre IP-Adresse) an die jeweiligen Anbieter übermittelt werden.",
     link: "Mehr erfahren",
     necessary: "Nur notwendige",
     accept: "Alle akzeptieren",
   },
   en: {
-    text: "We use Google Maps to show you our location. Data may be transmitted to Google.",
+    text: "We use Google Maps for the location map and HeyDent for online appointment booking. Loading these services may transmit data (including your IP address) to the respective providers.",
     link: "Learn more",
     necessary: "Only necessary",
     accept: "Accept all",
   },
   fr: {
-    text: "Nous utilisons Google Maps pour vous montrer notre emplacement. Des données peuvent être transmises à Google.",
+    text: "Nous utilisons Google Maps pour la carte de localisation et HeyDent pour la prise de rendez-vous en ligne. Le chargement de ces services peut transmettre des données (dont votre adresse IP) aux prestataires concernés.",
     link: "En savoir plus",
     necessary: "Uniquement nécessaires",
     accept: "Tout accepter",
   },
   es: {
-    text: "Utilizamos Google Maps para mostrarle nuestra ubicación. Los datos pueden ser transmitidos a Google.",
+    text: "Utilizamos Google Maps para el mapa de ubicación y HeyDent para la reserva de citas en línea. Al cargar estos servicios se pueden transmitir datos (incluida su dirección IP) a los respectivos proveedores.",
     link: "Más información",
     necessary: "Solo necesarias",
     accept: "Aceptar todas",

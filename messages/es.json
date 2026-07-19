@@ -396,7 +396,10 @@
       "titel": "Su cita deseada",
       "titelAkzent": "en pocos clics",
       "platzhalter": "La reserva en línea se activará próximamente.",
-      "bissDahin": "Mientras tanto puede contactarnos por teléfono al {telefon} o por correo electrónico."
+      "bissDahin": "Mientras tanto puede contactarnos por teléfono al {telefon} o por correo electrónico.",
+      "beschreibung": "Elija su cita cómodamente en línea — la reserva se abre directamente en esta página.",
+      "cta": "Abrir la reserva de citas",
+      "hinweis": "Al abrir la reserva se establece una conexión con nuestro proveedor HeyDent; se transmiten datos (incluida su dirección IP). También puede contactarnos por teléfono al {telefon}."
     },
     "sprechzeiten": {
       "label": "Horario de consulta",

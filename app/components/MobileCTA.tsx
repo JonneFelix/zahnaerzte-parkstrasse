@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { type Locale } from "../../lib/i18n";
+import { openOrb, hasHeydentConsent } from "../../lib/heydent";
 
 const ctaTexts: Record<string, { anrufen: string; termin: string }> = {
   de: { anrufen: "Anrufen", termin: "Termin buchen" },
@@ -15,6 +15,9 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
   const ct = ctaTexts[locale] || ctaTexts.de;
   const [sichtbar, setSichtbar] = useState(false);
   const [menuOffen, setMenuOffen] = useState(false);
+  /* Ist der schwebende Orb aktiv? Dann rechts Platz lassen, damit er die
+     Buttons nicht überlagert (Orb sitzt unten rechts, z weit über der Leiste). */
+  const [orbAktiv, setOrbAktiv] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setSichtbar(window.scrollY > 400);
@@ -26,7 +29,21 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
     });
     observer.observe(document.body, { attributes: true, attributeFilter: ["data-menu-open"] });
 
-    return () => { window.removeEventListener("scroll", handleScroll); observer.disconnect(); };
+    // Orb-Einwilligung beobachten (steuert die Kollisions-Reserve rechts)
+    setOrbAktiv(hasHeydentConsent());
+    const onCookieConsent = (e: Event) => {
+      if ((e as CustomEvent).detail === "all") setOrbAktiv(true);
+    };
+    const onHeydentConsent = () => setOrbAktiv(true);
+    window.addEventListener("consent-changed", onCookieConsent);
+    window.addEventListener("heydent-consent-changed", onHeydentConsent);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
+      window.removeEventListener("consent-changed", onCookieConsent);
+      window.removeEventListener("heydent-consent-changed", onHeydentConsent);
+    };
   }, []);
 
   return (
@@ -43,7 +60,15 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
         paddingBottom: "env(safe-area-inset-bottom)",
       }}
     >
-      <div className="flex items-center gap-3 px-4 py-3">
+      <div
+        className="flex items-center gap-3 py-3"
+        style={{
+          paddingLeft: "1rem",
+          /* Rechts mehr Platz, wenn der Orb unten rechts schwebt */
+          paddingRight: orbAktiv ? "5.5rem" : "1rem",
+          transition: "padding-right 0.3s ease-out",
+        }}
+      >
         {/* Anrufen */}
         <a
           href="tel:+494088021050"
@@ -59,20 +84,22 @@ export default function MobileCTA({ locale = "de" as Locale }: { locale?: Locale
           {ct.anrufen}
         </a>
 
-        {/* Termin buchen */}
-        <Link
-          href={`/${locale}/termin`}
-          className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full font-semibold text-sm text-white"
+        {/* Termin buchen — öffnet die Online-Terminbuchung (Orb) */}
+        <button
+          type="button"
+          onClick={() => openOrb(locale)}
+          className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full font-semibold text-sm text-white cursor-pointer"
           style={{
             background: "linear-gradient(135deg, #F26522 0%, #e3541a 100%)",
             boxShadow: "0 4px 12px rgba(242,101,34,0.3)",
+            border: "none",
           }}
         >
           <svg viewBox="0 0 20 20" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M6.75 3v1.5M13.25 3v1.5M3 8.25h14M4.5 4.5h11a1.5 1.5 0 011.5 1.5v10a1.5 1.5 0 01-1.5 1.5h-11A1.5 1.5 0 013 16V6a1.5 1.5 0 011.5-1.5z" />
           </svg>
           {ct.termin}
-        </Link>
+        </button>
       </div>
     </div>
   );

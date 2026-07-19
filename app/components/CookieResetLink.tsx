@@ -19,6 +19,7 @@ export default function CookieResetLink({ locale = "de" }: { locale?: string }) 
       onClick={() => {
         try {
           localStorage.removeItem("cookie-consent");
+          localStorage.removeItem("heydent-consent");
           window.dispatchEvent(new CustomEvent("consent-changed", { detail: "necessary" }));
         } catch {}
         window.location.reload();

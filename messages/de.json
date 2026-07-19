@@ -396,7 +396,10 @@
       "titel": "Ihr Wunschtermin",
       "titelAkzent": "in wenigen Klicks",
       "platzhalter": "Online-Terminbuchung wird in Kürze aktiviert.",
-      "bissDahin": "Bis dahin erreichen Sie uns telefonisch unter {telefon} oder per E-Mail."
+      "bissDahin": "Bis dahin erreichen Sie uns telefonisch unter {telefon} oder per E-Mail.",
+      "beschreibung": "Wählen Sie Ihren Wunschtermin bequem online — die Buchung öffnet sich direkt hier auf der Seite.",
+      "cta": "Online-Terminbuchung öffnen",
+      "hinweis": "Beim Öffnen wird eine Verbindung zu unserem Dienstleister HeyDent hergestellt; dabei werden Daten (u.a. Ihre IP-Adresse) übertragen. Alternativ erreichen Sie uns telefonisch unter {telefon}."
     },
     "sprechzeiten": {
       "label": "Sprechzeiten",

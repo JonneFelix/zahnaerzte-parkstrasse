@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieBanner from "../components/CookieBanner";
 import MobileCTA from "../components/MobileCTA";
+import HeydentOrb from "../components/HeydentOrb";
 import SetLocale from "../components/SetLocale";
 import { locales, type Locale } from "../../lib/i18n";
 
@@ -152,6 +153,7 @@ export default async function LocaleLayout({
       <Footer locale={locale as Locale} />
       <MobileCTA locale={locale as Locale} />
       <CookieBanner />
+      <HeydentOrb locale={locale} />
     </>
   );
 }

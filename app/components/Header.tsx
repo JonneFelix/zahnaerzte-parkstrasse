@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { type Locale, locales } from "../../lib/i18n";
+import { openOrb } from "../../lib/heydent";
 
 /* Übersetzte Navigation pro Sprache */
 const navTexts: Record<string, {
@@ -233,9 +234,10 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
               {/* Sprach-Widget */}
               <LanguageSwitcher locale={locale} />
 
-              <Link
-                href={l("/termin", locale)}
-                className="cta-schimmer ml-2 px-5 py-2 text-xs tracking-wider transition-all duration-500"
+              <button
+                type="button"
+                onClick={() => openOrb(locale)}
+                className="cta-schimmer ml-2 px-5 py-2 text-xs tracking-wider transition-all duration-500 cursor-pointer"
                 style={{
                   fontFamily: "var(--font-work-sans), 'Work Sans', sans-serif",
                   fontWeight: 600,
@@ -244,10 +246,11 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
                   borderRadius: "9999px",
                   letterSpacing: "0.08em",
                   boxShadow: "0 4px 18px rgba(242, 101, 34, 0.35)",
+                  border: "none",
                 }}
               >
                 {(navTexts[locale] || navTexts.de).terminBuchen.toUpperCase()}
-              </Link>
+              </button>
             </nav>
 
             {/* Mobiler Hamburger */}
@@ -366,10 +369,10 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
 
         {/* Fester Bereich am unteren Rand — unabhängig vom Scroll */}
         <div className="shrink-0 px-8 pb-8 pt-4 flex flex-col items-center gap-3" style={{ borderTop: "1px solid rgba(105, 123, 123, 0.06)" }}>
-          <Link
-            href={l("/termin", locale)}
-            onClick={() => setMobileOffen(false)}
-            className="cta-schimmer px-10 py-3.5 text-sm tracking-wider"
+          <button
+            type="button"
+            onClick={() => { setMobileOffen(false); openOrb(locale); }}
+            className="cta-schimmer px-10 py-3.5 text-sm tracking-wider cursor-pointer"
             style={{
               fontWeight: 600,
               color: "#fff",
@@ -377,10 +380,11 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
               borderRadius: "9999px",
               letterSpacing: "0.1em",
               boxShadow: "0 8px 28px rgba(242, 101, 34, 0.3)",
+              border: "none",
             }}
           >
             {(navTexts[locale] || navTexts.de).terminBuchen.toUpperCase()}
-          </Link>
+          </button>
           <a
             href="tel:+494088021050"
             className="text-sm tracking-wider"

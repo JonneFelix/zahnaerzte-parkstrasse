@@ -1,5 +1,5 @@
-import Link from "next/link";
 import BaumDekor from "./BaumDekor";
+import OrbCTAButton from "./OrbCTAButton";
 
 /* Wiederverwendbarer CTA-Banner am Ende jeder Seite */
 export default function CTABanner({
@@ -49,29 +49,12 @@ export default function CTABanner({
         >
           {text}
         </p>
-        <Link
-          href={ctaHref.startsWith("http") ? ctaHref : `/${locale}${ctaHref}`}
-          className="cta-schimmer group inline-flex items-center gap-3 mt-8 px-10 py-4 text-sm tracking-wider transition-all duration-500"
-          style={{
-            fontWeight: 600,
-            color: "#fff",
-            background: "linear-gradient(135deg, #F26522, #e3541a)",
-            borderRadius: "9999px",
-            letterSpacing: "0.12em",
-            boxShadow: "0 8px 28px rgba(242, 101, 34, 0.3)",
-          }}
-        >
-          {ctaText}
-          <svg
-            viewBox="0 0 20 20"
-            className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-            stroke="currentColor"
-            strokeWidth="2"
-            fill="none"
-          >
-            <path d="M4 10h12M11 5l5 5-5 5" />
-          </svg>
-        </Link>
+        {/* Öffnet die Online-Terminbuchung (Orb). Externe ctaHref bleiben normale Links. */}
+        <OrbCTAButton
+          label={ctaText}
+          locale={locale}
+          href={ctaHref.startsWith("http") ? ctaHref : undefined}
+        />
       </div>
     </section>
   );

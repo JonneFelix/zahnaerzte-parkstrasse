@@ -223,6 +223,9 @@
         },
         "janz": {
           "rolle": "Zahnärztin · Endodontie"
+        },
+        "anderssohn": {
+          "rolle": "Zahnärztin · Ab Oktober 2026"
         }
       },
       "alleKennenlernen": "ALLE KENNENLERNEN"
@@ -241,13 +244,13 @@
   "Team": {
     "meta": {
       "title": "Unser Team — Dr. Schwegmann & Dr. Janz",
-      "description": "Lernen Sie unsere Zahnärztinnen kennen: Dr. Claudia Schwegmann (Fachzahnärztin Oralchirurgie) und Dr. Nina Janz (Endodontie). Seit 1998 in Othmarschen."
+      "description": "Unsere Zahnärztinnen in Othmarschen: Dr. Claudia Schwegmann (Oralchirurgie) und Dr. Nina Janz (Endodontie). Ab Oktober 2026 neu: Dr. Birthe Anderssohn."
     },
     "hero": {
       "label": "Unser Team",
       "titel": "Die Menschen hinter",
       "titelAkzent": "Ihrem Lächeln",
-      "subtext": "Zwei Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
+      "subtext": "Unsere Zahnärztinnen, ein eingespieltes Team und eine gemeinsame Überzeugung: Jeder Patient verdient unsere volle Aufmerksamkeit."
     },
     "aerztinnen": {
       "schwegmann": {
@@ -319,6 +322,11 @@
           "Wurzelbehandlung",
           "Allgemeine Zahnheilkunde"
         ]
+      },
+      "anderssohn": {
+        "rolle": "Zahnärztin · Neu im Team ab Oktober 2026",
+        "zitat": "Ein gesundes Lächeln entsteht aus Vertrauen, Präzision und Fürsorge. Als erfahrene Zahnärztin verbinde ich fundiertes Fachwissen mit einem ganzheitlichen Blick auf Ihre Gesundheit und freue mich darauf, Sie zum Lächeln zu bringen.",
+        "ueber": "Ab Oktober 2026 verstärkt Dr. Birthe Anderssohn unser Team an der Parkstraße — und wir freuen uns schon jetzt auf sie. An dieser Stelle stellen wir sie Ihnen bald ausführlicher vor."
       }
     },
     "praxisteam": {

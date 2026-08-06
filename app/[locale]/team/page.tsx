@@ -17,10 +17,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 /* Nicht-übersetzbare Daten */
-const aerztinnenBilder = ["/images/team/dr-schwegmann-portrait-neu.jpg", "/images/dr-janz.jpg"];
-const aerztinnenBildPosition = ["center 28%", "center center"];
-const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz"];
-const aerztinnenKeys = ["schwegmann", "janz"];
+const aerztinnenBilder = ["/images/team/dr-schwegmann-portrait-neu.jpg", "/images/dr-janz.jpg", "/images/team/dr-anderssohn.jpg"];
+const aerztinnenBildPosition = ["center 28%", "center center", "center center"];
+const aerztinnenNamen = ["Dr. Claudia Schwegmann", "Dr. Nina Janz", "Dr. Birthe Anderssohn"];
+const aerztinnenKeys = ["schwegmann", "janz", "anderssohn"];
+
+/* Anführungszeichen je Sprache — die Zitate werden außerhalb der Messages gerendert */
+const zitatZeichen: Record<string, [string, string]> = {
+  de: ["„", "“"],
+  en: ["“", "”"],
+  fr: ["« ", " »"],
+  es: ["«", "»"],
+};
 
 export default async function TeamSeite({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -30,15 +38,19 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
   const aerztinnenData = t.aerztinnen as Record<string, Record<string, unknown>>;
   const praxisteam = t.praxisteam as Record<string, string>;
   const cta = t.cta as Record<string, string>;
+  const [zitatAuf, zitatZu] = zitatZeichen[locale] ?? zitatZeichen.de;
 
   // Ärztinnen-Daten zusammenbauen
   const aerztinnen = aerztinnenKeys.map((key, i) => {
     const a = aerztinnenData[key];
-    const timeline = a.timeline as Record<string, Record<string, string>>;
-    const timelineArr = Object.values(timeline).map((entry) => ({
-      jahr: entry.jahr,
-      text: entry.text,
-    }));
+    /* Timeline und Tags sind optional — bei Dr. Anderssohn folgen die Lebenslauf-Daten erst zum Praxisstart */
+    const timeline = a.timeline as Record<string, Record<string, string>> | undefined;
+    const timelineArr = timeline
+      ? Object.values(timeline).map((entry) => ({
+          jahr: entry.jahr,
+          text: entry.text,
+        }))
+      : [];
     return {
       name: aerztinnenNamen[i],
       bild: aerztinnenBilder[i],
@@ -51,7 +63,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
       aufklappText1: (a.aufklappText1 as string | undefined) || "",
       aufklappText2: (a.aufklappText2 as string | undefined) || "",
       timeline: timelineArr,
-      tags: a.tags as string[],
+      tags: (a.tags as string[] | undefined) || [],
     };
   });
 
@@ -164,7 +176,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                       lineHeight: 1.8,
                     }}
                   >
-                    &bdquo;{a.zitat}&ldquo;
+                    {zitatAuf}{a.zitat}{zitatZu}
                   </p>
                 </blockquote>
 
@@ -179,7 +191,8 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                   {a.ueber}
                 </p>
 
-                {/* Timeline */}
+                {/* Timeline (entfällt, solange keine Lebenslauf-Daten vorliegen) */}
+                {a.timeline.length > 0 && (
                 <div className="space-y-3 mb-8">
                   {a.timeline.map((tl) => (
                     <div key={tl.jahr} className="flex gap-4 items-baseline">
@@ -210,6 +223,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                     </div>
                   ))}
                 </div>
+                )}
 
                 {/* Sprachkompetenz */}
                 {a.sprachen.length > 0 && (
@@ -224,7 +238,8 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                   </div>
                 )}
 
-                {/* Tags */}
+                {/* Tags (entfällt, solange keine Schwerpunkte freigegeben sind) */}
+                {a.tags.length > 0 && (
                 <div className="flex flex-wrap gap-2">
                   {a.tags.map((tag) => (
                     <span
@@ -241,6 +256,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
                     </span>
                   ))}
                 </div>
+                )}
 
                 {/* Aufklappbar (nur bei Dr. Schwegmann) */}
                 {a.aufklappTitel && (
@@ -273,7 +289,7 @@ export default async function TeamSeite({ params }: { params: Promise<{ locale: 
           ============================================================ */}
       <section
         className="relative py-20 lg:py-28 overflow-hidden"
-        style={{ background: "#f4f1ec" }}
+        style={{ background: aerztinnen.length % 2 === 0 ? "#f4f1ec" : "#f0ede8" }}
       >
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
           <SektionsHeader

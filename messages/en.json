@@ -223,6 +223,9 @@
         },
         "janz": {
           "rolle": "Dentist · Endodontics"
+        },
+        "anderssohn": {
+          "rolle": "Dentist · From October 2026"
         }
       },
       "alleKennenlernen": "MEET THE TEAM"
@@ -241,13 +244,13 @@
   "Team": {
     "meta": {
       "title": "Our Team — Dr. Schwegmann & Dr. Janz",
-      "description": "Meet our dentists: Dr. Claudia Schwegmann (Specialist in Oral Surgery) and Dr. Nina Janz (Endodontics). In Othmarschen since 1998."
+      "description": "Our dentists in Othmarschen: Dr. Claudia Schwegmann (oral surgery) and Dr. Nina Janz (endodontics). Joining in October 2026: Dr. Birthe Anderssohn."
     },
     "hero": {
       "label": "Our Team",
       "titel": "The people behind",
       "titelAkzent": "your smile",
-      "subtext": "Two dentists, one well-coordinated team and a shared conviction: every patient deserves our full attention."
+      "subtext": "Our dentists, a well-coordinated team and a shared conviction: every patient deserves our full attention."
     },
     "aerztinnen": {
       "schwegmann": {
@@ -319,6 +322,11 @@
           "Root Canal Treatment",
           "General Dentistry"
         ]
+      },
+      "anderssohn": {
+        "rolle": "Dentist · Joining our practice in October 2026",
+        "zitat": "A healthy smile is built on trust, precision and care. As an experienced dentist, I combine sound professional expertise with a holistic view of your health — and I look forward to making you smile.",
+        "ueber": "Dr. Birthe Anderssohn will join our team at Parkstraße in October 2026 — and we are already looking forward to it. We will introduce her here in more detail soon."
       }
     },
     "praxisteam": {

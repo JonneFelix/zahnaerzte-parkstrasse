@@ -223,6 +223,9 @@
         },
         "janz": {
           "rolle": "Dentista · Endodoncia"
+        },
+        "anderssohn": {
+          "rolle": "Dentista · Desde octubre de 2026"
         }
       },
       "alleKennenlernen": "CONOCER AL EQUIPO"
@@ -241,13 +244,13 @@
   "Team": {
     "meta": {
       "title": "Nuestro equipo — Dra. Schwegmann y Dra. Janz",
-      "description": "Conozca a nuestras dentistas: Dra. Claudia Schwegmann (especialista en cirugía oral) y Dra. Nina Janz (endodoncia). En Othmarschen desde 1998."
+      "description": "Nuestras dentistas en Othmarschen: Dra. Claudia Schwegmann (cirugía oral) y Dra. Nina Janz (endodoncia). Desde octubre de 2026: Dra. Birthe Anderssohn."
     },
     "hero": {
       "label": "Nuestro equipo",
       "titel": "Las personas detrás de",
       "titelAkzent": "su sonrisa",
-      "subtext": "Dos dentistas, un equipo coordinado y una convicción compartida: cada paciente merece toda nuestra atención."
+      "subtext": "Nuestras dentistas, un equipo coordinado y una convicción compartida: cada paciente merece toda nuestra atención."
     },
     "aerztinnen": {
       "schwegmann": {
@@ -319,6 +322,11 @@
           "Tratamiento de conducto",
           "Odontología general"
         ]
+      },
+      "anderssohn": {
+        "rolle": "Dentista · A partir de octubre de 2026 en nuestra clínica",
+        "zitat": "Una sonrisa sana nace de la confianza, la precisión y el cuidado. Como dentista experimentada, combino sólidos conocimientos profesionales con una visión integral de su salud — y me hace ilusión hacerle sonreír.",
+        "ueber": "A partir de octubre de 2026, la Dra. Birthe Anderssohn reforzará nuestro equipo en Parkstraße — y ya estamos deseando recibirla. Pronto se la presentaremos aquí con más detalle."
       }
     },
     "praxisteam": {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import SeiteHero from "../../components/SeiteHero";
 import SektionsHeader from "../../components/SektionsHeader";
 import BaumDekor from "../../components/BaumDekor";
+import OrbCTAButton from "../../components/OrbCTAButton";
 import GoogleMap from "../../components/GoogleMap";
 import Bauhinweis from "../../components/Bauhinweis";
 import { getDictionary, type Locale } from "../../../lib/i18n";
@@ -27,6 +28,7 @@ export default async function KontaktSeite({ params }: { params: Promise<{ local
   const bus = anfahrt.bus as Record<string, string>;
   const auto = anfahrt.auto as Record<string, string>;
   const fortbildungen = t.fortbildungen as Record<string, string>;
+  const nav = (dict.Common as Record<string, unknown>).nav as Record<string, string>;
 
   return (
     <>
@@ -65,7 +67,7 @@ export default async function KontaktSeite({ params }: { params: Promise<{ local
                 <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><path d="M7 3L10 3L12 8L9 11C11 15 13 17 17 19L20 16L25 18L25 22C25 23.5 23.5 25 22 25C15 25 3 17 3 7C3 5.5 4.5 3 7 3Z" /></svg>
               </div>
               <h3 className="text-lg mb-2" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{kontaktdaten.telefonEmail}</h3>
-              <a href="tel:+494088021050" className="block text-sm mb-1 transition-colors duration-300 hover:text-[#e3541a]" style={{ color: "#F26522", fontWeight: 600 }}>040 — 880 21 50</a>
+              <a href="tel:+49408802150" className="block text-sm mb-1 transition-colors duration-300 hover:text-[#e3541a]" style={{ color: "#F26522", fontWeight: 600 }}>040 — 880 21 50</a>
               <a href="mailto:info@zahnarzt-othmarschen.de" className="block text-sm transition-colors duration-300 hover:text-[#2d3a3a]" style={{ color: "#5a6a6a", fontWeight: 300 }}>info@zahnarzt-othmarschen.de</a>
             </div>
 
@@ -117,13 +119,12 @@ export default async function KontaktSeite({ params }: { params: Promise<{ local
                 <p className="text-sm" style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}>{auto.text}</p>
               </div>
               <div className="text-center mt-6">
-                <Link
-                  href={`/${locale}/termin`}
-                  className="cta-schimmer inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500"
-                  style={{ fontWeight: 600, color: "#fff", background: "linear-gradient(135deg, #F26522, #e3541a)", borderRadius: "9999px", letterSpacing: "0.1em", boxShadow: "0 8px 28px rgba(242,101,34,0.3)" }}
-                >
-                  TERMIN BUCHEN
-                </Link>
+                {/* Öffnet die Online-Terminbuchung; Label übersetzt statt hart „TERMIN BUCHEN" */}
+                <OrbCTAButton
+                  label={nav.terminBuchen}
+                  locale={locale}
+                  className="cta-schimmer group inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500 cursor-pointer"
+                />
               </div>
             </div>
           </div>

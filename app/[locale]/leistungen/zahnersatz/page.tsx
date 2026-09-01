@@ -86,7 +86,7 @@ export default async function ZahnersatzSeite({ params }: { params: Promise<{ lo
         </div>
       </section>
 
-      <CTABanner titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
+      <CTABanner locale={locale} titel={cta.titel} titelAkzent={cta.titelAkzent} text={cta.text} />
     </>
   );
 }

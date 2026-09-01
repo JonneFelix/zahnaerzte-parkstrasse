@@ -1,12 +1,16 @@
 import BaumDekor from "./BaumDekor";
 import OrbCTAButton from "./OrbCTAButton";
+import { getDictionary, type Locale } from "../../lib/i18n";
 
-/* Wiederverwendbarer CTA-Banner am Ende jeder Seite */
-export default function CTABanner({
-  titel = "Wir freuen uns",
-  titelAkzent = "auf Sie",
-  text = "Vereinbaren Sie Ihren Termin — online, telefonisch oder per E-Mail.",
-  ctaText = "TERMIN VEREINBAREN",
+/* Wiederverwendbarer CTA-Banner am Ende jeder Seite.
+   Fehlende Texte werden aus `Common.cta` der jeweiligen Sprache befüllt —
+   so bleibt der Button/Titel auch auf EN/FR/ES lokalisiert, wenn eine
+   Aufrufstelle keine expliziten Texte übergibt. */
+export default async function CTABanner({
+  titel,
+  titelAkzent,
+  text,
+  ctaText,
   ctaHref = "/termin",
   locale = "de",
 }: {
@@ -17,6 +21,14 @@ export default function CTABanner({
   ctaHref?: string;
   locale?: string;
 }) {
+  const dict = await getDictionary(locale as Locale);
+  const common = ((dict.Common as Record<string, unknown>)?.cta ?? {}) as Record<string, string>;
+  const titelFinal = titel ?? common.titel ?? "Wir freuen uns";
+  const titelAkzentFinal = titelAkzent ?? common.titelAkzent ?? "auf Sie";
+  const textFinal =
+    text ?? common.text ?? "Vereinbaren Sie Ihren Termin — online, telefonisch oder per E-Mail.";
+  const ctaTextFinal = ctaText ?? common.ctaText ?? "TERMIN VEREINBAREN";
+
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
       <div
@@ -38,20 +50,20 @@ export default function CTABanner({
             lineHeight: 1.2,
           }}
         >
-          {titel}{" "}
+          {titelFinal}{" "}
           <span style={{ fontWeight: 600, color: "#697B7B" }}>
-            {titelAkzent}
+            {titelAkzentFinal}
           </span>
         </h2>
         <p
           className="mt-4 text-base"
           style={{ color: "#6a7a7a", fontWeight: 300, lineHeight: 1.7 }}
         >
-          {text}
+          {textFinal}
         </p>
         {/* Öffnet die Online-Terminbuchung (Orb). Externe ctaHref bleiben normale Links. */}
         <OrbCTAButton
-          label={ctaText}
+          label={ctaTextFinal}
           locale={locale}
           href={ctaHref.startsWith("http") ? ctaHref : undefined}
         />

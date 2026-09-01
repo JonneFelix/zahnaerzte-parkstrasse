@@ -180,7 +180,7 @@ export default function Footer({ locale = "de" as Locale }: { locale?: Locale })
                 22605 Hamburg
               </a>
               <a
-                href="tel:+494088021050"
+                href="tel:+49408802150"
                 className="block text-sm transition-colors duration-300 hover:text-white"
                 style={{ color: "#F26522", fontWeight: 500 }}
               >

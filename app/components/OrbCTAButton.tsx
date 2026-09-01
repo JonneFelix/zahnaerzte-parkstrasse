@@ -11,14 +11,18 @@ export default function OrbCTAButton({
   label,
   locale = "de",
   href,
+  className: classNameProp,
 }: {
   label: string;
   locale?: string;
   href?: string;
+  /* Überschreibt die Layout-Klassen (Abstände/Padding), Farbe/Form bleiben */
+  className?: string;
 }) {
   const isExternal = !!href && /^https?:/.test(href);
 
   const className =
+    classNameProp ??
     "cta-schimmer group inline-flex items-center gap-3 mt-8 px-10 py-4 text-sm tracking-wider transition-all duration-500 cursor-pointer";
   const style: React.CSSProperties = {
     fontWeight: 600,

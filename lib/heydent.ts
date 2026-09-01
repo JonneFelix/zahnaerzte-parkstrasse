@@ -14,14 +14,24 @@
 export const HEYDENT_SLUG = "parkstrasse-othmarschen";
 export const HEYDENT_BASE = "https://termin.hey-dent.de";
 
-/** Prüft, ob die Online-Terminbuchung geladen werden darf. */
+/**
+ * Prüft, ob die Online-Terminbuchung geladen werden darf.
+ *
+ * Ausschliesslich der dedizierte, zweckgebundene Schlüssel `heydent-consent`
+ * zählt — NICHT ein pauschales `cookie-consent === "all"`. So kann ein altes
+ * „Alle akzeptieren", das ein Bestandsbesucher früher (nur für Google Maps)
+ * erteilt hat, HeyDent nicht rückwirkend freischalten. Der Cookie-Banner
+ * setzt `heydent-consent` beim „Alle akzeptieren" fortan explizit mit.
+ */
+/* Sitzungs-Fallback bei blockiertem localStorage: sonst fragt der Consent-Dialog
+   bei jedem weiteren Klick erneut, obwohl das Widget längst läuft. */
+let consentDieseSitzung = false;
+
 export function hasHeydentConsent(): boolean {
   if (typeof window === "undefined") return false;
+  if (consentDieseSitzung) return true;
   try {
-    return (
-      localStorage.getItem("cookie-consent") === "all" ||
-      localStorage.getItem("heydent-consent") === "granted"
-    );
+    return localStorage.getItem("heydent-consent") === "granted";
   } catch {
     return false;
   }
@@ -30,6 +40,7 @@ export function hasHeydentConsent(): boolean {
 /** Erteilt die dedizierte Einwilligung für die Online-Terminbuchung. */
 export function grantHeydentConsent(): void {
   if (typeof window === "undefined") return;
+  consentDieseSitzung = true;
   try {
     localStorage.setItem("heydent-consent", "granted");
   } catch {

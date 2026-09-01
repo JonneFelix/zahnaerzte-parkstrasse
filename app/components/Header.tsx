@@ -50,6 +50,14 @@ const zahnwissenTexts: Record<string, string> = {
   es: "Conocimiento dental",
 };
 
+/* Aria-Labels für den mobilen Menü-Umschalter (lokalisiert) */
+const menuLabels: Record<string, { open: string; close: string }> = {
+  de: { open: "Menü öffnen", close: "Menü schließen" },
+  en: { open: "Open menu", close: "Close menu" },
+  fr: { open: "Ouvrir le menu", close: "Fermer le menu" },
+  es: { open: "Abrir menú", close: "Cerrar menú" },
+};
+
 function getNavLinks(locale: Locale) {
   const t = navTexts[locale] || navTexts.de;
   return [
@@ -257,7 +265,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
             <button
               className="lg:hidden flex flex-col gap-1.5 p-2 z-50"
               onClick={() => setMobileOffen(!mobileOffen)}
-              aria-label={mobileOffen ? "Menü schließen" : "Menü öffnen"}
+              aria-label={mobileOffen ? (menuLabels[locale] || menuLabels.de).close : (menuLabels[locale] || menuLabels.de).open}
             >
               <span
                 className="block w-6 h-0.5 transition-all duration-300 origin-center"
@@ -386,7 +394,7 @@ export default function Header({ locale = "de" as Locale }: { locale?: Locale })
             {(navTexts[locale] || navTexts.de).terminBuchen.toUpperCase()}
           </button>
           <a
-            href="tel:+494088021050"
+            href="tel:+49408802150"
             className="text-sm tracking-wider"
             style={{ color: "#697B7B", fontWeight: 400, letterSpacing: "0.08em" }}
           >

@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * Footer-Link zum Widerruf der Cookie-/Maps-Einwilligung.
- * Löscht die gespeicherte Auswahl und lädt neu — der Consent-Banner
- * erscheint dann wieder und Google Maps fällt auf den Platzhalter zurück.
+ * Footer-Link zum Widerruf ALLER Einwilligungen (Cookie/Maps UND HeyDent-
+ * Terminbuchung). Löscht die gespeicherten Schlüssel und lädt neu — Consent-
+ * Banner und Termin-Platzhalter erscheinen wieder, Maps fällt auf den
+ * Platzhalter zurück.
  */
 const labels: Record<string, string> = {
   de: "Cookie-Einstellungen",

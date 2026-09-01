@@ -6,6 +6,7 @@ import OrganischerTrenner from "../components/OrganischerTrenner";
 import SektionsHeader from "../components/SektionsHeader";
 import MobileKarussell from "../components/MobileKarussell";
 import Bauhinweis from "../components/Bauhinweis";
+import OrbCTAButton from "../components/OrbCTAButton";
 import { getDictionary, type Locale } from "../../lib/i18n";
 import { createMetadata } from "../../lib/metadata";
 
@@ -215,21 +216,12 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
               </p>
 
               <div className="anim-einblenden d5 flex flex-wrap gap-4 mt-10">
-                <Link
-                  href={`/${locale}/termin`}
-                  className="cta-schimmer group inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500"
-                  style={{
-                    fontWeight: 600, color: "#fff",
-                    background: "linear-gradient(135deg, #F26522, #e3541a)",
-                    borderRadius: "9999px", letterSpacing: "0.1em",
-                    boxShadow: "0 8px 28px rgba(242, 101, 34, 0.3)",
-                  }}
-                >
-                  {hero.ctaPrimaer}
-                  <svg viewBox="0 0 24 24" className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" stroke="currentColor" strokeWidth="2" fill="none">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
+                {/* Öffnet die Online-Terminbuchung (Orb) statt nur auf /termin zu verlinken */}
+                <OrbCTAButton
+                  label={hero.ctaPrimaer}
+                  locale={locale}
+                  className="cta-schimmer group inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500 cursor-pointer"
+                />
                 <Link
                   href={`/${locale}/team`}
                   className="inline-flex items-center gap-3 px-8 py-4 text-sm tracking-wider transition-all duration-500 hover:border-[#697B7B]"
@@ -537,7 +529,7 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
                 <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><path d="M7 3 L10 3 L12 8 L9 11 C11 15 13 17 17 19 L20 16 L25 18 L25 22 C25 23.5 23.5 25 22 25 C15 25 3 17 3 7 C3 5.5 4.5 3 7 3Z" /></svg>
               </div>
               <h3 className="text-lg mb-2" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{kontaktSection.telefon}</h3>
-              <a href="tel:+494088021050" className="block text-sm mb-1.5 transition-colors duration-300" style={{ color: "#F26522", fontWeight: 600 }}>040 — 880 21 50</a>
+              <a href="tel:+49408802150" className="block text-sm mb-1.5 transition-colors duration-300" style={{ color: "#F26522", fontWeight: 600 }}>040 — 880 21 50</a>
               <a href="mailto:info@zahnarzt-othmarschen.de" className="block text-sm transition-colors duration-300" style={{ color: "#5a6a6a", fontWeight: 300 }}>info@zahnarzt-othmarschen.de</a>
             </div>
 
@@ -558,19 +550,11 @@ export default async function Homepage({ params }: { params: Promise<{ locale: s
           </div>
 
           <div className="text-center mt-14 anim-einblenden d8">
-            <Link
-              href={`/${locale}/termin`}
-              className="cta-schimmer group inline-flex items-center gap-3 px-10 py-5 text-sm tracking-wider transition-all duration-500"
-              style={{
-                fontWeight: 600, color: "#fff",
-                background: "linear-gradient(135deg, #F26522, #e3541a)",
-                borderRadius: "9999px", letterSpacing: "0.12em",
-                boxShadow: "0 8px 28px rgba(242, 101, 34, 0.3)",
-              }}
-            >
-              {kontaktSection.jetztTermin}
-              <svg viewBox="0 0 20 20" className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" stroke="currentColor" strokeWidth="2" fill="none"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
-            </Link>
+            <OrbCTAButton
+              label={kontaktSection.jetztTermin}
+              locale={locale}
+              className="cta-schimmer group inline-flex items-center gap-3 px-10 py-5 text-sm tracking-wider transition-all duration-500 cursor-pointer"
+            />
           </div>
         </div>
       </section>

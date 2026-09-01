@@ -283,7 +283,7 @@ export default async function FortbildungenSeite({ params }: { params: Promise<{
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <a
-                href="tel:+494088021050"
+                href="tel:+49408802150"
                 className="inline-flex items-center gap-2 text-sm transition-colors duration-300 hover:text-[#e3541a]"
                 style={{ color: "#F26522", fontWeight: 600 }}
               >

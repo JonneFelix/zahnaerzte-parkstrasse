@@ -65,12 +65,6 @@
       "text": "Prenez rendez-vous — en ligne, par téléphone ou par e-mail.",
       "ctaText": "PRENDRE RENDEZ-VOUS"
     },
-    "cookie": {
-      "text": "Nous utilisons Google Maps pour vous indiquer notre emplacement. Des données peuvent être transmises à Google.",
-      "mehrErfahren": "En savoir plus",
-      "nurNotwendige": "Nécessaires uniquement",
-      "alleAkzeptieren": "Tout accepter"
-    },
     "breadcrumbs": {
       "startseite": "Accueil",
       "leistungen": "Services",
@@ -92,10 +86,6 @@
       "datenschutz": "Protection des données",
       "praxis": "Cabinet",
       "wissenswertes": "Informations utiles"
-    },
-    "mobileCta": {
-      "anrufen": "Appeler",
-      "terminBuchen": "Prendre rendez-vous"
     }
   },
   "HomePage": {
@@ -346,7 +336,7 @@
   "Kontakt": {
     "meta": {
       "title": "Contact & Accès",
-      "description": "Comment nous trouver : Parkstraße 10, 22605 Hamburg-Othmarschen. Téléphone : 040 880 21 50. Parking disponible."
+      "description": "Comment nous trouver : Parkstraße 10, 22605 Hamburg-Othmarschen. Téléphone : 040 880 21 50. Rendez-vous en ligne ou par téléphone. Parking disponible."
     },
     "hero": {
       "label": "Contact",
@@ -403,8 +393,6 @@
       "label": "Réserver en ligne",
       "titel": "Votre rendez-vous souhaité",
       "titelAkzent": "en quelques clics",
-      "platzhalter": "La réservation en ligne sera activée prochainement.",
-      "bissDahin": "En attendant, vous pouvez nous joindre par téléphone au {telefon} ou par e-mail.",
       "beschreibung": "Choisissez votre rendez-vous en toute simplicité en ligne — la réservation s'ouvre directement sur cette page.",
       "cta": "Ouvrir la prise de rendez-vous",
       "hinweis": "L'ouverture de la réservation établit une connexion avec notre prestataire HeyDent ; des données (dont votre adresse IP) sont transmises. Vous pouvez aussi nous joindre par téléphone au {telefon}."
@@ -633,7 +621,7 @@
         "fragen": {
           "wartezeit": {
             "frage": "Dois-je attendre longtemps pour un rendez-vous ?",
-            "antwort": "En règle générale, nous pouvons vous proposer un rendez-vous dans un délai de 1 à 2 semaines. En cas de douleurs aiguës, nous nous efforçons de vous recevoir rapidement."
+            "antwort": "En règle générale, nous pouvons vous proposer un rendez-vous dans un délai de 1 à 2 semaines. En cas de douleurs aiguës, nous nous efforçons de vous recevoir rapidement ; vous pouvez également réserver vos rendez-vous directement en ligne 24h/24."
           },
           "angstpatienten": {
             "frage": "Traitez-vous aussi les patients anxieux ?",
@@ -683,7 +671,7 @@
     "mehrErfahren": "En savoir plus",
     "cta": {
       "titel": "D'autres questions ?",
-      "titelAkzent": "Appelez-nous",
+      "titelAkzent": "Nous vous aidons",
       "text": "Nous répondons volontiers à toutes vos questions personnellement."
     }
   },
@@ -857,7 +845,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Ce site web ne dépose pas ses propres cookies. Par l'intégration de Google Maps sur notre page de contact, des cookies de Google peuvent être déposés — uniquement après votre consentement explicite (voir la section 'Google Maps'). Pour la mesure d'audience, nous utilisons Umami, qui fonctionne sans cookies et sans suivi inter-sites (voir la section 'Analyse web'). Pour des raisons techniques, nous enregistrons uniquement votre choix de cookies et votre langue localement dans votre navigateur (localStorage) ; ces informations servent exclusivement au fonctionnement du site et ne sont pas transmises à des tiers."
+        "text": "Ce site web ne dépose pas ses propres cookies. Par l'intégration de Google Maps sur notre page de contact, des cookies de Google peuvent être déposés — uniquement après votre consentement explicite (voir la section 'Google Maps'). Pour la mesure d'audience, nous utilisons Umami, qui fonctionne sans cookies et sans suivi inter-sites (voir la section 'Analyse web'). Pour des raisons techniques, nous enregistrons uniquement votre choix de cookies, votre langue ainsi que votre consentement à la prise de rendez-vous en ligne (clé « heydent-consent ») localement dans votre navigateur (localStorage) ; ces informations servent exclusivement au fonctionnement du site et ne sont pas transmises à des tiers. En cliquant sur « Tout accepter » dans la bannière de cookies, vous donnez également votre consentement à la prise de rendez-vous en ligne."
       }
     },
     "externeDienste": {
@@ -876,7 +864,7 @@
       },
       "terminbuchung": {
         "titel": "Prise de rendez-vous en ligne (HeyDent)",
-        "text": "Sur notre page de rendez-vous, nous proposons une prise de rendez-vous en ligne via notre prestataire HeyDent (intégré sous forme d'iframe). Pour des raisons de protection des données, l'outil de réservation n'est chargé qu'après votre consentement actif (solution en deux clics) ; ce n'est qu'alors qu'une connexion aux serveurs du prestataire est établie et que votre adresse IP est transmise. Lorsque vous demandez un rendez-vous, les données que vous saisissez (p. ex. nom, coordonnées, date souhaitée, éventuellement le motif de la consultation) sont traitées pour la prise de rendez-vous ; comme un contexte lié à la santé peut exister, le traitement repose sur votre consentement explicite (art. 9, par. 2, point a, en lien avec l'art. 6, par. 1, point a du RGPD), que vous pouvez révoquer à tout moment. Les données sont traitées pour le compte du cabinet (sous-traitance au sens de l'art. 28 du RGPD). Vous pouvez bien entendu aussi prendre rendez-vous par téléphone au 040 880 21 50."
+        "text": "Sur l'ensemble de notre site web, nous proposons une prise de rendez-vous en ligne via notre prestataire HeyDent. Pour des raisons de protection des données, la réservation n'est chargée qu'après votre consentement actif (solution en deux clics) : ce n'est qu'alors que le script embed-orb.js est chargé depuis termin.hey-dent.de, lequel affiche la réservation sous forme de fenêtre superposée (overlay) ; à ce moment-là, une connexion aux serveurs du prestataire est établie et votre adresse IP est transmise. Lorsque vous demandez un rendez-vous, les données que vous saisissez (p. ex. nom, coordonnées, date souhaitée, éventuellement le motif de la consultation) sont traitées pour la prise de rendez-vous ; comme un contexte lié à la santé peut exister, le traitement repose sur votre consentement explicite (art. 9, par. 2, point a, en lien avec l'art. 6, par. 1, point a du RGPD), que vous pouvez révoquer à tout moment. Les données sont traitées pour le compte du cabinet (sous-traitance au sens de l'art. 28 du RGPD). Vous pouvez bien entendu aussi prendre rendez-vous par téléphone au 040 880 21 50."
       }
     },
     "rechte": {

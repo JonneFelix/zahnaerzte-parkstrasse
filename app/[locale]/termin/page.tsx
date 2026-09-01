@@ -53,7 +53,7 @@ export default async function TerminSeite({ params }: { params: Promise<{ locale
                 <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="#F26522" strokeWidth="1.5"><path d="M7 3L10 3L12 8L9 11C11 15 13 17 17 19L20 16L25 18L25 22C25 23.5 23.5 25 22 25C15 25 3 17 3 7C3 5.5 4.5 3 7 3Z" /></svg>
               </div>
               <h3 className="text-lg mb-2" style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 600, color: "#2d3a3a" }}>{optionen.telefon}</h3>
-              <a href="tel:+494088021050" className="block text-lg transition-colors duration-300 hover:text-[#e3541a]" style={{ color: "#F26522", fontWeight: 600 }}>
+              <a href="tel:+49408802150" className="block text-lg transition-colors duration-300 hover:text-[#e3541a]" style={{ color: "#F26522", fontWeight: 600 }}>
                 040 — 880 21 50
               </a>
             </div>

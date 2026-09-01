@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { grantHeydentConsent } from "../../lib/heydent";
 
 type ConsentStatus = "all" | "necessary" | null;
 
@@ -41,6 +42,9 @@ const texts: Record<string, { text: string; link: string; necessary: string; acc
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
+  /* Solange das mobile Vollbild-Menü offen ist, tritt der Banner zurück —
+     sonst verdeckt er dessen unteren Bereich samt „Termin buchen"-Button. */
+  const [menuOffen, setMenuOffen] = useState(false);
   const pathname = usePathname();
 
   /* Sprache aus dem URL-Pfad erkennen */
@@ -52,25 +56,43 @@ export default function CookieBanner() {
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) {
       const timer = setTimeout(() => setVisible(true), 1500);
-      return () => clearTimeout(timer);
+      const observer = new MutationObserver(() => {
+        setMenuOffen(document.body.dataset.menuOpen === "true");
+      });
+      observer.observe(document.body, { attributes: true, attributeFilter: ["data-menu-open"] });
+      return () => {
+        clearTimeout(timer);
+        observer.disconnect();
+      };
     }
   }, []);
 
   function handleConsent(type: "all" | "necessary") {
     localStorage.setItem("cookie-consent", type);
+    /* „Alle akzeptieren" erteilt die HeyDent-Einwilligung explizit mit (der
+       Banner nennt HeyDent). „Nur notwendige" lässt eine bereits über den
+       dedizierten Dialog erteilte Einwilligung bewusst stehen — ein pauschaler
+       Banner-Klick darf sie nicht still widerrufen, während das Widget läuft.
+       Widerruf gibt es über den Footer-Link „Cookie-Einstellungen". */
+    if (type === "all") grantHeydentConsent();
     setVisible(false);
     window.dispatchEvent(new CustomEvent("consent-changed", { detail: type }));
   }
 
-  if (!visible) return null;
+  if (!visible || menuOffen) return null;
 
   return (
+    /* Position weicht dem Termin-Widget aus (sitzt unten rechts, auf dem Handy
+       unten volle Breite): Desktop unten LINKS, Mobil oberhalb der Widget-Karte.
+       Die id enthält bewusst „cookie" — daran erkennt das HeyDent-Widget den
+       offenen Banner und hält seine Sprechblase solange zurück. */
     <div
-      className="fixed bottom-0 left-0 right-0 z-[9999] px-4 pb-4 animate-slide-up"
+      id="cookie-banner"
+      className="fixed left-0 right-0 z-[9999] px-4 bottom-28 md:bottom-32 lg:bottom-0 lg:right-auto lg:w-full lg:max-w-xl lg:pb-5 lg:pl-5"
       style={{ animation: "slideUp 0.5s ease-out forwards" }}
     >
       <div
-        className="max-w-3xl mx-auto p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center gap-4"
+        className="max-w-xl mx-auto lg:mx-0 p-5 md:p-6 flex flex-col items-start gap-4"
         style={{
           background: "rgba(44, 58, 58, 0.97)",
           backdropFilter: "blur(12px)",
@@ -87,10 +109,10 @@ export default function CookieBanner() {
             </Link>
           </p>
         </div>
-        <div className="flex gap-3 shrink-0 w-full md:w-auto">
+        <div className="flex gap-3 shrink-0 w-full">
           <button
             onClick={() => handleConsent("necessary")}
-            className="flex-1 md:flex-initial px-5 py-2.5 text-sm tracking-wide transition-all duration-300 cursor-pointer"
+            className="flex-1 px-5 py-2.5 text-sm tracking-wide transition-all duration-300 cursor-pointer"
             style={{
               color: "rgba(255,255,255,0.8)", fontWeight: 500,
               border: "1px solid rgba(255,255,255,0.2)", borderRadius: "9999px",
@@ -101,7 +123,7 @@ export default function CookieBanner() {
           </button>
           <button
             onClick={() => handleConsent("all")}
-            className="flex-1 md:flex-initial px-5 py-2.5 text-sm tracking-wide transition-all duration-300 cursor-pointer"
+            className="flex-1 px-5 py-2.5 text-sm tracking-wide transition-all duration-300 cursor-pointer"
             style={{
               color: "#fff", fontWeight: 600,
               background: "linear-gradient(135deg, #F26522, #e3541a)",

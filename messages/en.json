@@ -65,12 +65,6 @@
       "text": "Schedule your appointment — online, by phone or by email.",
       "ctaText": "BOOK APPOINTMENT"
     },
-    "cookie": {
-      "text": "We use Google Maps to show you our location. Data may be transmitted to Google.",
-      "mehrErfahren": "Learn more",
-      "nurNotwendige": "Necessary only",
-      "alleAkzeptieren": "Accept all"
-    },
     "breadcrumbs": {
       "startseite": "Home",
       "leistungen": "Services",
@@ -92,10 +86,6 @@
       "datenschutz": "Privacy Policy",
       "praxis": "Practice",
       "wissenswertes": "Resources"
-    },
-    "mobileCta": {
-      "anrufen": "Call",
-      "terminBuchen": "Book Appointment"
     }
   },
   "HomePage": {
@@ -346,7 +336,7 @@
   "Kontakt": {
     "meta": {
       "title": "Contact & Directions",
-      "description": "How to find us: Parkstraße 10, 22605 Hamburg-Othmarschen. Phone: 040 880 21 50. Parking available."
+      "description": "How to find us: Parkstraße 10, 22605 Hamburg-Othmarschen. Phone: 040 880 21 50. Book appointments online or by phone. Parking available."
     },
     "hero": {
       "label": "Contact",
@@ -403,8 +393,6 @@
       "label": "Book Online",
       "titel": "Your preferred appointment",
       "titelAkzent": "in just a few clicks",
-      "platzhalter": "Online booking will be activated shortly.",
-      "bissDahin": "In the meantime you can reach us by phone at {telefon} or by email.",
       "beschreibung": "Choose your preferred appointment conveniently online — the booking opens right here on this page.",
       "cta": "Open online booking",
       "hinweis": "Opening the booking establishes a connection to our service provider HeyDent; data (including your IP address) is transmitted. Alternatively, you can reach us by phone at {telefon}."
@@ -633,7 +621,7 @@
         "fragen": {
           "wartezeit": {
             "frage": "Will I have to wait long for an appointment?",
-            "antwort": "As a rule we can offer you an appointment within 1–2 weeks. For acute complaints we strive to arrange a short-notice appointment."
+            "antwort": "As a rule we can offer you an appointment within 1–2 weeks. For acute complaints we strive to arrange a short-notice appointment; you can also book appointments directly online around the clock."
           },
           "angstpatienten": {
             "frage": "Do you also treat anxious patients?",
@@ -683,7 +671,7 @@
     "mehrErfahren": "Learn more",
     "cta": {
       "titel": "Still have questions?",
-      "titelAkzent": "Give us a call",
+      "titelAkzent": "We're happy to help",
       "text": "We are happy to answer any further questions personally."
     }
   },
@@ -857,7 +845,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "This website itself does not set its own cookies. Through the embedding of Google Maps on our contact page, cookies from Google may be set — only after your explicit consent (see section 'Google Maps'). For reach measurement we use Umami, which works without cookies and without cross-site tracking (see section 'Web analytics'). For technical purposes only, we store your cookie selection and language preference locally in your browser (localStorage); this information serves solely the functioning of the website and is not transmitted to third parties."
+        "text": "This website itself does not set its own cookies. Through the embedding of Google Maps on our contact page, cookies from Google may be set — only after your explicit consent (see section 'Google Maps'). For reach measurement we use Umami, which works without cookies and without cross-site tracking (see section 'Web analytics'). For technical purposes only, we store your cookie selection, your language preference and your consent to online appointment booking (key 'heydent-consent') locally in your browser (localStorage); this information serves solely the functioning of the website and is not transmitted to third parties. Clicking 'Accept all' in the cookie banner also grants consent to online appointment booking."
       }
     },
     "externeDienste": {
@@ -876,7 +864,7 @@
       },
       "terminbuchung": {
         "titel": "Online appointment booking (HeyDent)",
-        "text": "On our appointment page we offer online appointment booking via our service provider HeyDent (embedded as an iframe). For data protection reasons, the booking tool is only loaded after you have actively consented (two-click solution); only then is a connection to the provider's servers established and your IP address transmitted. When you request an appointment, the data you enter (e.g. name, contact details, preferred date, possibly the reason for the visit) is processed to arrange the appointment; as this may have a health-related context, the processing is based on your explicit consent (Art. 9(2)(a) in conjunction with Art. 6(1)(a) GDPR), which you can withdraw at any time. The data is processed on behalf of the practice (processing under Art. 28 GDPR). You can of course also arrange appointments by phone at 040 880 21 50."
+        "text": "We offer online appointment booking via our service provider HeyDent throughout our website. For data protection reasons, the booking is only loaded after you have actively consented (two-click solution): only then is the script embed-orb.js loaded from termin.hey-dent.de, which provides the booking as an overlay; at that point a connection to the provider's servers is established and your IP address is transmitted. When you request an appointment, the data you enter (e.g. name, contact details, preferred date, possibly the reason for the visit) is processed to arrange the appointment; as this may have a health-related context, the processing is based on your explicit consent (Art. 9(2)(a) in conjunction with Art. 6(1)(a) GDPR), which you can withdraw at any time. The data is processed on behalf of the practice (processing under Art. 28 GDPR). You can of course also arrange appointments by phone at 040 880 21 50."
       }
     },
     "rechte": {

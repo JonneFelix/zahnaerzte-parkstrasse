@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieBanner from "../components/CookieBanner";
-import MobileCTA from "../components/MobileCTA";
+import OrbPlatzhalter from "../components/OrbPlatzhalter";
 import HeydentOrb from "../components/HeydentOrb";
 import SetLocale from "../components/SetLocale";
 import { locales, type Locale } from "../../lib/i18n";
@@ -27,10 +27,10 @@ export async function generateMetadata({
   };
 
   const descriptions: Record<string, string> = {
-    de: "Ihre Zahnarztpraxis in Hamburg-Othmarschen. Oralchirurgie, Implantate, Zahnersatz & Prophylaxe. Fachzahnärztin für Oralchirurgie. Termin: 040 880 21 50.",
-    en: "Your dental practice in Hamburg-Othmarschen. Oral surgery, implants, prosthetics & prophylaxis. Specialist in oral surgery. Appointment: 040 880 21 50.",
-    fr: "Votre cabinet dentaire à Hamburg-Othmarschen. Chirurgie orale, implants, prothèses & prophylaxie. Spécialiste en chirurgie orale. Rendez-vous : 040 880 21 50.",
-    es: "Su clínica dental en Hamburg-Othmarschen. Cirugía oral, implantes, prótesis y profilaxis. Especialista en cirugía oral. Cita: 040 880 21 50.",
+    de: "Ihre Zahnarztpraxis in Hamburg-Othmarschen. Oralchirurgie, Implantate, Zahnersatz & Prophylaxe. Termine online oder unter 040 880 21 50.",
+    en: "Your dental practice in Hamburg-Othmarschen. Oral surgery, implants, prosthetics & prophylaxis. Book online or call +49 40 880 21 50.",
+    fr: "Votre cabinet dentaire à Hamburg-Othmarschen. Chirurgie orale, implants, prothèses & prophylaxie. Rendez-vous en ligne ou au 040 880 21 50.",
+    es: "Su clínica dental en Hamburg-Othmarschen. Cirugía oral, implantes, prótesis y profilaxis. Cita online o al 040 880 21 50.",
   };
 
   return {
@@ -72,7 +72,7 @@ const schemaOrg = {
   "name": "Zahnärzte Parkstrasse Othmarschen",
   "description": "Zahnarztpraxis in Hamburg-Othmarschen unter der Leitung von Dr. Claudia Schwegmann, Fachzahnärztin für Oralchirurgie.",
   "url": "https://www.zahnarzt-othmarschen.de",
-  "telephone": "+494088021050",
+  "telephone": "+49408802150",
   "email": "info@zahnarzt-othmarschen.de",
   "address": { "@type": "PostalAddress", "streetAddress": "Parkstraße 10", "addressLocality": "Hamburg", "addressRegion": "HH", "postalCode": "22605", "addressCountry": "DE" },
   "geo": { "@type": "GeoCoordinates", "latitude": 53.5528, "longitude": 9.8832 },
@@ -151,7 +151,7 @@ export default async function LocaleLayout({
       <Header locale={locale as Locale} />
       <main>{children}</main>
       <Footer locale={locale as Locale} />
-      <MobileCTA locale={locale as Locale} />
+      <OrbPlatzhalter locale={locale as Locale} />
       <CookieBanner />
       <HeydentOrb locale={locale} />
     </>

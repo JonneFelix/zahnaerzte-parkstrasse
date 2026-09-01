@@ -65,12 +65,6 @@
       "text": "Vereinbaren Sie Ihren Termin — online, telefonisch oder per E-Mail.",
       "ctaText": "TERMIN VEREINBAREN"
     },
-    "cookie": {
-      "text": "Wir nutzen Google Maps, um Ihnen unseren Standort zu zeigen. Dabei können Daten an Google übermittelt werden.",
-      "mehrErfahren": "Mehr erfahren",
-      "nurNotwendige": "Nur notwendige",
-      "alleAkzeptieren": "Alle akzeptieren"
-    },
     "breadcrumbs": {
       "startseite": "Startseite",
       "leistungen": "Leistungen",
@@ -92,10 +86,6 @@
       "datenschutz": "Datenschutz",
       "praxis": "Praxis",
       "wissenswertes": "Wissenswertes"
-    },
-    "mobileCta": {
-      "anrufen": "Anrufen",
-      "terminBuchen": "Termin buchen"
     }
   },
   "HomePage": {
@@ -346,7 +336,7 @@
   "Kontakt": {
     "meta": {
       "title": "Kontakt & Anfahrt",
-      "description": "So finden Sie uns: Parkstraße 10, 22605 Hamburg-Othmarschen. Telefon: 040 880 21 50. Parkplätze vorhanden."
+      "description": "So finden Sie uns: Parkstraße 10, 22605 Hamburg-Othmarschen. Telefon: 040 880 21 50. Termine online oder telefonisch. Parkplätze vorhanden."
     },
     "hero": {
       "label": "Kontakt",
@@ -403,8 +393,6 @@
       "label": "Online buchen",
       "titel": "Ihr Wunschtermin",
       "titelAkzent": "in wenigen Klicks",
-      "platzhalter": "Online-Terminbuchung wird in Kürze aktiviert.",
-      "bissDahin": "Bis dahin erreichen Sie uns telefonisch unter {telefon} oder per E-Mail.",
       "beschreibung": "Wählen Sie Ihren Wunschtermin bequem online — die Buchung öffnet sich direkt hier auf der Seite.",
       "cta": "Online-Terminbuchung öffnen",
       "hinweis": "Beim Öffnen wird eine Verbindung zu unserem Dienstleister HeyDent hergestellt; dabei werden Daten (u.a. Ihre IP-Adresse) übertragen. Alternativ erreichen Sie uns telefonisch unter {telefon}."
@@ -633,7 +621,7 @@
         "fragen": {
           "wartezeit": {
             "frage": "Muss ich lange auf einen Termin warten?",
-            "antwort": "In der Regel können wir Ihnen innerhalb von 1–2 Wochen einen Termin anbieten. Bei akuten Beschwerden bemühen wir uns um einen kurzfristigen Termin."
+            "antwort": "In der Regel können wir Ihnen innerhalb von 1–2 Wochen einen Termin anbieten. Bei akuten Beschwerden bemühen wir uns um einen kurzfristigen Termin; Termine lassen sich außerdem rund um die Uhr direkt online buchen."
           },
           "angstpatienten": {
             "frage": "Behandeln Sie auch Angstpatienten?",
@@ -683,7 +671,7 @@
     "mehrErfahren": "Mehr erfahren",
     "cta": {
       "titel": "Noch Fragen?",
-      "titelAkzent": "Rufen Sie uns an",
+      "titelAkzent": "Wir helfen weiter",
       "text": "Wir beantworten gern alle weiteren Fragen persönlich."
     }
   },
@@ -857,7 +845,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können — erst nach Ihrer ausdrücklichen Zustimmung — Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Zur Reichweitenmessung nutzen wir Umami, das ohne Cookies und ohne websiteübergreifendes Tracking arbeitet (siehe Abschnitt 'Webanalyse'). Technisch notwendig speichern wir lediglich Ihre Cookie-Auswahl sowie Ihre Sprachwahl lokal in Ihrem Browser (localStorage); diese Angaben dienen ausschließlich der Funktion der Website und werden nicht an Dritte übermittelt."
+        "text": "Diese Website selbst setzt keine eigenen Cookies. Durch die Einbindung von Google Maps auf unserer Kontaktseite können — erst nach Ihrer ausdrücklichen Zustimmung — Cookies von Google gesetzt werden (siehe Abschnitt 'Google Maps'). Zur Reichweitenmessung nutzen wir Umami, das ohne Cookies und ohne websiteübergreifendes Tracking arbeitet (siehe Abschnitt 'Webanalyse'). Technisch notwendig speichern wir lediglich Ihre Cookie-Auswahl, Ihre Sprachwahl sowie Ihre Einwilligung in die Online-Terminbuchung (Schlüssel »heydent-consent«) lokal in Ihrem Browser (localStorage); diese Angaben dienen ausschließlich der Funktion der Website und werden nicht an Dritte übermittelt. Mit »Alle akzeptieren« im Cookie-Banner erteilen Sie die Einwilligung in die Online-Terminbuchung mit."
       }
     },
     "externeDienste": {
@@ -876,7 +864,7 @@
       },
       "terminbuchung": {
         "titel": "Online-Terminbuchung (HeyDent)",
-        "text": "Auf unserer Terminseite bieten wir eine Online-Terminbuchung über unseren Dienstleister HeyDent (als iframe eingebettet) an. Das Buchungs-Tool wird aus Datenschutzgründen erst geladen, nachdem Sie aktiv zugestimmt haben (2-Klick-Lösung); erst dann wird eine Verbindung zu den Servern des Anbieters hergestellt und Ihre IP-Adresse übertragen. Wenn Sie einen Termin anfragen, werden die eingegebenen Daten (z.B. Name, Kontaktdaten, Wunschtermin, ggf. Behandlungsanlass) zur Terminvereinbarung verarbeitet; da hierbei ein Gesundheitsbezug bestehen kann, erfolgt die Verarbeitung auf Grundlage Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a i.V.m. Art. 6 Abs. 1 lit. a DSGVO), die Sie jederzeit widerrufen können. Die Daten werden im Auftrag der Praxis verarbeitet (Auftragsverarbeitung nach Art. 28 DSGVO). Sie können Termine selbstverständlich auch telefonisch unter 040 880 21 50 vereinbaren."
+        "text": "Auf unserer gesamten Webseite bieten wir eine Online-Terminbuchung über unseren Dienstleister HeyDent an. Aus Datenschutzgründen wird die Buchung erst geladen, nachdem Sie aktiv zugestimmt haben (2-Klick-Lösung): Erst dann wird das Script embed-orb.js von termin.hey-dent.de nachgeladen, das die Buchung als Overlay bereitstellt; dabei wird eine Verbindung zu den Servern des Anbieters hergestellt und Ihre IP-Adresse übertragen. Wenn Sie einen Termin anfragen, werden die eingegebenen Daten (z.B. Name, Kontaktdaten, Wunschtermin, ggf. Behandlungsanlass) zur Terminvereinbarung verarbeitet; da hierbei ein Gesundheitsbezug bestehen kann, erfolgt die Verarbeitung auf Grundlage Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a i.V.m. Art. 6 Abs. 1 lit. a DSGVO), die Sie jederzeit widerrufen können. Die Daten werden im Auftrag der Praxis verarbeitet (Auftragsverarbeitung nach Art. 28 DSGVO). Sie können Termine selbstverständlich auch telefonisch unter 040 880 21 50 vereinbaren."
       }
     },
     "rechte": {

@@ -59,6 +59,7 @@ const READY_TIMEOUT_MS = 9000;
  */
 export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
   const [dialogOpen, setDialogOpen] = useState(false);
+  const acceptBtnRef = useRef<HTMLButtonElement | null>(null);
   const localeRef = useRef(locale);
   const appReadyRef = useRef(false);
   const pendingOpenRef = useRef(false);
@@ -67,7 +68,13 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
   const t = dialogTexts[dialogOpen ? localeRef.current : locale] || dialogTexts.de;
 
   const navigateToTermin = useCallback((loc: string) => {
-    window.location.href = `/${loc}/termin`;
+    const target = `/${loc}/termin`;
+    /* Schon auf der Buchungsseite? Ein Reload brächte nur eine Schleife und
+       keinen Mehrwert — Telefon/E-Mail stehen dort ohnehin sichtbar. */
+    if (window.location.pathname.replace(/\/+$/, "") === target) return;
+    /* Mit Trailing Slash: der Static Export (trailingSlash: true) liefert
+       /de/termin/ — ohne Slash je nach Host ein Umweg-Redirect oder 404. */
+    window.location.href = `${target}/`;
   }, []);
 
   /* Orb-Loader-Script einmalig einbinden (idempotent) */
@@ -79,6 +86,12 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
     script.setAttribute("data-slug", HEYDENT_SLUG);
     script.setAttribute("data-heydent-orb", "");
     script.onerror = () => {
+      /* Toten Script-Tag entfernen, damit ein späterer Versuch neu laden kann
+         (sonst blockiert die Idempotenz-Prüfung jeden Folgeklick). */
+      script.remove();
+      /* Platzhalter-Karte wieder einblenden lassen: mit erteilter Einwilligung,
+         aber blockiertem Script gäbe es sonst gar keinen Buchungseinstieg. */
+      window.dispatchEvent(new CustomEvent("heydent:orb-unavailable"));
       /* Script nicht ladbar — falls Öffnen angefragt war, auf /termin ausweichen */
       if (pendingOpenRef.current) {
         pendingOpenRef.current = false;
@@ -90,10 +103,14 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
   }, [navigateToTermin]);
 
   const heydentOpen = useCallback((): boolean => {
-    const api = (window as unknown as { HeyDent?: { open?: () => void } }).HeyDent;
-    if (api && typeof api.open === "function") {
-      api.open();
-      return true;
+    try {
+      const api = (window as unknown as { HeyDent?: { open?: () => void } }).HeyDent;
+      if (api && typeof api.open === "function") {
+        api.open();
+        return true;
+      }
+    } catch {
+      /* Host-API hat geworfen — als „nicht geöffnet" behandeln (Fallback greift) */
     }
     return false;
   }, []);
@@ -125,10 +142,12 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
       if (!e.data || typeof e.data.type !== "string") return;
       if (e.data.type === "heydent:ready") {
         appReadyRef.current = true;
-        if (pendingOpenRef.current) {
+        /* Nur bei tatsächlich erfolgreichem Öffnen aufräumen. Ist die Host-API
+           trotz „ready" noch nicht gesetzt, bleibt der Öffnen-Wunsch offen und
+           der Timeout weicht am Ende sauber auf /termin aus. */
+        if (pendingOpenRef.current && heydentOpen()) {
           pendingOpenRef.current = false;
           if (timerRef.current) clearTimeout(timerRef.current);
-          heydentOpen();
         }
       }
     }
@@ -175,6 +194,23 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, []);
+
+  /* Offener Dialog verhält sich modal: ESC schließt, die Seite dahinter
+     scrollt nicht, der Fokus startet auf dem Zustimmen-Knopf. */
+  useEffect(() => {
+    if (!dialogOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setDialogOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    acceptBtnRef.current?.focus();
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [dialogOpen]);
 
   function acceptDialog() {
     grantHeydentConsent();
@@ -255,6 +291,7 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
           </button>
           <button
             type="button"
+            ref={acceptBtnRef}
             onClick={acceptDialog}
             className="cta-schimmer flex-1 px-5 py-3 text-sm tracking-wide transition-all duration-300 cursor-pointer"
             style={{

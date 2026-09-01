@@ -65,12 +65,6 @@
       "text": "Reserve su cita — en línea, por teléfono o por correo electrónico.",
       "ctaText": "RESERVAR CITA"
     },
-    "cookie": {
-      "text": "Utilizamos Google Maps para mostrarle nuestra ubicación. Los datos pueden transmitirse a Google.",
-      "mehrErfahren": "Más información",
-      "nurNotwendige": "Solo necesarias",
-      "alleAkzeptieren": "Aceptar todas"
-    },
     "breadcrumbs": {
       "startseite": "Inicio",
       "leistungen": "Servicios",
@@ -92,10 +86,6 @@
       "datenschutz": "Protección de datos",
       "praxis": "Clínica",
       "wissenswertes": "Información útil"
-    },
-    "mobileCta": {
-      "anrufen": "Llamar",
-      "terminBuchen": "Reservar cita"
     }
   },
   "HomePage": {
@@ -346,7 +336,7 @@
   "Kontakt": {
     "meta": {
       "title": "Contacto y cómo llegar",
-      "description": "Cómo encontrarnos: Parkstraße 10, 22605 Hamburg-Othmarschen. Teléfono: 040 880 21 50. Aparcamiento disponible."
+      "description": "Cómo encontrarnos: Parkstraße 10, 22605 Hamburg-Othmarschen. Teléfono: 040 880 21 50. Citas en línea o por teléfono. Aparcamiento disponible."
     },
     "hero": {
       "label": "Contacto",
@@ -403,8 +393,6 @@
       "label": "Reservar en línea",
       "titel": "Su cita deseada",
       "titelAkzent": "en pocos clics",
-      "platzhalter": "La reserva en línea se activará próximamente.",
-      "bissDahin": "Mientras tanto puede contactarnos por teléfono al {telefon} o por correo electrónico.",
       "beschreibung": "Elija su cita cómodamente en línea — la reserva se abre directamente en esta página.",
       "cta": "Abrir la reserva de citas",
       "hinweis": "Al abrir la reserva se establece una conexión con nuestro proveedor HeyDent; se transmiten datos (incluida su dirección IP). También puede contactarnos por teléfono al {telefon}."
@@ -633,7 +621,7 @@
         "fragen": {
           "wartezeit": {
             "frage": "¿Tengo que esperar mucho para una cita?",
-            "antwort": "Por regla general podemos ofrecerle una cita en un plazo de 1 a 2 semanas. En caso de molestias agudas nos esforzamos por darle una cita a corto plazo."
+            "antwort": "Por regla general podemos ofrecerle una cita en un plazo de 1 a 2 semanas. En caso de molestias agudas nos esforzamos por darle una cita a corto plazo; además, puede reservar citas directamente en línea las 24 horas."
           },
           "angstpatienten": {
             "frage": "¿Tratan también a pacientes con miedo al dentista?",
@@ -683,7 +671,7 @@
     "mehrErfahren": "Más información",
     "cta": {
       "titel": "¿Más preguntas?",
-      "titelAkzent": "Llámenos",
+      "titelAkzent": "Le ayudamos",
       "text": "Respondemos con gusto a todas sus preguntas personalmente."
     }
   },
@@ -857,7 +845,7 @@
       },
       "cookies": {
         "titel": "Cookies",
-        "text": "Este sitio web no establece cookies propias. Mediante la integración de Google Maps en nuestra página de contacto, Google puede establecer cookies, pero solo tras su consentimiento expreso (véase la sección 'Google Maps'). Para la medición de audiencia utilizamos Umami, que funciona sin cookies y sin seguimiento entre sitios (véase la sección 'Análisis web'). Por motivos técnicos, solo almacenamos su selección de cookies y su preferencia de idioma localmente en su navegador (localStorage); esta información sirve exclusivamente para el funcionamiento del sitio y no se transmite a terceros."
+        "text": "Este sitio web no establece cookies propias. Mediante la integración de Google Maps en nuestra página de contacto, Google puede establecer cookies, pero solo tras su consentimiento expreso (véase la sección 'Google Maps'). Para la medición de audiencia utilizamos Umami, que funciona sin cookies y sin seguimiento entre sitios (véase la sección 'Análisis web'). Por motivos técnicos, solo almacenamos su selección de cookies, su preferencia de idioma y su consentimiento para la reserva de citas en línea (clave «heydent-consent») localmente en su navegador (localStorage); esta información sirve exclusivamente para el funcionamiento del sitio y no se transmite a terceros. Al pulsar «Aceptar todas» en el banner de cookies, otorga también el consentimiento para la reserva de citas en línea."
       }
     },
     "externeDienste": {
@@ -876,7 +864,7 @@
       },
       "terminbuchung": {
         "titel": "Reserva de citas en línea (HeyDent)",
-        "text": "En nuestra página de citas ofrecemos la reserva de citas en línea a través de nuestro proveedor HeyDent (integrado como iframe). Por motivos de protección de datos, la herramienta de reservas solo se carga después de que usted haya dado su consentimiento activo (solución de dos clics); solo entonces se establece una conexión con los servidores del proveedor y se transmite su dirección IP. Cuando solicita una cita, los datos que introduce (p. ej. nombre, datos de contacto, fecha deseada y, en su caso, el motivo de la visita) se tratan para concertar la cita; como puede existir un contexto relacionado con la salud, el tratamiento se basa en su consentimiento explícito (art. 9.2.a en relación con el art. 6.1.a RGPD), que puede revocar en cualquier momento. Los datos se tratan por encargo de la clínica (encargo de tratamiento según el art. 28 RGPD). Por supuesto, también puede concertar citas por teléfono en el 040 880 21 50."
+        "text": "En todo nuestro sitio web ofrecemos la reserva de citas en línea a través de nuestro proveedor HeyDent. Por motivos de protección de datos, la reserva solo se carga después de que usted haya dado su consentimiento activo (solución de dos clics): solo entonces se carga el script embed-orb.js desde termin.hey-dent.de, que muestra la reserva como una capa superpuesta (overlay); en ese momento se establece una conexión con los servidores del proveedor y se transmite su dirección IP. Cuando solicita una cita, los datos que introduce (p. ej. nombre, datos de contacto, fecha deseada y, en su caso, el motivo de la visita) se tratan para concertar la cita; como puede existir un contexto relacionado con la salud, el tratamiento se basa en su consentimiento explícito (art. 9.2.a en relación con el art. 6.1.a RGPD), que puede revocar en cualquier momento. Los datos se tratan por encargo de la clínica (encargo de tratamiento según el art. 28 RGPD). Por supuesto, también puede concertar citas por teléfono en el 040 880 21 50."
       }
     },
     "rechte": {

@@ -88,7 +88,7 @@ export default function CookieBanner() {
        offenen Banner und hält seine Sprechblase solange zurück. */
     <div
       id="cookie-banner"
-      className="fixed left-0 right-0 z-[9999] px-4 bottom-28 md:bottom-32 lg:bottom-0 lg:right-auto lg:w-full lg:max-w-xl lg:pb-5 lg:pl-5"
+      className="fixed left-0 right-0 z-[9999] px-4 bottom-28 md:bottom-32 lg:bottom-0 lg:right-auto lg:w-full lg:max-w-xl lg:pb-[26px] lg:pl-[26px]"
       style={{ animation: "slideUp 0.5s ease-out forwards" }}
     >
       <div
@@ -104,7 +104,8 @@ export default function CookieBanner() {
         <div className="flex-1">
           <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.9)", fontWeight: 300, lineHeight: 1.7 }}>
             {t.text}{" "}
-            <Link href={datenschutzPath} className="underline transition-colors duration-300 hover:text-[#F26522]" style={{ color: "rgba(255,255,255,0.7)" }}>
+            {/* py/-my vergrößert nur die Tap-Fläche (Inline-Link war 16px hoch) */}
+            <Link href={datenschutzPath} className="inline-block py-2 -my-2 underline transition-colors duration-300 hover:text-[#F26522]" style={{ color: "rgba(255,255,255,0.7)" }}>
               {t.link}
             </Link>
           </p>

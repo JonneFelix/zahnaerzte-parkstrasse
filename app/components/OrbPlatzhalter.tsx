@@ -111,7 +111,12 @@ export default function OrbPlatzhalter({ locale = "de" as Locale }: { locale?: L
         .orb-ph {
           position: fixed; right: 26px; bottom: 26px; z-index: 30;
           font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+          /* Der Wrapper bleibt mobil volle Breite, auch wenn nur der Kreis
+             sichtbar ist — ohne das hier schluckt er Taps auf darunterliegende
+             Links (Footer „Cookie-Einstellungen"). Klickbar ist nur die Karte. */
+          pointer-events: none;
         }
+        .orb-ph-card { pointer-events: auto; }
         .orb-ph-card {
           display: flex; align-items: center; gap: 13px; min-height: 74px;
           padding: 10px 14px 10px 10px; background: #fff;

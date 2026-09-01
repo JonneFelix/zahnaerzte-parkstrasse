@@ -9,15 +9,19 @@ import {
   hasHeydentConsent,
 } from "../../lib/heydent";
 
-/* Consent-Dialog-Texte (ausdrückliche Einwilligung vor dem ersten Laden) */
+/* Consent-Dialog-Texte (ausdrückliche Einwilligung vor dem ersten Laden).
+   Die Telefon-Alternative ist bewusst getrennt, damit die Nummer als
+   klickbarer tel:-Link gerendert werden kann. */
 const dialogTexts: Record<
   string,
-  { titel: string; hinweis: string; button: string; ablehnen: string; mehr: string }
+  { titel: string; hinweis: string; telefonSatz: string; telefonNummer: string; button: string; ablehnen: string; mehr: string }
 > = {
   de: {
     titel: "Online-Terminbuchung",
     hinweis:
-      "Beim Öffnen wird eine Verbindung zu unserem Dienstleister HeyDent hergestellt; dabei werden Daten (u.a. Ihre IP-Adresse) übertragen. Alternativ erreichen Sie uns telefonisch unter 040 880 21 50.",
+      "Beim Öffnen wird eine Verbindung zu unserem Dienstleister HeyDent hergestellt; dabei werden Daten (u.a. Ihre IP-Adresse) übertragen.",
+    telefonSatz: "Alternativ erreichen Sie uns telefonisch unter",
+    telefonNummer: "040 880 21 50",
     button: "Zustimmen & öffnen",
     ablehnen: "Abbrechen",
     mehr: "Datenschutzerklärung",
@@ -25,7 +29,9 @@ const dialogTexts: Record<
   en: {
     titel: "Online appointment booking",
     hinweis:
-      "Opening the tool establishes a connection to our service provider HeyDent; data (including your IP address) is transmitted. Alternatively, you can reach us by phone at +49 40 880 21 50.",
+      "Opening the tool establishes a connection to our service provider HeyDent; data (including your IP address) is transmitted.",
+    telefonSatz: "Alternatively, you can reach us by phone at",
+    telefonNummer: "+49 40 880 21 50",
     button: "Agree & open",
     ablehnen: "Cancel",
     mehr: "Privacy policy",
@@ -33,7 +39,9 @@ const dialogTexts: Record<
   fr: {
     titel: "Prise de rendez-vous en ligne",
     hinweis:
-      "L'ouverture de l'outil établit une connexion avec notre prestataire HeyDent ; des données (dont votre adresse IP) sont transmises. Vous pouvez aussi nous joindre par téléphone au 040 880 21 50.",
+      "L'ouverture de l'outil établit une connexion avec notre prestataire HeyDent ; des données (dont votre adresse IP) sont transmises.",
+    telefonSatz: "Vous pouvez aussi nous joindre au",
+    telefonNummer: "+49 40 880 21 50",
     button: "Accepter et ouvrir",
     ablehnen: "Annuler",
     mehr: "Confidentialité",
@@ -41,7 +49,9 @@ const dialogTexts: Record<
   es: {
     titel: "Reserva de citas en línea",
     hinweis:
-      "Al abrir la herramienta se establece una conexión con nuestro proveedor HeyDent; se transmiten datos (incluida su dirección IP). También puede contactarnos por teléfono en el 040 880 21 50.",
+      "Al abrir la herramienta se establece una conexión con nuestro proveedor HeyDent; se transmiten datos (incluida su dirección IP).",
+    telefonSatz: "También puede llamarnos al",
+    telefonNummer: "+49 40 880 21 50",
     button: "Aceptar y abrir",
     ablehnen: "Cancelar",
     mehr: "Privacidad",
@@ -60,6 +70,8 @@ const READY_TIMEOUT_MS = 9000;
 export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
   const [dialogOpen, setDialogOpen] = useState(false);
   const acceptBtnRef = useRef<HTMLButtonElement | null>(null);
+  /* Element, das den Dialog geöffnet hat — bekommt beim Schließen den Fokus zurück */
+  const openerRef = useRef<HTMLElement | null>(null);
   const localeRef = useRef(locale);
   const appReadyRef = useRef(false);
   const pendingOpenRef = useRef(false);
@@ -181,6 +193,7 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
       if (hasHeydentConsent()) {
         openWhenReady(loc);
       } else {
+        openerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
         setDialogOpen(true);
       }
     }
@@ -209,6 +222,10 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
+      /* Fokus zurück zum auslösenden Element — sonst landet die nächste
+         Tab-Taste ganz oben auf der Seite. Nach Zustimmung übernimmt das
+         Widget den Fokus anschließend selbst. */
+      openerRef.current?.focus();
     };
   }, [dialogOpen]);
 
@@ -263,7 +280,15 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
           className="text-sm mb-2"
           style={{ color: "#5a6a6a", fontWeight: 300, lineHeight: 1.7 }}
         >
-          {t.hinweis}
+          {t.hinweis} {t.telefonSatz}{" "}
+          <a
+            href="tel:+49408802150"
+            className="whitespace-nowrap underline transition-colors duration-300 hover:text-[#F26522]"
+            style={{ color: "#4a5959", fontWeight: 500 }}
+          >
+            {t.telefonNummer}
+          </a>
+          .
         </p>
         <Link
           href={datenschutzHref}
@@ -277,7 +302,7 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
           <button
             type="button"
             onClick={() => setDialogOpen(false)}
-            className="flex-1 px-5 py-3 text-sm tracking-wide transition-all duration-300 cursor-pointer"
+            className="flex-1 whitespace-nowrap px-5 py-3 text-sm tracking-wide transition-all duration-300 cursor-pointer"
             style={{
               color: "#4a5959",
               fontWeight: 500,
@@ -293,7 +318,7 @@ export default function HeydentOrb({ locale = "de" }: { locale?: string }) {
             type="button"
             ref={acceptBtnRef}
             onClick={acceptDialog}
-            className="cta-schimmer flex-1 px-5 py-3 text-sm tracking-wide transition-all duration-300 cursor-pointer"
+            className="cta-schimmer flex-1 whitespace-nowrap px-5 py-3 text-sm tracking-wide transition-all duration-300 cursor-pointer"
             style={{
               color: "#fff",
               fontWeight: 600,

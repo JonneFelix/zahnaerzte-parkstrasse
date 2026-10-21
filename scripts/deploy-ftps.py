@@ -16,7 +16,9 @@ import posixpath
 import re
 import ssl
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 MANIFEST = ".deploy-manifest.json"
@@ -118,24 +120,58 @@ def read_remote(ftp: ftplib.FTP, path: str) -> bytes:
     return buf.getvalue()
 
 
-def put_atomic(ftp: ftplib.FTP, base: str, rel: str, data: io.BufferedIOBase, known_dirs: set[str]) -> None:
-    parent, name = posixpath.split(rel)
-    missing = []
-    while parent and parent not in known_dirs:
-        missing.append(parent)
-        parent = posixpath.dirname(parent)
-    for d in reversed(missing):
+def ensure_dirs(ftp: ftplib.FTP, base: str, rels: list[str], known_dirs: set[str]) -> None:
+    needed = set()
+    for rel in rels:
+        parent = posixpath.dirname(rel)
+        while parent and parent not in known_dirs:
+            needed.add(parent)
+            parent = posixpath.dirname(parent)
+    for d in sorted(needed, key=lambda d: d.count("/")):
         ftp.mkd(posixpath.join(base, d))
         known_dirs.add(d)
+
+
+def put_atomic(ftp: ftplib.FTP, base: str, rel: str, data: io.BufferedIOBase) -> None:
     # Der Punkt am Anfang hält halbe Uploads per .htaccess-Sperre aus dem Web heraus.
-    tmp = posixpath.join(base, posixpath.dirname(rel), f"{TMP_PREFIX}{name}")
+    tmp = posixpath.join(base, posixpath.dirname(rel), f"{TMP_PREFIX}{posixpath.basename(rel)}")
     ftp.storbinary(f"STOR {tmp}", data)
     ftp.rename(tmp, posixpath.join(base, rel))
 
 
-def write_manifest(ftp: ftplib.FTP, base: str, files: dict, retired: dict, known_dirs: set[str]) -> None:
+def upload_parallel(base: str, export: Path, rels: list[str], workers: int, progress: list[int]) -> None:
+    # Jede Datei braucht eine eigene TLS-Datenverbindung; aus GitHub-Runnern in den USA
+    # dauert das pro Datei über eine Sekunde, deshalb mehrere Steuerverbindungen parallel.
+    local = threading.local()
+    conns: list[ftplib.FTP] = []
+    lock = threading.Lock()
+
+    def upload(rel: str) -> None:
+        if not hasattr(local, "ftp"):
+            local.ftp = connect()
+            with lock:
+                conns.append(local.ftp)
+        with open(export / rel, "rb") as f:
+            put_atomic(local.ftp, base, rel, f)
+        with lock:
+            progress[0] += 1
+            if progress[0] % 100 == 0:
+                print(f"  {progress[0]}/{progress[1]} hochgeladen", flush=True)
+
+    try:
+        with ThreadPoolExecutor(workers) as pool:
+            list(pool.map(upload, rels))
+    finally:
+        for conn in conns:
+            try:
+                conn.quit()
+            except (OSError, ftplib.Error):
+                conn.close()
+
+
+def write_manifest(ftp: ftplib.FTP, base: str, files: dict, retired: dict) -> None:
     data = json.dumps({"files": files, "retired": retired}, indent=0).encode()
-    put_atomic(ftp, base, MANIFEST, io.BytesIO(data), known_dirs)
+    put_atomic(ftp, base, MANIFEST, io.BytesIO(data))
 
 
 def main() -> None:
@@ -197,7 +233,6 @@ def main() -> None:
         ftp.quit()
         return
 
-    known_dirs = set(remote_dirs)
     for rel in stale_tmp:
         ftp.delete(posixpath.join(base, rel))
     # Bricht der Lauf ab, fehlen die betroffenen Dateien im Manifest und werden beim
@@ -209,18 +244,26 @@ def main() -> None:
         base,
         {k: v for k, v in known.items() if k not in touched},
         {k: v for k, v in retired_before.items() if k not in local},
-        known_dirs,
     )
-    for i, rel in enumerate(uploads, 1):
-        with open(args.export / rel, "rb") as f:
-            put_atomic(ftp, base, rel, f, known_dirs)
-        if i % 100 == 0:
-            print(f"  {i}/{len(uploads)} hochgeladen")
+    ensure_dirs(ftp, base, uploads, set(remote_dirs))
+    if uploads and uploads[0] == ".htaccess":
+        with open(args.export / ".htaccess", "rb") as f:
+            put_atomic(ftp, base, ".htaccess", f)
+    # Die Steuerverbindung würde während der langen Uploads in den Leerlauf-Timeout laufen.
+    ftp.quit()
+
+    rest = [rel for rel in uploads if rel != ".htaccess"]
+    workers = int(os.environ.get("FTP_PARALLEL", "4"))
+    progress = [0, len(rest)]
+    upload_parallel(base, args.export, [r for r in rest if r.startswith("_next/")], workers, progress)
+    upload_parallel(base, args.export, [r for r in rest if not r.startswith("_next/")], workers, progress)
+
+    ftp = connect()
     for rel in deletes:
         ftp.delete(posixpath.join(base, rel))
     for d in empty_dirs:
         ftp.rmd(posixpath.join(base, d))
-    write_manifest(ftp, base, local, retired, known_dirs)
+    write_manifest(ftp, base, local, retired)
     ftp.quit()
     print("Deploy OK")
 

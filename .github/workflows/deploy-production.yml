@@ -23,7 +23,7 @@ jobs:
   build-and-deploy:
     name: Build & Deploy via FTPS
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
 
     steps:
       - name: Repository auschecken
@@ -50,4 +50,4 @@ jobs:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASS }}
           DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
-        run: python3 scripts/deploy-ftps.py out $DRY_RUN
+        run: python3 -u scripts/deploy-ftps.py out $DRY_RUN

@@ -1,19 +1,35 @@
 name: Deploy to Production (Andre Hotzler)
 
-# Nur bei Push auf main deployen
+# Bei Push auf main deployen; von Hand auch als Probelauf ohne Änderungen
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Nur Plan anzeigen, nichts ändern
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
-    name: Build & Deploy via HTTP
+    name: Build & Deploy via FTPS
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Bun installieren
         uses: oven-sh/setup-bun@v2
@@ -26,30 +42,12 @@ jobs:
       - name: Seite bauen
         run: bun run build
 
-      - name: ZIP-Archiv erstellen
-        run: cd out && zip -r ../deploy.zip . -x "*.DS_Store"
-
-      - name: Per HTTP deployen
-        run: |
-          response=$(curl -s -w "\n%{http_code}" \
-            -X POST "${{ secrets.DEPLOY_URL }}" \
-            -H "X-Deploy-Key: ${{ secrets.DEPLOY_KEY }}" \
-            -F "archive=@deploy.zip" \
-            --max-time 120)
-
-          http_code=$(echo "$response" | tail -1)
-          body=$(echo "$response" | sed '$d')
-
-          echo "$body"
-
-          if [ "$http_code" != "200" ]; then
-            echo "Deploy fehlgeschlagen mit HTTP $http_code"
-            exit 1
-          fi
-
-          if ! echo "$body" | grep -q "Deploy OK"; then
-            echo "Deploy-Antwort enthält kein 'Deploy OK'"
-            exit 1
-          fi
-
-          echo "Deploy erfolgreich!"
+      # Kein PHP mehr auf dem Server: Das Skript spiegelt out/ per FTPS und bricht ab,
+      # wenn die PHP-Sperre in der .htaccess fehlt.
+      - name: Per FTPS deployen
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASS }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python3 scripts/deploy-ftps.py out $DRY_RUN

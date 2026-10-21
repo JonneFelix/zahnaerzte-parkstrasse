@@ -3,6 +3,18 @@
 # Apache-Konfiguration für statische Next.js-Seite
 # ===========================================
 
+# -------------------------------------------
+# 0. PHP-SPERRE: In diesem Webspace läuft kein PHP, CGI oder SSI.
+# Der Kunde kann PHP in LiveConfig nicht abschalten. Apache prüft Require und
+# RedirectMatch vor dem PHP-Handler, PHP sieht gesperrte Requests also nie.
+# Bewusst ohne <IfModule>, Options und DirectoryIndex: Ist eine Direktive nicht
+# erlaubt, liefert Apache 500 für die ganze Seite, PHP bleibt trotzdem gesperrt.
+# -------------------------------------------
+<FilesMatch "(?i)(^\.|\.(php[0-9]?|pht|phtml|phps|phar|cgi|fcgi|shtml?|stm)(\.|$)|\.(inc|pl|py|sh)$)">
+    Require all denied
+</FilesMatch>
+RedirectMatch 403 "(?i)\.(php[0-9]?|pht|phtml|phps|phar|cgi|fcgi|shtml?|stm)(\.|/|$)"
+
 # Rewrite-Engine aktivieren
 RewriteEngine On
 
